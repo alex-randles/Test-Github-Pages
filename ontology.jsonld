@@ -33,9 +33,6 @@
     } ]
   } ]
 }, {
-  "@id" : "http://purl.1122org/ontology/bibo/status",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
   "@id" : "http://purl.org/dc/terms/abstract",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -92,9 +89,6 @@
 }, {
   "@id" : "https://alex-randles.github.io/MQV/#",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
-  "http://purl.1122org/ontology/bibo/status" : [ {
-    "@value" : "Draft"
-  } ],
   "http://purl.org/dc/terms/abstract" : [ {
     "@value" : "The Mapping Quality Vocabulary (MQV) provides a set of classes, properties, and restrictions that can be used to represent and interchange provenance and metadata information relating to the quality assessment, quality refinement and quality validation of mapping definitions used to generate Linked data datasets. It can also be specialized to create new classes and properties to model provenance and metadata information for domain specific mapping languages"
   } ],
@@ -106,6 +100,9 @@
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@value" : "Mapping Quality Vocabulary"
+  } ],
+  "http://purl.org/ontology/bibo/status" : [ {
+    "@value" : "Draft"
   } ],
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
     "@value" : "mqv"
@@ -365,7 +362,7 @@
   } ]
 }, {
   "@id" : "https://alex-randles.github.io/MQV/#hasLiteralValue",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A literal associated with the violation."
   } ],
@@ -378,9 +375,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/ns/prov#value"
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@value" : "@prefix :     <http://example.com/> . \n@prefix mqv: <https://alex-randles.github.io/MQV/#> . \n\n:mappingViolation\n\ta mqv:MappingViolation;\n\tmqv:hasLiteralValue \"en-GB\".\n"

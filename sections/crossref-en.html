@@ -384,7 +384,7 @@ This section provides details for each class and property defined by Mapping Qua
          <dd>
             <a href="#hasLiteralValue"
                title="https://alex-randles.github.io/MQV/#hasLiteralValue">hasLiteralValue</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasLocation" title="https://alex-randles.github.io/MQV/#hasLocation">hasLocation</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasLocation" title="https://alex-randles.github.io/MQV/#hasLocation">hasLocation</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#hasObjectValue"
                title="https://alex-randles.github.io/MQV/#hasObjectValue">hasObjectValue</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#inTripleMap" title="https://alex-randles.github.io/MQV/#inTripleMap">inTripleMap</a>
@@ -529,12 +529,6 @@ This section provides details for each class and property defined by Mapping Qua
       </li>
       <li>
          <a href="#executes" title="https://alex-randles.github.io/MQV/#executes">executes</a>
-      </li>
-      <li>
-         <a href="#hasLiteralValue"
-            title="https://alex-randles.github.io/MQV/#hasLiteralValue">
-            <span>hasLiteralValue</span>
-         </a>
       </li>
       <li>
          <a href="#hasMetricType"
@@ -792,35 +786,6 @@ This section provides details for each class and property defined by Mapping Qua
                   target="_blank"
                   title="http://www.w3.org/ns/dqv#Metric">metric</a>
                <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasLiteralValue">
-      <h3>hasLiteralValue<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://alex-randles.github.io/MQV/#hasLiteralValue</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="http://www.w3.org/ns/prov#value"
-                  target="_blank"
-                  title="http://www.w3.org/ns/prov#value">value</a>
-               <sup class="type-dp" title="data property">dp</sup>
-            </dd>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#MappingViolation"
-                  title="https://alex-randles.github.io/MQV/#MappingViolation">MappingViolation</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#hasLiteralValue">data property</a>
             </dd>
          </dl>
       </div>
@@ -1702,9 +1667,7 @@ This section provides details for each class and property defined by Mapping Qua
       </li>
       <li>
          <a href="#hasLiteralValue"
-            title="https://alex-randles.github.io/MQV/#hasLiteralValue">
-            <span>hasLiteralValue</span>
-         </a>
+            title="https://alex-randles.github.io/MQV/#hasLiteralValue">hasLiteralValue</a>
       </li>
       <li>
          <a href="#hasLocation" title="https://alex-randles.github.io/MQV/#hasLocation">hasLocation</a>
@@ -1772,23 +1735,40 @@ This section provides details for each class and property defined by Mapping Qua
       </div>
    </div>
    <div class="entity" id="hasLiteralValue">
-      <h3>hasLiteralValue<sup class="type-op" title="object property">op</sup>
+      <h3>hasLiteralValue<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://alex-randles.github.io/MQV/#hasLiteralValue</p>
+      <div class="comment">
+         <span class="markdown">A literal associated with the violation.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>@prefix :     &lt;http://example.com/&gt; . 
+@prefix mqv: &lt;https://alex-randles.github.io/MQV/#&gt; . 
+
+:mappingViolation
+	a mqv:MappingViolation;
+	mqv:hasLiteralValue "en-GB".
+</pre>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#MappingViolation"
+                  title="https://alex-randles.github.io/MQV/#MappingViolation">MappingViolation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>has range</dt>
             <dd>
                <a href="http://www.w3.org/2001/XMLSchema#string"
                   target="_blank"
                   title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#hasLiteralValue">object property</a>
             </dd>
          </dl>
       </div>

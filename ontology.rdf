@@ -5,18 +5,17 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:bibo="http://purl.1122org/ontology/bibo/"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:bibo1="http://purl.org/ontology/bibo/"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://alex-randles.github.io/MQV/#">
-        <bibo:status>Draft</bibo:status>
         <terms:abstract>The Mapping Quality Vocabulary (MQV) provides a set of classes, properties, and restrictions that can be used to represent and interchange provenance and metadata information relating to the quality assessment, quality refinement and quality validation of mapping definitions used to generate Linked data datasets. It can also be specialized to create new classes and properties to model provenance and metadata information for domain specific mapping languages</terms:abstract>
         <terms:created>1 June 2020</terms:created>
         <terms:license>http://creativecommons.org/publicdomain/zero/1.0/</terms:license>
         <terms:title>Mapping Quality Vocabulary</terms:title>
+        <bibo:status>Draft</bibo:status>
         <vann:preferredNamespacePrefix>mqv</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://alex-randles.github.io/MQV/#</vann:preferredNamespaceUri>
     </owl:Ontology>
@@ -32,13 +31,6 @@
      -->
 
 
-    
-
-
-    <!-- http://purl.1122org/ontology/bibo/status -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.1122org/ontology/bibo/status"/>
     
 
 
@@ -212,16 +204,6 @@
 :qualityMetric
 	a mqv:QualityMetric;
 .</skos:example>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://alex-randles.github.io/MQV/#hasLiteralValue -->
-
-
-    <owl:ObjectProperty rdf:about="https://alex-randles.github.io/MQV/#hasLiteralValue">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#value"/>
-        <rdfs:domain rdf:resource="https://alex-randles.github.io/MQV/#MappingViolation"/>
     </owl:ObjectProperty>
     
 
@@ -704,7 +686,17 @@
 
 
     <owl:DatatypeProperty rdf:about="https://alex-randles.github.io/MQV/#hasLiteralValue">
+        <rdfs:domain rdf:resource="https://alex-randles.github.io/MQV/#MappingViolation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>A literal associated with the violation.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasLiteralValue</rdfs:label>
+        <skos:example>@prefix :     &lt;http://example.com/&gt; . 
+@prefix mqv: &lt;https://alex-randles.github.io/MQV/#&gt; . 
+
+:mappingViolation
+	a mqv:MappingViolation;
+	mqv:hasLiteralValue &quot;en-GB&quot;.
+</skos:example>
     </owl:DatatypeProperty>
     
 
@@ -1060,17 +1052,6 @@
      -->
 
 
-    <rdf:Description rdf:about="https://alex-randles.github.io/MQV/#hasLiteralValue">
-        <rdfs:comment>A literal associated with the violation.</rdfs:comment>
-        <rdfs:label xml:lang="en">hasLiteralValue</rdfs:label>
-        <skos:example>@prefix :     &lt;http://example.com/&gt; . 
-@prefix mqv: &lt;https://alex-randles.github.io/MQV/#&gt; . 
-
-:mappingViolation
-	a mqv:MappingViolation;
-	mqv:hasLiteralValue &quot;en-GB&quot;.
-</skos:example>
-    </rdf:Description>
     <rdf:Description rdf:about="https://alex-randles.github.io/MQV/#mappingPurpose">
         <rdfs:comment>The rationale for the mapping document being created.</rdfs:comment>
         <rdfs:label xml:lang="en">mappingPurpose</rdfs:label>

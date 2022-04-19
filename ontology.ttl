@@ -7,21 +7,17 @@
 @base <https://alex-randles.github.io/MQV/#> .
 
 <https://alex-randles.github.io/MQV/#> rdf:type owl:Ontology ;
-                                        <http://purl.1122org/ontology/bibo/status> "Draft" ;
                                         <http://purl.org/dc/terms/abstract> "The Mapping Quality Vocabulary (MQV) provides a set of classes, properties, and restrictions that can be used to represent and interchange provenance and metadata information relating to the quality assessment, quality refinement and quality validation of mapping definitions used to generate Linked data datasets. It can also be specialized to create new classes and properties to model provenance and metadata information for domain specific mapping languages" ;
                                         <http://purl.org/dc/terms/created> "1 June 2020" ;
                                         <http://purl.org/dc/terms/license> "http://creativecommons.org/publicdomain/zero/1.0/" ;
                                         <http://purl.org/dc/terms/title> "Mapping Quality Vocabulary" ;
+                                        <http://purl.org/ontology/bibo/status> "Draft" ;
                                         <http://purl.org/vocab/vann/preferredNamespacePrefix> "mqv" ;
                                         <http://purl.org/vocab/vann/preferredNamespaceUri> "https://alex-randles.github.io/MQV/#" .
 
 #################################################################
 #    Annotation properties
 #################################################################
-
-###  http://purl.1122org/ontology/bibo/status
-<http://purl.1122org/ontology/bibo/status> rdf:type owl:AnnotationProperty .
-
 
 ###  http://purl.org/dc/terms/abstract
 <http://purl.org/dc/terms/abstract> rdf:type owl:AnnotationProperty .
@@ -141,12 +137,6 @@
 :qualityMetric
 	a mqv:QualityMetric;
 .""" .
-
-
-###  https://alex-randles.github.io/MQV/#hasLiteralValue
-:hasLiteralValue rdf:type owl:ObjectProperty ;
-                 rdfs:subPropertyOf <http://www.w3.org/ns/prov#value> ;
-                 rdfs:domain :MappingViolation .
 
 
 ###  https://alex-randles.github.io/MQV/#hasMetricType
@@ -524,7 +514,17 @@
 
 ###  https://alex-randles.github.io/MQV/#hasLiteralValue
 :hasLiteralValue rdf:type owl:DatatypeProperty ;
-                 rdfs:range xsd:string .
+                 rdfs:domain :MappingViolation ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "A literal associated with the violation." ;
+                 rdfs:label "hasLiteralValue"@en ;
+                 <http://www.w3.org/2004/02/skos/core#example> """@prefix :     <http://example.com/> . 
+@prefix mqv: <https://alex-randles.github.io/MQV/#> . 
+
+:mappingViolation
+	a mqv:MappingViolation;
+	mqv:hasLiteralValue \"en-GB\".
+""" .
 
 
 ###  https://alex-randles.github.io/MQV/#hasLocation
@@ -788,17 +788,6 @@
 #################################################################
 #    Annotations
 #################################################################
-
-:hasLiteralValue rdfs:comment "A literal associated with the violation." ;
-                 rdfs:label "hasLiteralValue"@en ;
-                 <http://www.w3.org/2004/02/skos/core#example> """@prefix :     <http://example.com/> . 
-@prefix mqv: <https://alex-randles.github.io/MQV/#> . 
-
-:mappingViolation
-	a mqv:MappingViolation;
-	mqv:hasLiteralValue \"en-GB\".
-""" .
-
 
 :mappingPurpose rdfs:comment "The rationale for the mapping document being created." ;
                 rdfs:label "mappingPurpose"@en ;
