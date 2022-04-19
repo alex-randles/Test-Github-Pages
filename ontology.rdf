@@ -459,6 +459,7 @@
 
 
     <owl:ObjectProperty rdf:about="https://alex-randles.github.io/MQV/#mappingSource">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="https://alex-randles.github.io/MQV/#MappingDocument"/>
         <rdfs:range rdf:resource="https://alex-randles.github.io/MQV/#MappingDocument"/>
         <rdfs:comment>The original mapping document, which the refined mapping document was created from.</rdfs:comment>
@@ -880,6 +881,10 @@
 
     <owl:Class rdf:about="https://alex-randles.github.io/MQV/#MappingDocument">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <owl:disjointWith rdf:resource="https://alex-randles.github.io/MQV/#MappingTool"/>
+        <owl:disjointWith rdf:resource="https://alex-randles.github.io/MQV/#MappingValidationReport"/>
+        <owl:disjointWith rdf:resource="https://alex-randles.github.io/MQV/#MappingViolation"/>
+        <owl:disjointWith rdf:resource="https://alex-randles.github.io/MQV/#QualityRequirement"/>
         <rdfs:comment>A mapping document is a document which contains information on how non-RDF data will be transformed to RDF.</rdfs:comment>
         <rdfs:label xml:lang="en">MappingDocument</rdfs:label>
         <skos:example>@prefix :     &lt;http://example.com/&gt; . 
@@ -928,6 +933,9 @@
 
     <owl:Class rdf:about="https://alex-randles.github.io/MQV/#MappingTool">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <owl:disjointWith rdf:resource="https://alex-randles.github.io/MQV/#MappingValidationReport"/>
+        <owl:disjointWith rdf:resource="https://alex-randles.github.io/MQV/#MappingViolation"/>
+        <owl:disjointWith rdf:resource="https://alex-randles.github.io/MQV/#QualityRequirement"/>
         <rdfs:comment>A tool which is used to create or refine a mapping document.</rdfs:comment>
         <rdfs:label xml:lang="en">MappingTool</rdfs:label>
         <skos:example>@prefix :     &lt;http://example.com/&gt; . 
@@ -951,6 +959,8 @@
 
     <owl:Class rdf:about="https://alex-randles.github.io/MQV/#MappingValidationReport">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <owl:disjointWith rdf:resource="https://alex-randles.github.io/MQV/#MappingViolation"/>
+        <owl:disjointWith rdf:resource="https://alex-randles.github.io/MQV/#QualityRequirement"/>
         <rdfs:comment>A mapping validation report contains information about quality violations contained within a mapping document.</rdfs:comment>
         <rdfs:label xml:lang="en">MappingValidationReport</rdfs:label>
         <skos:example>@prefix :     &lt;http://example.com/&gt; . 
@@ -975,6 +985,7 @@
 
     <owl:Class rdf:about="https://alex-randles.github.io/MQV/#MappingViolation">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <owl:disjointWith rdf:resource="https://alex-randles.github.io/MQV/#QualityRequirement"/>
         <rdfs:comment>A mapping violation is a quality issue present within a mapping.</rdfs:comment>
         <rdfs:label xml:lang="en">MappingViolation</rdfs:label>
         <skos:example>@prefix :     &lt;http://example.com/&gt; . 

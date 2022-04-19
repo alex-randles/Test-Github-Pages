@@ -145,6 +145,15 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/ns/prov#Entity"
   } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://alex-randles.github.io/MQV/#MappingTool"
+  }, {
+    "@id" : "https://alex-randles.github.io/MQV/#MappingValidationReport"
+  }, {
+    "@id" : "https://alex-randles.github.io/MQV/#MappingViolation"
+  }, {
+    "@id" : "https://alex-randles.github.io/MQV/#QualityRequirement"
+  } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@value" : "@prefix :     <http://example.com/> . \n@prefix mqv: <https://alex-randles.github.io/MQV/#> . \n\n\n:mappingDocument\n\ta mqv:MappingDocument;\n\tmqv:createdBy :mappingEngineer\n.\n\n:mappingEngineer\n\ta prov:Agent ;\n.\n"
   } ]
@@ -177,6 +186,13 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/ns/prov#Entity"
   } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://alex-randles.github.io/MQV/#MappingValidationReport"
+  }, {
+    "@id" : "https://alex-randles.github.io/MQV/#MappingViolation"
+  }, {
+    "@id" : "https://alex-randles.github.io/MQV/#QualityRequirement"
+  } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@value" : "@prefix :     <http://example.com/> . \n@prefix mqv: <https://alex-randles.github.io/MQV/#> . \n\n\n:mappingTool\n\ta mqv:MappingTool;\n.\n\n:mappingDocument\n\ta mqv:MappingDocument ;\n\tmqv:toolsUsed :mappingTool ;\n."
   } ]
@@ -193,6 +209,11 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/ns/prov#Entity"
   } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://alex-randles.github.io/MQV/#MappingViolation"
+  }, {
+    "@id" : "https://alex-randles.github.io/MQV/#QualityRequirement"
+  } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@value" : "@prefix :     <http://example.com/> . \n@prefix mqv: <https://alex-randles.github.io/MQV/#> . \n\n\n:mappingValidationReport\n\ta mqv:MappingValidationReport;\n.\n\n:mappingAssessment\n\ta mqv:MappingAssessment ;\n\tmqv:hasValidationReport :mappingValidationReport ;\n.\n"
   } ]
@@ -208,6 +229,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/ns/prov#Entity"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://alex-randles.github.io/MQV/#QualityRequirement"
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@value" : "@prefix :     <http://example.com/> . \n@prefix mqv: <https://alex-randles.github.io/MQV/#> . \n\n\n:mappingViolation\n\ta mqv:MappingViolation;\n.\n\n:mappingValidationReport\n\ta mqv:MappingValidationReport ;\n\tmqv:hasViolation :mappingViolation;\n."
@@ -597,7 +621,7 @@
   } ]
 }, {
   "@id" : "https://alex-randles.github.io/MQV/#mappingSource",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The original mapping document, which the refined mapping document was created from."
   } ],

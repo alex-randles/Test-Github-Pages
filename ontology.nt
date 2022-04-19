@@ -202,6 +202,7 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # https://alex-randles.github.io/MQV/#mappingSource
 <https://alex-randles.github.io/MQV/#mappingSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://alex-randles.github.io/MQV/#mappingSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
 <https://alex-randles.github.io/MQV/#mappingSource> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alex-randles.github.io/MQV/#MappingDocument> .
 <https://alex-randles.github.io/MQV/#mappingSource> <http://www.w3.org/2000/01/rdf-schema#range> <https://alex-randles.github.io/MQV/#MappingDocument> .
 <https://alex-randles.github.io/MQV/#mappingSource> <http://www.w3.org/2000/01/rdf-schema#comment> "The original mapping document, which the refined mapping document was created from." .
@@ -372,6 +373,10 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # https://alex-randles.github.io/MQV/#MappingDocument
 <https://alex-randles.github.io/MQV/#MappingDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://alex-randles.github.io/MQV/#MappingDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<https://alex-randles.github.io/MQV/#MappingDocument> <http://www.w3.org/2002/07/owl#disjointWith> <https://alex-randles.github.io/MQV/#MappingTool> .
+<https://alex-randles.github.io/MQV/#MappingDocument> <http://www.w3.org/2002/07/owl#disjointWith> <https://alex-randles.github.io/MQV/#MappingValidationReport> .
+<https://alex-randles.github.io/MQV/#MappingDocument> <http://www.w3.org/2002/07/owl#disjointWith> <https://alex-randles.github.io/MQV/#MappingViolation> .
+<https://alex-randles.github.io/MQV/#MappingDocument> <http://www.w3.org/2002/07/owl#disjointWith> <https://alex-randles.github.io/MQV/#QualityRequirement> .
 <https://alex-randles.github.io/MQV/#MappingDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "A mapping document is a document which contains information on how non-RDF data will be transformed to RDF." .
 <https://alex-randles.github.io/MQV/#MappingDocument> <http://www.w3.org/2000/01/rdf-schema#label> "MappingDocument"@en .
 <https://alex-randles.github.io/MQV/#MappingDocument> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/> . \n@prefix mqv: <https://alex-randles.github.io/MQV/#> . \n\n\n:mappingDocument\n\ta mqv:MappingDocument;\n\tmqv:createdBy :mappingEngineer\n.\n\n:mappingEngineer\n\ta prov:Agent ;\n.\n" .
@@ -386,6 +391,9 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # https://alex-randles.github.io/MQV/#MappingTool
 <https://alex-randles.github.io/MQV/#MappingTool> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://alex-randles.github.io/MQV/#MappingTool> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<https://alex-randles.github.io/MQV/#MappingTool> <http://www.w3.org/2002/07/owl#disjointWith> <https://alex-randles.github.io/MQV/#MappingValidationReport> .
+<https://alex-randles.github.io/MQV/#MappingTool> <http://www.w3.org/2002/07/owl#disjointWith> <https://alex-randles.github.io/MQV/#MappingViolation> .
+<https://alex-randles.github.io/MQV/#MappingTool> <http://www.w3.org/2002/07/owl#disjointWith> <https://alex-randles.github.io/MQV/#QualityRequirement> .
 <https://alex-randles.github.io/MQV/#MappingTool> <http://www.w3.org/2000/01/rdf-schema#comment> "A tool which is used to create or refine a mapping document." .
 <https://alex-randles.github.io/MQV/#MappingTool> <http://www.w3.org/2000/01/rdf-schema#label> "MappingTool"@en .
 <https://alex-randles.github.io/MQV/#MappingTool> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/> . \n@prefix mqv: <https://alex-randles.github.io/MQV/#> . \n\n\n:mappingTool\n\ta mqv:MappingTool;\n.\n\n:mappingDocument\n\ta mqv:MappingDocument ;\n\tmqv:toolsUsed :mappingTool ;\n." .
@@ -393,6 +401,8 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # https://alex-randles.github.io/MQV/#MappingValidationReport
 <https://alex-randles.github.io/MQV/#MappingValidationReport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://alex-randles.github.io/MQV/#MappingValidationReport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<https://alex-randles.github.io/MQV/#MappingValidationReport> <http://www.w3.org/2002/07/owl#disjointWith> <https://alex-randles.github.io/MQV/#MappingViolation> .
+<https://alex-randles.github.io/MQV/#MappingValidationReport> <http://www.w3.org/2002/07/owl#disjointWith> <https://alex-randles.github.io/MQV/#QualityRequirement> .
 <https://alex-randles.github.io/MQV/#MappingValidationReport> <http://www.w3.org/2000/01/rdf-schema#comment> "A mapping validation report contains information about quality violations contained within a mapping document." .
 <https://alex-randles.github.io/MQV/#MappingValidationReport> <http://www.w3.org/2000/01/rdf-schema#label> "MappingValidationReport"@en .
 <https://alex-randles.github.io/MQV/#MappingValidationReport> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/> . \n@prefix mqv: <https://alex-randles.github.io/MQV/#> . \n\n\n:mappingValidationReport\n\ta mqv:MappingValidationReport;\n.\n\n:mappingAssessment\n\ta mqv:MappingAssessment ;\n\tmqv:hasValidationReport :mappingValidationReport ;\n.\n" .
@@ -400,6 +410,7 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # https://alex-randles.github.io/MQV/#MappingViolation
 <https://alex-randles.github.io/MQV/#MappingViolation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://alex-randles.github.io/MQV/#MappingViolation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<https://alex-randles.github.io/MQV/#MappingViolation> <http://www.w3.org/2002/07/owl#disjointWith> <https://alex-randles.github.io/MQV/#QualityRequirement> .
 <https://alex-randles.github.io/MQV/#MappingViolation> <http://www.w3.org/2000/01/rdf-schema#comment> "A mapping violation is a quality issue present within a mapping." .
 <https://alex-randles.github.io/MQV/#MappingViolation> <http://www.w3.org/2000/01/rdf-schema#label> "MappingViolation"@en .
 <https://alex-randles.github.io/MQV/#MappingViolation> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/> . \n@prefix mqv: <https://alex-randles.github.io/MQV/#> . \n\n\n:mappingViolation\n\ta mqv:MappingViolation;\n.\n\n:mappingValidationReport\n\ta mqv:MappingValidationReport ;\n\tmqv:hasViolation :mappingViolation;\n." .
