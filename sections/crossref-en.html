@@ -4,21 +4,6 @@ This section provides details for each class and property defined by Mapping Qua
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
-         <a href="#http://www.w3.org/ns/prov#Activity" title="http://www.w3.org/ns/prov#Activity">
-            <span>activity</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://www.w3.org/ns/prov#Agent" title="http://www.w3.org/ns/prov#Agent">
-            <span>agent</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://www.w3.org/ns/prov#Collection" title="http://www.w3.org/ns/prov#Collection">
-            <span>collection</span>
-         </a>
-      </li>
-      <li>
          <a href="#MappingAssessment"
             title="https://alex-randles.github.io/MQV/#MappingAssessment">MappingAssessment</a>
       </li>
@@ -50,86 +35,6 @@ This section provides details for each class and property defined by Mapping Qua
             title="https://alex-randles.github.io/MQV/#QualityRequirement">QualityRequirement</a>
       </li>
    </ul>
-   <div class="entity" id="http://www.w3.org/ns/prov#Activity">
-      <h3>activity<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.w3.org/ns/prov#Activity</p>
-      <dl class="description">
-         <dt>has sub-classes</dt>
-         <dd>
-            <a href="#MappingAssessment"
-               title="https://alex-randles.github.io/MQV/#MappingAssessment">MappingAssessment</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#MappingRefinement"
-               title="https://alex-randles.github.io/MQV/#MappingRefinement">MappingRefinement</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is disjoint with</dt>
-         <dd>
-            <a href="#http://www.w3.org/ns/prov#Agent" title="http://www.w3.org/ns/prov#Agent">agent</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://www.w3.org/ns/prov#Collection" title="http://www.w3.org/ns/prov#Collection">collection</a>
-            <sup class="type-c" title="class">c</sup>, <a href="http://www.w3.org/ns/prov#Entity"
-               target="_blank"
-               title="http://www.w3.org/ns/prov#Entity">entity</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="http://www.w3.org/ns/prov#Agent">
-      <h3>agent<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.w3.org/ns/prov#Agent</p>
-      <dl class="description">
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#assessmentPerformedBy"
-               title="https://alex-randles.github.io/MQV/#assessmentPerformedBy">assessmentPerformedBy</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#performedBy" title="https://alex-randles.github.io/MQV/#performedBy">performedBy</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#refinementPerformedBy"
-               title="https://alex-randles.github.io/MQV/#refinementPerformedBy">refinementPerformedBy</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is disjoint with</dt>
-         <dd>
-            <a href="#http://www.w3.org/ns/prov#Activity" title="http://www.w3.org/ns/prov#Activity">activity</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://www.w3.org/ns/prov#Collection" title="http://www.w3.org/ns/prov#Collection">collection</a>
-            <sup class="type-c" title="class">c</sup>, <a href="http://www.w3.org/ns/prov#Entity"
-               target="_blank"
-               title="http://www.w3.org/ns/prov#Entity">entity</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="http://www.w3.org/ns/prov#Collection">
-      <h3>collection<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.w3.org/ns/prov#Collection</p>
-      <dl class="description">
-         <dt>has sub-classes</dt>
-         <dd>
-            <a href="#QualityMetricType"
-               title="https://alex-randles.github.io/MQV/#QualityMetricType">QualityMetricType</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is disjoint with</dt>
-         <dd>
-            <a href="#http://www.w3.org/ns/prov#Activity" title="http://www.w3.org/ns/prov#Activity">activity</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://www.w3.org/ns/prov#Agent" title="http://www.w3.org/ns/prov#Agent">agent</a>
-            <sup class="type-c" title="class">c</sup>, <a href="http://www.w3.org/ns/prov#Entity"
-               target="_blank"
-               title="http://www.w3.org/ns/prov#Entity">entity</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="MappingAssessment">
       <h3>MappingAssessment<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -159,7 +64,9 @@ This section provides details for each class and property defined by Mapping Qua
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://www.w3.org/ns/prov#Activity" title="http://www.w3.org/ns/prov#Activity">activity</a>
+            <a href="http://www.w3.org/ns/prov#Activity"
+               target="_blank"
+               title="http://www.w3.org/ns/prov#Activity">activity</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -281,7 +188,9 @@ This section provides details for each class and property defined by Mapping Qua
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://www.w3.org/ns/prov#Activity" title="http://www.w3.org/ns/prov#Activity">activity</a>
+            <a href="http://www.w3.org/ns/prov#Activity"
+               target="_blank"
+               title="http://www.w3.org/ns/prov#Activity">activity</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -492,7 +401,9 @@ This section provides details for each class and property defined by Mapping Qua
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://www.w3.org/ns/prov#Collection" title="http://www.w3.org/ns/prov#Collection">collection</a>
+            <a href="http://www.w3.org/ns/prov#Collection"
+               target="_blank"
+               title="http://www.w3.org/ns/prov#Collection">collection</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in range of</dt>
@@ -729,7 +640,9 @@ This section provides details for each class and property defined by Mapping Qua
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#http://www.w3.org/ns/prov#Agent" title="http://www.w3.org/ns/prov#Agent">agent</a>
+               <a href="http://www.w3.org/ns/prov#Agent"
+                  target="_blank"
+                  title="http://www.w3.org/ns/prov#Agent">agent</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -771,7 +684,9 @@ This section provides details for each class and property defined by Mapping Qua
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#http://www.w3.org/ns/prov#Agent" title="http://www.w3.org/ns/prov#Agent">agent</a>
+               <a href="http://www.w3.org/ns/prov#Agent"
+                  target="_blank"
+                  title="http://www.w3.org/ns/prov#Agent">agent</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
                <a href="#MappingRefinement"
@@ -1376,7 +1291,9 @@ This section provides details for each class and property defined by Mapping Qua
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#http://www.w3.org/ns/prov#Agent" title="http://www.w3.org/ns/prov#Agent">agent</a>
+               <a href="http://www.w3.org/ns/prov#Agent"
+                  target="_blank"
+                  title="http://www.w3.org/ns/prov#Agent">agent</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1545,7 +1462,9 @@ This section provides details for each class and property defined by Mapping Qua
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#http://www.w3.org/ns/prov#Agent" title="http://www.w3.org/ns/prov#Agent">agent</a>
+               <a href="http://www.w3.org/ns/prov#Agent"
+                  target="_blank"
+                  title="http://www.w3.org/ns/prov#Agent">agent</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>

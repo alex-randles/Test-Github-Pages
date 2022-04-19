@@ -603,21 +603,15 @@
 
 
 ###  http://www.w3.org/ns/prov#Activity
-<http://www.w3.org/ns/prov#Activity> rdf:type owl:Class ;
-                                     owl:disjointWith <http://www.w3.org/ns/prov#Agent> ,
-                                                      <http://www.w3.org/ns/prov#Collection> ,
-                                                      <http://www.w3.org/ns/prov#Entity> .
+<http://www.w3.org/ns/prov#Activity> rdf:type owl:Class .
 
 
 ###  http://www.w3.org/ns/prov#Agent
-<http://www.w3.org/ns/prov#Agent> rdf:type owl:Class ;
-                                  owl:disjointWith <http://www.w3.org/ns/prov#Collection> ,
-                                                   <http://www.w3.org/ns/prov#Entity> .
+<http://www.w3.org/ns/prov#Agent> rdf:type owl:Class .
 
 
 ###  http://www.w3.org/ns/prov#Collection
-<http://www.w3.org/ns/prov#Collection> rdf:type owl:Class ;
-                                       owl:disjointWith <http://www.w3.org/ns/prov#Entity> .
+<http://www.w3.org/ns/prov#Collection> rdf:type owl:Class .
 
 
 ###  http://www.w3.org/ns/prov#Entity
