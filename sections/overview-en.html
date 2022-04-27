@@ -1,166 +1,118 @@
-<h2 id="overv" class="list">Mapping Quality Vocabulary: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<h2 id="overv" class="list">Change Detection Ontology: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
 This ontology has the following classes and properties.</span>
 <h4>Classes</h4>
 <ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
    <li>
-      <a href="#MappingAssessment"
-         title="https://alex-randles.github.io/MQV/#MappingAssessment">MappingAssessment</a>
+      <a href="#ChangeLog"
+         title="https://change-detection-ontology.adaptcentre.ie/#ChangeLog">cdo:EventLog</a>
    </li>
    <li>
-      <a href="#MappingDocument"
-         title="https://alex-randles.github.io/MQV/#MappingDocument">MappingDocument</a>
+      <a href="#DatatypeSourceData"
+         title="https://change-detection-ontology.adaptcentre.ie/#DatatypeSourceData">DatatypeSourceData</a>
    </li>
    <li>
-      <a href="#MappingRefinement"
-         title="https://alex-randles.github.io/MQV/#MappingRefinement">MappingRefinement</a>
+      <a href="#DeleteSourceData"
+         title="https://change-detection-ontology.adaptcentre.ie/#DeleteSourceData">DeleteSourceData</a>
    </li>
    <li>
-      <a href="#MappingTool" title="https://alex-randles.github.io/MQV/#MappingTool">MappingTool</a>
+      <a href="#http://linkedevents.org/ontology/Event" title="http://linkedevents.org/ontology/Event">Event</a>
    </li>
    <li>
-      <a href="#MappingValidationReport"
-         title="https://alex-randles.github.io/MQV/#MappingValidationReport">MappingValidationReport</a>
+      <a href="#InsertSourceData"
+         title="https://change-detection-ontology.adaptcentre.ie/#InsertSourceData">InsertSourceData</a>
    </li>
    <li>
-      <a href="#MappingViolation"
-         title="https://alex-randles.github.io/MQV/#MappingViolation">MappingViolation</a>
+      <a href="#MergeSourceData"
+         title="https://change-detection-ontology.adaptcentre.ie/#MergeSourceData">MergeSourceData</a>
    </li>
    <li>
-      <a href="#QualityMetricType"
-         title="https://alex-randles.github.io/MQV/#QualityMetricType">QualityMetricType</a>
-   </li>
-   <li>
-      <a href="#QualityRequirement"
-         title="https://alex-randles.github.io/MQV/#QualityRequirement">QualityRequirement</a>
+      <a href="#MoveSourceData"
+         title="https://change-detection-ontology.adaptcentre.ie/#MoveSourceData">MoveSourceData</a>
    </li>
 </ul><h4>Object Properties</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
    <li>
-      <a href="#assessedMapping"
-         title="https://alex-randles.github.io/MQV/#assessedMapping">assessedMapping</a>
+      <a href="#http://linkedevents.org/ontology/atPlace" title="http://linkedevents.org/ontology/atPlace">at place</a>
    </li>
    <li>
-      <a href="#assessmentPerformedBy"
-         title="https://alex-randles.github.io/MQV/#assessmentPerformedBy">assessmentPerformedBy</a>
+      <a href="#http://linkedevents.org/ontology/atTime" title="http://linkedevents.org/ontology/atTime">at time</a>
    </li>
    <li>
-      <a href="#createdBy" title="https://alex-randles.github.io/MQV/#createdBy">createdBy</a>
+      <a href="#hasEvent"
+         title="https://change-detection-ontology.adaptcentre.ie/#hasEvent">hasEvent</a>
    </li>
    <li>
-      <a href="#executes" title="https://alex-randles.github.io/MQV/#executes">executes</a>
+      <a href="#hasOwner"
+         title="https://change-detection-ontology.adaptcentre.ie/#hasOwner">hasOwner</a>
    </li>
    <li>
-      <a href="#hasMetricType"
-         title="https://alex-randles.github.io/MQV/#hasMetricType">hasMetricType</a>
+      <a href="#inEventLog"
+         title="https://change-detection-ontology.adaptcentre.ie/#inEventLog">inEventLog</a>
    </li>
    <li>
-      <a href="#hasObjectValue"
-         title="https://alex-randles.github.io/MQV/#hasObjectValue">hasObjectValue</a>
-   </li>
-   <li>
-      <a href="#hasQualityMeasurement"
-         title="https://alex-randles.github.io/MQV/#hasQualityMeasurement">hasQualityMeasurement</a>
-   </li>
-   <li>
-      <a href="#hasQualityRequirement"
-         title="https://alex-randles.github.io/MQV/#hasQualityRequirement">hasQualityRequirement</a>
-   </li>
-   <li>
-      <a href="#hasRefinement"
-         title="https://alex-randles.github.io/MQV/#hasRefinement">hasRefinement</a>
-   </li>
-   <li>
-      <a href="#hasValidationReport"
-         title="https://alex-randles.github.io/MQV/#hasValidationReport">hasValidationReport</a>
-   </li>
-   <li>
-      <a href="#hasViolation" title="https://alex-randles.github.io/MQV/#hasViolation">hasViolation</a>
-   </li>
-   <li>
-      <a href="#inTripleMap" title="https://alex-randles.github.io/MQV/#inTripleMap">inTripleMap</a>
-   </li>
-   <li>
-      <a href="#isDescribedBy"
-         title="https://alex-randles.github.io/MQV/#isDescribedBy">isDescribedBy</a>
-   </li>
-   <li>
-      <a href="#mappingPurpose"
-         title="https://alex-randles.github.io/MQV/#mappingPurpose">
-         <span>mappingPurpose</span>
-      </a>
-   </li>
-   <li>
-      <a href="#mappingSource"
-         title="https://alex-randles.github.io/MQV/#mappingSource">mappingSource</a>
-   </li>
-   <li>
-      <a href="#performedBy" title="https://alex-randles.github.io/MQV/#performedBy">performedBy</a>
-   </li>
-   <li>
-      <a href="#performedOn" title="https://alex-randles.github.io/MQV/#performedOn">performedOn</a>
-   </li>
-   <li>
-      <a href="#refinedViolation"
-         title="https://alex-randles.github.io/MQV/#refinedViolation">refinedViolation</a>
-   </li>
-   <li>
-      <a href="#refinementName"
-         title="https://alex-randles.github.io/MQV/#refinementName">
-         <span>refinementName</span>
-      </a>
-   </li>
-   <li>
-      <a href="#refinementPerformedBy"
-         title="https://alex-randles.github.io/MQV/#refinementPerformedBy">refinementPerformedBy</a>
-   </li>
-   <li>
-      <a href="#resultMessage"
-         title="https://alex-randles.github.io/MQV/#resultMessage">
-         <span>resultMessage</span>
-      </a>
-   </li>
-   <li>
-      <a href="#toolsUsed" title="https://alex-randles.github.io/MQV/#toolsUsed">toolsUsed</a>
-   </li>
-   <li>
-      <a href="#wasDerivedFrom"
-         title="https://alex-randles.github.io/MQV/#wasDerivedFrom">wasDerivedFrom</a>
-   </li>
-   <li>
-      <a href="#wasRefinedBy" title="https://alex-randles.github.io/MQV/#wasRefinedBy">wasRefinedBy</a>
+      <a href="#http://linkedevents.org/ontology/involvedAgent" title="http://linkedevents.org/ontology/involvedAgent">involved agent</a>
    </li>
 </ul><h4>Data Properties</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
    <li>
-      <a href="#hasConfidenceScore"
-         title="https://alex-randles.github.io/MQV/#hasConfidenceScore">hasConfidenceScore</a>
+      <a href="#hasReason"
+         title="https://change-detection-ontology.adaptcentre.ie/#hasReason">
+         <span>has reason</span>
+      </a>
    </li>
+</ul><h4>Named Individuals</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
    <li>
-      <a href="#hasLiteralValue"
-         title="https://alex-randles.github.io/MQV/#hasLiteralValue">hasLiteralValue</a>
-   </li>
-   <li>
-      <a href="#hasLocation" title="https://alex-randles.github.io/MQV/#hasLocation">hasLocation</a>
-   </li>
-   <li>
-      <a href="#hasRefinementQuery"
-         title="https://alex-randles.github.io/MQV/#hasRefinementQuery">hasRefinementQuery</a>
-   </li>
-   <li>
-      <a href="#mappingPurpose"
-         title="https://alex-randles.github.io/MQV/#mappingPurpose">
-         <span>mappingPurpose</span>
+      <a href="#http://example.org/detectionTime" title="http://example.org/detectionTime">
+         <span>detection time</span>
       </a>
    </li>
    <li>
-      <a href="#refinementName"
-         title="https://alex-randles.github.io/MQV/#refinementName">
-         <span>refinementName</span>
+      <a href="#http://example.org/eventLog" title="http://example.org/eventLog">
+         <span>event log</span>
       </a>
    </li>
    <li>
-      <a href="#resultMessage"
-         title="https://alex-randles.github.io/MQV/#resultMessage">
-         <span>resultMessage</span>
+      <a href="#http://example.org/insertEvent1" title="http://example.org/insertEvent1">
+         <span>insert event1</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://example.org/insertEvent2" title="http://example.org/insertEvent2">
+         <span>insert event2</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://example.org/notificationConstraint" title="http://example.org/notificationConstraint">
+         <span>notification constraint</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://example.org/notificationPolicy" title="http://example.org/notificationPolicy">
+         <span>notification policy</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://example.org/policyObligation" title="http://example.org/policyObligation">
+         <span>policy obligation</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://example.org/sendNotificationAction" title="http://example.org/sendNotificationAction">
+         <span>send notification action</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://example.org/softwareAgent" title="http://example.org/softwareAgent">
+         <span>software agent</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://example.org/sourceData" title="http://example.org/sourceData">
+         <span>source data</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://example.org/userAgent" title="http://example.org/userAgent">
+         <span>user agent</span>
       </a>
    </li>
 </ul><iframe align="center" width="100%" height ="500px" src="webvowl/index.html"></iframe> 
