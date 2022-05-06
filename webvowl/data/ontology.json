@@ -2,1592 +2,1378 @@
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "en", "undefined" ],
-    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl", "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiMetaPolicy.owl", "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl", "http://linkedevents.org/ontology", "http://www.w3.org/2001/XMLSchema", "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl", "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiEntity.owl", "https://change-detection-ontology.adaptcentre.ie/", "http://www.w3.org/2000/01/rdf-schema", "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiAction.owl", "http://www.w3.org/2006/time", "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl" ],
-    "iri" : "https://change-detection-ontology.adaptcentre.ie/#",
-    "version" : "20 April 2022",
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/ns/prov", "http://www.w3.org/ns/dqv", "http://www.w3.org/2001/XMLSchema", "https://alex-randles.github.io/MQV/" ],
+    "title" : {
+      "undefined" : "Mapping Quality Vocabulary"
+    },
+    "iri" : "https://alex-randles.github.io/MQV/#",
     "other" : {
-      "license" : [ {
-        "identifier" : "license",
-        "language" : "undefined",
-        "value" : "http://creativecommons.org/publicdomain/zero/1.0/",
-        "type" : "label"
-      } ],
       "created" : [ {
         "identifier" : "created",
         "language" : "undefined",
-        "value" : "20 April 2022",
+        "value" : "1 June 2020",
         "type" : "label"
       } ],
       "preferredNamespacePrefix" : [ {
         "identifier" : "preferredNamespacePrefix",
         "language" : "undefined",
-        "value" : "cdo",
-        "type" : "label"
-      } ],
-      "abstract" : [ {
-        "identifier" : "abstract",
-        "language" : "undefined",
-        "value" : "The Change Detection Ontology (CDO) provides a set of classes, properties, and restrictions that can be used to represent and interchange provenance and metadata information relating to changes that occur within source data that has created an RDF dataset. It can also be specialized to create new classes and properties to model provenance and metadata information for domain specific changes.",
-        "type" : "label"
-      } ],
-      "versionInfo" : [ {
-        "identifier" : "versionInfo",
-        "language" : "undefined",
-        "value" : "20 April 2022",
+        "value" : "mqv",
         "type" : "label"
       } ],
       "preferredNamespaceUri" : [ {
         "identifier" : "preferredNamespaceUri",
         "language" : "undefined",
-        "value" : "https://change-detection-ontology.adaptcentre.ie/#",
+        "value" : "https://alex-randles.github.io/MQV/#",
+        "type" : "label"
+      } ],
+      "abstract" : [ {
+        "identifier" : "abstract",
+        "language" : "undefined",
+        "value" : "The Mapping Quality Vocabulary (MQV) provides a set of classes, properties, and restrictions that can be used to represent and interchange provenance and metadata information relating to the quality assessment, quality refinement and quality validation of mapping definitions used to generate Linked data datasets. It can also be specialized to create new classes and properties to model provenance and metadata information for domain specific mapping languages",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Mapping Quality Vocabulary",
+        "type" : "label"
+      } ],
+      "status" : [ {
+        "identifier" : "status",
+        "language" : "undefined",
+        "value" : "Draft",
         "type" : "label"
       } ]
     }
   },
   "namespace" : [ ],
   "class" : [ {
-    "id" : "0",
-    "type" : "owl:Class"
-  }, {
-    "id" : "13",
-    "type" : "owl:Class"
-  }, {
-    "id" : "16",
-    "type" : "owl:Class"
-  }, {
-    "id" : "19",
-    "type" : "owl:Class"
-  }, {
-    "id" : "18",
-    "type" : "owl:Class"
-  }, {
-    "id" : "40",
-    "type" : "owl:Class"
-  }, {
-    "id" : "53",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "45",
-    "type" : "owl:Class"
-  }, {
-    "id" : "32",
-    "type" : "owl:Class"
-  }, {
-    "id" : "11",
+    "id" : "9",
     "type" : "owl:Class"
   }, {
     "id" : "12",
     "type" : "owl:Class"
   }, {
-    "id" : "14",
+    "id" : "1",
     "type" : "owl:Class"
   }, {
-    "id" : "23",
+    "id" : "8",
     "type" : "owl:Class"
   }, {
-    "id" : "3",
+    "id" : "16",
     "type" : "owl:Class"
   }, {
-    "id" : "64",
+    "id" : "22",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "25",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "18",
     "type" : "owl:Class"
   }, {
-    "id" : "57",
+    "id" : "26",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "27",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "51",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "53",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
     "type" : "owl:Class"
   }, {
     "id" : "4",
     "type" : "owl:Class"
   }, {
-    "id" : "15",
-    "type" : "owl:Class"
-  }, {
-    "id" : "6",
-    "type" : "owl:Class"
-  }, {
-    "id" : "52",
-    "type" : "owl:Class"
-  }, {
-    "id" : "27",
-    "type" : "owl:Class"
-  }, {
-    "id" : "76",
-    "type" : "owl:Class"
-  }, {
-    "id" : "47",
-    "type" : "owl:Class"
-  }, {
-    "id" : "49",
-    "type" : "owl:Class"
-  }, {
-    "id" : "29",
-    "type" : "owl:Class"
-  }, {
-    "id" : "1",
-    "type" : "owl:Class"
-  }, {
-    "id" : "60",
-    "type" : "owl:Class"
-  }, {
     "id" : "7",
     "type" : "owl:Class"
   }, {
-    "id" : "42",
-    "type" : "owl:Class"
-  }, {
-    "id" : "93",
-    "type" : "owl:Class"
-  }, {
-    "id" : "25",
-    "type" : "owl:Class"
-  }, {
-    "id" : "88",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "9",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "67",
-    "type" : "owl:Class"
-  }, {
-    "id" : "72",
-    "type" : "owl:Thing"
-  }, {
     "id" : "69",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "98",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "38",
     "type" : "owl:Class"
   }, {
-    "id" : "31",
+    "id" : "14",
     "type" : "owl:Class"
   }, {
-    "id" : "21",
-    "type" : "owl:Class"
-  }, {
-    "id" : "65",
+    "id" : "2",
     "type" : "owl:Class"
   }, {
     "id" : "79",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
-    "iri" : "https://change-detection-ontology.adaptcentre.ie/#DeleteSourceData",
-    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
+    "iri" : "http://www.w3.org/ns/prov#Activity",
+    "baseIri" : "http://www.w3.org/ns/prov",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "DeleteSourceData",
-      "undefined" : "DeleteSourceData"
+      "IRI-based" : "Activity"
     },
-    "comment" : {
-      "undefined" : "Data has been removed within the source data."
-    },
-    "id" : "0",
-    "superClasses" : [ "1" ]
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#And",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "And",
-      "undefined" : "And Boolean Constraint"
-    },
+    "subClasses" : [ "4", "2" ],
     "attributes" : [ "external" ],
-    "id" : "13",
-    "superClasses" : [ "14", "15" ]
+    "id" : "9"
   }, {
-    "iri" : "https://change-detection-ontology.adaptcentre.ie/#InsertSourceData",
-    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
+    "iri" : "http://www.w3.org/ns/dqv#Category",
+    "baseIri" : "http://www.w3.org/ns/dqv",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "InsertSourceData",
-      "undefined" : "InsertSourceData"
-    },
-    "individuals" : [ {
-      "iri" : "http://example.org/insertEvent1",
-      "baseIri" : "http://example.org",
-      "labels" : {
-        "IRI-based" : "insertEvent1"
-      }
-    }, {
-      "iri" : "http://example.org/insertEvent2",
-      "baseIri" : "http://example.org",
-      "labels" : {
-        "IRI-based" : "insertEvent2"
-      }
-    } ],
-    "comment" : {
-      "undefined" : "Data has been inserted within the source data."
-    },
-    "id" : "16",
-    "superClasses" : [ "1" ]
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#Not",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Not",
-      "undefined" : "Not Boolean Constraint"
-    },
-    "comment" : {
-      "undefined" : "A constraint that cannot be proved"
-    },
-    "attributes" : [ "external" ],
-    "id" : "19",
-    "superClasses" : [ "14" ]
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#Permission",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Permission"
-    },
-    "attributes" : [ "external" ],
-    "id" : "18",
-    "superClasses" : [ "4" ]
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#ObligationOrProhibition",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ObligationOrProhibition"
-    },
-    "subClasses" : [ "27", "21" ],
-    "attributes" : [ "external" ],
-    "id" : "40"
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "53",
-    "label" : {
-      "undefined" : "Thing"
-    }
-  }, {
-    "iri" : "https://change-detection-ontology.adaptcentre.ie/#MergeSourceData",
-    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "MergeSourceData",
-      "undefined" : "MergeSourceData"
-    },
-    "comment" : {
-      "undefined" : "Data has been merged within the source data."
-    },
-    "id" : "45",
-    "superClasses" : [ "1" ]
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#Constraint",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Constraint",
-      "undefined" : "constraint"
-    },
-    "subClasses" : [ "14", "31" ],
-    "comment" : {
-      "undefined" : "Root of Rei Constraint Ontology"
-    },
-    "attributes" : [ "external" ],
-    "id" : "32"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Policy",
-      "undefined" : "Policy"
-    },
-    "individuals" : [ {
-      "iri" : "http://example.org/notificationPolicy",
-      "baseIri" : "http://example.org",
-      "labels" : {
-        "IRI-based" : "notificationPolicy"
-      }
-    } ],
-    "comment" : {
-      "undefined" : "Policy class. Contains a list of defaults and policy rules. "
-    },
-    "attributes" : [ "external" ],
-    "id" : "11",
-    "superClasses" : [ "23" ]
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiMetaPolicy.owl#ModalityPrecedence",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiMetaPolicy.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ModalityPrecedence"
+      "IRI-based" : "Category"
     },
     "attributes" : [ "external" ],
     "id" : "12"
   }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#BooleanConstraint",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
+    "iri" : "http://www.w3.org/ns/dqv#Metric",
+    "baseIri" : "http://www.w3.org/ns/dqv",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "BooleanConstraint",
-      "undefined" : "BooleanConstraint"
-    },
-    "subClasses" : [ "13", "19", "25" ],
-    "comment" : {
-      "undefined" : "Models boolean constraints of AND, OR and NOT"
-    },
-    "attributes" : [ "external" ],
-    "id" : "14",
-    "superClasses" : [ "32" ]
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#ReiRoot",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ReiRoot",
-      "undefined" : "ReiRoot"
-    },
-    "subClasses" : [ "11", "29" ],
-    "comment" : {
-      "undefined" : "Root of the Rei Ontology"
-    },
-    "attributes" : [ "external" ],
-    "id" : "23"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#Dispensation",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Dispensation",
-      "undefined" : "Dispensation"
-    },
-    "comment" : {
-      "undefined" : "A waiver for an obligation. Entity is no longer obliged. Different from not obliged to"
-    },
-    "attributes" : [ "external" ],
-    "id" : "3",
-    "superClasses" : [ "4" ]
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiMetaPolicy.owl#RulePriority",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiMetaPolicy.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "RulePriority"
-    },
-    "attributes" : [ "external" ],
-    "id" : "64"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiEntity.owl#Entity",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiEntity.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Entity"
-    },
-    "attributes" : [ "external" ],
-    "id" : "57"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#DeonticObject",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "DeonticObject",
-      "undefined" : "DeonticObject"
-    },
-    "subClasses" : [ "27", "21", "18", "3" ],
-    "comment" : {
-      "undefined" : "The class of deontic objects"
-    },
-    "attributes" : [ "external" ],
-    "id" : "4",
-    "superClasses" : [ "65", "42" ]
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#AndOrOr",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "AndOrOr"
-    },
-    "subClasses" : [ "13", "25" ],
-    "attributes" : [ "external" ],
-    "id" : "15"
-  }, {
-    "iri" : "https://change-detection-ontology.adaptcentre.ie/#ChangeLog",
-    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ChangeLog",
-      "undefined" : "cdo:EventLog"
-    },
-    "individuals" : [ {
-      "iri" : "http://example.org/eventLog",
-      "baseIri" : "http://example.org",
-      "labels" : {
-        "IRI-based" : "eventLog"
-      }
-    } ],
-    "comment" : {
-      "undefined" : "A grouping of events that represent a change."
-    },
-    "id" : "6"
-  }, {
-    "iri" : "https://change-detection-ontology.adaptcentre.ie/#MoveSourceData",
-    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "MoveSourceData",
-      "undefined" : "MoveSourceData"
-    },
-    "comment" : {
-      "undefined" : "Data has been moved within the source data."
-    },
-    "id" : "52",
-    "superClasses" : [ "1" ]
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#Prohibition",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Prohibition",
-      "undefined" : "Prohibition"
-    },
-    "attributes" : [ "external" ],
-    "id" : "27",
-    "superClasses" : [ "4", "40" ]
-  }, {
-    "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place",
-    "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Place"
-    },
-    "individuals" : [ {
-      "iri" : "http://example.org/sourceData",
-      "baseIri" : "http://example.org",
-      "labels" : {
-        "IRI-based" : "sourceData"
-      }
-    } ],
-    "attributes" : [ "external" ],
-    "id" : "76"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiEntity.owl#Agent",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiEntity.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Agent"
-    },
-    "individuals" : [ {
-      "iri" : "http://example.org/userAgent",
-      "baseIri" : "http://example.org",
-      "labels" : {
-        "IRI-based" : "userAgent"
-      }
-    }, {
-      "iri" : "http://example.org/softwareAgent",
-      "baseIri" : "http://example.org",
-      "labels" : {
-        "IRI-based" : "softwareAgent"
-      }
-    } ],
-    "attributes" : [ "external" ],
-    "id" : "47"
-  }, {
-    "iri" : "https://change-detection-ontology.adaptcentre.ie/#DatatypeSourceData",
-    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "DatatypeSourceData",
-      "undefined" : "DatatypeSourceData"
-    },
-    "comment" : {
-      "undefined" : "Datatype has been changed in the source data"
-    },
-    "id" : "49",
-    "superClasses" : [ "1" ]
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Granting",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Granting",
-      "undefined" : "Granting"
-    },
-    "comment" : {
-      "undefined" : "The class that connects deontic objects to policies"
-    },
-    "attributes" : [ "external" ],
-    "id" : "29",
-    "superClasses" : [ "42", "23" ]
-  }, {
-    "iri" : "http://linkedevents.org/ontology/Event",
-    "baseIri" : "http://linkedevents.org/ontology",
-    "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://linkedevents.org/ontology/",
-        "type" : "iri"
-      } ],
-      "definition" : [ {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "\n\"Something that happened,\" as might be reported in a news article or\nexplained by a historian.",
-        "type" : "label"
-      } ],
-      "issued" : [ {
-        "identifier" : "issued",
-        "language" : "undefined",
-        "value" : "2009-07-28",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "Event",
-      "en" : "Event"
-    },
-    "subClasses" : [ "0", "16", "49", "45", "52" ],
-    "comment" : {
-      "en" : "\nNote that, unlike some defintions of \"event,\" this definition does not\nspecify that an event involves a change of state, nor does it attempt\nto distinguish events from processes or states."
+      "IRI-based" : "Metric"
     },
     "attributes" : [ "external" ],
     "id" : "1"
   }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiMetaPolicy.owl#MetaPolicyDefault",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiMetaPolicy.owl",
+    "iri" : "http://www.w3.org/ns/prov#Entity",
+    "baseIri" : "http://www.w3.org/ns/prov",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "MetaPolicyDefault"
+      "IRI-based" : "Entity"
     },
+    "subClasses" : [ "15", "16", "17", "7", "18" ],
     "attributes" : [ "external" ],
-    "id" : "60"
+    "id" : "8"
   }, {
-    "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
-    "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
+    "iri" : "https://alex-randles.github.io/MQV/#MappingValidationReport",
+    "baseIri" : "https://alex-randles.github.io/MQV/",
     "instances" : 0,
-    "label" : {
-      "IRI-based" : "Agent"
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n\n:mappingValidationReport\n\ta mqv:MappingValidationReport;\n.\n\n:mappingAssessment\n\ta mqv:MappingAssessment ;\n\tmqv:hasValidationReport :mappingValidationReport ;\n.\n",
+        "type" : "label"
+      } ]
     },
-    "individuals" : [ {
-      "iri" : "http://example.org/userAgent",
-      "baseIri" : "http://example.org",
-      "labels" : {
-        "IRI-based" : "userAgent"
-      }
-    } ],
-    "attributes" : [ "external" ],
-    "id" : "7"
+    "label" : {
+      "IRI-based" : "MappingValidationReport",
+      "en" : "MappingValidationReport"
+    },
+    "comment" : {
+      "undefined" : "A mapping validation report contains information about quality violations contained within a mapping document."
+    },
+    "id" : "16",
+    "superClasses" : [ "8" ]
   }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#GrantingOrDeontic",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
-    "instances" : 0,
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "22",
     "label" : {
-      "IRI-based" : "GrantingOrDeontic"
-    },
-    "subClasses" : [ "4", "29" ],
-    "attributes" : [ "external" ],
-    "id" : "42"
+      "undefined" : "Thing"
+    }
   }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiMetaPolicy.owl#Behavior",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiMetaPolicy.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Behavior"
-    },
-    "attributes" : [ "external" ],
-    "id" : "93"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#Or",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Or",
-      "undefined" : "Or Boolean Constraint"
-    },
-    "attributes" : [ "external" ],
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
     "id" : "25",
-    "superClasses" : [ "14", "15" ]
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "88",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "9",
     "label" : {
       "undefined" : "Thing"
     }
   }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiMetaPolicy.owl#PolicyPriority",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiMetaPolicy.owl",
+    "iri" : "https://alex-randles.github.io/MQV/#MappingViolation",
+    "baseIri" : "https://alex-randles.github.io/MQV/",
     "instances" : 0,
-    "label" : {
-      "IRI-based" : "PolicyPriority"
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n\n:mappingViolation\n\ta mqv:MappingViolation;\n.\n\n:mappingValidationReport\n\ta mqv:MappingValidationReport ;\n\tmqv:hasViolation :mappingViolation;\n.",
+        "type" : "label"
+      } ]
     },
-    "attributes" : [ "external" ],
-    "id" : "67"
+    "label" : {
+      "IRI-based" : "MappingViolation",
+      "en" : "MappingViolation"
+    },
+    "comment" : {
+      "undefined" : "A mapping violation is a quality issue present within a mapping."
+    },
+    "id" : "18",
+    "superClasses" : [ "8" ]
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "72",
+    "id" : "26",
     "label" : {
       "undefined" : "Thing"
     }
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "69",
+    "id" : "27",
     "label" : {
       "undefined" : "Thing"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "98",
+    "id" : "28",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
     }
   }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiAction.owl#Action",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiAction.owl",
+    "iri" : "https://alex-randles.github.io/MQV/#MappingDocument",
+    "baseIri" : "https://alex-randles.github.io/MQV/",
     "instances" : 0,
-    "label" : {
-      "IRI-based" : "Action"
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n\n:mappingDocument\n\ta mqv:MappingDocument;\n\tmqv:createdBy :mappingEngineer\n.\n\n:mappingEngineer\n\ta prov:Agent ;\n.\n",
+        "type" : "label"
+      } ]
     },
-    "individuals" : [ {
-      "iri" : "http://example.org/sendNotificationAction",
-      "baseIri" : "http://example.org",
-      "labels" : {
-        "IRI-based" : "sendNotificationAction"
-      }
-    } ],
-    "attributes" : [ "external" ],
-    "id" : "38"
+    "label" : {
+      "IRI-based" : "MappingDocument",
+      "en" : "MappingDocument"
+    },
+    "comment" : {
+      "undefined" : "A mapping document is a document which contains information on how non-RDF data will be transformed to RDF."
+    },
+    "id" : "15",
+    "superClasses" : [ "8" ]
   }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
+    "iri" : "http://www.w3.org/ns/dqv#Dimension",
+    "baseIri" : "http://www.w3.org/ns/dqv",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "SimpleConstraint",
-      "undefined" : "SimpleConstraint"
+      "IRI-based" : "Dimension"
     },
-    "individuals" : [ {
-      "iri" : "http://example.org/notificationConstraint",
-      "baseIri" : "http://example.org",
-      "labels" : {
-        "IRI-based" : "notificationConstraint"
-      }
-    } ],
     "attributes" : [ "external" ],
-    "id" : "31",
-    "superClasses" : [ "32" ]
+    "id" : "30"
   }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#Obligation",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "39",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "40",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "41",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "44",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "45",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "48",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "35",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#Agent",
+    "baseIri" : "http://www.w3.org/ns/prov",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Obligation",
-      "undefined" : "Dispensation"
+      "IRI-based" : "Agent"
     },
-    "individuals" : [ {
-      "iri" : "http://example.org/policyObligation",
-      "baseIri" : "http://example.org",
-      "annotations" : {
-        "desc" : [ {
-          "identifier" : "desc",
-          "language" : "undefined",
-          "value" : "Obligation to send notification when threshold satisified",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "policyObligation"
-      }
-    } ],
     "attributes" : [ "external" ],
-    "id" : "21",
-    "superClasses" : [ "4", "40" ]
+    "id" : "5"
   }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiAction.owl#ActionOrDeontic",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiAction.owl",
+    "instances" : 0,
+    "union" : [ "5", "2" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "47"
+  }, {
+    "instances" : 0,
+    "union" : [ "14", "30", "12", "1" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "51"
+  }, {
+    "instances" : 0,
+    "union" : [ "15", "7" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "53"
+  }, {
+    "iri" : "https://alex-randles.github.io/MQV/#MappingTool",
+    "baseIri" : "https://alex-randles.github.io/MQV/",
+    "instances" : 0,
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n\n:mappingTool\n\ta mqv:MappingTool;\n.\n\n:mappingDocument\n\ta mqv:MappingDocument ;\n\tmqv:toolsUsed :mappingTool ;\n.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MappingTool",
+      "en" : "MappingTool"
+    },
+    "comment" : {
+      "undefined" : "A tool which is used to create or refine a mapping document."
+    },
+    "id" : "17",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "https://alex-randles.github.io/MQV/#QualityMetricType",
+    "baseIri" : "https://alex-randles.github.io/MQV/",
+    "instances" : 0,
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n\n:dataQualityType\n\ta mqv:QualityMetricType;\n.\n\n:mappingViolation\n\ta mqv:MappingViolation ;\n\tmqv:hasMetricType :dataQualityType ;\n.\n",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "QualityMetricType",
+      "en" : "QualityMetricType"
+    },
+    "comment" : {
+      "undefined" : "Quality metrics may be grouped into type's, such as mapping, data and vocabulary."
+    },
+    "id" : "11",
+    "superClasses" : [ "69" ]
+  }, {
+    "iri" : "https://alex-randles.github.io/MQV/#MappingAssessment",
+    "baseIri" : "https://alex-randles.github.io/MQV/",
+    "instances" : 0,
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:mappingQualityAssessement\n\ta mqv:MappingAssessment ;\n\tmqv:perfomedBy :mappingEngineer;\n.\n\n:mappingEngineer\n    a  prov:Agent;\n",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MappingAssessment",
+      "en" : "MappingAssessment"
+    },
+    "comment" : {
+      "undefined" : "An activity in which the quality of a mapping document is assessed, generating information on quality issues within the mapping."
+    },
+    "id" : "4",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "https://alex-randles.github.io/MQV/#QualityRequirement",
+    "baseIri" : "https://alex-randles.github.io/MQV/",
+    "instances" : 0,
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n\n:qualityRequirement\n\ta mqv:QualityRequirement;\n.\n\n:mappingAssessment\n\ta mqv:MappingAssessment ;\n\tmqv:hasQualityRequirement :qualityRequirement ;\n.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "QualityRequirement",
+      "en" : "QualityRequirement"
+    },
+    "comment" : {
+      "undefined" : "A quality requirement is a requirement a mapping should satisfy."
+    },
+    "id" : "7",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#Collection",
+    "baseIri" : "http://www.w3.org/ns/prov",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "ActionOrDeontic"
+      "IRI-based" : "Collection"
     },
-    "subClasses" : [ "4" ],
+    "subClasses" : [ "11" ],
     "attributes" : [ "external" ],
-    "id" : "65"
+    "id" : "69"
   }, {
-    "iri" : "http://www.w3.org/2006/time#TemporalEntity",
-    "baseIri" : "http://www.w3.org/2006/time",
+    "iri" : "http://www.w3.org/ns/dqv#QualityMeasurement",
+    "baseIri" : "http://www.w3.org/ns/dqv",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "TemporalEntity"
+      "IRI-based" : "QualityMeasurement"
     },
-    "individuals" : [ {
-      "iri" : "http://example.org/detectionTime",
-      "baseIri" : "http://example.org",
-      "labels" : {
-        "IRI-based" : "detectionTime"
-      }
-    } ],
+    "attributes" : [ "external" ],
+    "id" : "14"
+  }, {
+    "iri" : "https://alex-randles.github.io/MQV/#MappingRefinement",
+    "baseIri" : "https://alex-randles.github.io/MQV/",
+    "instances" : 0,
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n\n:mappingRefinement\n\ta mqv:MapppingRefinement;\n.\n\n:mappingViolation\n\ta mqv:Violation ;\n\tmqv:wasRefinedBy :mappingRefinement ;\n.\n",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MappingRefinement",
+      "en" : "MappingRefinement"
+    },
+    "comment" : {
+      "undefined" : "An activity which involves removing quality violations contained within a mapping document."
+    },
+    "id" : "2",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Resource"
+    },
     "attributes" : [ "external" ],
     "id" : "79"
   } ],
   "property" : [ {
-    "id" : "2",
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "6",
     "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "5",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "8",
-    "type" : "owl:objectProperty"
   }, {
     "id" : "10",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "17",
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "19",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "20",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "22",
+    "id" : "21",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "24",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "26",
-    "type" : "rdfs:SubClassOf"
+    "id" : "29",
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "28",
-    "type" : "rdfs:SubClassOf"
+    "id" : "31",
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "30",
-    "type" : "rdfs:SubClassOf"
+    "id" : "32",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "33",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "34",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "35",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "36",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "37",
+    "id" : "38",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "39",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "41",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "43",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "44",
-    "type" : "rdfs:SubClassOf"
+    "id" : "42",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "46",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "48",
-    "type" : "rdfs:SubClassOf"
+    "id" : "49",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "50",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "51",
-    "type" : "rdfs:SubClassOf"
+    "id" : "52",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "54",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "55",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "56",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "37",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "59",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "63",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "64",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "65",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "67",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "68",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "70",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "71",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "72",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "75",
     "type" : "owl:objectProperty"
   }, {
     "id" : "58",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "59",
+    "id" : "76",
     "type" : "owl:objectProperty"
-  }, {
-    "id" : "61",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "62",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "63",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "66",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "68",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "70",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "71",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "73",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "74",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "75",
-    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "77",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "78",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "80",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "81",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "82",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "83",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "84",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "85",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "86",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "87",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "89",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "90",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "91",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "92",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "94",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "95",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "96",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "97",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "99",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "100",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "101",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "102",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "103",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "104",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "105",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "106",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "107",
+    "id" : "60",
     "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
-    "range" : "4",
-    "domain" : "3",
+    "iri" : "https://alex-randles.github.io/MQV/#hasRefinement",
+    "baseIri" : "https://alex-randles.github.io/MQV/",
+    "range" : "2",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "@prefix :     <http://example.com/>.;\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.;\n\n:qualityMetric\n\ta dqv:Metric;\n\tmqv:hasRefinement :mappingRefinement;\n.\n\n:mappingRefinement\n\ta mqv:MappingRefinement;\n.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasRefinement",
+      "en" : "hasRefinement"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The refinement used for refining a quality violation detcted by a particular quality metric."
+    },
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://alex-randles.github.io/MQV/#assessmentPerformedBy",
+    "baseIri" : "https://alex-randles.github.io/MQV/",
+    "range" : "5",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "@prefix :     <http://example.com/>.;\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.;\n\n:mappingAssessment\n\ta mqv:MappingAssessment;\n\tmqv:assessmentPerformedBy :AlexRandles;\n.\n\n:AlexRandles\n\ta prov:Agent;\n.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "assessmentPerformedBy",
+      "en" : "assessmentPerformedBy"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "The agent who performed the assessment of the mapping."
+    },
+    "attributes" : [ "object" ],
+    "id" : "3"
+  }, {
+    "range" : "8",
+    "domain" : "7",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "2"
+    "id" : "6"
   }, {
-    "iri" : "https://change-detection-ontology.adaptcentre.ie/#hasOwner",
-    "inverse" : "8",
-    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
-    "range" : "7",
-    "label" : {
-      "IRI-based" : "hasOwner",
-      "undefined" : "hasOwner"
+    "iri" : "https://alex-randles.github.io/MQV/#hasMetricType",
+    "baseIri" : "https://alex-randles.github.io/MQV/",
+    "range" : "11",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "@prefix :     <http://example.com/>.;\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.;\n\n:qualityMetric\n\ta dqv:Metric;\n\tmqv:hasMetricType :dataQualityMetric;\n.\n\n:dataQualityMetric\n\ta mqv:QualityMetricType;\n.",
+        "type" : "label"
+      } ]
     },
-    "domain" : "6",
+    "label" : {
+      "IRI-based" : "hasMetricType",
+      "en" : "hasMetricType"
+    },
+    "domain" : "1",
     "comment" : {
-      "undefined" : "The owner of the event log."
+      "undefined" : "A type assigned to a mapping quality metric. For instance, vocabulary type, for a mapping quality metric, which relates to the vocabulary being used within the mapping."
     },
     "attributes" : [ "object" ],
-    "id" : "5"
-  }, {
-    "iri" : "https://change-detection-ontology.adaptcentre.ie/#ownedBy",
-    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
-    "range" : "9",
-    "label" : {
-      "IRI-based" : "ownedBy"
-    },
-    "domain" : "9",
-    "attributes" : [ "object" ],
-    "id" : "8"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#defaultModality",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
-    "range" : "12",
-    "label" : {
-      "IRI-based" : "defaultModality",
-      "undefined" : "defaults"
-    },
-    "domain" : "11",
-    "comment" : {
-      "undefined" : "Whether positive or negative modality holds precedence"
-    },
-    "attributes" : [ "object", "external" ],
     "id" : "10"
   }, {
+    "iri" : "https://alex-randles.github.io/MQV/#wasDerivedFrom",
+    "baseIri" : "https://alex-randles.github.io/MQV/",
     "range" : "4",
-    "domain" : "18",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "17"
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "@prefix :     <http://example.com/>.;\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.;\n\n:qualityMeasurement\n\ta dqv:QualityMeasurement;\n\tmqv:wasDerivedFrom :mappingAssessment;\n.\n\n:mappingAssessment\n\ta mqv:MappingAssessment;\n.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "wasDerivedFrom",
+      "undefined" : "wasDerivedFrom"
+    },
+    "domain" : "14",
+    "comment" : {
+      "undefined" : "The quality measurement calculated by the mapping quality assessment process."
+    },
+    "attributes" : [ "object" ],
+    "id" : "13"
   }, {
-    "range" : "4",
-    "domain" : "21",
+    "range" : "8",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "19"
+  }, {
+    "range" : "8",
+    "domain" : "16",
     "attributes" : [ "object", "anonymous" ],
     "id" : "20"
   }, {
-    "range" : "23",
-    "domain" : "11",
+    "range" : "9",
+    "domain" : "4",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "22"
+    "id" : "21"
   }, {
-    "range" : "14",
-    "domain" : "25",
+    "range" : "8",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "23"
+  }, {
+    "range" : "9",
+    "domain" : "2",
     "attributes" : [ "object", "anonymous" ],
     "id" : "24"
   }, {
-    "range" : "4",
-    "domain" : "27",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "26"
-  }, {
-    "range" : "23",
-    "domain" : "29",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "28"
-  }, {
-    "range" : "32",
-    "domain" : "31",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "30"
-  }, {
-    "range" : "32",
-    "domain" : "14",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "33"
-  }, {
-    "range" : "14",
-    "domain" : "19",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "34"
-  }, {
-    "range" : "14",
-    "domain" : "13",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "35"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#first",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
-    "range" : "32",
-    "label" : {
-      "IRI-based" : "first"
-    },
-    "domain" : "14",
-    "attributes" : [ "object", "external" ],
-    "id" : "36"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#action",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
-    "range" : "38",
-    "label" : {
-      "IRI-based" : "action",
-      "undefined" : "action"
-    },
-    "cardinality" : "1",
-    "domain" : "4",
-    "attributes" : [ "object", "external" ],
-    "id" : "37"
-  }, {
-    "range" : "40",
-    "domain" : "27",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "39"
-  }, {
-    "range" : "42",
-    "domain" : "29",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "41"
-  }, {
-    "range" : "40",
-    "domain" : "21",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "43"
-  }, {
-    "range" : "1",
-    "domain" : "45",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "44"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#obligedTo",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
-    "range" : "47",
-    "label" : {
-      "IRI-based" : "obligedTo",
-      "undefined" : "obligedTo"
-    },
-    "domain" : "21",
-    "comment" : {
-      "undefined" : "Whom the the actor is obliged to"
-    },
-    "attributes" : [ "object", "external" ],
-    "id" : "46"
-  }, {
-    "range" : "1",
-    "domain" : "49",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "48"
-  }, {
-    "range" : "42",
-    "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "50"
-  }, {
-    "range" : "1",
-    "domain" : "52",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "51"
-  }, {
-    "range" : "1",
-    "domain" : "16",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "54"
-  }, {
-    "range" : "1",
-    "domain" : "0",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "55"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#to",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
-    "range" : "57",
-    "label" : {
-      "IRI-based" : "to",
-      "undefined" : "to"
-    },
-    "domain" : "29",
-    "attributes" : [ "object", "external" ],
-    "id" : "56"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#context",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
-    "range" : "32",
-    "label" : {
-      "IRI-based" : "context",
-      "undefined" : "context"
-    },
-    "domain" : "11",
-    "comment" : {
-      "undefined" : "All the conditions associated with the policy. Includes domain"
-    },
-    "attributes" : [ "object", "external" ],
-    "id" : "58"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#metaDefault",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
-    "range" : "60",
-    "label" : {
-      "IRI-based" : "metaDefault",
-      "undefined" : "MetaPolicy about defaults"
-    },
-    "domain" : "11",
-    "comment" : {
-      "undefined" : "In case of conflict, should priority between rules be checked before modality or vice versa"
-    },
-    "attributes" : [ "object", "external" ],
-    "id" : "59"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#second",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
-    "range" : "32",
-    "label" : {
-      "IRI-based" : "second"
-    },
-    "domain" : "15",
-    "attributes" : [ "object", "external" ],
-    "id" : "61"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#constraint",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
-    "range" : "32",
-    "label" : {
-      "IRI-based" : "constraint"
-    },
-    "domain" : "4",
-    "subproperty" : [ "63" ],
-    "attributes" : [ "object", "external" ],
-    "id" : "62"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#startingConstraint",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
-    "range" : "32",
-    "label" : {
-      "IRI-based" : "startingConstraint"
-    },
-    "superproperty" : [ "62" ],
-    "domain" : "4",
-    "attributes" : [ "object", "external" ],
-    "id" : "63"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#imports",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
-    "range" : "67",
-    "label" : {
-      "IRI-based" : "imports",
-      "undefined" : "imports"
-    },
-    "domain" : "11",
-    "attributes" : [ "object", "external" ],
-    "id" : "66"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#modifiedBy",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
-    "range" : "69",
-    "label" : {
-      "IRI-based" : "modifiedBy",
-      "undefined" : "modifiedBy"
-    },
-    "domain" : "11",
-    "attributes" : [ "object", "external" ],
-    "id" : "68"
-  }, {
-    "iri" : "https://change-detection-ontology.adaptcentre.ie/#inEventLog",
-    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
-    "range" : "6",
-    "label" : {
-      "IRI-based" : "inEventLog",
-      "undefined" : "inEventLog"
-    },
-    "domain" : "1",
-    "comment" : {
-      "undefined" : "An event within an event log."
-    },
-    "attributes" : [ "object" ],
-    "id" : "70"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#predicate",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
-    "range" : "72",
-    "label" : {
-      "IRI-based" : "predicate"
-    },
-    "domain" : "31",
-    "attributes" : [ "object", "external" ],
-    "id" : "71"
-  }, {
+    "iri" : "https://alex-randles.github.io/MQV/#performedOn",
+    "baseIri" : "https://alex-randles.github.io/MQV/",
     "range" : "15",
-    "domain" : "13",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "73"
-  }, {
-    "range" : "65",
-    "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "74"
-  }, {
-    "range" : "15",
-    "domain" : "25",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "75"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#inequal",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
-    "range" : "9",
-    "label" : {
-      "IRI-based" : "inequal"
-    },
-    "domain" : "9",
-    "attributes" : [ "object", "symmetric", "external" ],
-    "id" : "77"
-  }, {
-    "iri" : "http://linkedevents.org/ontology/atTime",
-    "baseIri" : "http://linkedevents.org/ontology",
-    "range" : "79",
     "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
+      "example" : [ {
+        "identifier" : "example",
         "language" : "undefined",
-        "value" : "http://linkedevents.org/ontology/",
-        "type" : "iri"
-      } ],
-      "definition" : [ {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "\nan abstract instant or interval of\ntime that is when an event happened.",
-        "type" : "label"
-      } ],
-      "issued" : [ {
-        "identifier" : "issued",
-        "language" : "undefined",
-        "value" : "2009-07-28",
+        "value" : "@prefix :     <http://example.com/>.;\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.;\n\n:mappingAssessment\n\ta mqv:MappingAssessment;\n\tmqv:performedOn :mappingDocument;\n.\n\n:mappingDocument\n\ta mqv:MappingDocument;\n.",
         "type" : "label"
       } ]
     },
     "label" : {
-      "IRI-based" : "atTime",
-      "en" : "at time"
-    },
-    "domain" : "1",
-    "comment" : {
-      "en" : "\nEquivalent definitions from other ontologies:\n\n* C4DM Event ontology: \"Relates an event to a time object, classifying\n  a time region (either instantaneous or having an extent).\""
-    },
-    "attributes" : [ "object", "functional", "external" ],
-    "id" : "78"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#endingConstraint",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
-    "range" : "32",
-    "label" : {
-      "IRI-based" : "endingConstraint"
+      "IRI-based" : "performedOn",
+      "en" : "performedOn"
     },
     "domain" : "4",
-    "attributes" : [ "object", "external" ],
-    "id" : "80"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#rulePriority",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
-    "range" : "64",
-    "label" : {
-      "IRI-based" : "rulePriority",
-      "undefined" : "priority"
-    },
-    "domain" : "11",
     "comment" : {
-      "undefined" : "Used to set priority between granting rules"
+      "undefined" : "The original mapping document which the quality assessment process was performed on."
     },
-    "attributes" : [ "object", "external" ],
-    "id" : "81"
+    "attributes" : [ "object" ],
+    "id" : "29"
   }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#provision",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
-    "range" : "21",
+    "iri" : "https://alex-randles.github.io/MQV/#hasQualityRequirement",
+    "baseIri" : "https://alex-randles.github.io/MQV/",
+    "range" : "7",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "@prefix :     <http://example.com/>.;\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.;\n\n:mappingAssessment\n\ta mqv:MappingAssessment;\n\tmqv:hasQualityRequirement :qualityRequirement;\n.\n\n:qualityRequirement\n\ta mqv:QualityRequirement;\n.",
+        "type" : "label"
+      } ]
+    },
     "label" : {
-      "IRI-based" : "provision"
+      "IRI-based" : "hasQualityRequirement",
+      "en" : "hasQualityRequirement"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "The quality requirement of a quality assessment process."
+    },
+    "attributes" : [ "object" ],
+    "id" : "31"
+  }, {
+    "iri" : "https://alex-randles.github.io/MQV/#performedBy",
+    "baseIri" : "https://alex-randles.github.io/MQV/",
+    "range" : "5",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "@prefix :     <http://example.com/>.;\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.;\n\n:mappingAssessment\n\ta mqv:MappingAssessment;\n\tmqv:performedBy :mappingEngineer;\n.\n\n:mappingEngineer\n\ta prov:Agent;\n.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "performedBy",
+      "en" : "performedBy"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "The agent who executes the mapping quality assessment process."
+    },
+    "attributes" : [ "object" ],
+    "id" : "32"
+  }, {
+    "iri" : "https://alex-randles.github.io/MQV/#toolsUsed",
+    "baseIri" : "https://alex-randles.github.io/MQV/",
+    "range" : "17",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "@prefix :     <http://example.com/>.;\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.;\n\n:mappingDocument\n\ta mqv:MappingDocument;\n\tmqv:toolsUsed :mappingTool;\n.\n\n:mappingTool\n\ta mqv:MappingTool;\n.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "toolsUsed",
+      "en" : "toolsUsed"
+    },
+    "domain" : "15",
+    "comment" : {
+      "undefined" : "Mapping tools which have been used to create a mapping document."
+    },
+    "attributes" : [ "object" ],
+    "id" : "33"
+  }, {
+    "iri" : "https://alex-randles.github.io/MQV/#hasLocation",
+    "baseIri" : "https://alex-randles.github.io/MQV/",
+    "range" : "35",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:mappingViolation\n\ta mqv:MappingViolation;\n\tmqv:hasLocation \"Predicate Object Map\"^^xsd:string.\n",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasLocation",
+      "en" : "hasLocation"
     },
     "domain" : "18",
     "comment" : {
-      "undefined" : "Obligation on the actor to either perform some action or make some conditions true sometime in the future."
+      "undefined" : "The location of a violation within the mapping."
     },
-    "attributes" : [ "object", "external" ],
-    "id" : "82"
+    "attributes" : [ "datatype" ],
+    "id" : "34"
   }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#actor",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
-    "range" : "47",
-    "label" : {
-      "IRI-based" : "actor",
-      "undefined" : "actor"
+    "iri" : "https://alex-randles.github.io/MQV/#refinementName",
+    "baseIri" : "https://alex-randles.github.io/MQV/",
+    "range" : "22",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:refinement-0\n\ta mqv:MappingRefinement;\n\tmqv:refinementName \"Remove Language Tag\"^^xsd:string.\n",
+        "type" : "label"
+      } ]
     },
-    "cardinality" : "1",
-    "domain" : "4",
-    "attributes" : [ "object", "external" ],
-    "id" : "83"
-  }, {
-    "iri" : "https://change-detection-ontology.adaptcentre.ie/#hasEvent",
-    "inverse" : "70",
-    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
-    "range" : "1",
     "label" : {
-      "IRI-based" : "hasEvent",
-      "undefined" : "hasEvent"
+      "IRI-based" : "refinementName",
+      "en" : "refinementName"
     },
-    "domain" : "6",
+    "superproperty" : [ "37" ],
+    "domain" : "2",
     "comment" : {
-      "undefined" : "An event within a certain event log"
+      "undefined" : "A textual description of a refinement."
     },
     "attributes" : [ "object" ],
-    "id" : "84"
+    "id" : "36"
   }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#object",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
-    "range" : "72",
-    "label" : {
-      "IRI-based" : "object"
+    "iri" : "https://alex-randles.github.io/MQV/#refinementPerformedBy",
+    "baseIri" : "https://alex-randles.github.io/MQV/",
+    "range" : "5",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "@prefix :     <http://example.com/>.;\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.;\n\n:mappingAssessment\n\ta mqv:MappingAssessment;\n\tmqv:refinementPerformedBy :AlexRandles;\n.\n\n:AlexRandles\n\ta prov:Agent;\n.",
+        "type" : "label"
+      } ]
     },
-    "domain" : "31",
-    "attributes" : [ "object", "external" ],
-    "id" : "85"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#deontic",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
-    "range" : "4",
     "label" : {
-      "IRI-based" : "deontic",
-      "undefined" : "deontic object"
+      "IRI-based" : "refinementPerformedBy",
+      "en" : "refinementPerformedBy"
     },
-    "cardinality" : "1",
-    "domain" : "29",
-    "attributes" : [ "object", "external" ],
-    "id" : "86"
-  }, {
-    "iri" : "https://change-detection-ontology.adaptcentre.ie/#hasReason",
-    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
-    "range" : "88",
-    "label" : {
-      "IRI-based" : "hasReason"
-    },
-    "domain" : "1",
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "87"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#sanction",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
-    "range" : "53",
-    "label" : {
-      "IRI-based" : "sanction"
-    },
-    "domain" : "40",
+    "domain" : "4",
     "comment" : {
-      "undefined" : "In case a rule is broken, a sanction is imposed. Sanction can be either an action or a deontic object"
+      "undefined" : "The agent who performed the refinement of the mapping."
     },
-    "attributes" : [ "object", "external" ],
-    "id" : "89"
+    "attributes" : [ "object" ],
+    "id" : "38"
   }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#createdBy",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
-    "range" : "69",
+    "iri" : "http://www.w3.org/ns/prov#generated",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "generated"
+    },
+    "domain" : "26",
+    "subproperty" : [ "43" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "42"
+  }, {
+    "iri" : "https://alex-randles.github.io/MQV/#createdBy",
+    "baseIri" : "https://alex-randles.github.io/MQV/",
+    "range" : "47",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "@prefix :     <http://example.com/>.;\ta mqv:MappingAssessment ;\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.;\n\n:mappingDocument\n\ta mqv:MappingDocument;\n\tmqv:createdBy :mappingEngineer;\n.\n\n:mappingEngineer\n\ta prov:Agent;\n.",
+        "type" : "label"
+      } ]
+    },
     "label" : {
       "IRI-based" : "createdBy",
-      "undefined" : "creator"
+      "en" : "createdBy"
     },
-    "domain" : "11",
-    "attributes" : [ "object", "external" ],
-    "id" : "90"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#grants",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
-    "range" : "42",
-    "label" : {
-      "IRI-based" : "grants",
-      "undefined" : "grants"
-    },
-    "domain" : "11",
+    "domain" : "15",
     "comment" : {
-      "undefined" : "Associates deontic objects with the policy"
+      "undefined" : "The agent or mapping quality refinement process who produced the mapping document."
     },
-    "attributes" : [ "object", "external" ],
-    "id" : "91"
+    "attributes" : [ "object" ],
+    "id" : "46"
   }, {
-    "iri" : "http://linkedevents.org/ontology/atPlace",
-    "baseIri" : "http://linkedevents.org/ontology",
-    "range" : "76",
+    "iri" : "https://alex-randles.github.io/MQV/#hasRefinementQuery",
+    "baseIri" : "https://alex-randles.github.io/MQV/",
+    "range" : "48",
     "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
+      "example" : [ {
+        "identifier" : "example",
         "language" : "undefined",
-        "value" : "http://linkedevents.org/ontology/Event",
-        "type" : "iri"
-      } ],
-      "definition" : [ {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "\na named or relatively specified place that is where\nan event happened.",
-        "type" : "label"
-      } ],
-      "issued" : [ {
-        "identifier" : "issued",
-        "language" : "undefined",
-        "value" : "2009-07-28",
+        "value" : "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:refinement1 a mqv:MappingRefinement;\n\tmqv:hasRefinementQuery '''\n\t\tPREFIX rr: <http://www.w3.org/ns/r2rml#>\n\t\tPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\t\tPREFIX foaf: <http://xmlns.com/foaf/0.1/>\n\t\tDELETE{?om rr:datatype ?datatype}\n\t\tINSERT{?om rr:datatype xsd:string }\n\t\tWHERE\n\t\t{\n\t\t?sub rr:predicateObjectMap ?pom.\n\t\t?pom rr:predicate foaf:name.\n\t\t?pom rr:objectMap ?om.\n\t\t?om rr:datatype ?datatype.\n\t\t}'''^^xsd:string .\n",
         "type" : "label"
       } ]
     },
     "label" : {
-      "IRI-based" : "atPlace",
-      "en" : "at place"
+      "IRI-based" : "hasRefinementQuery",
+      "en" : "hasRefinementQuery"
     },
-    "domain" : "1",
+    "domain" : "2",
     "comment" : {
-      "en" : "\nThis property relates an event to some meaningful place, which may\nhave a name (e.g. \"Paris\") or may be defined relative to some other\nentity or entities (e.g. \"the unincorporated area between Carson and\nHarbor Gateway\"). An event may be related to more than one such\nplace."
+      "undefined" : "A query executed during by a refinement."
     },
-    "attributes" : [ "object", "external" ],
-    "id" : "92"
+    "attributes" : [ "datatype" ],
+    "id" : "49"
   }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#subject",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
-    "range" : "72",
+    "iri" : "https://alex-randles.github.io/MQV/#isDescribedBy",
+    "baseIri" : "https://alex-randles.github.io/MQV/",
+    "range" : "1",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "@prefix :     <http://example.com/>.;\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.;\n\n:mappingViolation\n\ta mqv:MappingViolation;\n\tmqv:isDescribedBy :qualityMetric;\n.\n\n:qualityMetric\n\ta dqv:Metric;\n.",
+        "type" : "label"
+      } ]
+    },
     "label" : {
-      "IRI-based" : "subject"
+      "IRI-based" : "isDescribedBy",
+      "en" : "isDescribedBy"
     },
-    "domain" : "31",
-    "attributes" : [ "object", "external" ],
-    "id" : "94"
+    "domain" : "18",
+    "comment" : {
+      "undefined" : "The quality metric which detected a quality violation."
+    },
+    "attributes" : [ "object" ],
+    "id" : "50"
   }, {
-    "range" : "52",
-    "domain" : "49",
+    "iri" : "https://alex-randles.github.io/MQV/#wasRefinedBy",
+    "baseIri" : "https://alex-randles.github.io/MQV/",
+    "range" : "2",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "@prefix :     <http://example.com/>.;\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.;\n\n:mappingViolation\n\ta mqv:MappingViolation;\n\tmqv:wasRefinedBy :mappingRefinement;\n.\n\n:mappingRefinement\n\ta mqv:MappingRefinement;\n.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "wasRefinedBy",
+      "en" : "wasRefinedBy"
+    },
+    "domain" : "18",
+    "comment" : {
+      "undefined" : "The refinement used to refine a quality violation."
+    },
+    "attributes" : [ "object" ],
+    "id" : "52"
+  }, {
+    "iri" : "https://alex-randles.github.io/MQV/#mappingSource",
+    "baseIri" : "https://alex-randles.github.io/MQV/",
+    "range" : "15",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "@prefix :     <http://example.com/>.;\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.;\n\n:refinedMappingDocument\n\ta mqv:MappingDocument;\n\tmqv:mappingSource :originalMappingDocument;\n.\n\n:originalMappingDocument\n\ta mqv:MappingDocument;\n.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "mappingSource",
+      "en" : "mappingSource"
+    },
+    "domain" : "15",
+    "comment" : {
+      "undefined" : "The original mapping document, which the refined mapping document was created from."
+    },
+    "attributes" : [ "object" ],
+    "id" : "54"
+  }, {
+    "iri" : "https://alex-randles.github.io/MQV/#hasViolation",
+    "baseIri" : "https://alex-randles.github.io/MQV/",
+    "range" : "18",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "@prefix :     <http://example.com/>.;\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.;\n\n:mappingValidationReport\n\ta mqv:MappingValidationReport;\n\tmqv:hasViolation :mappingViolation;\n.\n\n:mappingViolation\n\ta mqv:MappingViolation;\n.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasViolation",
+      "en" : "hasViolation"
+    },
+    "domain" : "16",
+    "comment" : {
+      "undefined" : "A mapping quality violation contained within a mapping validation report."
+    },
+    "attributes" : [ "object" ],
+    "id" : "55"
+  }, {
+    "iri" : "https://alex-randles.github.io/MQV/#mappingPurpose",
+    "baseIri" : "https://alex-randles.github.io/MQV/",
+    "range" : "25",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:mappingDocument\n\ta mqv:MappingDocument;\n\tmqv:mappingPurpose 'A mapping for mapping personnel information to RDF.^^xsd:string'",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "mappingPurpose",
+      "en" : "mappingPurpose"
+    },
+    "superproperty" : [ "37" ],
+    "domain" : "15",
+    "comment" : {
+      "undefined" : "The rationale for the mapping document being created."
+    },
+    "attributes" : [ "object" ],
+    "id" : "56"
+  }, {
+    "iri" : "https://alex-randles.github.io/MQV/#hasValidationReport",
+    "baseIri" : "https://alex-randles.github.io/MQV/",
+    "range" : "16",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "@prefix :     <http://example.com/>.;\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.;\n\n:mappingAssessment\n\ta mqv:MappingAssessment;\n\tmqv:hasValidationReport :mappingValidationReport;\n.\n\n:mappingValidationReport\n\ta mqv:MappingValidationReport;\n\tmqv:hasViolation :mappingViolation;\n.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasValidationReport",
+      "en" : "hasValidationReport"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "The mapping quality validation report generated by the quality assessment process."
+    },
+    "attributes" : [ "object" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#value",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "value"
+    },
+    "domain" : "26",
+    "subproperty" : [ "58", "36", "56", "59", "60" ],
+    "attributes" : [ "datatype", "external" ],
+    "id" : "37"
+  }, {
+    "range" : "18",
+    "domain" : "15",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "95"
+    "id" : "61"
+  }, {
+    "iri" : "https://alex-randles.github.io/MQV/#resultMessage",
+    "baseIri" : "https://alex-randles.github.io/MQV/",
+    "range" : "27",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:mappingViolation\n    a mqv:MappingViolation;\n    mqv:resultMessage \"Usage of undefined Property.\"\n.\n\n",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "resultMessage",
+      "en" : "resultMessage"
+    },
+    "superproperty" : [ "37" ],
+    "domain" : "18",
+    "comment" : {
+      "undefined" : "A textual description of the violation."
+    },
+    "attributes" : [ "object" ],
+    "id" : "59"
   }, {
     "range" : "16",
-    "domain" : "49",
+    "domain" : "15",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "96"
+    "id" : "62"
   }, {
-    "range" : "0",
-    "domain" : "49",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "97"
-  }, {
-    "range" : "6",
-    "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "99"
-  }, {
-    "range" : "45",
-    "domain" : "49",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "100"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#modifiedTime",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
-    "range" : "69",
-    "label" : {
-      "IRI-based" : "modifiedTime",
-      "undefined" : "modifiedTime"
-    },
-    "domain" : "11",
-    "attributes" : [ "object", "external" ],
-    "id" : "101"
-  }, {
-    "iri" : "http://linkedevents.org/ontology/involvedAgent",
-    "baseIri" : "http://linkedevents.org/ontology",
     "range" : "7",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "63"
+  }, {
+    "range" : "7",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "64"
+  }, {
+    "range" : "18",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "65"
+  }, {
+    "iri" : "https://alex-randles.github.io/MQV/#refinedViolation",
+    "baseIri" : "https://alex-randles.github.io/MQV/",
+    "range" : "18",
     "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
+      "example" : [ {
+        "identifier" : "example",
         "language" : "undefined",
-        "value" : "http://linkedevents.org/ontology/",
-        "type" : "iri"
-      } ],
-      "definition" : [ {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "an agent involved in an event.",
-        "type" : "label"
-      } ],
-      "issued" : [ {
-        "identifier" : "issued",
-        "language" : "undefined",
-        "value" : "2009-07-28",
+        "value" : "@prefix :     <http://example.com/>.;\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.;\n\n:refinement-0\n\ta mqv:MappingRefinement;\n\tmqv:refinedViolation :mappingViolation.\n\n:mappingViolation\n    a mqv:MappingViolation .\n\n",
         "type" : "label"
       } ]
     },
     "label" : {
-      "IRI-based" : "involvedAgent",
-      "en" : "involved agent"
+      "IRI-based" : "refinedViolation",
+      "en" : "refinedViolation"
     },
-    "domain" : "1",
+    "superproperty" : [ "42" ],
+    "domain" : "2",
     "comment" : {
-      "en" : "\nThis property relates an event to anything with agency, such as a\n(legal or natural) person, a group, an organization, a computational\nagent, etc. It does not imply any causal relationship, influence,\nintentionality, etc."
+      "undefined" : "The refinement which refined the violation."
     },
-    "attributes" : [ "object", "external" ],
-    "id" : "102"
+    "attributes" : [ "object" ],
+    "id" : "43"
   }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#equal",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
-    "range" : "9",
-    "label" : {
-      "IRI-based" : "equal"
-    },
-    "domain" : "9",
-    "attributes" : [ "object", "symmetric", "external" ],
-    "id" : "103"
+    "range" : "16",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "66"
   }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#requirement",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
-    "range" : "32",
-    "label" : {
-      "IRI-based" : "requirement",
-      "undefined" : "requirement"
-    },
-    "domain" : "29",
-    "attributes" : [ "object", "external" ],
-    "id" : "104"
+    "range" : "18",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "67"
   }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#desc",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
-    "range" : "98",
-    "label" : {
-      "IRI-based" : "desc",
-      "undefined" : "description"
-    },
-    "domain" : "23",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "105"
+    "range" : "7",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "68"
   }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#defaultBehavior",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
-    "range" : "93",
-    "label" : {
-      "IRI-based" : "defaultBehavior",
-      "undefined" : "defaults"
+    "range" : "2",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "70"
+  }, {
+    "range" : "17",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "71"
+  }, {
+    "iri" : "https://alex-randles.github.io/MQV/#executes",
+    "baseIri" : "https://alex-randles.github.io/MQV/",
+    "range" : "1",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "@prefix :     <http://example.com/>.;\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.;\n\n:mappingAssessment\n\ta mqv:MappingAssessment;\n\tmqv:executes :qualityMetric;\n.\n\n:qualityMetric\n\ta mqv:QualityMetric;\n.",
+        "type" : "label"
+      } ]
     },
-    "domain" : "11",
+    "label" : {
+      "IRI-based" : "executes",
+      "en" : "executes"
+    },
+    "domain" : "4",
     "comment" : {
-      "undefined" : "Whether implicit/explicit right or prohibition"
+      "undefined" : "The quality metric being executed by the mapping quality assessment process."
     },
-    "attributes" : [ "object", "external" ],
-    "id" : "106"
+    "attributes" : [ "object" ],
+    "id" : "72"
   }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#creationTime",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
+    "iri" : "https://alex-randles.github.io/MQV/#hasConfidenceScore",
+    "baseIri" : "https://alex-randles.github.io/MQV/",
+    "range" : "45",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:mappingRefinement\n\ta mqv:MappingRefinement;\n\tmqv:hasConfidenceScore \"0.8\"^^xsd:double;\n.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasConfidenceScore",
+      "en" : "hasConfidenceScore"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "The confidence score of a mapping refinement."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "73"
+  }, {
+    "iri" : "https://alex-randles.github.io/MQV/#inTripleMap",
+    "baseIri" : "https://alex-randles.github.io/MQV/",
+    "range" : "27",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "@prefix :     <http://example.com/>.;\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.;\n\n:mappingViolation\n\ta mqv:MappingViolation;\n\tmqv:inTripleMap <#TripleMap1>;\n.\n",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "inTripleMap",
+      "en" : "inTripleMap"
+    },
+    "domain" : "18",
+    "comment" : {
+      "undefined" : "The triple map which contains the violation."
+    },
+    "attributes" : [ "object" ],
+    "id" : "74"
+  }, {
+    "iri" : "https://alex-randles.github.io/MQV/#assessedMapping",
+    "baseIri" : "https://alex-randles.github.io/MQV/",
+    "range" : "15",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "@prefix :     <http://example.com/>.;\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.;\n\n:mappingAssessment\n\ta mqv:MappingAssessment;\n\tmqv:assessedMapping :mappingDocument;\n.\n\n:mappingDocument\n\ta mqv:MappingDocument;\n.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "assessedMapping",
+      "en" : "assessedMapping"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "The quality assessment of the mapping document created by the refinement process."
+    },
+    "attributes" : [ "object" ],
+    "id" : "75"
+  }, {
+    "iri" : "https://alex-randles.github.io/MQV/#hasLiteralValue",
+    "baseIri" : "https://alex-randles.github.io/MQV/",
+    "range" : "27",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:mappingViolation\n\ta mqv:MappingViolation;\n\tmqv:hasValue \"en-GB\".\n",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasLiteralValue",
+      "en" : "hasValue"
+    },
+    "superproperty" : [ "37" ],
+    "domain" : "18",
+    "comment" : {
+      "undefined" : "The value associated with the violation."
+    },
+    "attributes" : [ "object" ],
+    "id" : "58"
+  }, {
+    "iri" : "https://alex-randles.github.io/MQV/#hasQualityMeasurement",
+    "baseIri" : "https://alex-randles.github.io/MQV/",
+    "range" : "51",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "@prefix :     <http://example.com/>.;\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.;\n\n:mappingDocument\n\ta mqv:MappingDocument;\n\tmqv:hasQualityMeasurement :qualityMeasurement;\n.\n\n:qualityMeasurement\n\ta dqv:QualityMeasurement;\n.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasQualityMeasurement",
+      "en" : "hasQualityMeasurement"
+    },
+    "domain" : "53",
+    "comment" : {
+      "undefined" : "A measurement calculated  by a quality metric on a mapping document."
+    },
+    "attributes" : [ "object" ],
+    "id" : "76"
+  }, {
     "range" : "69",
-    "label" : {
-      "IRI-based" : "creationTime",
-      "undefined" : "creationTime"
-    },
     "domain" : "11",
-    "attributes" : [ "object", "external" ],
-    "id" : "107"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "77"
+  }, {
+    "range" : "8",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "78"
+  }, {
+    "iri" : "https://alex-randles.github.io/MQV/#hasObjectValue",
+    "baseIri" : "https://alex-randles.github.io/MQV/",
+    "range" : "79",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n@prefix foaf: <http://xmlns.com/foaf/0.1/>.\n\n:mappingViolation\n\ta mqv:MappingViolation;\n\tmqv:hasValue foaf:Persons.\n",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasObjectValue",
+      "en" : "hasValue"
+    },
+    "superproperty" : [ "37" ],
+    "domain" : "18",
+    "comment" : {
+      "undefined" : "The object value associated with the violation."
+    },
+    "attributes" : [ "object" ],
+    "id" : "60"
   } ]
 }
