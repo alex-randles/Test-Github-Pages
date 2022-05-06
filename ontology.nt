@@ -47,13 +47,16 @@
 # http://www.w3.org/ns/prov#generated
 <http://www.w3.org/ns/prov#generated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
+# http://www.w3.org/ns/prov#value
+<http://www.w3.org/ns/prov#value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
 # https://alex-randles.github.io/MQV/#assessedMapping
 <https://alex-randles.github.io/MQV/#assessedMapping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://alex-randles.github.io/MQV/#assessedMapping> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alex-randles.github.io/MQV/#MappingAssessment> .
 <https://alex-randles.github.io/MQV/#assessedMapping> <http://www.w3.org/2000/01/rdf-schema#range> <https://alex-randles.github.io/MQV/#MappingDocument> .
 <https://alex-randles.github.io/MQV/#assessedMapping> <http://www.w3.org/2000/01/rdf-schema#comment> "The quality assessment of the mapping document created by the refinement process." .
 <https://alex-randles.github.io/MQV/#assessedMapping> <http://www.w3.org/2000/01/rdf-schema#label> "assessedMapping"@en .
-<https://alex-randles.github.io/MQV/#assessedMapping> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.;\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.;\n\n:mappingAssessment\n\ta mqv:MappingAssessment;\n\tmqv:assessedMapping :mappingDocument;\n.\n\n:mappingDocument\n\ta mqv:MappingDocument;\n." .
+<https://alex-randles.github.io/MQV/#assessedMapping> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:mappingAssessment\n\ta mqv:MappingAssessment;\n\tmqv:assessedMapping :mappingDocument;\n.\n\n:mappingDocument\n\ta mqv:MappingDocument;\n." .
 # 
 # https://alex-randles.github.io/MQV/#assessmentPerformedBy
 <https://alex-randles.github.io/MQV/#assessmentPerformedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -61,7 +64,7 @@
 <https://alex-randles.github.io/MQV/#assessmentPerformedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Agent> .
 <https://alex-randles.github.io/MQV/#assessmentPerformedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The agent who performed the assessment of the mapping." .
 <https://alex-randles.github.io/MQV/#assessmentPerformedBy> <http://www.w3.org/2000/01/rdf-schema#label> "assessmentPerformedBy"@en .
-<https://alex-randles.github.io/MQV/#assessmentPerformedBy> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.;\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.;\n\n:mappingAssessment\n\ta mqv:MappingAssessment;\n\tmqv:assessmentPerformedBy :AlexRandles;\n.\n\n:AlexRandles\n\ta prov:Agent;\n." .
+<https://alex-randles.github.io/MQV/#assessmentPerformedBy> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:mappingAssessment\n\ta mqv:MappingAssessment;\n\tmqv:assessmentPerformedBy :AlexRandles;\n.\n\n:AlexRandles\n\ta prov:Agent;\n." .
 # 
 # https://alex-randles.github.io/MQV/#createdBy
 <https://alex-randles.github.io/MQV/#createdBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -77,7 +80,7 @@ _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://alex-randles.github.io/MQV/#createdBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The agent or mapping quality refinement process who produced the mapping document." .
 <https://alex-randles.github.io/MQV/#createdBy> <http://www.w3.org/2000/01/rdf-schema#label> "createdBy"@en .
-<https://alex-randles.github.io/MQV/#createdBy> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.;\ta mqv:MappingAssessment ;\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.;\n\n:mappingDocument\n\ta mqv:MappingDocument;\n\tmqv:createdBy :mappingEngineer;\n.\n\n:mappingEngineer\n\ta prov:Agent;\n." .
+<https://alex-randles.github.io/MQV/#createdBy> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.\ta mqv:MappingAssessment ;\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:mappingDocument\n\ta mqv:MappingDocument;\n\tmqv:createdBy :mappingEngineer;\n.\n\n:mappingEngineer\n\ta prov:Agent;\n." .
 # 
 # https://alex-randles.github.io/MQV/#executes
 <https://alex-randles.github.io/MQV/#executes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -85,13 +88,15 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://alex-randles.github.io/MQV/#executes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/dqv#Metric> .
 <https://alex-randles.github.io/MQV/#executes> <http://www.w3.org/2000/01/rdf-schema#comment> "The quality metric being executed by the mapping quality assessment process." .
 <https://alex-randles.github.io/MQV/#executes> <http://www.w3.org/2000/01/rdf-schema#label> "executes"@en .
-<https://alex-randles.github.io/MQV/#executes> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.;\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.;\n\n:mappingAssessment\n\ta mqv:MappingAssessment;\n\tmqv:executes :qualityMetric;\n.\n\n:qualityMetric\n\ta mqv:QualityMetric;\n." .
+<https://alex-randles.github.io/MQV/#executes> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:mappingAssessment\n\ta mqv:MappingAssessment;\n\tmqv:executes :qualityMetric;\n.\n\n:qualityMetric\n\ta mqv:QualityMetric;\n." .
 # 
 # https://alex-randles.github.io/MQV/#hasLiteralValue
 <https://alex-randles.github.io/MQV/#hasLiteralValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://alex-randles.github.io/MQV/#hasLiteralValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#value> .
-<http://www.w3.org/ns/prov#value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://alex-randles.github.io/MQV/#hasLiteralValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alex-randles.github.io/MQV/#MappingViolation> .
+<https://alex-randles.github.io/MQV/#hasLiteralValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The literal value associated with the violation." .
+<https://alex-randles.github.io/MQV/#hasLiteralValue> <http://www.w3.org/2000/01/rdf-schema#label> "hasLiteralValue"@en .
+<https://alex-randles.github.io/MQV/#hasLiteralValue> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:mappingViolation\n\ta mqv:MappingViolation;\n\tmqv:hasValue \"en-GB\".\n" .
 # 
 # https://alex-randles.github.io/MQV/#hasMetricType
 <https://alex-randles.github.io/MQV/#hasMetricType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -99,17 +104,16 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://alex-randles.github.io/MQV/#hasMetricType> <http://www.w3.org/2000/01/rdf-schema#range> <https://alex-randles.github.io/MQV/#QualityMetricType> .
 <https://alex-randles.github.io/MQV/#hasMetricType> <http://www.w3.org/2000/01/rdf-schema#comment> "A type assigned to a mapping quality metric. For instance, vocabulary type, for a mapping quality metric, which relates to the vocabulary being used within the mapping." .
 <https://alex-randles.github.io/MQV/#hasMetricType> <http://www.w3.org/2000/01/rdf-schema#label> "hasMetricType"@en .
-<https://alex-randles.github.io/MQV/#hasMetricType> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.;\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.;\n\n:qualityMetric\n\ta dqv:Metric;\n\tmqv:hasMetricType :dataQualityMetric;\n.\n\n:dataQualityMetric\n\ta mqv:QualityMetricType;\n." .
+<https://alex-randles.github.io/MQV/#hasMetricType> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:qualityMetric\n\ta dqv:Metric;\n\tmqv:hasMetricType :dataQualityMetric;\n.\n\n:dataQualityMetric\n\ta mqv:QualityMetricType;\n." .
 # 
 # https://alex-randles.github.io/MQV/#hasObjectValue
 <https://alex-randles.github.io/MQV/#hasObjectValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://alex-randles.github.io/MQV/#hasObjectValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#value> .
 <https://alex-randles.github.io/MQV/#hasObjectValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alex-randles.github.io/MQV/#MappingViolation> .
 <https://alex-randles.github.io/MQV/#hasObjectValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
-<http://www.w3.org/2000/01/rdf-schema#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://alex-randles.github.io/MQV/#hasObjectValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The object value associated with the violation." .
-<https://alex-randles.github.io/MQV/#hasObjectValue> <http://www.w3.org/2000/01/rdf-schema#label> "hasValue"@en .
-<https://alex-randles.github.io/MQV/#hasObjectValue> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n@prefix foaf: <http://xmlns.com/foaf/0.1/>.\n\n:mappingViolation\n\ta mqv:MappingViolation;\n\tmqv:hasValue foaf:Persons.\n" .
+<https://alex-randles.github.io/MQV/#hasObjectValue> <http://www.w3.org/2000/01/rdf-schema#label> "hasObjectValue"@en .
+<https://alex-randles.github.io/MQV/#hasObjectValue> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n@prefix foaf: <http://xmlns.com/foaf/0.1/>.\n\n:mappingViolation\n\ta mqv:MappingViolation;\n\tmqv:hasObjectValue foaf:Persons.\n" .
 # 
 # https://alex-randles.github.io/MQV/#hasQualityMeasurement
 <https://alex-randles.github.io/MQV/#hasQualityMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -139,7 +143,7 @@ _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://alex-randles.github.io/MQV/#hasQualityMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "A measurement calculated  by a quality metric on a mapping document." .
 <https://alex-randles.github.io/MQV/#hasQualityMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "hasQualityMeasurement"@en .
-<https://alex-randles.github.io/MQV/#hasQualityMeasurement> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.;\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.;\n\n:mappingDocument\n\ta mqv:MappingDocument;\n\tmqv:hasQualityMeasurement :qualityMeasurement;\n.\n\n:qualityMeasurement\n\ta dqv:QualityMeasurement;\n." .
+<https://alex-randles.github.io/MQV/#hasQualityMeasurement> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:mappingDocument\n\ta mqv:MappingDocument;\n\tmqv:hasQualityMeasurement :qualityMeasurement;\n.\n\n:qualityMeasurement\n\ta dqv:QualityMeasurement;\n." .
 # 
 # https://alex-randles.github.io/MQV/#hasQualityRequirement
 <https://alex-randles.github.io/MQV/#hasQualityRequirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -147,7 +151,7 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://alex-randles.github.io/MQV/#hasQualityRequirement> <http://www.w3.org/2000/01/rdf-schema#range> <https://alex-randles.github.io/MQV/#QualityRequirement> .
 <https://alex-randles.github.io/MQV/#hasQualityRequirement> <http://www.w3.org/2000/01/rdf-schema#comment> "The quality requirement of a quality assessment process." .
 <https://alex-randles.github.io/MQV/#hasQualityRequirement> <http://www.w3.org/2000/01/rdf-schema#label> "hasQualityRequirement"@en .
-<https://alex-randles.github.io/MQV/#hasQualityRequirement> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.;\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.;\n\n:mappingAssessment\n\ta mqv:MappingAssessment;\n\tmqv:hasQualityRequirement :qualityRequirement;\n.\n\n:qualityRequirement\n\ta mqv:QualityRequirement;\n." .
+<https://alex-randles.github.io/MQV/#hasQualityRequirement> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:mappingAssessment\n\ta mqv:MappingAssessment;\n\tmqv:hasQualityRequirement :qualityRequirement;\n.\n\n:qualityRequirement\n\ta mqv:QualityRequirement;\n." .
 # 
 # https://alex-randles.github.io/MQV/#hasRefinement
 <https://alex-randles.github.io/MQV/#hasRefinement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -155,7 +159,7 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://alex-randles.github.io/MQV/#hasRefinement> <http://www.w3.org/2000/01/rdf-schema#range> <https://alex-randles.github.io/MQV/#MappingRefinement> .
 <https://alex-randles.github.io/MQV/#hasRefinement> <http://www.w3.org/2000/01/rdf-schema#comment> "The refinement used for refining a quality violation detcted by a particular quality metric." .
 <https://alex-randles.github.io/MQV/#hasRefinement> <http://www.w3.org/2000/01/rdf-schema#label> "hasRefinement"@en .
-<https://alex-randles.github.io/MQV/#hasRefinement> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.;\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.;\n\n:qualityMetric\n\ta dqv:Metric;\n\tmqv:hasRefinement :mappingRefinement;\n.\n\n:mappingRefinement\n\ta mqv:MappingRefinement;\n." .
+<https://alex-randles.github.io/MQV/#hasRefinement> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:qualityMetric\n\ta dqv:Metric;\n\tmqv:hasRefinement :mappingRefinement;\n.\n\n:mappingRefinement\n\ta mqv:MappingRefinement;\n." .
 # 
 # https://alex-randles.github.io/MQV/#hasValidationReport
 <https://alex-randles.github.io/MQV/#hasValidationReport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -163,7 +167,7 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://alex-randles.github.io/MQV/#hasValidationReport> <http://www.w3.org/2000/01/rdf-schema#range> <https://alex-randles.github.io/MQV/#MappingValidationReport> .
 <https://alex-randles.github.io/MQV/#hasValidationReport> <http://www.w3.org/2000/01/rdf-schema#comment> "The mapping quality validation report generated by the quality assessment process." .
 <https://alex-randles.github.io/MQV/#hasValidationReport> <http://www.w3.org/2000/01/rdf-schema#label> "hasValidationReport"@en .
-<https://alex-randles.github.io/MQV/#hasValidationReport> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.;\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.;\n\n:mappingAssessment\n\ta mqv:MappingAssessment;\n\tmqv:hasValidationReport :mappingValidationReport;\n.\n\n:mappingValidationReport\n\ta mqv:MappingValidationReport;\n\tmqv:hasViolation :mappingViolation;\n." .
+<https://alex-randles.github.io/MQV/#hasValidationReport> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:mappingAssessment\n\ta mqv:MappingAssessment;\n\tmqv:hasValidationReport :mappingValidationReport;\n.\n\n:mappingValidationReport\n\ta mqv:MappingValidationReport;\n\tmqv:hasViolation :mappingViolation;\n." .
 # 
 # https://alex-randles.github.io/MQV/#hasViolation
 <https://alex-randles.github.io/MQV/#hasViolation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -171,14 +175,15 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://alex-randles.github.io/MQV/#hasViolation> <http://www.w3.org/2000/01/rdf-schema#range> <https://alex-randles.github.io/MQV/#MappingViolation> .
 <https://alex-randles.github.io/MQV/#hasViolation> <http://www.w3.org/2000/01/rdf-schema#comment> "A mapping quality violation contained within a mapping validation report." .
 <https://alex-randles.github.io/MQV/#hasViolation> <http://www.w3.org/2000/01/rdf-schema#label> "hasViolation"@en .
-<https://alex-randles.github.io/MQV/#hasViolation> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.;\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.;\n\n:mappingValidationReport\n\ta mqv:MappingValidationReport;\n\tmqv:hasViolation :mappingViolation;\n.\n\n:mappingViolation\n\ta mqv:MappingViolation;\n." .
+<https://alex-randles.github.io/MQV/#hasViolation> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:mappingValidationReport\n\ta mqv:MappingValidationReport;\n\tmqv:hasViolation :mappingViolation;\n.\n\n:mappingViolation\n\ta mqv:MappingViolation;\n." .
 # 
 # https://alex-randles.github.io/MQV/#inTripleMap
 <https://alex-randles.github.io/MQV/#inTripleMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://alex-randles.github.io/MQV/#inTripleMap> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alex-randles.github.io/MQV/#MappingViolation> .
+<https://alex-randles.github.io/MQV/#inTripleMap> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
 <https://alex-randles.github.io/MQV/#inTripleMap> <http://www.w3.org/2000/01/rdf-schema#comment> "The triple map which contains the violation." .
 <https://alex-randles.github.io/MQV/#inTripleMap> <http://www.w3.org/2000/01/rdf-schema#label> "inTripleMap"@en .
-<https://alex-randles.github.io/MQV/#inTripleMap> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.;\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.;\n\n:mappingViolation\n\ta mqv:MappingViolation;\n\tmqv:inTripleMap <#TripleMap1>;\n.\n" .
+<https://alex-randles.github.io/MQV/#inTripleMap> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:mappingViolation\n\ta mqv:MappingViolation;\n\tmqv:inTripleMap <#TripleMap1>;\n.\n" .
 # 
 # https://alex-randles.github.io/MQV/#isDescribedBy
 <https://alex-randles.github.io/MQV/#isDescribedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -186,12 +191,7 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://alex-randles.github.io/MQV/#isDescribedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/dqv#Metric> .
 <https://alex-randles.github.io/MQV/#isDescribedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The quality metric which detected a quality violation." .
 <https://alex-randles.github.io/MQV/#isDescribedBy> <http://www.w3.org/2000/01/rdf-schema#label> "isDescribedBy"@en .
-<https://alex-randles.github.io/MQV/#isDescribedBy> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.;\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.;\n\n:mappingViolation\n\ta mqv:MappingViolation;\n\tmqv:isDescribedBy :qualityMetric;\n.\n\n:qualityMetric\n\ta dqv:Metric;\n." .
-# 
-# https://alex-randles.github.io/MQV/#mappingPurpose
-<https://alex-randles.github.io/MQV/#mappingPurpose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://alex-randles.github.io/MQV/#mappingPurpose> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#value> .
-<https://alex-randles.github.io/MQV/#mappingPurpose> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alex-randles.github.io/MQV/#MappingDocument> .
+<https://alex-randles.github.io/MQV/#isDescribedBy> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:mappingViolation\n\ta mqv:MappingViolation;\n\tmqv:isDescribedBy :qualityMetric;\n.\n\n:qualityMetric\n\ta dqv:Metric;\n." .
 # 
 # https://alex-randles.github.io/MQV/#mappingSource
 <https://alex-randles.github.io/MQV/#mappingSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -199,7 +199,7 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://alex-randles.github.io/MQV/#mappingSource> <http://www.w3.org/2000/01/rdf-schema#range> <https://alex-randles.github.io/MQV/#MappingDocument> .
 <https://alex-randles.github.io/MQV/#mappingSource> <http://www.w3.org/2000/01/rdf-schema#comment> "The original mapping document, which the refined mapping document was created from." .
 <https://alex-randles.github.io/MQV/#mappingSource> <http://www.w3.org/2000/01/rdf-schema#label> "mappingSource"@en .
-<https://alex-randles.github.io/MQV/#mappingSource> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.;\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.;\n\n:refinedMappingDocument\n\ta mqv:MappingDocument;\n\tmqv:mappingSource :originalMappingDocument;\n.\n\n:originalMappingDocument\n\ta mqv:MappingDocument;\n." .
+<https://alex-randles.github.io/MQV/#mappingSource> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:refinedMappingDocument\n\ta mqv:MappingDocument;\n\tmqv:mappingSource :originalMappingDocument;\n.\n\n:originalMappingDocument\n\ta mqv:MappingDocument;\n." .
 # 
 # https://alex-randles.github.io/MQV/#performedBy
 <https://alex-randles.github.io/MQV/#performedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -207,7 +207,7 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://alex-randles.github.io/MQV/#performedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Agent> .
 <https://alex-randles.github.io/MQV/#performedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The agent who executes the mapping quality assessment process." .
 <https://alex-randles.github.io/MQV/#performedBy> <http://www.w3.org/2000/01/rdf-schema#label> "performedBy"@en .
-<https://alex-randles.github.io/MQV/#performedBy> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.;\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.;\n\n:mappingAssessment\n\ta mqv:MappingAssessment;\n\tmqv:performedBy :mappingEngineer;\n.\n\n:mappingEngineer\n\ta prov:Agent;\n." .
+<https://alex-randles.github.io/MQV/#performedBy> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:mappingAssessment\n\ta mqv:MappingAssessment;\n\tmqv:performedBy :mappingEngineer;\n.\n\n:mappingEngineer\n\ta prov:Agent;\n." .
 # 
 # https://alex-randles.github.io/MQV/#performedOn
 <https://alex-randles.github.io/MQV/#performedOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -215,7 +215,7 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://alex-randles.github.io/MQV/#performedOn> <http://www.w3.org/2000/01/rdf-schema#range> <https://alex-randles.github.io/MQV/#MappingDocument> .
 <https://alex-randles.github.io/MQV/#performedOn> <http://www.w3.org/2000/01/rdf-schema#comment> "The original mapping document which the quality assessment process was performed on." .
 <https://alex-randles.github.io/MQV/#performedOn> <http://www.w3.org/2000/01/rdf-schema#label> "performedOn"@en .
-<https://alex-randles.github.io/MQV/#performedOn> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.;\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.;\n\n:mappingAssessment\n\ta mqv:MappingAssessment;\n\tmqv:performedOn :mappingDocument;\n.\n\n:mappingDocument\n\ta mqv:MappingDocument;\n." .
+<https://alex-randles.github.io/MQV/#performedOn> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:mappingAssessment\n\ta mqv:MappingAssessment;\n\tmqv:performedOn :mappingDocument;\n.\n\n:mappingDocument\n\ta mqv:MappingDocument;\n." .
 # 
 # https://alex-randles.github.io/MQV/#refinedViolation
 <https://alex-randles.github.io/MQV/#refinedViolation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -224,12 +224,7 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://alex-randles.github.io/MQV/#refinedViolation> <http://www.w3.org/2000/01/rdf-schema#range> <https://alex-randles.github.io/MQV/#MappingViolation> .
 <https://alex-randles.github.io/MQV/#refinedViolation> <http://www.w3.org/2000/01/rdf-schema#comment> "The refinement which refined the violation." .
 <https://alex-randles.github.io/MQV/#refinedViolation> <http://www.w3.org/2000/01/rdf-schema#label> "refinedViolation"@en .
-<https://alex-randles.github.io/MQV/#refinedViolation> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.;\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.;\n\n:refinement-0\n\ta mqv:MappingRefinement;\n\tmqv:refinedViolation :mappingViolation.\n\n:mappingViolation\n    a mqv:MappingViolation .\n\n" .
-# 
-# https://alex-randles.github.io/MQV/#refinementName
-<https://alex-randles.github.io/MQV/#refinementName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://alex-randles.github.io/MQV/#refinementName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#value> .
-<https://alex-randles.github.io/MQV/#refinementName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alex-randles.github.io/MQV/#MappingRefinement> .
+<https://alex-randles.github.io/MQV/#refinedViolation> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:refinement-0\n\ta mqv:MappingRefinement;\n\tmqv:refinedViolation :mappingViolation.\n\n:mappingViolation\n    a mqv:MappingViolation .\n\n" .
 # 
 # https://alex-randles.github.io/MQV/#refinementPerformedBy
 <https://alex-randles.github.io/MQV/#refinementPerformedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -237,12 +232,7 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://alex-randles.github.io/MQV/#refinementPerformedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Agent> .
 <https://alex-randles.github.io/MQV/#refinementPerformedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The agent who performed the refinement of the mapping." .
 <https://alex-randles.github.io/MQV/#refinementPerformedBy> <http://www.w3.org/2000/01/rdf-schema#label> "refinementPerformedBy"@en .
-<https://alex-randles.github.io/MQV/#refinementPerformedBy> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.;\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.;\n\n:mappingAssessment\n\ta mqv:MappingAssessment;\n\tmqv:refinementPerformedBy :AlexRandles;\n.\n\n:AlexRandles\n\ta prov:Agent;\n." .
-# 
-# https://alex-randles.github.io/MQV/#resultMessage
-<https://alex-randles.github.io/MQV/#resultMessage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://alex-randles.github.io/MQV/#resultMessage> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#value> .
-<https://alex-randles.github.io/MQV/#resultMessage> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alex-randles.github.io/MQV/#MappingViolation> .
+<https://alex-randles.github.io/MQV/#refinementPerformedBy> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:mappingAssessment\n\ta mqv:MappingAssessment;\n\tmqv:refinementPerformedBy :AlexRandles;\n.\n\n:AlexRandles\n\ta prov:Agent;\n." .
 # 
 # https://alex-randles.github.io/MQV/#toolsUsed
 <https://alex-randles.github.io/MQV/#toolsUsed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -250,7 +240,7 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://alex-randles.github.io/MQV/#toolsUsed> <http://www.w3.org/2000/01/rdf-schema#range> <https://alex-randles.github.io/MQV/#MappingTool> .
 <https://alex-randles.github.io/MQV/#toolsUsed> <http://www.w3.org/2000/01/rdf-schema#comment> "Mapping tools which have been used to create a mapping document." .
 <https://alex-randles.github.io/MQV/#toolsUsed> <http://www.w3.org/2000/01/rdf-schema#label> "toolsUsed"@en .
-<https://alex-randles.github.io/MQV/#toolsUsed> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.;\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.;\n\n:mappingDocument\n\ta mqv:MappingDocument;\n\tmqv:toolsUsed :mappingTool;\n.\n\n:mappingTool\n\ta mqv:MappingTool;\n." .
+<https://alex-randles.github.io/MQV/#toolsUsed> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:mappingDocument\n\ta mqv:MappingDocument;\n\tmqv:toolsUsed :mappingTool;\n.\n\n:mappingTool\n\ta mqv:MappingTool;\n." .
 # 
 # https://alex-randles.github.io/MQV/#wasDerivedFrom
 <https://alex-randles.github.io/MQV/#wasDerivedFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -258,7 +248,7 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://alex-randles.github.io/MQV/#wasDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#range> <https://alex-randles.github.io/MQV/#MappingAssessment> .
 <https://alex-randles.github.io/MQV/#wasDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#comment> "The quality measurement calculated by the mapping quality assessment process." .
 <https://alex-randles.github.io/MQV/#wasDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#label> "wasDerivedFrom" .
-<https://alex-randles.github.io/MQV/#wasDerivedFrom> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.;\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.;\n\n:qualityMeasurement\n\ta dqv:QualityMeasurement;\n\tmqv:wasDerivedFrom :mappingAssessment;\n.\n\n:mappingAssessment\n\ta mqv:MappingAssessment;\n." .
+<https://alex-randles.github.io/MQV/#wasDerivedFrom> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:qualityMeasurement\n\ta dqv:QualityMeasurement;\n\tmqv:wasDerivedFrom :mappingAssessment;\n.\n\n:mappingAssessment\n\ta mqv:MappingAssessment;\n." .
 # 
 # https://alex-randles.github.io/MQV/#wasRefinedBy
 <https://alex-randles.github.io/MQV/#wasRefinedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -266,7 +256,7 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://alex-randles.github.io/MQV/#wasRefinedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://alex-randles.github.io/MQV/#MappingRefinement> .
 <https://alex-randles.github.io/MQV/#wasRefinedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The refinement used to refine a quality violation." .
 <https://alex-randles.github.io/MQV/#wasRefinedBy> <http://www.w3.org/2000/01/rdf-schema#label> "wasRefinedBy"@en .
-<https://alex-randles.github.io/MQV/#wasRefinedBy> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.;\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.;\n\n:mappingViolation\n\ta mqv:MappingViolation;\n\tmqv:wasRefinedBy :mappingRefinement;\n.\n\n:mappingRefinement\n\ta mqv:MappingRefinement;\n." .
+<https://alex-randles.github.io/MQV/#wasRefinedBy> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:mappingViolation\n\ta mqv:MappingViolation;\n\tmqv:wasRefinedBy :mappingRefinement;\n.\n\n:mappingRefinement\n\ta mqv:MappingRefinement;\n." .
 # 
 # 
 # 
@@ -277,9 +267,6 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # #################################################################
 # 
 # 
-# http://www.w3.org/ns/prov#value
-<http://www.w3.org/ns/prov#value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-# 
 # https://alex-randles.github.io/MQV/#hasConfidenceScore
 <https://alex-randles.github.io/MQV/#hasConfidenceScore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://alex-randles.github.io/MQV/#hasConfidenceScore> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alex-randles.github.io/MQV/#MappingRefinement> .
@@ -287,10 +274,6 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://alex-randles.github.io/MQV/#hasConfidenceScore> <http://www.w3.org/2000/01/rdf-schema#comment> "The confidence score of a mapping refinement." .
 <https://alex-randles.github.io/MQV/#hasConfidenceScore> <http://www.w3.org/2000/01/rdf-schema#label> "hasConfidenceScore"@en .
 <https://alex-randles.github.io/MQV/#hasConfidenceScore> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:mappingRefinement\n\ta mqv:MappingRefinement;\n\tmqv:hasConfidenceScore \"0.8\"^^xsd:double;\n." .
-# 
-# https://alex-randles.github.io/MQV/#hasLiteralValue
-<https://alex-randles.github.io/MQV/#hasLiteralValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://alex-randles.github.io/MQV/#hasLiteralValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 # 
 # https://alex-randles.github.io/MQV/#hasLocation
 <https://alex-randles.github.io/MQV/#hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -306,19 +289,29 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://alex-randles.github.io/MQV/#hasRefinementQuery> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://alex-randles.github.io/MQV/#hasRefinementQuery> <http://www.w3.org/2000/01/rdf-schema#comment> "A query executed during by a refinement." .
 <https://alex-randles.github.io/MQV/#hasRefinementQuery> <http://www.w3.org/2000/01/rdf-schema#label> "hasRefinementQuery"@en .
-<https://alex-randles.github.io/MQV/#hasRefinementQuery> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:refinement1 a mqv:MappingRefinement;\n\tmqv:hasRefinementQuery '''\n\t\tPREFIX rr: <http://www.w3.org/ns/r2rml#>\n\t\tPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\t\tPREFIX foaf: <http://xmlns.com/foaf/0.1/>\n\t\tDELETE{?om rr:datatype ?datatype}\n\t\tINSERT{?om rr:datatype xsd:string }\n\t\tWHERE\n\t\t{\n\t\t?sub rr:predicateObjectMap ?pom.\n\t\t?pom rr:predicate foaf:name.\n\t\t?pom rr:objectMap ?om.\n\t\t?om rr:datatype ?datatype.\n\t\t}'''^^xsd:string .\n" .
+<https://alex-randles.github.io/MQV/#hasRefinementQuery> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:refinement1 a mqv:MappingRefinement;\n\tmqv:hasRefinementQuery '''\n\t\tPREFIX rr: <http://www.w3.org/ns/r2rml#>\n\t\tPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\t\tPREFIX foaf: <http://xmlns.com/foaf/0.1/>\n\t\tDELETE{?om rr:datatype ?datatype}\n\t\tINSERT{?om rr:datatype xsd:string }\n\t\tWHERE\n\t\t{\n\t\t\t?sub rr:predicateObjectMap ?pom.\n\t\t\t?pom rr:predicate foaf:name.\n\t\t\t?pom rr:objectMap ?om.\n\t\t\t?om rr:datatype ?datatype.\n\t\t}'''^^xsd:string .\n" .
 # 
 # https://alex-randles.github.io/MQV/#mappingPurpose
 <https://alex-randles.github.io/MQV/#mappingPurpose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://alex-randles.github.io/MQV/#mappingPurpose> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://alex-randles.github.io/MQV/#mappingPurpose> <http://www.w3.org/2000/01/rdf-schema#comment> "The rationale for the mapping document being created." .
+<https://alex-randles.github.io/MQV/#mappingPurpose> <http://www.w3.org/2000/01/rdf-schema#label> "mappingPurpose"@en .
+<https://alex-randles.github.io/MQV/#mappingPurpose> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:mappingDocument\n\ta mqv:MappingDocument;\n\tmqv:mappingPurpose 'A mapping for mapping personnel information to RDF.^^xsd:string'" .
 # 
 # https://alex-randles.github.io/MQV/#refinementName
 <https://alex-randles.github.io/MQV/#refinementName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://alex-randles.github.io/MQV/#refinementName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alex-randles.github.io/MQV/#MappingRefinement> .
 <https://alex-randles.github.io/MQV/#refinementName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://alex-randles.github.io/MQV/#refinementName> <http://www.w3.org/2000/01/rdf-schema#comment> "A textual description of a refinement." .
+<https://alex-randles.github.io/MQV/#refinementName> <http://www.w3.org/2000/01/rdf-schema#label> "refinementName"@en .
+<https://alex-randles.github.io/MQV/#refinementName> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:refinement-0\n\ta mqv:MappingRefinement;\n\tmqv:refinementName \"Remove Language Tag\"^^xsd:string.\n" .
 # 
 # https://alex-randles.github.io/MQV/#resultMessage
 <https://alex-randles.github.io/MQV/#resultMessage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://alex-randles.github.io/MQV/#resultMessage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://alex-randles.github.io/MQV/#resultMessage> <http://www.w3.org/2000/01/rdf-schema#comment> "A textual description of the violation." .
+<https://alex-randles.github.io/MQV/#resultMessage> <http://www.w3.org/2000/01/rdf-schema#label> "resultMessage"@en .
+<https://alex-randles.github.io/MQV/#resultMessage> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:mappingViolation\n    a mqv:MappingViolation;\n    mqv:resultMessage \"Usage of undefined Property.\"\n.\n\n" .
 # 
 # 
 # 
@@ -330,6 +323,7 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # 
 # http://www.w3.org/2000/01/rdf-schema#Resource
+<http://www.w3.org/2000/01/rdf-schema#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://www.w3.org/ns/dqv#Category
 <http://www.w3.org/ns/dqv#Category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -420,30 +414,5 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://alex-randles.github.io/MQV/#QualityRequirement> <http://www.w3.org/2000/01/rdf-schema#comment> "A quality requirement is a requirement a mapping should satisfy." .
 <https://alex-randles.github.io/MQV/#QualityRequirement> <http://www.w3.org/2000/01/rdf-schema#label> "QualityRequirement"@en .
 <https://alex-randles.github.io/MQV/#QualityRequirement> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n\n:qualityRequirement\n\ta mqv:QualityRequirement;\n.\n\n:mappingAssessment\n\ta mqv:MappingAssessment ;\n\tmqv:hasQualityRequirement :qualityRequirement ;\n." .
-# 
-# 
-# 
-# #################################################################
-# #
-# #    Annotations
-# #
-# #################################################################
-# 
-# 
-<https://alex-randles.github.io/MQV/#hasLiteralValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The value associated with the violation." .
-<https://alex-randles.github.io/MQV/#hasLiteralValue> <http://www.w3.org/2000/01/rdf-schema#label> "hasValue"@en .
-<https://alex-randles.github.io/MQV/#hasLiteralValue> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:mappingViolation\n\ta mqv:MappingViolation;\n\tmqv:hasValue \"en-GB\".\n" .
-# 
-<https://alex-randles.github.io/MQV/#mappingPurpose> <http://www.w3.org/2000/01/rdf-schema#comment> "The rationale for the mapping document being created." .
-<https://alex-randles.github.io/MQV/#mappingPurpose> <http://www.w3.org/2000/01/rdf-schema#label> "mappingPurpose"@en .
-<https://alex-randles.github.io/MQV/#mappingPurpose> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:mappingDocument\n\ta mqv:MappingDocument;\n\tmqv:mappingPurpose 'A mapping for mapping personnel information to RDF.^^xsd:string'" .
-# 
-<https://alex-randles.github.io/MQV/#refinementName> <http://www.w3.org/2000/01/rdf-schema#comment> "A textual description of a refinement." .
-<https://alex-randles.github.io/MQV/#refinementName> <http://www.w3.org/2000/01/rdf-schema#label> "refinementName"@en .
-<https://alex-randles.github.io/MQV/#refinementName> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:refinement-0\n\ta mqv:MappingRefinement;\n\tmqv:refinementName \"Remove Language Tag\"^^xsd:string.\n" .
-# 
-<https://alex-randles.github.io/MQV/#resultMessage> <http://www.w3.org/2000/01/rdf-schema#comment> "A textual description of the violation." .
-<https://alex-randles.github.io/MQV/#resultMessage> <http://www.w3.org/2000/01/rdf-schema#label> "resultMessage"@en .
-<https://alex-randles.github.io/MQV/#resultMessage> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:mappingViolation\n    a mqv:MappingViolation;\n    mqv:resultMessage \"Usage of undefined Property.\"\n.\n\n" .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
