@@ -22,7 +22,7 @@ The agent who initiated the process is also captured (prov:Agent). A mapping ass
 class. This information allows the model to validate whether such quality requirements have been satisfied in the assessment and refinement stage. The model draws inspiration from 
 previous work where data quality was classified into categories (dqv:Category), dimensions (dqv:Dimension) and metrics (dqv:Metric) <a href="#bib-ZaveriEtAl">[ZaveriEtAl]</a>. 
 The DQV  <a href="#bib-DQV">[DQV]</a> defines these quality categories in a machine-readable format. In our model we also allow for refinements to be described. The model uses the information in such classes 
-to generate a mapping validation report <font face="courier-new">(mqv:MappingValidationReport).</font>Each violation identified is then represented with the mqv:MappingViolation class. 
+to generate a mapping validation report <font face="courier-new,  monospace">(mqv:MappingValidationReport).</font>Each violation identified is then represented with the mqv:MappingViolation class. 
 </p>
 <p> 
 <strong>Mapping quality refinement. </strong>This stage captures mapping refinements executed in the mapping. Each metric described using our model may have multiple refinements (mqv:MappingRefinement) associated with depending on the quality aspect being measured. The refinement executed in the mapping is associated to the identified violation through the property mqv:wasRefinedBy.
