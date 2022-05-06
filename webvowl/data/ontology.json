@@ -20,16 +20,16 @@
         "value" : "mqv",
         "type" : "label"
       } ],
-      "preferredNamespaceUri" : [ {
-        "identifier" : "preferredNamespaceUri",
-        "language" : "undefined",
-        "value" : "https://alex-randles.github.io/MQV/#",
-        "type" : "label"
-      } ],
       "abstract" : [ {
         "identifier" : "abstract",
         "language" : "undefined",
         "value" : "The Mapping Quality Vocabulary (MQV) provides a set of classes, properties, and restrictions that can be used to represent and interchange provenance and metadata information relating to the quality assessment, quality refinement and quality validation of mapping definitions used to generate Linked data datasets. It can also be specialized to create new classes and properties to model provenance and metadata information for domain specific mapping languages",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://alex-randles.github.io/MQV/#",
         "type" : "label"
       } ],
       "title" : [ {
@@ -51,10 +51,10 @@
     "id" : "6",
     "type" : "owl:Class"
   }, {
-    "id" : "1",
+    "id" : "9",
     "type" : "owl:Class"
   }, {
-    "id" : "9",
+    "id" : "1",
     "type" : "owl:Class"
   }, {
     "id" : "12",
@@ -67,7 +67,7 @@
     "type" : "owl:Class"
   }, {
     "id" : "25",
-    "type" : "owl:Thing"
+    "type" : "rdfs:Literal"
   }, {
     "id" : "13",
     "type" : "owl:Class"
@@ -78,13 +78,13 @@
     "id" : "38",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "34",
+    "id" : "36",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "39",
     "type" : "owl:Thing"
   }, {
-    "id" : "36",
+    "id" : "34",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "42",
@@ -129,7 +129,7 @@
     "id" : "2",
     "type" : "owl:Class"
   }, {
-    "id" : "73",
+    "id" : "72",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
@@ -143,15 +143,6 @@
     "attributes" : [ "external" ],
     "id" : "6"
   }, {
-    "iri" : "http://www.w3.org/ns/dqv#Metric",
-    "baseIri" : "http://www.w3.org/ns/dqv",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Metric"
-    },
-    "attributes" : [ "external" ],
-    "id" : "1"
-  }, {
     "iri" : "http://www.w3.org/ns/dqv#Category",
     "baseIri" : "http://www.w3.org/ns/dqv",
     "instances" : 0,
@@ -160,6 +151,15 @@
     },
     "attributes" : [ "external" ],
     "id" : "9"
+  }, {
+    "iri" : "http://www.w3.org/ns/dqv#Metric",
+    "baseIri" : "http://www.w3.org/ns/dqv",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Metric"
+    },
+    "attributes" : [ "external" ],
+    "id" : "1"
   }, {
     "iri" : "http://www.w3.org/ns/prov#Entity",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -213,11 +213,11 @@
     "id" : "17",
     "superClasses" : [ "12" ]
   }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "id" : "25",
     "label" : {
-      "undefined" : "Thing"
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
     }
   }, {
     "iri" : "https://alex-randles.github.io/MQV/#MappingDocument",
@@ -259,7 +259,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "34",
+    "id" : "36",
     "label" : {
       "IRI-based" : "string"
     }
@@ -273,7 +273,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "36",
+    "id" : "34",
     "label" : {
       "IRI-based" : "string"
     }
@@ -454,7 +454,7 @@
       "IRI-based" : "Resource"
     },
     "attributes" : [ "external" ],
-    "id" : "73"
+    "id" : "72"
   } ],
   "property" : [ {
     "id" : "0",
@@ -536,19 +536,22 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "54",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "55",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "56",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "59",
+    "id" : "58",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "60",
+    "id" : "59",
     "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "60",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "61",
     "type" : "owl:disjointWith"
@@ -559,11 +562,11 @@
     "id" : "63",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "64",
-    "type" : "owl:disjointWith"
-  }, {
     "id" : "41",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "65",
     "type" : "owl:disjointWith"
@@ -578,27 +581,24 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "69",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "70",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "71",
+    "id" : "70",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "72",
+    "id" : "71",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "73",
     "type" : "owl:objectProperty"
   }, {
     "id" : "74",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "57",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "75",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "58",
+    "id" : "57",
     "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
@@ -818,31 +818,9 @@
     "attributes" : [ "object" ],
     "id" : "32"
   }, {
-    "iri" : "https://alex-randles.github.io/MQV/#refinementName",
-    "baseIri" : "https://alex-randles.github.io/MQV/",
-    "range" : "34",
-    "annotations" : {
-      "example" : [ {
-        "identifier" : "example",
-        "language" : "undefined",
-        "value" : "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:refinement-0\n\ta mqv:MappingRefinement;\n\tmqv:refinementName \"Remove Language Tag\"^^xsd:string.\n",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "refinementName",
-      "en" : "refinementName"
-    },
-    "domain" : "2",
-    "comment" : {
-      "undefined" : "A textual description of a refinement."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "33"
-  }, {
     "iri" : "https://alex-randles.github.io/MQV/#hasLocation",
     "baseIri" : "https://alex-randles.github.io/MQV/",
-    "range" : "36",
+    "range" : "34",
     "annotations" : {
       "example" : [ {
         "identifier" : "example",
@@ -858,6 +836,28 @@
     "domain" : "17",
     "comment" : {
       "undefined" : "The location of a violation within the mapping."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "33"
+  }, {
+    "iri" : "https://alex-randles.github.io/MQV/#refinementName",
+    "baseIri" : "https://alex-randles.github.io/MQV/",
+    "range" : "36",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:refinement-0\n\ta mqv:MappingRefinement;\n\tmqv:refinementName \"Remove Language Tag\"^^xsd:string.\n",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "refinementName",
+      "en" : "refinementName"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "A textual description of a refinement."
     },
     "attributes" : [ "datatype" ],
     "id" : "35"
@@ -1027,28 +1027,6 @@
     "attributes" : [ "object" ],
     "id" : "53"
   }, {
-    "iri" : "https://alex-randles.github.io/MQV/#hasValidationReport",
-    "baseIri" : "https://alex-randles.github.io/MQV/",
-    "range" : "14",
-    "annotations" : {
-      "example" : [ {
-        "identifier" : "example",
-        "language" : "undefined",
-        "value" : "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:mappingAssessment\n\ta mqv:MappingAssessment;\n\tmqv:hasValidationReport :mappingValidationReport;\n.\n\n:mappingValidationReport\n\ta mqv:MappingValidationReport;\n\tmqv:hasViolation :mappingViolation;\n.",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "hasValidationReport",
-      "en" : "hasValidationReport"
-    },
-    "domain" : "4",
-    "comment" : {
-      "undefined" : "The mapping quality validation report generated by the quality assessment process."
-    },
-    "attributes" : [ "object" ],
-    "id" : "54"
-  }, {
     "iri" : "https://alex-randles.github.io/MQV/#mappingPurpose",
     "baseIri" : "https://alex-randles.github.io/MQV/",
     "range" : "45",
@@ -1069,6 +1047,28 @@
       "undefined" : "The rationale for the mapping document being created."
     },
     "attributes" : [ "datatype" ],
+    "id" : "54"
+  }, {
+    "iri" : "https://alex-randles.github.io/MQV/#hasValidationReport",
+    "baseIri" : "https://alex-randles.github.io/MQV/",
+    "range" : "14",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:mappingAssessment\n\ta mqv:MappingAssessment;\n\tmqv:hasValidationReport :mappingValidationReport;\n.\n\n:mappingValidationReport\n\ta mqv:MappingValidationReport;\n\tmqv:hasViolation :mappingViolation;\n.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasValidationReport",
+      "en" : "hasValidationReport"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "The mapping quality validation report generated by the quality assessment process."
+    },
+    "attributes" : [ "object" ],
     "id" : "55"
   }, {
     "iri" : "http://www.w3.org/ns/prov#value",
@@ -1078,14 +1078,14 @@
       "IRI-based" : "value"
     },
     "domain" : "39",
-    "subproperty" : [ "57", "58" ],
+    "subproperty" : [ "57" ],
     "attributes" : [ "external", "object" ],
     "id" : "56"
   }, {
-    "range" : "14",
+    "range" : "16",
     "domain" : "13",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "59"
+    "id" : "58"
   }, {
     "iri" : "https://alex-randles.github.io/MQV/#resultMessage",
     "baseIri" : "https://alex-randles.github.io/MQV/",
@@ -1107,27 +1107,27 @@
       "undefined" : "A textual description of the violation."
     },
     "attributes" : [ "datatype" ],
+    "id" : "59"
+  }, {
+    "range" : "15",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "60"
   }, {
-    "range" : "17",
+    "range" : "14",
     "domain" : "13",
     "attributes" : [ "anonymous", "object" ],
     "id" : "61"
   }, {
     "range" : "16",
-    "domain" : "13",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "62"
-  }, {
-    "range" : "14",
     "domain" : "15",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "63"
+    "id" : "62"
   }, {
     "range" : "17",
     "domain" : "15",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "64"
+    "id" : "63"
   }, {
     "iri" : "https://alex-randles.github.io/MQV/#refinedViolation",
     "baseIri" : "https://alex-randles.github.io/MQV/",
@@ -1152,30 +1152,30 @@
     "attributes" : [ "object" ],
     "id" : "41"
   }, {
-    "range" : "16",
+    "range" : "14",
     "domain" : "15",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "65"
+    "id" : "64"
   }, {
     "range" : "16",
     "domain" : "14",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "66"
+    "id" : "65"
   }, {
     "range" : "17",
     "domain" : "14",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "67"
+    "id" : "66"
   }, {
     "range" : "2",
     "domain" : "4",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "68"
+    "id" : "67"
   }, {
-    "range" : "15",
+    "range" : "17",
     "domain" : "13",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "69"
+    "id" : "68"
   }, {
     "iri" : "https://alex-randles.github.io/MQV/#executes",
     "baseIri" : "https://alex-randles.github.io/MQV/",
@@ -1197,7 +1197,7 @@
       "undefined" : "The quality metric being executed by the mapping quality assessment process."
     },
     "attributes" : [ "object" ],
-    "id" : "70"
+    "id" : "69"
   }, {
     "iri" : "https://alex-randles.github.io/MQV/#hasConfidenceScore",
     "baseIri" : "https://alex-randles.github.io/MQV/",
@@ -1219,11 +1219,11 @@
       "undefined" : "The confidence score of a mapping refinement."
     },
     "attributes" : [ "datatype" ],
-    "id" : "71"
+    "id" : "70"
   }, {
     "iri" : "https://alex-randles.github.io/MQV/#inTripleMap",
     "baseIri" : "https://alex-randles.github.io/MQV/",
-    "range" : "73",
+    "range" : "72",
     "annotations" : {
       "example" : [ {
         "identifier" : "example",
@@ -1241,7 +1241,7 @@
       "undefined" : "The triple map which contains the violation."
     },
     "attributes" : [ "object" ],
-    "id" : "72"
+    "id" : "71"
   }, {
     "iri" : "https://alex-randles.github.io/MQV/#assessedMapping",
     "baseIri" : "https://alex-randles.github.io/MQV/",
@@ -1263,7 +1263,7 @@
       "undefined" : "The quality assessment of the mapping document created by the refinement process."
     },
     "attributes" : [ "object" ],
-    "id" : "74"
+    "id" : "73"
   }, {
     "iri" : "https://alex-randles.github.io/MQV/#hasLiteralValue",
     "baseIri" : "https://alex-randles.github.io/MQV/",
@@ -1280,13 +1280,12 @@
       "IRI-based" : "hasLiteralValue",
       "en" : "hasLiteralValue"
     },
-    "superproperty" : [ "56" ],
     "domain" : "17",
     "comment" : {
       "undefined" : "The literal value associated with the violation."
     },
-    "attributes" : [ "object" ],
-    "id" : "57"
+    "attributes" : [ "datatype" ],
+    "id" : "74"
   }, {
     "iri" : "https://alex-randles.github.io/MQV/#hasQualityMeasurement",
     "baseIri" : "https://alex-randles.github.io/MQV/",
@@ -1312,7 +1311,7 @@
   }, {
     "iri" : "https://alex-randles.github.io/MQV/#hasObjectValue",
     "baseIri" : "https://alex-randles.github.io/MQV/",
-    "range" : "73",
+    "range" : "72",
     "annotations" : {
       "example" : [ {
         "identifier" : "example",
@@ -1331,6 +1330,6 @@
       "undefined" : "The object value associated with the violation."
     },
     "attributes" : [ "object" ],
-    "id" : "58"
+    "id" : "57"
   } ]
 }

@@ -207,25 +207,6 @@
     
 
 
-    <!-- https://alex-randles.github.io/MQV/#hasLiteralValue -->
-
-
-    <owl:ObjectProperty rdf:about="https://alex-randles.github.io/MQV/#hasLiteralValue">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#value"/>
-        <rdfs:domain rdf:resource="https://alex-randles.github.io/MQV/#MappingViolation"/>
-        <rdfs:comment>The literal value associated with the violation.</rdfs:comment>
-        <rdfs:label xml:lang="en">hasLiteralValue</rdfs:label>
-        <skos:example>@prefix :     &lt;http://example.com/&gt;.
-@prefix mqv: &lt;https://alex-randles.github.io/MQV/#&gt;.
-
-:mappingViolation
-	a mqv:MappingViolation;
-	mqv:hasValue &quot;en-GB&quot;.
-</skos:example>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://alex-randles.github.io/MQV/#hasMetricType -->
 
 
@@ -657,6 +638,24 @@
 	a mqv:MappingRefinement;
 	mqv:hasConfidenceScore &quot;0.8&quot;^^xsd:double;
 .</skos:example>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://alex-randles.github.io/MQV/#hasLiteralValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://alex-randles.github.io/MQV/#hasLiteralValue">
+        <rdfs:domain rdf:resource="https://alex-randles.github.io/MQV/#MappingViolation"/>
+        <rdfs:comment>The literal value associated with the violation.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasLiteralValue</rdfs:label>
+        <skos:example>@prefix :     &lt;http://example.com/&gt;.
+@prefix mqv: &lt;https://alex-randles.github.io/MQV/#&gt;.
+
+:mappingViolation
+	a mqv:MappingViolation;
+	mqv:hasValue &quot;en-GB&quot;.
+</skos:example>
     </owl:DatatypeProperty>
     
 
