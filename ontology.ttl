@@ -54,6 +54,10 @@
 <http://www.w3.org/ns/prov#generated> rdf:type owl:ObjectProperty .
 
 
+###  http://www.w3.org/ns/prov#used
+<http://www.w3.org/ns/prov#used> rdf:type owl:ObjectProperty .
+
+
 ###  http://www.w3.org/ns/prov#value
 <http://www.w3.org/ns/prov#value> rdf:type owl:ObjectProperty .
 
@@ -374,7 +378,7 @@
 
 ###  https://alex-randles.github.io/MQV/#refinedViolation
 :refinedViolation rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf <http://www.w3.org/ns/prov#generated> ;
+                  rdfs:subPropertyOf <http://www.w3.org/ns/prov#used> ;
                   rdfs:domain :MappingRefinement ;
                   rdfs:range :MappingViolation ;
                   rdfs:comment "The refinement which refined the violation." ;
@@ -490,6 +494,7 @@
 ###  https://alex-randles.github.io/MQV/#hasLiteralValue
 :hasLiteralValue rdf:type owl:DatatypeProperty ;
                  rdfs:domain :MappingViolation ;
+                 rdfs:range xsd:string ;
                  rdfs:comment "The literal value associated with the violation." ;
                  rdfs:label "hasLiteralValue"@en ;
                  <http://www.w3.org/2004/02/skos/core#example> """@prefix :     <http://example.com/>.
@@ -544,6 +549,7 @@
 
 ###  https://alex-randles.github.io/MQV/#mappingPurpose
 :mappingPurpose rdf:type owl:DatatypeProperty ;
+                rdfs:domain :MappingDocument ;
                 rdfs:range xsd:string ;
                 rdfs:comment "The rationale for the mapping document being created." ;
                 rdfs:label "mappingPurpose"@en ;
@@ -572,6 +578,7 @@
 
 ###  https://alex-randles.github.io/MQV/#resultMessage
 :resultMessage rdf:type owl:DatatypeProperty ;
+               rdfs:domain :MappingDocument ;
                rdfs:range xsd:string ;
                rdfs:comment "A textual description of the violation." ;
                rdfs:label "resultMessage"@en ;

@@ -47,6 +47,9 @@
 # http://www.w3.org/ns/prov#generated
 <http://www.w3.org/ns/prov#generated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
+# http://www.w3.org/ns/prov#used
+<http://www.w3.org/ns/prov#used> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
 # http://www.w3.org/ns/prov#value
 <http://www.w3.org/ns/prov#value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
@@ -211,7 +214,7 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # https://alex-randles.github.io/MQV/#refinedViolation
 <https://alex-randles.github.io/MQV/#refinedViolation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://alex-randles.github.io/MQV/#refinedViolation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#generated> .
+<https://alex-randles.github.io/MQV/#refinedViolation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#used> .
 <https://alex-randles.github.io/MQV/#refinedViolation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alex-randles.github.io/MQV/#MappingRefinement> .
 <https://alex-randles.github.io/MQV/#refinedViolation> <http://www.w3.org/2000/01/rdf-schema#range> <https://alex-randles.github.io/MQV/#MappingViolation> .
 <https://alex-randles.github.io/MQV/#refinedViolation> <http://www.w3.org/2000/01/rdf-schema#comment> "The refinement which refined the violation." .
@@ -270,6 +273,7 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # https://alex-randles.github.io/MQV/#hasLiteralValue
 <https://alex-randles.github.io/MQV/#hasLiteralValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://alex-randles.github.io/MQV/#hasLiteralValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alex-randles.github.io/MQV/#MappingViolation> .
+<https://alex-randles.github.io/MQV/#hasLiteralValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://alex-randles.github.io/MQV/#hasLiteralValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The literal value associated with the violation." .
 <https://alex-randles.github.io/MQV/#hasLiteralValue> <http://www.w3.org/2000/01/rdf-schema#label> "hasLiteralValue"@en .
 <https://alex-randles.github.io/MQV/#hasLiteralValue> <http://www.w3.org/2004/02/skos/core#example> "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:mappingViolation\n\ta mqv:MappingViolation;\n\tmqv:hasValue \"en-GB\".\n" .
@@ -292,6 +296,7 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # https://alex-randles.github.io/MQV/#mappingPurpose
 <https://alex-randles.github.io/MQV/#mappingPurpose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://alex-randles.github.io/MQV/#mappingPurpose> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alex-randles.github.io/MQV/#MappingDocument> .
 <https://alex-randles.github.io/MQV/#mappingPurpose> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://alex-randles.github.io/MQV/#mappingPurpose> <http://www.w3.org/2000/01/rdf-schema#comment> "The rationale for the mapping document being created." .
 <https://alex-randles.github.io/MQV/#mappingPurpose> <http://www.w3.org/2000/01/rdf-schema#label> "mappingPurpose"@en .
@@ -307,6 +312,7 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # https://alex-randles.github.io/MQV/#resultMessage
 <https://alex-randles.github.io/MQV/#resultMessage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://alex-randles.github.io/MQV/#resultMessage> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alex-randles.github.io/MQV/#MappingDocument> .
 <https://alex-randles.github.io/MQV/#resultMessage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://alex-randles.github.io/MQV/#resultMessage> <http://www.w3.org/2000/01/rdf-schema#comment> "A textual description of the violation." .
 <https://alex-randles.github.io/MQV/#resultMessage> <http://www.w3.org/2000/01/rdf-schema#label> "resultMessage"@en .

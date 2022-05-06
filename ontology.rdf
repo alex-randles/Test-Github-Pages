@@ -101,6 +101,13 @@
     
 
 
+    <!-- http://www.w3.org/ns/prov#used -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#used"/>
+    
+
+
     <!-- http://www.w3.org/ns/prov#value -->
 
 
@@ -499,7 +506,7 @@
 
 
     <owl:ObjectProperty rdf:about="https://alex-randles.github.io/MQV/#refinedViolation">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#generated"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#used"/>
         <rdfs:domain rdf:resource="https://alex-randles.github.io/MQV/#MappingRefinement"/>
         <rdfs:range rdf:resource="https://alex-randles.github.io/MQV/#MappingViolation"/>
         <rdfs:comment>The refinement which refined the violation.</rdfs:comment>
@@ -647,6 +654,7 @@
 
     <owl:DatatypeProperty rdf:about="https://alex-randles.github.io/MQV/#hasLiteralValue">
         <rdfs:domain rdf:resource="https://alex-randles.github.io/MQV/#MappingViolation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>The literal value associated with the violation.</rdfs:comment>
         <rdfs:label xml:lang="en">hasLiteralValue</rdfs:label>
         <skos:example>@prefix :     &lt;http://example.com/&gt;.
@@ -713,6 +721,7 @@
 
 
     <owl:DatatypeProperty rdf:about="https://alex-randles.github.io/MQV/#mappingPurpose">
+        <rdfs:domain rdf:resource="https://alex-randles.github.io/MQV/#MappingDocument"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>The rationale for the mapping document being created.</rdfs:comment>
         <rdfs:label xml:lang="en">mappingPurpose</rdfs:label>
@@ -749,6 +758,7 @@
 
 
     <owl:DatatypeProperty rdf:about="https://alex-randles.github.io/MQV/#resultMessage">
+        <rdfs:domain rdf:resource="https://alex-randles.github.io/MQV/#MappingDocument"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>A textual description of the violation.</rdfs:comment>
         <rdfs:label xml:lang="en">resultMessage</rdfs:label>

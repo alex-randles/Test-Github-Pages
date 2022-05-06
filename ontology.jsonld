@@ -84,6 +84,9 @@
   "@id" : "http://www.w3.org/ns/prov#generated",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
+  "@id" : "http://www.w3.org/ns/prov#used",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
   "@id" : "http://www.w3.org/ns/prov#value",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
@@ -367,6 +370,9 @@
     "@language" : "en",
     "@value" : "hasLiteralValue"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@value" : "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:mappingViolation\n\ta mqv:MappingViolation;\n\tmqv:hasValue \"en-GB\".\n"
   } ]
@@ -588,6 +594,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The rationale for the mapping document being created."
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://alex-randles.github.io/MQV/#MappingDocument"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "mappingPurpose"
@@ -672,7 +681,7 @@
     "@id" : "https://alex-randles.github.io/MQV/#MappingViolation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/ns/prov#generated"
+    "@id" : "http://www.w3.org/ns/prov#used"
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@value" : "@prefix :     <http://example.com/>.\n@prefix mqv: <https://alex-randles.github.io/MQV/#>.\n\n:refinement-0\n\ta mqv:MappingRefinement;\n\tmqv:refinedViolation :mappingViolation.\n\n:mappingViolation\n    a mqv:MappingViolation .\n\n"
@@ -720,6 +729,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A textual description of the violation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://alex-randles.github.io/MQV/#MappingDocument"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
