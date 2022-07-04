@@ -1,0 +1,564 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "https://prometheus-metric-ontology.ericsson.com/", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "undefined" : "Prometheus Metric Ontology (PMO)"
+    },
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#",
+    "version" : "4 July 2022",
+    "author" : [ "Liam Fallon", "Alex Randles", "John Keeney" ],
+    "description" : {
+      "undefined" : "The Prometheus Metric Ontology (PMO) is used to capture information which relates to metric information within the Prometheus monitoring system."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/publicdomain/zero/1.0/",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Liam Fallon",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Alex Randles",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "John Keeney",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "4 July 2022",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "pmo",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://prometheus-metric-ontology.ericsson.com/#",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "4 July 2022",
+        "type" : "label"
+      } ],
+      "abstract" : [ {
+        "identifier" : "abstract",
+        "language" : "undefined",
+        "value" : "The Prometheus Metric Ontology (PMO) provides a set of classes, properties, and restrictions that can be used to represent and interchange provenance and metadata information relating to Prometheus metric information.",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Prometheus Metric Ontology (PMO)",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:Datatype"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#MetricResult",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MetricResult",
+      "undefined" : "MetricResult"
+    },
+    "comment" : {
+      "undefined" : "A result related to a specific result set."
+    },
+    "id" : "1"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "15",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "16",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "17",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#Metric",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Metric",
+      "undefined" : "Metric"
+    },
+    "comment" : {
+      "undefined" : "The metric information being monitored."
+    },
+    "id" : "6"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#MetricResultSet",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MetricResultSet",
+      "undefined" : "MetricResultSet"
+    },
+    "comment" : {
+      "undefined" : "The values and timestamps related to a metric."
+    },
+    "id" : "2"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#MetricQuery",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MetricQuery",
+      "undefined" : "MetricQuery"
+    },
+    "comment" : {
+      "undefined" : "The information related to the query used to collect the metric information."
+    },
+    "id" : "5"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "34",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "33",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "30",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "26",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "4",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "9",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "10",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "11",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "12",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "22",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "23",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#inMetricSet",
+    "inverse" : "3",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "inMetricSet",
+      "undefined" : "inMetricSet"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "A result within a result set."
+    },
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#usedByMetric",
+    "inverse" : "7",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "usedByMetric",
+      "undefined" : "usedByMetric"
+    },
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "The metric used by the query."
+    },
+    "attributes" : [ "object" ],
+    "id" : "4"
+  }, {
+    "range" : "2",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "8"
+  }, {
+    "range" : "1",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "9"
+  }, {
+    "range" : "2",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "10"
+  }, {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "11"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasValue",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "hasValue",
+      "undefined" : "hasValue"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The value associated with a result."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "12"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasResult",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasResult",
+      "undefined" : "hasResult"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "A result within a result set."
+    },
+    "attributes" : [ "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasInstance",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "hasInstance",
+      "undefined" : "hasInstance"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "The instance related to the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "18"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#generatedByMetric",
+    "inverse" : "20",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "generatedByMetric",
+      "undefined" : "generatedByMetric"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "The result set generated by the metric."
+    },
+    "attributes" : [ "object" ],
+    "id" : "19"
+  }, {
+    "range" : "1",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "21"
+  }, {
+    "range" : "5",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "22"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasJob",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "hasJob",
+      "undefined" : "hasJob"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "The job related to the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasHandler",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "hasHandler",
+      "undefined" : "hasHandler"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "The handler related to the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "24"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasQuery",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "hasQuery",
+      "undefined" : "hasQuery"
+    },
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "The query used to collect the metric information."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "25"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasResultType",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "hasResultType",
+      "undefined" : "hasResultType"
+    },
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "The result type returned by the API."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "27"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasName",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "hasName",
+      "undefined" : "hasName"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "The name of the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "29"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasResultSet",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasResultSet",
+      "undefined" : "hasResultSet"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "The result set associated with the metric."
+    },
+    "attributes" : [ "object" ],
+    "id" : "20"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasCode",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "hasCode",
+      "undefined" : "hasCode"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "The code related to the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "31"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasStatus",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "hasStatus",
+      "undefined" : "hasStatus"
+    },
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "The status of the API response."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "32"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasTimestamp",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "hasTimestamp",
+      "undefined" : "hasTimestamp"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The timestamp related to a result."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "35"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasMetricQuery",
+      "undefined" : "hasMetricQuery"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "The query which retrieved the metric information."
+    },
+    "attributes" : [ "object" ],
+    "id" : "7"
+  } ]
+}

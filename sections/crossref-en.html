@@ -1,0 +1,738 @@
+<h2 id="crossreference" class="list">Cross-reference for Prometheus Metric Ontology (PMO) classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Prometheus Metric Ontology (PMO).
+<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#Metric"
+            title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
+      </li>
+      <li>
+         <a href="#MetricQuery"
+            title="https://prometheus-metric-ontology.ericsson.com/#MetricQuery">MetricQuery</a>
+      </li>
+      <li>
+         <a href="#MetricResult"
+            title="https://prometheus-metric-ontology.ericsson.com/#MetricResult">MetricResult</a>
+      </li>
+      <li>
+         <a href="#MetricResultSet"
+            title="https://prometheus-metric-ontology.ericsson.com/#MetricResultSet">MetricResultSet</a>
+      </li>
+   </ul>
+   <div class="entity" id="Metric">
+      <h3>Metric<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#Metric</p>
+      <div class="comment">
+         <span class="markdown">The metric information being monitored.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasCode"
+               title="https://prometheus-metric-ontology.ericsson.com/#hasCode">hasCode</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasHandler"
+               title="https://prometheus-metric-ontology.ericsson.com/#hasHandler">hasHandler</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasInstance"
+               title="https://prometheus-metric-ontology.ericsson.com/#hasInstance">hasInstance</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasJob"
+               title="https://prometheus-metric-ontology.ericsson.com/#hasJob">hasJob</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasMetricQuery"
+               title="https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery">hasMetricQuery</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasName"
+               title="https://prometheus-metric-ontology.ericsson.com/#hasName">hasName</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasResultSet"
+               title="https://prometheus-metric-ontology.ericsson.com/#hasResultSet">hasResultSet</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#generatedByMetric"
+               title="https://prometheus-metric-ontology.ericsson.com/#generatedByMetric">generatedByMetric</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#usedByMetric"
+               title="https://prometheus-metric-ontology.ericsson.com/#usedByMetric">usedByMetric</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#MetricQuery"
+               title="https://prometheus-metric-ontology.ericsson.com/#MetricQuery">MetricQuery</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#MetricResult"
+               title="https://prometheus-metric-ontology.ericsson.com/#MetricResult">MetricResult</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#MetricResultSet"
+               title="https://prometheus-metric-ontology.ericsson.com/#MetricResultSet">MetricResultSet</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="MetricQuery">
+      <h3>MetricQuery<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#MetricQuery</p>
+      <div class="comment">
+         <span class="markdown">The information related to the query used to collect the metric information.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasQuery"
+               title="https://prometheus-metric-ontology.ericsson.com/#hasQuery">hasQuery</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasResultType"
+               title="https://prometheus-metric-ontology.ericsson.com/#hasResultType">hasResultType</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasStatus"
+               title="https://prometheus-metric-ontology.ericsson.com/#hasStatus">hasStatus</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#usedByMetric"
+               title="https://prometheus-metric-ontology.ericsson.com/#usedByMetric">usedByMetric</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasMetricQuery"
+               title="https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery">hasMetricQuery</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Metric"
+               title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#MetricResult"
+               title="https://prometheus-metric-ontology.ericsson.com/#MetricResult">MetricResult</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#MetricResultSet"
+               title="https://prometheus-metric-ontology.ericsson.com/#MetricResultSet">MetricResultSet</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="MetricResult">
+      <h3>MetricResult<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#MetricResult</p>
+      <div class="comment">
+         <span class="markdown">A result related to a specific result set.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasTimestamp"
+               title="https://prometheus-metric-ontology.ericsson.com/#hasTimestamp">hasTimestamp</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasValue"
+               title="https://prometheus-metric-ontology.ericsson.com/#hasValue">hasValue</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#inMetricSet"
+               title="https://prometheus-metric-ontology.ericsson.com/#inMetricSet">inMetricSet</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasResult"
+               title="https://prometheus-metric-ontology.ericsson.com/#hasResult">hasResult</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Metric"
+               title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#MetricQuery"
+               title="https://prometheus-metric-ontology.ericsson.com/#MetricQuery">MetricQuery</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#MetricResultSet"
+               title="https://prometheus-metric-ontology.ericsson.com/#MetricResultSet">MetricResultSet</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="MetricResultSet">
+      <h3>MetricResultSet<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#MetricResultSet</p>
+      <div class="comment">
+         <span class="markdown">The values and timestamps related to a metric.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#generatedByMetric"
+               title="https://prometheus-metric-ontology.ericsson.com/#generatedByMetric">generatedByMetric</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasResult"
+               title="https://prometheus-metric-ontology.ericsson.com/#hasResult">hasResult</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasResultSet"
+               title="https://prometheus-metric-ontology.ericsson.com/#hasResultSet">hasResultSet</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#inMetricSet"
+               title="https://prometheus-metric-ontology.ericsson.com/#inMetricSet">inMetricSet</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Metric"
+               title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#MetricQuery"
+               title="https://prometheus-metric-ontology.ericsson.com/#MetricQuery">MetricQuery</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#MetricResult"
+               title="https://prometheus-metric-ontology.ericsson.com/#MetricResult">MetricResult</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#generatedByMetric"
+            title="https://prometheus-metric-ontology.ericsson.com/#generatedByMetric">generatedByMetric</a>
+      </li>
+      <li>
+         <a href="#hasMetricQuery"
+            title="https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery">hasMetricQuery</a>
+      </li>
+      <li>
+         <a href="#hasResult"
+            title="https://prometheus-metric-ontology.ericsson.com/#hasResult">hasResult</a>
+      </li>
+      <li>
+         <a href="#hasResultSet"
+            title="https://prometheus-metric-ontology.ericsson.com/#hasResultSet">hasResultSet</a>
+      </li>
+      <li>
+         <a href="#inMetricSet"
+            title="https://prometheus-metric-ontology.ericsson.com/#inMetricSet">inMetricSet</a>
+      </li>
+      <li>
+         <a href="#usedByMetric"
+            title="https://prometheus-metric-ontology.ericsson.com/#usedByMetric">usedByMetric</a>
+      </li>
+   </ul>
+   <div class="entity" id="generatedByMetric">
+      <h3>generatedByMetric<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#generatedByMetric</p>
+      <div class="comment">
+         <span class="markdown">The result set generated by the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#MetricResultSet"
+                  title="https://prometheus-metric-ontology.ericsson.com/#MetricResultSet">MetricResultSet</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Metric"
+                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasResultSet"
+                  title="https://prometheus-metric-ontology.ericsson.com/#hasResultSet">hasResultSet</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasMetricQuery">
+      <h3>hasMetricQuery<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery</p>
+      <div class="comment">
+         <span class="markdown">The query which retrieved the metric information.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric"
+                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#MetricQuery"
+                  title="https://prometheus-metric-ontology.ericsson.com/#MetricQuery">MetricQuery</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#usedByMetric"
+                  title="https://prometheus-metric-ontology.ericsson.com/#usedByMetric">usedByMetric</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasResult">
+      <h3>hasResult<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasResult</p>
+      <div class="comment">
+         <span class="markdown">A result within a result set.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#MetricResultSet"
+                  title="https://prometheus-metric-ontology.ericsson.com/#MetricResultSet">MetricResultSet</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#MetricResult"
+                  title="https://prometheus-metric-ontology.ericsson.com/#MetricResult">MetricResult</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#inMetricSet"
+                  title="https://prometheus-metric-ontology.ericsson.com/#inMetricSet">inMetricSet</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasResultSet">
+      <h3>hasResultSet<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasResultSet</p>
+      <div class="comment">
+         <span class="markdown">The result set associated with the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric"
+                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#MetricResultSet"
+                  title="https://prometheus-metric-ontology.ericsson.com/#MetricResultSet">MetricResultSet</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#generatedByMetric"
+                  title="https://prometheus-metric-ontology.ericsson.com/#generatedByMetric">generatedByMetric</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="inMetricSet">
+      <h3>inMetricSet<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#inMetricSet</p>
+      <div class="comment">
+         <span class="markdown">A result within a result set.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#MetricResult"
+                  title="https://prometheus-metric-ontology.ericsson.com/#MetricResult">MetricResult</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#MetricResultSet"
+                  title="https://prometheus-metric-ontology.ericsson.com/#MetricResultSet">MetricResultSet</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasResult"
+                  title="https://prometheus-metric-ontology.ericsson.com/#hasResult">hasResult</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="usedByMetric">
+      <h3>usedByMetric<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#usedByMetric</p>
+      <div class="comment">
+         <span class="markdown">The metric used by the query.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#MetricQuery"
+                  title="https://prometheus-metric-ontology.ericsson.com/#MetricQuery">MetricQuery</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Metric"
+                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasMetricQuery"
+                  title="https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery">hasMetricQuery</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#hasCode"
+            title="https://prometheus-metric-ontology.ericsson.com/#hasCode">hasCode</a>
+      </li>
+      <li>
+         <a href="#hasHandler"
+            title="https://prometheus-metric-ontology.ericsson.com/#hasHandler">hasHandler</a>
+      </li>
+      <li>
+         <a href="#hasInstance"
+            title="https://prometheus-metric-ontology.ericsson.com/#hasInstance">hasInstance</a>
+      </li>
+      <li>
+         <a href="#hasJob"
+            title="https://prometheus-metric-ontology.ericsson.com/#hasJob">hasJob</a>
+      </li>
+      <li>
+         <a href="#hasName"
+            title="https://prometheus-metric-ontology.ericsson.com/#hasName">hasName</a>
+      </li>
+      <li>
+         <a href="#hasQuery"
+            title="https://prometheus-metric-ontology.ericsson.com/#hasQuery">hasQuery</a>
+      </li>
+      <li>
+         <a href="#hasResultType"
+            title="https://prometheus-metric-ontology.ericsson.com/#hasResultType">hasResultType</a>
+      </li>
+      <li>
+         <a href="#hasStatus"
+            title="https://prometheus-metric-ontology.ericsson.com/#hasStatus">hasStatus</a>
+      </li>
+      <li>
+         <a href="#hasTimestamp"
+            title="https://prometheus-metric-ontology.ericsson.com/#hasTimestamp">hasTimestamp</a>
+      </li>
+      <li>
+         <a href="#hasValue"
+            title="https://prometheus-metric-ontology.ericsson.com/#hasValue">hasValue</a>
+      </li>
+   </ul>
+   <div class="entity" id="hasCode">
+      <h3>hasCode<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasCode</p>
+      <div class="comment">
+         <span class="markdown">The code related to the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric"
+                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasHandler">
+      <h3>hasHandler<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasHandler</p>
+      <div class="comment">
+         <span class="markdown">The handler related to the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric"
+                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasInstance">
+      <h3>hasInstance<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasInstance</p>
+      <div class="comment">
+         <span class="markdown">The instance related to the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric"
+                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasJob">
+      <h3>hasJob<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasJob</p>
+      <div class="comment">
+         <span class="markdown">The job related to the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric"
+                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasName">
+      <h3>hasName<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasName</p>
+      <div class="comment">
+         <span class="markdown">The name of the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric"
+                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasQuery">
+      <h3>hasQuery<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasQuery</p>
+      <div class="comment">
+         <span class="markdown">The query used to collect the metric information.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#MetricQuery"
+                  title="https://prometheus-metric-ontology.ericsson.com/#MetricQuery">MetricQuery</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasResultType">
+      <h3>hasResultType<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasResultType</p>
+      <div class="comment">
+         <span class="markdown">The result type returned by the API.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#MetricQuery"
+                  title="https://prometheus-metric-ontology.ericsson.com/#MetricQuery">MetricQuery</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasStatus">
+      <h3>hasStatus<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasStatus</p>
+      <div class="comment">
+         <span class="markdown">The status of the API response.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#MetricQuery"
+                  title="https://prometheus-metric-ontology.ericsson.com/#MetricQuery">MetricQuery</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasTimestamp">
+      <h3>hasTimestamp<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasTimestamp</p>
+      <div class="comment">
+         <span class="markdown">The timestamp related to a result.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#MetricResult"
+                  title="https://prometheus-metric-ontology.ericsson.com/#MetricResult">MetricResult</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#dateTime"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#dateTime">date time</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasValue">
+      <h3>hasValue<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasValue</p>
+      <div class="comment">
+         <span class="markdown">The value associated with a result.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#MetricResult"
+                  title="https://prometheus-metric-ontology.ericsson.com/#MetricResult">MetricResult</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+</div>
+</div>
