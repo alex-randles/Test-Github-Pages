@@ -2,15 +2,15 @@
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "undefined" ],
-    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "https://prometheus-metric-ontology.ericsson.com/", "http://www.w3.org/2001/XMLSchema" ],
+    "baseIris" : [ "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl", "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiMetaPolicy.owl", "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl", "http://linkedevents.org/ontology", "http://www.w3.org/2001/XMLSchema", "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl", "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiEntity.owl", "https://change-detection-ontology.adaptcentre.ie/", "http://www.w3.org/2000/01/rdf-schema", "http://xmlns.com/foaf/0.1", "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiAction.owl", "http://www.w3.org/2006/time", "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl" ],
     "title" : {
-      "undefined" : "Prometheus Metric Ontology (PMO)"
+      "undefined" : "Change Detection Ontology (CDO)"
     },
-    "iri" : "https://prometheus-metric-ontology.ericsson.com/#",
-    "version" : "4 July 2022",
-    "author" : [ "Liam Fallon", "Alex Randles", "John Keeney" ],
+    "iri" : "https://change-detection-ontology.adaptcentre.ie/#",
+    "version" : "20 April 2022",
+    "author" : [ "Alex Randles", "Declan O'Sullivan" ],
     "description" : {
-      "undefined" : "The Prometheus Metric Ontology (PMO) is used to capture information which relates to metric information within the Prometheus monitoring system."
+      "undefined" : "The Change Detection Ontology (CDO) is used to capture information which relates the changes that have occured within the source data of an RDF dataset. \n\nThe ontology allows a notification policy to be defined to notify users when a threshold of changes have occured. Once notified the mapping and source data should be re-examined to ensure no further action is required."
     },
     "other" : {
       "license" : [ {
@@ -22,543 +22,1835 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Liam Fallon",
-        "type" : "label"
-      }, {
-        "identifier" : "creator",
-        "language" : "undefined",
         "value" : "Alex Randles",
         "type" : "label"
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "John Keeney",
+        "value" : "Declan O'Sullivan",
         "type" : "label"
       } ],
       "created" : [ {
         "identifier" : "created",
         "language" : "undefined",
-        "value" : "4 July 2022",
+        "value" : "20 April 2022",
         "type" : "label"
       } ],
       "preferredNamespacePrefix" : [ {
         "identifier" : "preferredNamespacePrefix",
         "language" : "undefined",
-        "value" : "pmo",
+        "value" : "cdo",
         "type" : "label"
       } ],
       "preferredNamespaceUri" : [ {
         "identifier" : "preferredNamespaceUri",
         "language" : "undefined",
-        "value" : "https://prometheus-metric-ontology.ericsson.com/#",
-        "type" : "label"
-      } ],
-      "versionInfo" : [ {
-        "identifier" : "versionInfo",
-        "language" : "undefined",
-        "value" : "4 July 2022",
+        "value" : "https://change-detection-ontology.adaptcentre.ie/#",
         "type" : "label"
       } ],
       "abstract" : [ {
         "identifier" : "abstract",
         "language" : "undefined",
-        "value" : "The Prometheus Metric Ontology (PMO) provides a set of classes, properties, and restrictions that can be used to represent and interchange provenance and metadata information relating to Prometheus metric information.",
+        "value" : "The Change Detection Ontology (CDO) provides a set of classes, properties, and restrictions that can be used to represent and interchange provenance and metadata information relating to changes that occur within source data that has created an RDF dataset. It can also be specialized to create new classes and properties to model provenance and metadata information for domain specific changes.",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "20 April 2022",
         "type" : "label"
       } ],
       "title" : [ {
         "identifier" : "title",
         "language" : "undefined",
-        "value" : "Prometheus Metric Ontology (PMO)",
+        "value" : "Change Detection Ontology (CDO)",
         "type" : "label"
       } ]
     }
   },
   "namespace" : [ ],
   "class" : [ {
-    "id" : "1",
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
     "type" : "owl:Class"
   }, {
     "id" : "14",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "15",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "16",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "17",
-    "type" : "rdfs:Datatype"
+    "type" : "owl:Class"
   }, {
     "id" : "6",
     "type" : "owl:Class"
   }, {
-    "id" : "2",
+    "id" : "16",
     "type" : "owl:Class"
   }, {
-    "id" : "5",
+    "id" : "25",
     "type" : "owl:Class"
   }, {
-    "id" : "34",
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "65",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "97",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "12",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "78",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "75",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "94",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "101",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "7",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "33",
-    "type" : "rdfs:Datatype"
+    "type" : "owl:Class"
   }, {
-    "id" : "13",
-    "type" : "rdfs:Datatype"
+    "id" : "23",
+    "type" : "owl:Class"
   }, {
-    "id" : "30",
-    "type" : "rdfs:Datatype"
+    "id" : "71",
+    "type" : "owl:Class"
   }, {
-    "id" : "28",
-    "type" : "rdfs:Datatype"
+    "id" : "109",
+    "type" : "owl:Class"
   }, {
-    "id" : "26",
-    "type" : "rdfs:Datatype"
+    "id" : "111",
+    "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
-    "iri" : "https://prometheus-metric-ontology.ericsson.com/#MetricResult",
-    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "iri" : "https://change-detection-ontology.adaptcentre.ie/#DeleteSourceData",
+    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
     "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://change-detection-ontology.adaptcentre.ie/#",
+        "type" : "iri"
+      } ]
+    },
     "label" : {
-      "IRI-based" : "MetricResult",
-      "undefined" : "MetricResult"
+      "IRI-based" : "DeleteSourceData",
+      "undefined" : "DeleteSourceData"
     },
     "comment" : {
-      "undefined" : "A result related to a specific result set."
+      "undefined" : "Data has been removed within the source data."
     },
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#And",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "And",
+      "undefined" : "And Boolean Constraint"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.com/notificationConstraint",
+      "baseIri" : "http://www.example.com",
+      "annotations" : {
+        "sixth" : [ {
+          "identifier" : "sixth",
+          "language" : "undefined",
+          "value" : "http://www.example.com/datatypeChangeConstraint",
+          "type" : "iri"
+        } ],
+        "third" : [ {
+          "identifier" : "third",
+          "language" : "undefined",
+          "value" : "http://www.example.com/moveChangeConstraint",
+          "type" : "iri"
+        } ],
+        "fifth" : [ {
+          "identifier" : "fifth",
+          "language" : "undefined",
+          "value" : "http://www.example.com/mergeChangeConstraint",
+          "type" : "iri"
+        } ],
+        "fourth" : [ {
+          "identifier" : "fourth",
+          "language" : "undefined",
+          "value" : "http://www.example.com/updateChangeConstraint",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "notificationConstraint"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "15",
+    "superClasses" : [ "16", "17" ]
+  }, {
+    "iri" : "https://change-detection-ontology.adaptcentre.ie/#InsertSourceData",
+    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://change-detection-ontology.adaptcentre.ie/#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "InsertSourceData",
+      "undefined" : "InsertSourceData"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.com/insertChange",
+      "baseIri" : "http://www.example.com",
+      "annotations" : {
+        "atTime" : [ {
+          "identifier" : "atTime",
+          "language" : "undefined",
+          "value" : "http://www.example.com/detectionTime",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "insertChange"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Data has been inserted within the source data."
+    },
+    "id" : "18",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#Not",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Not",
+      "undefined" : "Not Boolean Constraint"
+    },
+    "comment" : {
+      "undefined" : "A constraint that cannot be proved"
+    },
+    "attributes" : [ "external" ],
+    "id" : "21",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#Permission",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Permission"
+    },
+    "attributes" : [ "external" ],
+    "id" : "20",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#ObligationOrProhibition",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ObligationOrProhibition"
+    },
+    "subClasses" : [ "29", "23" ],
+    "attributes" : [ "external" ],
+    "id" : "46"
+  }, {
+    "iri" : "https://change-detection-ontology.adaptcentre.ie/#MergeSourceData",
+    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://change-detection-ontology.adaptcentre.ie/#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MergeSourceData",
+      "undefined" : "MergeSourceData"
+    },
+    "comment" : {
+      "undefined" : "Data has been merged within the source data."
+    },
+    "id" : "49",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Person",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.com/userActor",
+      "baseIri" : "http://www.example.com",
+      "annotations" : {
+        "mbox" : [ {
+          "identifier" : "mbox",
+          "language" : "undefined",
+          "value" : "alexrandles0@gmail.com",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "userActor"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#Constraint",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Constraint",
+      "undefined" : "constraint"
+    },
+    "subClasses" : [ "16", "33" ],
+    "comment" : {
+      "undefined" : "Root of Rei Constraint Ontology"
+    },
+    "attributes" : [ "external" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiMetaPolicy.owl#ModalityPrecedence",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiMetaPolicy.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ModalityPrecedence"
+    },
+    "attributes" : [ "external" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Policy",
+      "undefined" : "Policy"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.com/notificationPolicy",
+      "baseIri" : "http://www.example.com",
+      "annotations" : {
+        "desc" : [ {
+          "identifier" : "desc",
+          "language" : "undefined",
+          "value" : "Notification policy for user 1",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "notificationPolicy"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Policy class. Contains a list of defaults and policy rules. "
+    },
+    "attributes" : [ "external" ],
+    "id" : "6",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#BooleanConstraint",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BooleanConstraint",
+      "undefined" : "BooleanConstraint"
+    },
+    "subClasses" : [ "15", "21", "27" ],
+    "comment" : {
+      "undefined" : "Models boolean constraints of AND, OR and NOT"
+    },
+    "attributes" : [ "external" ],
+    "id" : "16",
+    "superClasses" : [ "34" ]
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#ReiRoot",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ReiRoot",
+      "undefined" : "ReiRoot"
+    },
+    "subClasses" : [ "6", "31" ],
+    "comment" : {
+      "undefined" : "Root of the Rei Ontology"
+    },
+    "attributes" : [ "external" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#Dispensation",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Dispensation",
+      "undefined" : "Dispensation"
+    },
+    "comment" : {
+      "undefined" : "A waiver for an obligation. Entity is no longer obliged. Different from not obliged to"
+    },
+    "attributes" : [ "external" ],
+    "id" : "3",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiMetaPolicy.owl#RulePriority",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiMetaPolicy.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RulePriority"
+    },
+    "attributes" : [ "external" ],
+    "id" : "70"
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiEntity.owl#Entity",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiEntity.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Entity"
+    },
+    "attributes" : [ "external" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#DeonticObject",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DeonticObject",
+      "undefined" : "DeonticObject"
+    },
+    "subClasses" : [ "29", "23", "20", "3" ],
+    "comment" : {
+      "undefined" : "The class of deontic objects"
+    },
+    "attributes" : [ "external" ],
+    "id" : "4",
+    "superClasses" : [ "71", "44" ]
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#AndOrOr",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AndOrOr"
+    },
+    "subClasses" : [ "15", "27" ],
+    "attributes" : [ "external" ],
+    "id" : "17"
+  }, {
+    "iri" : "https://change-detection-ontology.adaptcentre.ie/#ChangeLog",
+    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://change-detection-ontology.adaptcentre.ie/#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ChangeLog",
+      "undefined" : "ChangeLog"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.com/changeLog",
+      "baseIri" : "http://www.example.com",
+      "annotations" : {
+        "hasPreviousVersion" : [ {
+          "identifier" : "hasPreviousVersion",
+          "language" : "undefined",
+          "value" : "https://raw.githubusercontent.com/alex-randles/Change-Detection-System-Examples/main/version_1_files/student.csv",
+          "type" : "iri"
+        } ],
+        "hasCurrentVersion" : [ {
+          "identifier" : "hasCurrentVersion",
+          "language" : "undefined",
+          "value" : "https://raw.githubusercontent.com/alex-randles/Change-Detection-System-Examples/main/version_2_files/student.csv",
+          "type" : "iri"
+        } ],
+        "hasChange" : [ {
+          "identifier" : "hasChange",
+          "language" : "undefined",
+          "value" : "http://www.example.com/insertChange",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "changeLog"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A grouping of changes that have occured relating to a specific source data."
+    },
+    "id" : "9"
+  }, {
+    "iri" : "https://change-detection-ontology.adaptcentre.ie/#MoveSourceData",
+    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://change-detection-ontology.adaptcentre.ie/#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MoveSourceData",
+      "undefined" : "MoveSourceData"
+    },
+    "comment" : {
+      "undefined" : "Data has been moved within the source data."
+    },
+    "id" : "56",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#Prohibition",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Prohibition",
+      "undefined" : "Prohibition"
+    },
+    "attributes" : [ "external" ],
+    "id" : "29",
+    "superClasses" : [ "4", "46" ]
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place",
+    "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Place"
+    },
+    "attributes" : [ "external" ],
+    "id" : "82"
+  }, {
+    "iri" : "https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData",
+    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://change-detection-ontology.adaptcentre.ie/#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "UpdateSourceData",
+      "undefined" : "UpdateSourceData"
+    },
+    "comment" : {
+      "undefined" : "Data has been updated within the source data."
+    },
+    "id" : "61",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiEntity.owl#Agent",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiEntity.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.com/userActor",
+      "baseIri" : "http://www.example.com",
+      "annotations" : {
+        "mbox" : [ {
+          "identifier" : "mbox",
+          "language" : "undefined",
+          "value" : "alexrandles0@gmail.com",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "userActor"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "51"
+  }, {
+    "iri" : "https://change-detection-ontology.adaptcentre.ie/#DatatypeSourceData",
+    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://change-detection-ontology.adaptcentre.ie/#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DatatypeSourceData",
+      "undefined" : "DatatypeSourceData"
+    },
+    "comment" : {
+      "undefined" : "Datatype has been changed in the source data."
+    },
+    "id" : "53",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Granting",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Granting",
+      "undefined" : "Granting"
+    },
+    "comment" : {
+      "undefined" : "The class that connects deontic objects to policies"
+    },
+    "attributes" : [ "external" ],
+    "id" : "31",
+    "superClasses" : [ "44", "25" ]
+  }, {
+    "iri" : "http://linkedevents.org/ontology/Event",
+    "baseIri" : "http://linkedevents.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event"
+    },
+    "subClasses" : [ "0", "61", "18", "53", "49", "56" ],
+    "attributes" : [ "external" ],
     "id" : "1"
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "14",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "15",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "16",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "17",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "https://prometheus-metric-ontology.ericsson.com/#Metric",
-    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiMetaPolicy.owl#MetaPolicyDefault",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiMetaPolicy.owl",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Metric",
-      "undefined" : "Metric"
+      "IRI-based" : "MetaPolicyDefault"
     },
-    "comment" : {
-      "undefined" : "The metric information being monitored."
-    },
-    "id" : "6"
+    "attributes" : [ "external" ],
+    "id" : "65"
   }, {
-    "iri" : "https://prometheus-metric-ontology.ericsson.com/#MetricResultSet",
-    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
+    "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "MetricResultSet",
-      "undefined" : "MetricResultSet"
+      "IRI-based" : "Agent"
     },
-    "comment" : {
-      "undefined" : "The values and timestamps related to a metric."
-    },
-    "id" : "2"
+    "attributes" : [ "external" ],
+    "id" : "10"
   }, {
-    "iri" : "https://prometheus-metric-ontology.ericsson.com/#MetricQuery",
-    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#GrantingOrDeontic",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "MetricQuery",
-      "undefined" : "MetricQuery"
+      "IRI-based" : "GrantingOrDeontic"
     },
-    "comment" : {
-      "undefined" : "The information related to the query used to collect the metric information."
+    "subClasses" : [ "4", "31" ],
+    "attributes" : [ "external" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiMetaPolicy.owl#Behavior",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiMetaPolicy.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Behavior"
     },
-    "id" : "5"
+    "attributes" : [ "external" ],
+    "id" : "97"
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#Or",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Or",
+      "undefined" : "Or Boolean Constraint"
+    },
+    "attributes" : [ "external" ],
+    "id" : "27",
+    "superClasses" : [ "16", "17" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "92",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "36",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "12",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "78",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "75",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiMetaPolicy.owl#PolicyPriority",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiMetaPolicy.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PolicyPriority"
+    },
+    "attributes" : [ "external" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "99",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "100",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "94",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiAction.owl#Action",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiAction.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Action"
+    },
+    "attributes" : [ "external" ],
+    "id" : "42"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "34",
+    "id" : "101",
     "label" : {
       "IRI-based" : "dateTime"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "7",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SimpleConstraint",
+      "undefined" : "SimpleConstraint"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.com/updateChangeConstraint",
+      "baseIri" : "http://www.example.com",
+      "annotations" : {
+        "object" : [ {
+          "identifier" : "object",
+          "language" : "undefined",
+          "value" : "0",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "updateChangeConstraint"
+      }
+    }, {
+      "iri" : "http://www.example.com/insertChangeConstraint",
+      "baseIri" : "http://www.example.com",
+      "annotations" : {
+        "object" : [ {
+          "identifier" : "object",
+          "language" : "undefined",
+          "value" : "0",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "insertChangeConstraint"
+      }
+    }, {
+      "iri" : "http://www.example.com/mergeChangeConstraint",
+      "baseIri" : "http://www.example.com",
+      "annotations" : {
+        "object" : [ {
+          "identifier" : "object",
+          "language" : "undefined",
+          "value" : "0",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "mergeChangeConstraint"
+      }
+    }, {
+      "iri" : "http://www.example.com/moveChangeConstraint",
+      "baseIri" : "http://www.example.com",
+      "annotations" : {
+        "object" : [ {
+          "identifier" : "object",
+          "language" : "undefined",
+          "value" : "0",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "moveChangeConstraint"
+      }
+    }, {
+      "iri" : "http://www.example.com/datatypeChangeConstraint",
+      "baseIri" : "http://www.example.com",
+      "annotations" : {
+        "object" : [ {
+          "identifier" : "object",
+          "language" : "undefined",
+          "value" : "0",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "datatypeChangeConstraint"
+      }
+    }, {
+      "iri" : "http://www.example.com/deleteChangeConstraint",
+      "baseIri" : "http://www.example.com",
+      "annotations" : {
+        "object" : [ {
+          "identifier" : "object",
+          "language" : "undefined",
+          "value" : "0",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "deleteChangeConstraint"
+      }
+    } ],
+    "attributes" : [ "external" ],
     "id" : "33",
-    "label" : {
-      "IRI-based" : "string"
-    }
+    "superClasses" : [ "34" ]
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "13",
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#Obligation",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
+    "instances" : 0,
     "label" : {
-      "IRI-based" : "string"
-    }
+      "IRI-based" : "Obligation",
+      "undefined" : "Dispensation"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.com/policyObligation",
+      "baseIri" : "http://www.example.com",
+      "annotations" : {
+        "actor" : [ {
+          "identifier" : "actor",
+          "language" : "undefined",
+          "value" : "http://www.example.com/userActor",
+          "type" : "iri"
+        }, {
+          "identifier" : "actor",
+          "language" : "undefined",
+          "value" : "https://change-detection-ontology.adaptcentre.ie/#softwareAgent",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "policyObligation"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "23",
+    "superClasses" : [ "4", "46" ]
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "30",
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiAction.owl#ActionOrDeontic",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiAction.owl",
+    "instances" : 0,
     "label" : {
-      "IRI-based" : "string"
-    }
+      "IRI-based" : "ActionOrDeontic"
+    },
+    "subClasses" : [ "4" ],
+    "attributes" : [ "external" ],
+    "id" : "71"
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "28",
+    "iri" : "http://www.w3.org/2006/time#Instant",
+    "baseIri" : "http://www.w3.org/2006/time",
+    "instances" : 0,
     "label" : {
-      "IRI-based" : "string"
-    }
+      "IRI-based" : "Instant"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.com/detectionTime",
+      "baseIri" : "http://www.example.com",
+      "labels" : {
+        "IRI-based" : "detectionTime"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "109"
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "26",
+    "iri" : "http://www.w3.org/2006/time#TemporalEntity",
+    "baseIri" : "http://www.w3.org/2006/time",
+    "instances" : 0,
     "label" : {
-      "IRI-based" : "string"
-    }
+      "IRI-based" : "TemporalEntity"
+    },
+    "attributes" : [ "external" ],
+    "id" : "111"
   } ],
   "property" : [ {
-    "id" : "0",
-    "type" : "owl:objectProperty"
+    "id" : "2",
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "4",
-    "type" : "owl:objectProperty"
+    "id" : "5",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "8",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "9",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "10",
-    "type" : "owl:disjointWith"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "11",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "12",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "3",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "18",
-    "type" : "owl:datatypeProperty"
+    "id" : "13",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "19",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "21",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "22",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "23",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "24",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "25",
-    "type" : "owl:datatypeProperty"
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "27",
-    "type" : "owl:datatypeProperty"
+    "id" : "28",
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "29",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "20",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "31",
-    "type" : "owl:datatypeProperty"
+    "id" : "30",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "32",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "35",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "7",
+    "id" : "37",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "62",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "68",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "83",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "84",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "85",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "86",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "87",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "88",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "89",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "90",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "91",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "96",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "98",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "102",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "103",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "104",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "105",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "106",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "107",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "108",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "110",
     "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
-    "iri" : "https://prometheus-metric-ontology.ericsson.com/#inMetricSet",
-    "inverse" : "3",
-    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "2",
-    "label" : {
-      "IRI-based" : "inMetricSet",
-      "undefined" : "inMetricSet"
-    },
-    "domain" : "1",
-    "comment" : {
-      "undefined" : "A result within a result set."
-    },
-    "attributes" : [ "object" ],
-    "id" : "0"
+    "range" : "4",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "2"
   }, {
-    "iri" : "https://prometheus-metric-ontology.ericsson.com/#usedByMetric",
-    "inverse" : "7",
-    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "6",
+    "iri" : "https://change-detection-ontology.adaptcentre.ie/#detectionStart",
+    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
+    "range" : "7",
     "label" : {
-      "IRI-based" : "usedByMetric",
-      "undefined" : "usedByMetric"
+      "IRI-based" : "detectionStart",
+      "undefined" : "detectionStart"
     },
-    "domain" : "5",
-    "comment" : {
-      "undefined" : "The metric used by the query."
-    },
-    "attributes" : [ "object" ],
-    "id" : "4"
-  }, {
-    "range" : "2",
     "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
+    "comment" : {
+      "undefined" : "The time when the notification policy was created."
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "5"
+  }, {
+    "iri" : "https://change-detection-ontology.adaptcentre.ie/#hasOwner",
+    "inverse" : "11",
+    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
+    "range" : "10",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://change-detection-ontology.adaptcentre.ie/#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasOwner",
+      "undefined" : "hasOwner"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "The owner of the event log."
+    },
+    "attributes" : [ "object" ],
     "id" : "8"
   }, {
-    "range" : "1",
-    "domain" : "5",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "9"
-  }, {
-    "range" : "2",
-    "domain" : "5",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "10"
-  }, {
-    "range" : "2",
-    "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "iri" : "https://change-detection-ontology.adaptcentre.ie/#ownedBy",
+    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
+    "range" : "12",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://change-detection-ontology.adaptcentre.ie/#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ownedBy",
+      "undefined" : "ownedBy"
+    },
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "The agent who owns the change log."
+    },
+    "attributes" : [ "object" ],
     "id" : "11"
   }, {
-    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasValue",
-    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "13",
-    "label" : {
-      "IRI-based" : "hasValue",
-      "undefined" : "hasValue"
-    },
-    "domain" : "1",
-    "comment" : {
-      "undefined" : "The value associated with a result."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "12"
-  }, {
-    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasResult",
-    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "1",
-    "label" : {
-      "IRI-based" : "hasResult",
-      "undefined" : "hasResult"
-    },
-    "domain" : "2",
-    "comment" : {
-      "undefined" : "A result within a result set."
-    },
-    "attributes" : [ "object" ],
-    "id" : "3"
-  }, {
-    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasInstance",
-    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "16",
-    "label" : {
-      "IRI-based" : "hasInstance",
-      "undefined" : "hasInstance"
-    },
-    "domain" : "6",
-    "comment" : {
-      "undefined" : "The instance related to the metric."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "18"
-  }, {
-    "iri" : "https://prometheus-metric-ontology.ericsson.com/#generatedByMetric",
-    "inverse" : "20",
-    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "6",
-    "label" : {
-      "IRI-based" : "generatedByMetric",
-      "undefined" : "generatedByMetric"
-    },
-    "domain" : "2",
-    "comment" : {
-      "undefined" : "The result set generated by the metric."
-    },
-    "attributes" : [ "object" ],
-    "id" : "19"
-  }, {
-    "range" : "1",
-    "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "21"
-  }, {
-    "range" : "5",
-    "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "22"
-  }, {
-    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasJob",
-    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "17",
-    "label" : {
-      "IRI-based" : "hasJob",
-      "undefined" : "hasJob"
-    },
-    "domain" : "6",
-    "comment" : {
-      "undefined" : "The job related to the metric."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "23"
-  }, {
-    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasHandler",
-    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "15",
-    "label" : {
-      "IRI-based" : "hasHandler",
-      "undefined" : "hasHandler"
-    },
-    "domain" : "6",
-    "comment" : {
-      "undefined" : "The handler related to the metric."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "24"
-  }, {
-    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasQuery",
-    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "26",
-    "label" : {
-      "IRI-based" : "hasQuery",
-      "undefined" : "hasQuery"
-    },
-    "domain" : "5",
-    "comment" : {
-      "undefined" : "The query used to collect the metric information."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "25"
-  }, {
-    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasResultType",
-    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "28",
-    "label" : {
-      "IRI-based" : "hasResultType",
-      "undefined" : "hasResultType"
-    },
-    "domain" : "5",
-    "comment" : {
-      "undefined" : "The result type returned by the API."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "27"
-  }, {
-    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasName",
-    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "30",
-    "label" : {
-      "IRI-based" : "hasName",
-      "undefined" : "hasName"
-    },
-    "domain" : "6",
-    "comment" : {
-      "undefined" : "The name of the metric."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "29"
-  }, {
-    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasResultSet",
-    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "2",
-    "label" : {
-      "IRI-based" : "hasResultSet",
-      "undefined" : "hasResultSet"
-    },
-    "domain" : "6",
-    "comment" : {
-      "undefined" : "The result set associated with the metric."
-    },
-    "attributes" : [ "object" ],
-    "id" : "20"
-  }, {
-    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasCode",
-    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#defaultModality",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
     "range" : "14",
     "label" : {
-      "IRI-based" : "hasCode",
-      "undefined" : "hasCode"
+      "IRI-based" : "defaultModality",
+      "undefined" : "defaults"
     },
     "domain" : "6",
     "comment" : {
-      "undefined" : "The code related to the metric."
+      "undefined" : "Whether positive or negative modality holds precedence"
     },
-    "attributes" : [ "datatype" ],
-    "id" : "31"
+    "attributes" : [ "object", "external" ],
+    "id" : "13"
   }, {
-    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasStatus",
-    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "33",
-    "label" : {
-      "IRI-based" : "hasStatus",
-      "undefined" : "hasStatus"
-    },
-    "domain" : "5",
-    "comment" : {
-      "undefined" : "The status of the API response."
-    },
-    "attributes" : [ "datatype" ],
+    "range" : "4",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "19"
+  }, {
+    "range" : "4",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "22"
+  }, {
+    "range" : "25",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "24"
+  }, {
+    "range" : "16",
+    "domain" : "27",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "26"
+  }, {
+    "range" : "4",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "28"
+  }, {
+    "range" : "25",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "30"
+  }, {
+    "range" : "34",
+    "domain" : "33",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "32"
   }, {
-    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasTimestamp",
-    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "iri" : "https://change-detection-ontology.adaptcentre.ie/#hasThreshold",
+    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
+    "range" : "36",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://change-detection-ontology.adaptcentre.ie/#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasThreshold",
+      "undefined" : "hasThreshold"
+    },
+    "domain" : "33",
+    "comment" : {
+      "undefined" : "The threshold defined for a change type within the notification policy."
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "35"
+  }, {
+    "range" : "34",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "37"
+  }, {
+    "range" : "16",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "38"
+  }, {
+    "range" : "16",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#first",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
     "range" : "34",
     "label" : {
-      "IRI-based" : "hasTimestamp",
-      "undefined" : "hasTimestamp"
+      "IRI-based" : "first"
+    },
+    "domain" : "16",
+    "attributes" : [ "object", "external" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#action",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "action",
+      "undefined" : "action"
+    },
+    "cardinality" : "1",
+    "domain" : "4",
+    "attributes" : [ "object", "external" ],
+    "id" : "41"
+  }, {
+    "range" : "44",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "43"
+  }, {
+    "range" : "46",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "45"
+  }, {
+    "range" : "44",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "47"
+  }, {
+    "range" : "1",
+    "domain" : "49",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#obligedTo",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "obligedTo",
+      "undefined" : "obligedTo"
+    },
+    "domain" : "23",
+    "comment" : {
+      "undefined" : "Whom the the actor is obliged to"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "50"
+  }, {
+    "range" : "1",
+    "domain" : "53",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "52"
+  }, {
+    "range" : "46",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "54"
+  }, {
+    "range" : "1",
+    "domain" : "56",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "55"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "57"
+  }, {
+    "range" : "1",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "59"
+  }, {
+    "range" : "1",
+    "domain" : "61",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#to",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
+    "range" : "63",
+    "label" : {
+      "IRI-based" : "to",
+      "undefined" : "to"
+    },
+    "domain" : "31",
+    "attributes" : [ "object", "external" ],
+    "id" : "62"
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#metaDefault",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
+    "range" : "65",
+    "label" : {
+      "IRI-based" : "metaDefault",
+      "undefined" : "MetaPolicy about defaults"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "In case of conflict, should priority between rules be checked before modality or vice versa"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#context",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "context",
+      "undefined" : "context"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "All the conditions associated with the policy. Includes domain"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#second",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "second"
+    },
+    "domain" : "17",
+    "attributes" : [ "object", "external" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#constraint",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "constraint"
+    },
+    "domain" : "4",
+    "subproperty" : [ "69" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#startingConstraint",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "startingConstraint"
+    },
+    "superproperty" : [ "68" ],
+    "domain" : "4",
+    "attributes" : [ "object", "external" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#imports",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
+    "range" : "73",
+    "label" : {
+      "IRI-based" : "imports",
+      "undefined" : "imports"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "external" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#modifiedBy",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
+    "range" : "75",
+    "label" : {
+      "IRI-based" : "modifiedBy",
+      "undefined" : "modifiedBy"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "external" ],
+    "id" : "74"
+  }, {
+    "iri" : "https://change-detection-ontology.adaptcentre.ie/#inEventLog",
+    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
+    "range" : "9",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://change-detection-ontology.adaptcentre.ie/#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "inEventLog",
+      "undefined" : "inEventLog"
     },
     "domain" : "1",
     "comment" : {
-      "undefined" : "The timestamp related to a result."
+      "undefined" : "An event within an event log."
     },
-    "attributes" : [ "datatype" ],
-    "id" : "35"
+    "attributes" : [ "object" ],
+    "id" : "76"
   }, {
-    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery",
-    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "5",
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#predicate",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
+    "range" : "78",
     "label" : {
-      "IRI-based" : "hasMetricQuery",
-      "undefined" : "hasMetricQuery"
+      "IRI-based" : "predicate"
+    },
+    "domain" : "33",
+    "attributes" : [ "object", "external" ],
+    "id" : "77"
+  }, {
+    "range" : "17",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "79"
+  }, {
+    "range" : "71",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "80"
+  }, {
+    "range" : "17",
+    "domain" : "27",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "81"
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#inequal",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "inequal"
+    },
+    "domain" : "12",
+    "attributes" : [ "object", "symmetric", "external" ],
+    "id" : "83"
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#endingConstraint",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "endingConstraint"
+    },
+    "domain" : "4",
+    "attributes" : [ "object", "external" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#rulePriority",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
+    "range" : "70",
+    "label" : {
+      "IRI-based" : "rulePriority",
+      "undefined" : "priority"
     },
     "domain" : "6",
     "comment" : {
-      "undefined" : "The query which retrieved the metric information."
+      "undefined" : "Used to set priority between granting rules"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "85"
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#provision",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "provision"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "Obligation on the actor to either perform some action or make some conditions true sometime in the future."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "86"
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#actor",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "actor",
+      "undefined" : "actor"
+    },
+    "cardinality" : "1",
+    "domain" : "4",
+    "attributes" : [ "object", "external" ],
+    "id" : "87"
+  }, {
+    "iri" : "https://change-detection-ontology.adaptcentre.ie/#hasEvent",
+    "inverse" : "76",
+    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://change-detection-ontology.adaptcentre.ie/#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasEvent",
+      "undefined" : "hasEvent"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "An event within a certain event log."
     },
     "attributes" : [ "object" ],
-    "id" : "7"
+    "id" : "88"
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#object",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
+    "range" : "78",
+    "label" : {
+      "IRI-based" : "object"
+    },
+    "domain" : "33",
+    "attributes" : [ "object", "external" ],
+    "id" : "89"
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#deontic",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "deontic",
+      "undefined" : "deontic object"
+    },
+    "cardinality" : "1",
+    "domain" : "31",
+    "attributes" : [ "object", "external" ],
+    "id" : "90"
+  }, {
+    "iri" : "https://change-detection-ontology.adaptcentre.ie/#hasReason",
+    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
+    "range" : "92",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://change-detection-ontology.adaptcentre.ie/#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasReason",
+      "undefined" : "hasReason"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The reason a change occurred."
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "91"
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#sanction",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
+    "range" : "94",
+    "label" : {
+      "IRI-based" : "sanction"
+    },
+    "domain" : "46",
+    "comment" : {
+      "undefined" : "In case a rule is broken, a sanction is imposed. Sanction can be either an action or a deontic object"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "93"
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#createdBy",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
+    "range" : "75",
+    "label" : {
+      "IRI-based" : "createdBy",
+      "undefined" : "creator"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "external" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#grants",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "grants",
+      "undefined" : "grants"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Associates deontic objects with the policy"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "96"
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#subject",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
+    "range" : "78",
+    "label" : {
+      "IRI-based" : "subject"
+    },
+    "domain" : "33",
+    "attributes" : [ "object", "external" ],
+    "id" : "98"
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#modifiedTime",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
+    "range" : "75",
+    "label" : {
+      "IRI-based" : "modifiedTime",
+      "undefined" : "modifiedTime"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "external" ],
+    "id" : "102"
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#equal",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "equal"
+    },
+    "domain" : "12",
+    "attributes" : [ "object", "symmetric", "external" ],
+    "id" : "103"
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#requirement",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "requirement",
+      "undefined" : "requirement"
+    },
+    "domain" : "31",
+    "attributes" : [ "object", "external" ],
+    "id" : "104"
+  }, {
+    "iri" : "http://www.w3.org/2006/time#inXSDDateTimeStamp",
+    "baseIri" : "http://www.w3.org/2006/time",
+    "range" : "99",
+    "label" : {
+      "IRI-based" : "inXSDDateTimeStamp"
+    },
+    "domain" : "12",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "105"
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#desc",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
+    "range" : "100",
+    "label" : {
+      "IRI-based" : "desc",
+      "undefined" : "description"
+    },
+    "domain" : "25",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "106"
+  }, {
+    "iri" : "https://change-detection-ontology.adaptcentre.ie/#detectionEnd",
+    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
+    "range" : "101",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://change-detection-ontology.adaptcentre.ie/#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "detectionEnd",
+      "undefined" : "detectionEnd"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "The time when the notification policy is finished."
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "107"
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#defaultBehavior",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
+    "range" : "97",
+    "label" : {
+      "IRI-based" : "defaultBehavior",
+      "undefined" : "defaults"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Whether implicit/explicit right or prohibition"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "108"
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#creationTime",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
+    "range" : "75",
+    "label" : {
+      "IRI-based" : "creationTime",
+      "undefined" : "creationTime"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "external" ],
+    "id" : "110"
   } ]
 }

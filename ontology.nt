@@ -1,15 +1,17 @@
-<https://prometheus-metric-ontology.ericsson.com/#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://prometheus-metric-ontology.ericsson.com/#> <http://purl.org/dc/terms/abstract> "The Prometheus Metric Ontology (PMO) provides a set of classes, properties, and restrictions that can be used to represent and interchange provenance and metadata information relating to Prometheus metric information." .
-<https://prometheus-metric-ontology.ericsson.com/#> <http://purl.org/dc/terms/created> "4 July 2022" .
-<https://prometheus-metric-ontology.ericsson.com/#> <http://purl.org/dc/terms/creator> "Alex Randles" .
-<https://prometheus-metric-ontology.ericsson.com/#> <http://purl.org/dc/terms/creator> "John Keeney" .
-<https://prometheus-metric-ontology.ericsson.com/#> <http://purl.org/dc/terms/creator> "Liam Fallon" .
-<https://prometheus-metric-ontology.ericsson.com/#> <http://purl.org/dc/terms/description> "The Prometheus Metric Ontology (PMO) is used to capture information which relates to metric information within the Prometheus monitoring system." .
-<https://prometheus-metric-ontology.ericsson.com/#> <http://purl.org/dc/terms/license> "http://creativecommons.org/publicdomain/zero/1.0/" .
-<https://prometheus-metric-ontology.ericsson.com/#> <http://purl.org/dc/terms/title> "Prometheus Metric Ontology (PMO)" .
-<https://prometheus-metric-ontology.ericsson.com/#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "pmo" .
-<https://prometheus-metric-ontology.ericsson.com/#> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://prometheus-metric-ontology.ericsson.com/#" .
-<https://prometheus-metric-ontology.ericsson.com/#> <http://www.w3.org/2002/07/owl#versionInfo> "4 July 2022" .
+<https://change-detection-ontology.adaptcentre.ie/#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://change-detection-ontology.adaptcentre.ie/#> <http://www.w3.org/2002/07/owl#imports> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#> .
+<https://change-detection-ontology.adaptcentre.ie/#> <http://www.w3.org/2002/07/owl#imports> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#> .
+<https://change-detection-ontology.adaptcentre.ie/#> <http://www.w3.org/2002/07/owl#imports> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#> .
+<https://change-detection-ontology.adaptcentre.ie/#> <http://purl.org/dc/terms/abstract> "The Change Detection Ontology (CDO) provides a set of classes, properties, and restrictions that can be used to represent and interchange provenance and metadata information relating to changes that occur within source data that has created an RDF dataset. It can also be specialized to create new classes and properties to model provenance and metadata information for domain specific changes." .
+<https://change-detection-ontology.adaptcentre.ie/#> <http://purl.org/dc/terms/created> "20 April 2022" .
+<https://change-detection-ontology.adaptcentre.ie/#> <http://purl.org/dc/terms/creator> "Alex Randles" .
+<https://change-detection-ontology.adaptcentre.ie/#> <http://purl.org/dc/terms/creator> "Declan O'Sullivan" .
+<https://change-detection-ontology.adaptcentre.ie/#> <http://purl.org/dc/terms/description> "The Change Detection Ontology (CDO) is used to capture information which relates the changes that have occured within the source data of an RDF dataset. \n\nThe ontology allows a notification policy to be defined to notify users when a threshold of changes have occured. Once notified the mapping and source data should be re-examined to ensure no further action is required." .
+<https://change-detection-ontology.adaptcentre.ie/#> <http://purl.org/dc/terms/license> "http://creativecommons.org/publicdomain/zero/1.0/" .
+<https://change-detection-ontology.adaptcentre.ie/#> <http://purl.org/dc/terms/title> "Change Detection Ontology (CDO)" .
+<https://change-detection-ontology.adaptcentre.ie/#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "cdo" .
+<https://change-detection-ontology.adaptcentre.ie/#> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://change-detection-ontology.adaptcentre.ie/#" .
+<https://change-detection-ontology.adaptcentre.ie/#> <http://www.w3.org/2002/07/owl#versionInfo> "20 April 2022" .
 # 
 # 
 # #################################################################
@@ -18,6 +20,15 @@
 # #
 # #################################################################
 # 
+# 
+# http://linkedevents.org/ontology/atPlace
+<http://linkedevents.org/ontology/atPlace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://linkedevents.org/ontology/atTime
+<http://linkedevents.org/ontology/atTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://linkedevents.org/ontology/involvedAgent
+<http://linkedevents.org/ontology/involvedAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/abstract
 <http://purl.org/dc/terms/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -31,6 +42,9 @@
 # http://purl.org/dc/terms/description
 <http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://purl.org/dc/terms/license
 <http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -43,6 +57,54 @@
 # http://purl.org/vocab/vann/preferredNamespaceUri
 <http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#fifth
+<http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#fifth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#fourth
+<http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#fourth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#object
+<http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#sixth
+<http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#sixth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#third
+<http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#third> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#action
+<http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#actor
+<http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#actor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#startingConstraint
+<http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#startingConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#actor
+<http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#actor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#desc
+<http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#desc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#grants
+<http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#grants> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/mbox
+<http://xmlns.com/foaf/0.1/mbox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://change-detection-ontology.adaptcentre.ie/#hasChange
+<https://change-detection-ontology.adaptcentre.ie/#hasChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://change-detection-ontology.adaptcentre.ie/#hasCurrentVersion
+<https://change-detection-ontology.adaptcentre.ie/#hasCurrentVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://change-detection-ontology.adaptcentre.ie/#hasPreviousVersion
+<https://change-detection-ontology.adaptcentre.ie/#hasPreviousVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # 
 # 
 # #################################################################
@@ -52,50 +114,37 @@
 # #################################################################
 # 
 # 
-# https://prometheus-metric-ontology.ericsson.com/#generatedByMetric
-<https://prometheus-metric-ontology.ericsson.com/#generatedByMetric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://prometheus-metric-ontology.ericsson.com/#generatedByMetric> <http://www.w3.org/2002/07/owl#inverseOf> <https://prometheus-metric-ontology.ericsson.com/#hasResultSet> .
-<https://prometheus-metric-ontology.ericsson.com/#generatedByMetric> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#MetricResultSet> .
-<https://prometheus-metric-ontology.ericsson.com/#generatedByMetric> <http://www.w3.org/2000/01/rdf-schema#range> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
-<https://prometheus-metric-ontology.ericsson.com/#generatedByMetric> <http://www.w3.org/2000/01/rdf-schema#comment> "The result set generated by the metric." .
-<https://prometheus-metric-ontology.ericsson.com/#generatedByMetric> <http://www.w3.org/2000/01/rdf-schema#label> "generatedByMetric" .
+# https://change-detection-ontology.adaptcentre.ie/#hasEvent
+<https://change-detection-ontology.adaptcentre.ie/#hasEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://change-detection-ontology.adaptcentre.ie/#hasEvent> <http://www.w3.org/2002/07/owl#inverseOf> <https://change-detection-ontology.adaptcentre.ie/#inEventLog> .
+<https://change-detection-ontology.adaptcentre.ie/#hasEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <https://change-detection-ontology.adaptcentre.ie/#ChangeLog> .
+<https://change-detection-ontology.adaptcentre.ie/#hasEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://linkedevents.org/ontology/Event> .
+<https://change-detection-ontology.adaptcentre.ie/#hasEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "An event within a certain event log." .
+<https://change-detection-ontology.adaptcentre.ie/#hasEvent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
+<https://change-detection-ontology.adaptcentre.ie/#hasEvent> <http://www.w3.org/2000/01/rdf-schema#label> "hasEvent" .
 # 
-# https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery
-<https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
-<https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery> <http://www.w3.org/2000/01/rdf-schema#range> <https://prometheus-metric-ontology.ericsson.com/#MetricQuery> .
-<https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery> <http://www.w3.org/2000/01/rdf-schema#comment> "The query which retrieved the metric information." .
-<https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery> <http://www.w3.org/2000/01/rdf-schema#label> "hasMetricQuery" .
+# https://change-detection-ontology.adaptcentre.ie/#hasOwner
+<https://change-detection-ontology.adaptcentre.ie/#hasOwner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://change-detection-ontology.adaptcentre.ie/#hasOwner> <http://www.w3.org/2002/07/owl#inverseOf> <https://change-detection-ontology.adaptcentre.ie/#ownedBy> .
+<https://change-detection-ontology.adaptcentre.ie/#hasOwner> <http://www.w3.org/2000/01/rdf-schema#domain> <https://change-detection-ontology.adaptcentre.ie/#ChangeLog> .
+<https://change-detection-ontology.adaptcentre.ie/#hasOwner> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> .
+<https://change-detection-ontology.adaptcentre.ie/#hasOwner> <http://www.w3.org/2000/01/rdf-schema#comment> "The owner of the event log." .
+<https://change-detection-ontology.adaptcentre.ie/#hasOwner> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
+<https://change-detection-ontology.adaptcentre.ie/#hasOwner> <http://www.w3.org/2000/01/rdf-schema#label> "hasOwner" .
 # 
-# https://prometheus-metric-ontology.ericsson.com/#hasResult
-<https://prometheus-metric-ontology.ericsson.com/#hasResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://prometheus-metric-ontology.ericsson.com/#hasResult> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#MetricResultSet> .
-<https://prometheus-metric-ontology.ericsson.com/#hasResult> <http://www.w3.org/2000/01/rdf-schema#range> <https://prometheus-metric-ontology.ericsson.com/#MetricResult> .
-<https://prometheus-metric-ontology.ericsson.com/#hasResult> <http://www.w3.org/2000/01/rdf-schema#comment> "A result within a result set." .
-<https://prometheus-metric-ontology.ericsson.com/#hasResult> <http://www.w3.org/2000/01/rdf-schema#label> "hasResult" .
+# https://change-detection-ontology.adaptcentre.ie/#inEventLog
+<https://change-detection-ontology.adaptcentre.ie/#inEventLog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://change-detection-ontology.adaptcentre.ie/#inEventLog> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linkedevents.org/ontology/Event> .
+<https://change-detection-ontology.adaptcentre.ie/#inEventLog> <http://www.w3.org/2000/01/rdf-schema#range> <https://change-detection-ontology.adaptcentre.ie/#ChangeLog> .
+<https://change-detection-ontology.adaptcentre.ie/#inEventLog> <http://www.w3.org/2000/01/rdf-schema#comment> "An event within an event log." .
+<https://change-detection-ontology.adaptcentre.ie/#inEventLog> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
+<https://change-detection-ontology.adaptcentre.ie/#inEventLog> <http://www.w3.org/2000/01/rdf-schema#label> "inEventLog" .
 # 
-# https://prometheus-metric-ontology.ericsson.com/#hasResultSet
-<https://prometheus-metric-ontology.ericsson.com/#hasResultSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://prometheus-metric-ontology.ericsson.com/#hasResultSet> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
-<https://prometheus-metric-ontology.ericsson.com/#hasResultSet> <http://www.w3.org/2000/01/rdf-schema#range> <https://prometheus-metric-ontology.ericsson.com/#MetricResultSet> .
-<https://prometheus-metric-ontology.ericsson.com/#hasResultSet> <http://www.w3.org/2000/01/rdf-schema#comment> "The result set associated with the metric." .
-<https://prometheus-metric-ontology.ericsson.com/#hasResultSet> <http://www.w3.org/2000/01/rdf-schema#label> "hasResultSet" .
-# 
-# https://prometheus-metric-ontology.ericsson.com/#inMetricSet
-<https://prometheus-metric-ontology.ericsson.com/#inMetricSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://prometheus-metric-ontology.ericsson.com/#inMetricSet> <http://www.w3.org/2002/07/owl#inverseOf> <https://prometheus-metric-ontology.ericsson.com/#hasResult> .
-<https://prometheus-metric-ontology.ericsson.com/#inMetricSet> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#MetricResult> .
-<https://prometheus-metric-ontology.ericsson.com/#inMetricSet> <http://www.w3.org/2000/01/rdf-schema#range> <https://prometheus-metric-ontology.ericsson.com/#MetricResultSet> .
-<https://prometheus-metric-ontology.ericsson.com/#inMetricSet> <http://www.w3.org/2000/01/rdf-schema#comment> "A result within a result set." .
-<https://prometheus-metric-ontology.ericsson.com/#inMetricSet> <http://www.w3.org/2000/01/rdf-schema#label> "inMetricSet" .
-# 
-# https://prometheus-metric-ontology.ericsson.com/#usedByMetric
-<https://prometheus-metric-ontology.ericsson.com/#usedByMetric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://prometheus-metric-ontology.ericsson.com/#usedByMetric> <http://www.w3.org/2002/07/owl#inverseOf> <https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery> .
-<https://prometheus-metric-ontology.ericsson.com/#usedByMetric> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#MetricQuery> .
-<https://prometheus-metric-ontology.ericsson.com/#usedByMetric> <http://www.w3.org/2000/01/rdf-schema#range> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
-<https://prometheus-metric-ontology.ericsson.com/#usedByMetric> <http://www.w3.org/2000/01/rdf-schema#comment> "The metric used by the query." .
-<https://prometheus-metric-ontology.ericsson.com/#usedByMetric> <http://www.w3.org/2000/01/rdf-schema#label> "usedByMetric" .
+# https://change-detection-ontology.adaptcentre.ie/#ownedBy
+<https://change-detection-ontology.adaptcentre.ie/#ownedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://change-detection-ontology.adaptcentre.ie/#ownedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The agent who owns the change log." .
+<https://change-detection-ontology.adaptcentre.ie/#ownedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
+<https://change-detection-ontology.adaptcentre.ie/#ownedBy> <http://www.w3.org/2000/01/rdf-schema#label> "ownedBy" .
 # 
 # 
 # 
@@ -106,75 +155,40 @@
 # #################################################################
 # 
 # 
-# https://prometheus-metric-ontology.ericsson.com/#hasCode
-<https://prometheus-metric-ontology.ericsson.com/#hasCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://prometheus-metric-ontology.ericsson.com/#hasCode> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
-<https://prometheus-metric-ontology.ericsson.com/#hasCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://prometheus-metric-ontology.ericsson.com/#hasCode> <http://www.w3.org/2000/01/rdf-schema#comment> "The code related to the metric." .
-<https://prometheus-metric-ontology.ericsson.com/#hasCode> <http://www.w3.org/2000/01/rdf-schema#label> "hasCode" .
+# http://www.w3.org/2006/time#inXSDDateTimeStamp
+<http://www.w3.org/2006/time#inXSDDateTimeStamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 # 
-# https://prometheus-metric-ontology.ericsson.com/#hasHandler
-<https://prometheus-metric-ontology.ericsson.com/#hasHandler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://prometheus-metric-ontology.ericsson.com/#hasHandler> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
-<https://prometheus-metric-ontology.ericsson.com/#hasHandler> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://prometheus-metric-ontology.ericsson.com/#hasHandler> <http://www.w3.org/2000/01/rdf-schema#comment> "The handler related to the metric." .
-<https://prometheus-metric-ontology.ericsson.com/#hasHandler> <http://www.w3.org/2000/01/rdf-schema#label> "hasHandler" .
+# https://change-detection-ontology.adaptcentre.ie/#detectionEnd
+<https://change-detection-ontology.adaptcentre.ie/#detectionEnd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://change-detection-ontology.adaptcentre.ie/#detectionEnd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://change-detection-ontology.adaptcentre.ie/#detectionEnd> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy> .
+<https://change-detection-ontology.adaptcentre.ie/#detectionEnd> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://change-detection-ontology.adaptcentre.ie/#detectionEnd> <http://www.w3.org/2000/01/rdf-schema#comment> "The time when the notification policy is finished." .
+<https://change-detection-ontology.adaptcentre.ie/#detectionEnd> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
+<https://change-detection-ontology.adaptcentre.ie/#detectionEnd> <http://www.w3.org/2000/01/rdf-schema#label> "detectionEnd" .
 # 
-# https://prometheus-metric-ontology.ericsson.com/#hasInstance
-<https://prometheus-metric-ontology.ericsson.com/#hasInstance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://prometheus-metric-ontology.ericsson.com/#hasInstance> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
-<https://prometheus-metric-ontology.ericsson.com/#hasInstance> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://prometheus-metric-ontology.ericsson.com/#hasInstance> <http://www.w3.org/2000/01/rdf-schema#comment> "The instance related to the metric." .
-<https://prometheus-metric-ontology.ericsson.com/#hasInstance> <http://www.w3.org/2000/01/rdf-schema#label> "hasInstance" .
+# https://change-detection-ontology.adaptcentre.ie/#detectionStart
+<https://change-detection-ontology.adaptcentre.ie/#detectionStart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://change-detection-ontology.adaptcentre.ie/#detectionStart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://change-detection-ontology.adaptcentre.ie/#detectionStart> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy> .
+<https://change-detection-ontology.adaptcentre.ie/#detectionStart> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://change-detection-ontology.adaptcentre.ie/#detectionStart> <http://www.w3.org/2000/01/rdf-schema#comment> "The time when the notification policy was created." .
+<https://change-detection-ontology.adaptcentre.ie/#detectionStart> <http://www.w3.org/2000/01/rdf-schema#label> "detectionStart" .
 # 
-# https://prometheus-metric-ontology.ericsson.com/#hasJob
-<https://prometheus-metric-ontology.ericsson.com/#hasJob> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://prometheus-metric-ontology.ericsson.com/#hasJob> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
-<https://prometheus-metric-ontology.ericsson.com/#hasJob> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://prometheus-metric-ontology.ericsson.com/#hasJob> <http://www.w3.org/2000/01/rdf-schema#comment> "The job related to the metric." .
-<https://prometheus-metric-ontology.ericsson.com/#hasJob> <http://www.w3.org/2000/01/rdf-schema#label> "hasJob" .
+# https://change-detection-ontology.adaptcentre.ie/#hasReason
+<https://change-detection-ontology.adaptcentre.ie/#hasReason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://change-detection-ontology.adaptcentre.ie/#hasReason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://change-detection-ontology.adaptcentre.ie/#hasReason> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linkedevents.org/ontology/Event> .
+<https://change-detection-ontology.adaptcentre.ie/#hasReason> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://change-detection-ontology.adaptcentre.ie/#hasReason> <http://www.w3.org/2000/01/rdf-schema#comment> "The reason a change occurred." .
+<https://change-detection-ontology.adaptcentre.ie/#hasReason> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
+<https://change-detection-ontology.adaptcentre.ie/#hasReason> <http://www.w3.org/2000/01/rdf-schema#label> "hasReason" .
 # 
-# https://prometheus-metric-ontology.ericsson.com/#hasName
-<https://prometheus-metric-ontology.ericsson.com/#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://prometheus-metric-ontology.ericsson.com/#hasName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
-<https://prometheus-metric-ontology.ericsson.com/#hasName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://prometheus-metric-ontology.ericsson.com/#hasName> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of the metric." .
-<https://prometheus-metric-ontology.ericsson.com/#hasName> <http://www.w3.org/2000/01/rdf-schema#label> "hasName" .
-# 
-# https://prometheus-metric-ontology.ericsson.com/#hasQuery
-<https://prometheus-metric-ontology.ericsson.com/#hasQuery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://prometheus-metric-ontology.ericsson.com/#hasQuery> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#MetricQuery> .
-<https://prometheus-metric-ontology.ericsson.com/#hasQuery> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://prometheus-metric-ontology.ericsson.com/#hasQuery> <http://www.w3.org/2000/01/rdf-schema#comment> "The query used to collect the metric information." .
-<https://prometheus-metric-ontology.ericsson.com/#hasQuery> <http://www.w3.org/2000/01/rdf-schema#label> "hasQuery" .
-# 
-# https://prometheus-metric-ontology.ericsson.com/#hasResultType
-<https://prometheus-metric-ontology.ericsson.com/#hasResultType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://prometheus-metric-ontology.ericsson.com/#hasResultType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#MetricQuery> .
-<https://prometheus-metric-ontology.ericsson.com/#hasResultType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://prometheus-metric-ontology.ericsson.com/#hasResultType> <http://www.w3.org/2000/01/rdf-schema#comment> "The result type returned by the API." .
-<https://prometheus-metric-ontology.ericsson.com/#hasResultType> <http://www.w3.org/2000/01/rdf-schema#label> "hasResultType" .
-# 
-# https://prometheus-metric-ontology.ericsson.com/#hasStatus
-<https://prometheus-metric-ontology.ericsson.com/#hasStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://prometheus-metric-ontology.ericsson.com/#hasStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#MetricQuery> .
-<https://prometheus-metric-ontology.ericsson.com/#hasStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://prometheus-metric-ontology.ericsson.com/#hasStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "The status of the API response." .
-<https://prometheus-metric-ontology.ericsson.com/#hasStatus> <http://www.w3.org/2000/01/rdf-schema#label> "hasStatus" .
-# 
-# https://prometheus-metric-ontology.ericsson.com/#hasTimestamp
-<https://prometheus-metric-ontology.ericsson.com/#hasTimestamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://prometheus-metric-ontology.ericsson.com/#hasTimestamp> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#MetricResult> .
-<https://prometheus-metric-ontology.ericsson.com/#hasTimestamp> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://prometheus-metric-ontology.ericsson.com/#hasTimestamp> <http://www.w3.org/2000/01/rdf-schema#comment> "The timestamp related to a result." .
-<https://prometheus-metric-ontology.ericsson.com/#hasTimestamp> <http://www.w3.org/2000/01/rdf-schema#label> "hasTimestamp" .
-# 
-# https://prometheus-metric-ontology.ericsson.com/#hasValue
-<https://prometheus-metric-ontology.ericsson.com/#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://prometheus-metric-ontology.ericsson.com/#hasValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#MetricResult> .
-<https://prometheus-metric-ontology.ericsson.com/#hasValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://prometheus-metric-ontology.ericsson.com/#hasValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The value associated with a result." .
-<https://prometheus-metric-ontology.ericsson.com/#hasValue> <http://www.w3.org/2000/01/rdf-schema#label> "hasValue" .
+# https://change-detection-ontology.adaptcentre.ie/#hasThreshold
+<https://change-detection-ontology.adaptcentre.ie/#hasThreshold> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://change-detection-ontology.adaptcentre.ie/#hasThreshold> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://change-detection-ontology.adaptcentre.ie/#hasThreshold> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint> .
+<https://change-detection-ontology.adaptcentre.ie/#hasThreshold> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
 # 
 # 
 # 
@@ -185,30 +199,231 @@
 # #################################################################
 # 
 # 
-# https://prometheus-metric-ontology.ericsson.com/#Metric
-<https://prometheus-metric-ontology.ericsson.com/#Metric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://prometheus-metric-ontology.ericsson.com/#Metric> <http://www.w3.org/2002/07/owl#disjointWith> <https://prometheus-metric-ontology.ericsson.com/#MetricQuery> .
-<https://prometheus-metric-ontology.ericsson.com/#Metric> <http://www.w3.org/2002/07/owl#disjointWith> <https://prometheus-metric-ontology.ericsson.com/#MetricResult> .
-<https://prometheus-metric-ontology.ericsson.com/#Metric> <http://www.w3.org/2002/07/owl#disjointWith> <https://prometheus-metric-ontology.ericsson.com/#MetricResultSet> .
-<https://prometheus-metric-ontology.ericsson.com/#Metric> <http://www.w3.org/2000/01/rdf-schema#comment> "The metric information being monitored." .
-<https://prometheus-metric-ontology.ericsson.com/#Metric> <http://www.w3.org/2000/01/rdf-schema#label> "Metric" .
+# http://linkedevents.org/ontology/Event
+<http://linkedevents.org/ontology/Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
-# https://prometheus-metric-ontology.ericsson.com/#MetricQuery
-<https://prometheus-metric-ontology.ericsson.com/#MetricQuery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://prometheus-metric-ontology.ericsson.com/#MetricQuery> <http://www.w3.org/2002/07/owl#disjointWith> <https://prometheus-metric-ontology.ericsson.com/#MetricResult> .
-<https://prometheus-metric-ontology.ericsson.com/#MetricQuery> <http://www.w3.org/2002/07/owl#disjointWith> <https://prometheus-metric-ontology.ericsson.com/#MetricResultSet> .
-<https://prometheus-metric-ontology.ericsson.com/#MetricQuery> <http://www.w3.org/2000/01/rdf-schema#comment> "The information related to the query used to collect the metric information." .
-<https://prometheus-metric-ontology.ericsson.com/#MetricQuery> <http://www.w3.org/2000/01/rdf-schema#label> "MetricQuery" .
+# http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiAction.owl#Action
+<http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiAction.owl#Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
-# https://prometheus-metric-ontology.ericsson.com/#MetricResult
-<https://prometheus-metric-ontology.ericsson.com/#MetricResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://prometheus-metric-ontology.ericsson.com/#MetricResult> <http://www.w3.org/2002/07/owl#disjointWith> <https://prometheus-metric-ontology.ericsson.com/#MetricResultSet> .
-<https://prometheus-metric-ontology.ericsson.com/#MetricResult> <http://www.w3.org/2000/01/rdf-schema#comment> "A result related to a specific result set." .
-<https://prometheus-metric-ontology.ericsson.com/#MetricResult> <http://www.w3.org/2000/01/rdf-schema#label> "MetricResult" .
+# http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#Obligation
+<http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#Obligation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
-# https://prometheus-metric-ontology.ericsson.com/#MetricResultSet
-<https://prometheus-metric-ontology.ericsson.com/#MetricResultSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://prometheus-metric-ontology.ericsson.com/#MetricResultSet> <http://www.w3.org/2000/01/rdf-schema#comment> "The values and timestamps related to a metric." .
-<https://prometheus-metric-ontology.ericsson.com/#MetricResultSet> <http://www.w3.org/2000/01/rdf-schema#label> "MetricResultSet" .
+# http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiEntity.owl#Agent
+<http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiEntity.owl#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy
+<http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2006/time#Instant
+<http://www.w3.org/2006/time#Instant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2006/time#TemporalEntity
+<http://www.w3.org/2006/time#TemporalEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://change-detection-ontology.adaptcentre.ie/#ChangeLog
+<https://change-detection-ontology.adaptcentre.ie/#ChangeLog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://change-detection-ontology.adaptcentre.ie/#ChangeLog> <http://www.w3.org/2000/01/rdf-schema#comment> "A grouping of changes that have occured relating to a specific source data." .
+<https://change-detection-ontology.adaptcentre.ie/#ChangeLog> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
+<https://change-detection-ontology.adaptcentre.ie/#ChangeLog> <http://www.w3.org/2000/01/rdf-schema#label> "ChangeLog" .
+# 
+# https://change-detection-ontology.adaptcentre.ie/#DatatypeSourceData
+<https://change-detection-ontology.adaptcentre.ie/#DatatypeSourceData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://change-detection-ontology.adaptcentre.ie/#DatatypeSourceData> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linkedevents.org/ontology/Event> .
+# 
+# https://change-detection-ontology.adaptcentre.ie/#DeleteSourceData
+<https://change-detection-ontology.adaptcentre.ie/#DeleteSourceData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://change-detection-ontology.adaptcentre.ie/#DeleteSourceData> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linkedevents.org/ontology/Event> .
+# 
+# https://change-detection-ontology.adaptcentre.ie/#InsertSourceData
+<https://change-detection-ontology.adaptcentre.ie/#InsertSourceData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://change-detection-ontology.adaptcentre.ie/#InsertSourceData> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linkedevents.org/ontology/Event> .
+# 
+# https://change-detection-ontology.adaptcentre.ie/#MergeSourceData
+<https://change-detection-ontology.adaptcentre.ie/#MergeSourceData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://change-detection-ontology.adaptcentre.ie/#MergeSourceData> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linkedevents.org/ontology/Event> .
+# 
+# https://change-detection-ontology.adaptcentre.ie/#MoveSourceData
+<https://change-detection-ontology.adaptcentre.ie/#MoveSourceData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://change-detection-ontology.adaptcentre.ie/#MoveSourceData> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linkedevents.org/ontology/Event> .
+# 
+# https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData
+<https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linkedevents.org/ontology/Event> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.example.com/changeLog
+<http://www.example.com/changeLog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.com/changeLog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://change-detection-ontology.adaptcentre.ie/#ChangeLog> .
+<http://www.example.com/changeLog> <https://change-detection-ontology.adaptcentre.ie/#hasChange> <http://www.example.com/insertChange> .
+<http://www.example.com/changeLog> <https://change-detection-ontology.adaptcentre.ie/#hasCurrentVersion> <https://raw.githubusercontent.com/alex-randles/Change-Detection-System-Examples/main/version_2_files/student.csv> .
+<http://www.example.com/changeLog> <https://change-detection-ontology.adaptcentre.ie/#hasPreviousVersion> <https://raw.githubusercontent.com/alex-randles/Change-Detection-System-Examples/main/version_1_files/student.csv> .
+# 
+# http://www.example.com/datatypeChangeConstraint
+<http://www.example.com/datatypeChangeConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.com/datatypeChangeConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint> .
+<http://www.example.com/datatypeChangeConstraint> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#predicate> <https://change-detection-ontology.adaptcentre.ie/#hasThreshold> .
+<https://change-detection-ontology.adaptcentre.ie/#hasThreshold> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.com/datatypeChangeConstraint> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#subject> <https://change-detection-ontology.adaptcentre.ie/#DatatypeSourceData> .
+<https://change-detection-ontology.adaptcentre.ie/#DatatypeSourceData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.com/datatypeChangeConstraint> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#object> "0" .
+# 
+# http://www.example.com/deleteChangeConstraint
+<http://www.example.com/deleteChangeConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.com/deleteChangeConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint> .
+<http://www.example.com/deleteChangeConstraint> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#predicate> <https://change-detection-ontology.adaptcentre.ie/#hasThreshold> .
+<http://www.example.com/deleteChangeConstraint> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#subject> <https://change-detection-ontology.adaptcentre.ie/#DeleteSourceData> .
+<https://change-detection-ontology.adaptcentre.ie/#DeleteSourceData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.com/deleteChangeConstraint> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#object> "0" .
+# 
+# http://www.example.com/detectionTime
+<http://www.example.com/detectionTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.com/detectionTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2006/time#Instant> .
+<http://www.example.com/detectionTime> <http://www.w3.org/2006/time#inXSDDateTimeStamp> "2022-07-05 17:12:57.090772"^^<http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+# 
+# http://www.example.com/insertChange
+<http://www.example.com/insertChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.com/insertChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://change-detection-ontology.adaptcentre.ie/#InsertSourceData> .
+<http://www.example.com/insertChange> <https://change-detection-ontology.adaptcentre.ie/#hasReason> "Name: Alex Randles" .
+<http://www.example.com/insertChange> <http://linkedevents.org/ontology/atTime> <http://www.example.com/detectionTime> .
+# 
+# http://www.example.com/insertChangeConstraint
+<http://www.example.com/insertChangeConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.com/insertChangeConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint> .
+<http://www.example.com/insertChangeConstraint> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#predicate> <https://change-detection-ontology.adaptcentre.ie/#hasThreshold> .
+<http://www.example.com/insertChangeConstraint> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#subject> <https://change-detection-ontology.adaptcentre.ie/#InsertSourceData> .
+<https://change-detection-ontology.adaptcentre.ie/#InsertSourceData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.com/insertChangeConstraint> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#object> "0" .
+# 
+# http://www.example.com/mergeChangeConstraint
+<http://www.example.com/mergeChangeConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.com/mergeChangeConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint> .
+<http://www.example.com/mergeChangeConstraint> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#predicate> <https://change-detection-ontology.adaptcentre.ie/#hasThreshold> .
+<http://www.example.com/mergeChangeConstraint> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#subject> <https://change-detection-ontology.adaptcentre.ie/#MergeSourceData> .
+<https://change-detection-ontology.adaptcentre.ie/#MergeSourceData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.com/mergeChangeConstraint> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#object> "0" .
+# 
+# http://www.example.com/moveChangeConstraint
+<http://www.example.com/moveChangeConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.com/moveChangeConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint> .
+<http://www.example.com/moveChangeConstraint> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#predicate> <https://change-detection-ontology.adaptcentre.ie/#hasThreshold> .
+<http://www.example.com/moveChangeConstraint> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#subject> <https://change-detection-ontology.adaptcentre.ie/#MoveSourceData> .
+<https://change-detection-ontology.adaptcentre.ie/#MoveSourceData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.com/moveChangeConstraint> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#object> "0" .
+# 
+# http://www.example.com/notificationConstraint
+<http://www.example.com/notificationConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.com/notificationConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#And> .
+<http://www.example.com/notificationConstraint> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#first> <http://www.example.com/insertChangeConstraint> .
+<http://www.example.com/notificationConstraint> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#second> <http://www.example.com/deleteChangeConstraint> .
+<http://www.example.com/notificationConstraint> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#fifth> <http://www.example.com/mergeChangeConstraint> .
+<http://www.example.com/notificationConstraint> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#fourth> <http://www.example.com/updateChangeConstraint> .
+<http://www.example.com/notificationConstraint> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#sixth> <http://www.example.com/datatypeChangeConstraint> .
+<http://www.example.com/notificationConstraint> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#third> <http://www.example.com/moveChangeConstraint> .
+# 
+# http://www.example.com/notificationPolicy
+<http://www.example.com/notificationPolicy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.com/notificationPolicy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy> .
+<http://www.example.com/notificationPolicy> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#grants> <http://www.example.com/policyObligation> .
+<http://www.example.com/notificationPolicy> <http://www.w3.org/2006/time#inXSDDateTimeStamp> "2022-08-07 00:00:00.0000"^^<http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.example.com/notificationPolicy> <https://change-detection-ontology.adaptcentre.ie/#detectionEnd> "2022-08-07 00:00:00.0000"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.example.com/notificationPolicy> <https://change-detection-ontology.adaptcentre.ie/#detectionStart> "2022-07-05 17:12:56.121344"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.example.com/notificationPolicy> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#desc> "Notification policy for user 1" .
+# 
+# http://www.example.com/policyObligation
+<http://www.example.com/policyObligation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.com/policyObligation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#Obligation> .
+<http://www.example.com/policyObligation> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#action> <https://change-detection-ontology.adaptcentre.ie/#sendNotification> .
+<https://change-detection-ontology.adaptcentre.ie/#sendNotification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.com/policyObligation> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#obligedTo> <https://change-detection-ontology.adaptcentre.ie/#softwareAgent> .
+<https://change-detection-ontology.adaptcentre.ie/#softwareAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.com/policyObligation> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#startingConstraint> <http://www.example.com/notificationConstraint> .
+<http://www.example.com/policyObligation> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#actor> <http://www.example.com/userActor> .
+<http://www.example.com/policyObligation> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#actor> <https://change-detection-ontology.adaptcentre.ie/#softwareAgent> .
+# 
+# http://www.example.com/updateChangeConstraint
+<http://www.example.com/updateChangeConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.com/updateChangeConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint> .
+<http://www.example.com/updateChangeConstraint> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#predicate> <https://change-detection-ontology.adaptcentre.ie/#hasThreshold> .
+<http://www.example.com/updateChangeConstraint> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#subject> <https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData> .
+<https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.com/updateChangeConstraint> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#object> "0" .
+# 
+# http://www.example.com/userActor
+<http://www.example.com/userActor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.com/userActor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiEntity.owl#Agent> .
+<http://www.example.com/userActor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.example.com/userActor> <http://xmlns.com/foaf/0.1/mbox> "alexrandles0@gmail.com" .
+# 
+# https://change-detection-ontology.adaptcentre.ie/#DatatypeSourceData
+# 
+# https://change-detection-ontology.adaptcentre.ie/#DeleteSourceData
+# 
+# https://change-detection-ontology.adaptcentre.ie/#InsertSourceData
+# 
+# https://change-detection-ontology.adaptcentre.ie/#MergeSourceData
+# 
+# https://change-detection-ontology.adaptcentre.ie/#MoveSourceData
+# 
+# https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData
+# 
+# https://change-detection-ontology.adaptcentre.ie/#hasThreshold
+# 
+# https://change-detection-ontology.adaptcentre.ie/#sendNotification
+# 
+# https://change-detection-ontology.adaptcentre.ie/#softwareAgent
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<https://change-detection-ontology.adaptcentre.ie/#DatatypeSourceData> <http://www.w3.org/2000/01/rdf-schema#comment> "Datatype has been changed in the source data." .
+<https://change-detection-ontology.adaptcentre.ie/#DatatypeSourceData> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
+<https://change-detection-ontology.adaptcentre.ie/#DatatypeSourceData> <http://www.w3.org/2000/01/rdf-schema#label> "DatatypeSourceData" .
+# 
+<https://change-detection-ontology.adaptcentre.ie/#DeleteSourceData> <http://www.w3.org/2000/01/rdf-schema#comment> "Data has been removed within the source data." .
+<https://change-detection-ontology.adaptcentre.ie/#DeleteSourceData> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
+<https://change-detection-ontology.adaptcentre.ie/#DeleteSourceData> <http://www.w3.org/2000/01/rdf-schema#label> "DeleteSourceData" .
+# 
+<https://change-detection-ontology.adaptcentre.ie/#InsertSourceData> <http://www.w3.org/2000/01/rdf-schema#comment> "Data has been inserted within the source data." .
+<https://change-detection-ontology.adaptcentre.ie/#InsertSourceData> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
+<https://change-detection-ontology.adaptcentre.ie/#InsertSourceData> <http://www.w3.org/2000/01/rdf-schema#label> "InsertSourceData" .
+# 
+<https://change-detection-ontology.adaptcentre.ie/#MergeSourceData> <http://www.w3.org/2000/01/rdf-schema#comment> "Data has been merged within the source data." .
+<https://change-detection-ontology.adaptcentre.ie/#MergeSourceData> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
+<https://change-detection-ontology.adaptcentre.ie/#MergeSourceData> <http://www.w3.org/2000/01/rdf-schema#label> "MergeSourceData" .
+# 
+<https://change-detection-ontology.adaptcentre.ie/#MoveSourceData> <http://www.w3.org/2000/01/rdf-schema#comment> "Data has been moved within the source data." .
+<https://change-detection-ontology.adaptcentre.ie/#MoveSourceData> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
+<https://change-detection-ontology.adaptcentre.ie/#MoveSourceData> <http://www.w3.org/2000/01/rdf-schema#label> "MoveSourceData" .
+# 
+<https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData> <http://www.w3.org/2000/01/rdf-schema#comment> "Data has been updated within the source data." .
+<https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
+<https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData> <http://www.w3.org/2000/01/rdf-schema#label> "UpdateSourceData" .
+# 
+<https://change-detection-ontology.adaptcentre.ie/#hasThreshold> <http://www.w3.org/2000/01/rdf-schema#comment> "The threshold defined for a change type within the notification policy." .
+<https://change-detection-ontology.adaptcentre.ie/#hasThreshold> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
+<https://change-detection-ontology.adaptcentre.ie/#hasThreshold> <http://www.w3.org/2000/01/rdf-schema#label> "hasThreshold" .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

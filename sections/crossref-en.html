@@ -1,414 +1,368 @@
-<h2 id="crossreference" class="list">Cross-reference for Prometheus Metric Ontology (PMO) classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-This section provides details for each class and property defined by Prometheus Metric Ontology (PMO).
+<h2 id="crossreference" class="list">Cross-reference for Change Detection Ontology (CDO) classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Change Detection Ontology (CDO).
 <div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
-         <a href="#Metric"
-            title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
+         <a href="#ChangeLog"
+            title="https://change-detection-ontology.adaptcentre.ie/#ChangeLog">ChangeLog</a>
       </li>
       <li>
-         <a href="#MetricQuery"
-            title="https://prometheus-metric-ontology.ericsson.com/#MetricQuery">MetricQuery</a>
+         <a href="#DatatypeSourceData"
+            title="https://change-detection-ontology.adaptcentre.ie/#DatatypeSourceData">
+            <span>DatatypeSourceData</span>
+         </a>
       </li>
       <li>
-         <a href="#MetricResult"
-            title="https://prometheus-metric-ontology.ericsson.com/#MetricResult">MetricResult</a>
+         <a href="#DeleteSourceData"
+            title="https://change-detection-ontology.adaptcentre.ie/#DeleteSourceData">
+            <span>DeleteSourceData</span>
+         </a>
       </li>
       <li>
-         <a href="#MetricResultSet"
-            title="https://prometheus-metric-ontology.ericsson.com/#MetricResultSet">MetricResultSet</a>
+         <a href="#InsertSourceData"
+            title="https://change-detection-ontology.adaptcentre.ie/#InsertSourceData">
+            <span>InsertSourceData</span>
+         </a>
+      </li>
+      <li>
+         <a href="#MergeSourceData"
+            title="https://change-detection-ontology.adaptcentre.ie/#MergeSourceData">
+            <span>MergeSourceData</span>
+         </a>
+      </li>
+      <li>
+         <a href="#MoveSourceData"
+            title="https://change-detection-ontology.adaptcentre.ie/#MoveSourceData">
+            <span>MoveSourceData</span>
+         </a>
+      </li>
+      <li>
+         <a href="#UpdateSourceData"
+            title="https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData">
+            <span>UpdateSourceData</span>
+         </a>
       </li>
    </ul>
-   <div class="entity" id="Metric">
-      <h3>Metric<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="ChangeLog">
+      <h3>ChangeLog<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#Metric</p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#ChangeLog</p>
       <div class="comment">
-         <span class="markdown">The metric information being monitored.</span>
+         <span class="markdown">A grouping of changes that have occured relating to a specific source data.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://change-detection-ontology.adaptcentre.ie/#">https://change-detection-ontology.adaptcentre.ie/#</a>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>is in domain of</dt>
          <dd>
-            <a href="#hasCode"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasCode">hasCode</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasHandler"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasHandler">hasHandler</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasInstance"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasInstance">hasInstance</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasJob"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasJob">hasJob</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasMetricQuery"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery">hasMetricQuery</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasName"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasName">hasName</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasResultSet"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasResultSet">hasResultSet</a>
+            <a href="#hasEvent"
+               title="https://change-detection-ontology.adaptcentre.ie/#hasEvent">hasEvent</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasOwner"
+               title="https://change-detection-ontology.adaptcentre.ie/#hasOwner">hasOwner</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#generatedByMetric"
-               title="https://prometheus-metric-ontology.ericsson.com/#generatedByMetric">generatedByMetric</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#usedByMetric"
-               title="https://prometheus-metric-ontology.ericsson.com/#usedByMetric">usedByMetric</a>
+            <a href="#inEventLog"
+               title="https://change-detection-ontology.adaptcentre.ie/#inEventLog">inEventLog</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
-         <dt>is disjoint with</dt>
+         <dt>has members</dt>
          <dd>
-            <a href="#MetricQuery"
-               title="https://prometheus-metric-ontology.ericsson.com/#MetricQuery">MetricQuery</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#MetricResult"
-               title="https://prometheus-metric-ontology.ericsson.com/#MetricResult">MetricResult</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#MetricResultSet"
-               title="https://prometheus-metric-ontology.ericsson.com/#MetricResultSet">MetricResultSet</a>
-            <sup class="type-c" title="class">c</sup>
+            <a href="#http://www.example.com/changeLog" title="http://www.example.com/changeLog">change log</a>
+            <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="MetricQuery">
-      <h3>MetricQuery<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="DatatypeSourceData">
+      <h3>DatatypeSourceData<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#MetricQuery</p>
-      <div class="comment">
-         <span class="markdown">The information related to the query used to collect the metric information.</span>
-      </div>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#DatatypeSourceData</p>
       <dl class="description">
-         <dt>is in domain of</dt>
+         <dt>has super-classes</dt>
          <dd>
-            <a href="#hasQuery"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasQuery">hasQuery</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasResultType"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasResultType">hasResultType</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasStatus"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasStatus">hasStatus</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#usedByMetric"
-               title="https://prometheus-metric-ontology.ericsson.com/#usedByMetric">usedByMetric</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#hasMetricQuery"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery">hasMetricQuery</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is disjoint with</dt>
-         <dd>
-            <a href="#Metric"
-               title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#MetricResult"
-               title="https://prometheus-metric-ontology.ericsson.com/#MetricResult">MetricResult</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#MetricResultSet"
-               title="https://prometheus-metric-ontology.ericsson.com/#MetricResultSet">MetricResultSet</a>
+            <a href="http://linkedevents.org/ontology/Event"
+               target="_blank"
+               title="http://linkedevents.org/ontology/Event">event</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>is also defined as</dt>
+         <dd>named individual</dd>
       </dl>
    </div>
-   <div class="entity" id="MetricResult">
-      <h3>MetricResult<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="DeleteSourceData">
+      <h3>DeleteSourceData<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#MetricResult</p>
-      <div class="comment">
-         <span class="markdown">A result related to a specific result set.</span>
-      </div>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#DeleteSourceData</p>
       <dl class="description">
-         <dt>is in domain of</dt>
+         <dt>has super-classes</dt>
          <dd>
-            <a href="#hasTimestamp"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasTimestamp">hasTimestamp</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasValue"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasValue">hasValue</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#inMetricSet"
-               title="https://prometheus-metric-ontology.ericsson.com/#inMetricSet">inMetricSet</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#hasResult"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasResult">hasResult</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is disjoint with</dt>
-         <dd>
-            <a href="#Metric"
-               title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#MetricQuery"
-               title="https://prometheus-metric-ontology.ericsson.com/#MetricQuery">MetricQuery</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#MetricResultSet"
-               title="https://prometheus-metric-ontology.ericsson.com/#MetricResultSet">MetricResultSet</a>
+            <a href="http://linkedevents.org/ontology/Event"
+               target="_blank"
+               title="http://linkedevents.org/ontology/Event">event</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>is also defined as</dt>
+         <dd>named individual</dd>
       </dl>
    </div>
-   <div class="entity" id="MetricResultSet">
-      <h3>MetricResultSet<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="InsertSourceData">
+      <h3>InsertSourceData<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#MetricResultSet</p>
-      <div class="comment">
-         <span class="markdown">The values and timestamps related to a metric.</span>
-      </div>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#InsertSourceData</p>
       <dl class="description">
-         <dt>is in domain of</dt>
+         <dt>has super-classes</dt>
          <dd>
-            <a href="#generatedByMetric"
-               title="https://prometheus-metric-ontology.ericsson.com/#generatedByMetric">generatedByMetric</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasResult"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasResult">hasResult</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#hasResultSet"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasResultSet">hasResultSet</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#inMetricSet"
-               title="https://prometheus-metric-ontology.ericsson.com/#inMetricSet">inMetricSet</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is disjoint with</dt>
-         <dd>
-            <a href="#Metric"
-               title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#MetricQuery"
-               title="https://prometheus-metric-ontology.ericsson.com/#MetricQuery">MetricQuery</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#MetricResult"
-               title="https://prometheus-metric-ontology.ericsson.com/#MetricResult">MetricResult</a>
+            <a href="http://linkedevents.org/ontology/Event"
+               target="_blank"
+               title="http://linkedevents.org/ontology/Event">event</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#http://www.example.com/insertChange" title="http://www.example.com/insertChange">insert change</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>named individual</dd>
+      </dl>
+   </div>
+   <div class="entity" id="MergeSourceData">
+      <h3>MergeSourceData<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#MergeSourceData</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://linkedevents.org/ontology/Event"
+               target="_blank"
+               title="http://linkedevents.org/ontology/Event">event</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>named individual</dd>
+      </dl>
+   </div>
+   <div class="entity" id="MoveSourceData">
+      <h3>MoveSourceData<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#MoveSourceData</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://linkedevents.org/ontology/Event"
+               target="_blank"
+               title="http://linkedevents.org/ontology/Event">event</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>named individual</dd>
+      </dl>
+   </div>
+   <div class="entity" id="UpdateSourceData">
+      <h3>UpdateSourceData<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://linkedevents.org/ontology/Event"
+               target="_blank"
+               title="http://linkedevents.org/ontology/Event">event</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>named individual</dd>
       </dl>
    </div>
 </div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
-         <a href="#generatedByMetric"
-            title="https://prometheus-metric-ontology.ericsson.com/#generatedByMetric">generatedByMetric</a>
+         <a href="#hasEvent"
+            title="https://change-detection-ontology.adaptcentre.ie/#hasEvent">hasEvent</a>
       </li>
       <li>
-         <a href="#hasMetricQuery"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery">hasMetricQuery</a>
+         <a href="#hasOwner"
+            title="https://change-detection-ontology.adaptcentre.ie/#hasOwner">hasOwner</a>
       </li>
       <li>
-         <a href="#hasResult"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasResult">hasResult</a>
+         <a href="#inEventLog"
+            title="https://change-detection-ontology.adaptcentre.ie/#inEventLog">inEventLog</a>
       </li>
       <li>
-         <a href="#hasResultSet"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasResultSet">hasResultSet</a>
-      </li>
-      <li>
-         <a href="#inMetricSet"
-            title="https://prometheus-metric-ontology.ericsson.com/#inMetricSet">inMetricSet</a>
-      </li>
-      <li>
-         <a href="#usedByMetric"
-            title="https://prometheus-metric-ontology.ericsson.com/#usedByMetric">usedByMetric</a>
+         <a href="#ownedBy"
+            title="https://change-detection-ontology.adaptcentre.ie/#ownedBy">ownedBy</a>
       </li>
    </ul>
-   <div class="entity" id="generatedByMetric">
-      <h3>generatedByMetric<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="hasEvent">
+      <h3>hasEvent<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#generatedByMetric</p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#hasEvent</p>
       <div class="comment">
-         <span class="markdown">The result set generated by the metric.</span>
+         <span class="markdown">An event within a certain event log.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://change-detection-ontology.adaptcentre.ie/#">https://change-detection-ontology.adaptcentre.ie/#</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#MetricResultSet"
-                  title="https://prometheus-metric-ontology.ericsson.com/#MetricResultSet">MetricResultSet</a>
+               <a href="#ChangeLog"
+                  title="https://change-detection-ontology.adaptcentre.ie/#ChangeLog">ChangeLog</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
+               <a href="http://linkedevents.org/ontology/Event"
+                  target="_blank"
+                  title="http://linkedevents.org/ontology/Event">event</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
             <dd>
-               <a href="#hasResultSet"
-                  title="https://prometheus-metric-ontology.ericsson.com/#hasResultSet">hasResultSet</a>
+               <a href="#inEventLog"
+                  title="https://change-detection-ontology.adaptcentre.ie/#inEventLog">inEventLog</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
    </div>
-   <div class="entity" id="hasMetricQuery">
-      <h3>hasMetricQuery<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="hasOwner">
+      <h3>hasOwner<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery</p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#hasOwner</p>
       <div class="comment">
-         <span class="markdown">The query which retrieved the metric information.</span>
+         <span class="markdown">The owner of the event log.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://change-detection-ontology.adaptcentre.ie/#">https://change-detection-ontology.adaptcentre.ie/#</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
+               <a href="#ChangeLog"
+                  title="https://change-detection-ontology.adaptcentre.ie/#ChangeLog">ChangeLog</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#MetricQuery"
-                  title="https://prometheus-metric-ontology.ericsson.com/#MetricQuery">MetricQuery</a>
+               <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"
+                  target="_blank"
+                  title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent">agent</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
             <dd>
-               <a href="#usedByMetric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#usedByMetric">usedByMetric</a>
+               <a href="#ownedBy"
+                  title="https://change-detection-ontology.adaptcentre.ie/#ownedBy">ownedBy</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
    </div>
-   <div class="entity" id="hasResult">
-      <h3>hasResult<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="inEventLog">
+      <h3>inEventLog<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasResult</p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#inEventLog</p>
       <div class="comment">
-         <span class="markdown">A result within a result set.</span>
+         <span class="markdown">An event within an event log.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://change-detection-ontology.adaptcentre.ie/#">https://change-detection-ontology.adaptcentre.ie/#</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#MetricResultSet"
-                  title="https://prometheus-metric-ontology.ericsson.com/#MetricResultSet">MetricResultSet</a>
+               <a href="http://linkedevents.org/ontology/Event"
+                  target="_blank"
+                  title="http://linkedevents.org/ontology/Event">event</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#MetricResult"
-                  title="https://prometheus-metric-ontology.ericsson.com/#MetricResult">MetricResult</a>
+               <a href="#ChangeLog"
+                  title="https://change-detection-ontology.adaptcentre.ie/#ChangeLog">ChangeLog</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
             <dd>
-               <a href="#inMetricSet"
-                  title="https://prometheus-metric-ontology.ericsson.com/#inMetricSet">inMetricSet</a>
+               <a href="#hasEvent"
+                  title="https://change-detection-ontology.adaptcentre.ie/#hasEvent">hasEvent</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
    </div>
-   <div class="entity" id="hasResultSet">
-      <h3>hasResultSet<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="ownedBy">
+      <h3>ownedBy<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasResultSet</p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#ownedBy</p>
       <div class="comment">
-         <span class="markdown">The result set associated with the metric.</span>
+         <span class="markdown">The agent who owns the change log.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://change-detection-ontology.adaptcentre.ie/#">https://change-detection-ontology.adaptcentre.ie/#</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#MetricResultSet"
-                  title="https://prometheus-metric-ontology.ericsson.com/#MetricResultSet">MetricResultSet</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
             <dt>is inverse of</dt>
             <dd>
-               <a href="#generatedByMetric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#generatedByMetric">generatedByMetric</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="inMetricSet">
-      <h3>inMetricSet<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#inMetricSet</p>
-      <div class="comment">
-         <span class="markdown">A result within a result set.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#MetricResult"
-                  title="https://prometheus-metric-ontology.ericsson.com/#MetricResult">MetricResult</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#MetricResultSet"
-                  title="https://prometheus-metric-ontology.ericsson.com/#MetricResultSet">MetricResultSet</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#hasResult"
-                  title="https://prometheus-metric-ontology.ericsson.com/#hasResult">hasResult</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="usedByMetric">
-      <h3>usedByMetric<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#usedByMetric</p>
-      <div class="comment">
-         <span class="markdown">The metric used by the query.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#MetricQuery"
-                  title="https://prometheus-metric-ontology.ericsson.com/#MetricQuery">MetricQuery</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#hasMetricQuery"
-                  title="https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery">hasMetricQuery</a>
+               <a href="#hasOwner"
+                  title="https://change-detection-ontology.adaptcentre.ie/#hasOwner">hasOwner</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -418,278 +372,50 @@ This section provides details for each class and property defined by Prometheus 
    <h3 id="dataproperties-headline" class="list">Data Properties</h3>
    <ul class="hlist">
       <li>
-         <a href="#hasCode"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasCode">hasCode</a>
+         <a href="#detectionEnd"
+            title="https://change-detection-ontology.adaptcentre.ie/#detectionEnd">detectionEnd</a>
       </li>
       <li>
-         <a href="#hasHandler"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasHandler">hasHandler</a>
+         <a href="#detectionStart"
+            title="https://change-detection-ontology.adaptcentre.ie/#detectionStart">detectionStart</a>
       </li>
       <li>
-         <a href="#hasInstance"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasInstance">hasInstance</a>
+         <a href="#hasReason"
+            title="https://change-detection-ontology.adaptcentre.ie/#hasReason">hasReason</a>
       </li>
       <li>
-         <a href="#hasJob"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasJob">hasJob</a>
-      </li>
-      <li>
-         <a href="#hasName"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasName">hasName</a>
-      </li>
-      <li>
-         <a href="#hasQuery"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasQuery">hasQuery</a>
-      </li>
-      <li>
-         <a href="#hasResultType"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasResultType">hasResultType</a>
-      </li>
-      <li>
-         <a href="#hasStatus"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasStatus">hasStatus</a>
-      </li>
-      <li>
-         <a href="#hasTimestamp"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasTimestamp">hasTimestamp</a>
-      </li>
-      <li>
-         <a href="#hasValue"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasValue">hasValue</a>
+         <a href="#hasThreshold"
+            title="https://change-detection-ontology.adaptcentre.ie/#hasThreshold">
+            <span>hasThreshold</span>
+         </a>
       </li>
    </ul>
-   <div class="entity" id="hasCode">
-      <h3>hasCode<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="detectionEnd">
+      <h3>detectionEnd<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasCode</p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#detectionEnd</p>
       <div class="comment">
-         <span class="markdown">The code related to the metric.</span>
+         <span class="markdown">The time when the notification policy is finished.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://change-detection-ontology.adaptcentre.ie/#">https://change-detection-ontology.adaptcentre.ie/#</a>
+         </dd>
+      </dl>
       <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
+               <a href="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy"
                   target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasHandler">
-      <h3>hasHandler<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasHandler</p>
-      <div class="comment">
-         <span class="markdown">The handler related to the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasInstance">
-      <h3>hasInstance<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasInstance</p>
-      <div class="comment">
-         <span class="markdown">The instance related to the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasJob">
-      <h3>hasJob<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasJob</p>
-      <div class="comment">
-         <span class="markdown">The job related to the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasName">
-      <h3>hasName<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasName</p>
-      <div class="comment">
-         <span class="markdown">The name of the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasQuery">
-      <h3>hasQuery<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasQuery</p>
-      <div class="comment">
-         <span class="markdown">The query used to collect the metric information.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#MetricQuery"
-                  title="https://prometheus-metric-ontology.ericsson.com/#MetricQuery">MetricQuery</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasResultType">
-      <h3>hasResultType<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasResultType</p>
-      <div class="comment">
-         <span class="markdown">The result type returned by the API.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#MetricQuery"
-                  title="https://prometheus-metric-ontology.ericsson.com/#MetricQuery">MetricQuery</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasStatus">
-      <h3>hasStatus<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasStatus</p>
-      <div class="comment">
-         <span class="markdown">The status of the API response.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#MetricQuery"
-                  title="https://prometheus-metric-ontology.ericsson.com/#MetricQuery">MetricQuery</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasTimestamp">
-      <h3>hasTimestamp<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasTimestamp</p>
-      <div class="comment">
-         <span class="markdown">The timestamp related to a result.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#MetricResult"
-                  title="https://prometheus-metric-ontology.ericsson.com/#MetricResult">MetricResult</a>
+                  title="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy">policy</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -701,22 +427,63 @@ This section provides details for each class and property defined by Prometheus 
          </dl>
       </div>
    </div>
-   <div class="entity" id="hasValue">
-      <h3>hasValue<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="detectionStart">
+      <h3>detectionStart<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasValue</p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#detectionStart</p>
       <div class="comment">
-         <span class="markdown">The value associated with a result.</span>
+         <span class="markdown">The time when the notification policy was created.</span>
       </div>
       <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#MetricResult"
-                  title="https://prometheus-metric-ontology.ericsson.com/#MetricResult">MetricResult</a>
+               <a href="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy"
+                  target="_blank"
+                  title="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy">policy</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#dateTime"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#dateTime">date time</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasReason">
+      <h3>hasReason<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#hasReason</p>
+      <div class="comment">
+         <span class="markdown">The reason a change occurred.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://change-detection-ontology.adaptcentre.ie/#">https://change-detection-ontology.adaptcentre.ie/#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://linkedevents.org/ontology/Event"
+                  target="_blank"
+                  title="http://linkedevents.org/ontology/Event">event</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -728,11 +495,375 @@ This section provides details for each class and property defined by Prometheus 
          </dl>
       </div>
    </div>
+   <div class="entity" id="hasThreshold">
+      <h3>hasThreshold<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#hasThreshold</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint"
+                  target="_blank"
+                  title="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint">simple constraint</a>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#int"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#int">int</a>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>named individual</dd>
+         </dl>
+      </div>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
+   <h3 id="namedindividuals" class="list">Named Individuals</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://www.example.com/changeLog" title="http://www.example.com/changeLog">
+            <span>change log</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.example.com/datatypeChangeConstraint" title="http://www.example.com/datatypeChangeConstraint">
+            <span>datatype change constraint</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.example.com/deleteChangeConstraint" title="http://www.example.com/deleteChangeConstraint">
+            <span>delete change constraint</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.example.com/detectionTime" title="http://www.example.com/detectionTime">
+            <span>detection time</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.example.com/insertChange" title="http://www.example.com/insertChange">
+            <span>insert change</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.example.com/insertChangeConstraint" title="http://www.example.com/insertChangeConstraint">
+            <span>insert change constraint</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.example.com/mergeChangeConstraint" title="http://www.example.com/mergeChangeConstraint">
+            <span>merge change constraint</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.example.com/moveChangeConstraint" title="http://www.example.com/moveChangeConstraint">
+            <span>move change constraint</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.example.com/notificationConstraint" title="http://www.example.com/notificationConstraint">
+            <span>notification constraint</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.example.com/notificationPolicy" title="http://www.example.com/notificationPolicy">
+            <span>notification policy</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.example.com/policyObligation" title="http://www.example.com/policyObligation">
+            <span>policy obligation</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.example.com/updateChangeConstraint" title="http://www.example.com/updateChangeConstraint">
+            <span>update change constraint</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.example.com/userActor" title="http://www.example.com/userActor">
+            <span>user actor</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="http://www.example.com/changeLog">
+      <h3>change log<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.example.com/changeLog</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#ChangeLog"
+               title="https://change-detection-ontology.adaptcentre.ie/#ChangeLog">ChangeLog</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.example.com/datatypeChangeConstraint">
+      <h3>datatype change constraint<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.example.com/datatypeChangeConstraint</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint"
+               target="_blank"
+               title="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint">simple constraint</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.example.com/deleteChangeConstraint">
+      <h3>delete change constraint<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.example.com/deleteChangeConstraint</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint"
+               target="_blank"
+               title="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint">simple constraint</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.example.com/detectionTime">
+      <h3>detection time<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.example.com/detectionTime</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.w3.org/2006/time#Instant"
+               target="_blank"
+               title="http://www.w3.org/2006/time#Instant">instant</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="http://www.w3.org/2006/time#inXSDDateTimeStamp"
+               target="_blank"
+               title="http://www.w3.org/2006/time#inXSDDateTimeStamp">in x s d date time stamp</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"2022-07-05 17:12:57.090772"^^<a href="http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#dateTimeStamp">date time stamp</a>
+            </span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.example.com/insertChange">
+      <h3>insert change<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.example.com/insertChange</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#InsertSourceData"
+               title="https://change-detection-ontology.adaptcentre.ie/#InsertSourceData">InsertSourceData</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasReason"
+               title="https://change-detection-ontology.adaptcentre.ie/#hasReason">hasReason</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"Name: Alex Randles"</span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.example.com/insertChangeConstraint">
+      <h3>insert change constraint<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.example.com/insertChangeConstraint</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint"
+               target="_blank"
+               title="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint">simple constraint</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.example.com/mergeChangeConstraint">
+      <h3>merge change constraint<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.example.com/mergeChangeConstraint</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint"
+               target="_blank"
+               title="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint">simple constraint</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.example.com/moveChangeConstraint">
+      <h3>move change constraint<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.example.com/moveChangeConstraint</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint"
+               target="_blank"
+               title="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint">simple constraint</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.example.com/notificationConstraint">
+      <h3>notification constraint<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.example.com/notificationConstraint</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#And"
+               target="_blank"
+               title="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#And">and</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.example.com/notificationPolicy">
+      <h3>notification policy<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.example.com/notificationPolicy</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy"
+               target="_blank"
+               title="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy">policy</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="http://www.w3.org/2006/time#inXSDDateTimeStamp"
+               target="_blank"
+               title="http://www.w3.org/2006/time#inXSDDateTimeStamp">in x s d date time stamp</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"2022-08-07 00:00:00.0000"^^<a href="http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#dateTimeStamp">date time stamp</a>
+            </span>
+         </dd>
+         <dd>
+            <a href="#detectionEnd"
+               title="https://change-detection-ontology.adaptcentre.ie/#detectionEnd">detectionEnd</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"2022-08-07 00:00:00.0000"^^<a href="http://www.w3.org/2001/XMLSchema#dateTime"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#dateTime">date time</a>
+            </span>
+         </dd>
+         <dd>
+            <a href="#detectionStart"
+               title="https://change-detection-ontology.adaptcentre.ie/#detectionStart">detectionStart</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"2022-07-05 17:12:56.121344"^^<a href="http://www.w3.org/2001/XMLSchema#dateTime"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#dateTime">date time</a>
+            </span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.example.com/policyObligation">
+      <h3>policy obligation<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.example.com/policyObligation</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#Obligation"
+               target="_blank"
+               title="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#Obligation">obligation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.example.com/updateChangeConstraint">
+      <h3>update change constraint<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.example.com/updateChangeConstraint</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint"
+               target="_blank"
+               title="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint">simple constraint</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.example.com/userActor">
+      <h3>user actor<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.example.com/userActor</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiEntity.owl#Agent"
+               target="_blank"
+               title="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiEntity.owl#Agent">agent</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="http://xmlns.com/foaf/0.1/Person"
+               target="_blank"
+               title="http://xmlns.com/foaf/0.1/Person">person</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
 </div><div id="legend">
 <h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <div   class="entity">
 <sup class="type-c" title="Classes">c</sup>: Classes <br/>
 <sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
 <sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
 </div>
 </div>

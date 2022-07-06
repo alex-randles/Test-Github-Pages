@@ -1,4 +1,16 @@
 [ {
+  "@id" : "http://linkedevents.org/ontology/Event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://linkedevents.org/ontology/atPlace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://linkedevents.org/ontology/atTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://linkedevents.org/ontology/involvedAgent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/abstract",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -9,6 +21,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/license",
@@ -23,337 +38,554 @@
   "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "https://prometheus-metric-ontology.ericsson.com/#",
+  "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiAction.owl#Action",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#fifth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#fourth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#object",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#sixth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#third",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#Obligation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#action",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#actor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#startingConstraint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiEntity.owl#Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#actor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#desc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#grants",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.example.com/changeLog",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://change-detection-ontology.adaptcentre.ie/#ChangeLog"
+  } ],
+  "https://change-detection-ontology.adaptcentre.ie/#hasChange" : [ {
+    "@id" : "http://www.example.com/insertChange"
+  } ],
+  "https://change-detection-ontology.adaptcentre.ie/#hasCurrentVersion" : [ {
+    "@id" : "https://raw.githubusercontent.com/alex-randles/Change-Detection-System-Examples/main/version_2_files/student.csv"
+  } ],
+  "https://change-detection-ontology.adaptcentre.ie/#hasPreviousVersion" : [ {
+    "@id" : "https://raw.githubusercontent.com/alex-randles/Change-Detection-System-Examples/main/version_1_files/student.csv"
+  } ]
+}, {
+  "@id" : "http://www.example.com/datatypeChangeConstraint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint" ],
+  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#object" : [ {
+    "@value" : "0"
+  } ],
+  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#predicate" : [ {
+    "@id" : "https://change-detection-ontology.adaptcentre.ie/#hasThreshold"
+  } ],
+  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#subject" : [ {
+    "@id" : "https://change-detection-ontology.adaptcentre.ie/#DatatypeSourceData"
+  } ]
+}, {
+  "@id" : "http://www.example.com/deleteChangeConstraint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint" ],
+  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#object" : [ {
+    "@value" : "0"
+  } ],
+  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#predicate" : [ {
+    "@id" : "https://change-detection-ontology.adaptcentre.ie/#hasThreshold"
+  } ],
+  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#subject" : [ {
+    "@id" : "https://change-detection-ontology.adaptcentre.ie/#DeleteSourceData"
+  } ]
+}, {
+  "@id" : "http://www.example.com/detectionTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2006/time#Instant"
+  } ],
+  "http://www.w3.org/2006/time#inXSDDateTimeStamp" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "@value" : "2022-07-05 17:12:57.090772"
+  } ]
+}, {
+  "@id" : "http://www.example.com/insertChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linkedevents.org/ontology/atTime" : [ {
+    "@id" : "http://www.example.com/detectionTime"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://change-detection-ontology.adaptcentre.ie/#InsertSourceData"
+  } ],
+  "https://change-detection-ontology.adaptcentre.ie/#hasReason" : [ {
+    "@value" : "Name: Alex Randles"
+  } ]
+}, {
+  "@id" : "http://www.example.com/insertChangeConstraint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint" ],
+  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#object" : [ {
+    "@value" : "0"
+  } ],
+  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#predicate" : [ {
+    "@id" : "https://change-detection-ontology.adaptcentre.ie/#hasThreshold"
+  } ],
+  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#subject" : [ {
+    "@id" : "https://change-detection-ontology.adaptcentre.ie/#InsertSourceData"
+  } ]
+}, {
+  "@id" : "http://www.example.com/mergeChangeConstraint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint" ],
+  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#object" : [ {
+    "@value" : "0"
+  } ],
+  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#predicate" : [ {
+    "@id" : "https://change-detection-ontology.adaptcentre.ie/#hasThreshold"
+  } ],
+  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#subject" : [ {
+    "@id" : "https://change-detection-ontology.adaptcentre.ie/#MergeSourceData"
+  } ]
+}, {
+  "@id" : "http://www.example.com/moveChangeConstraint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint" ],
+  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#object" : [ {
+    "@value" : "0"
+  } ],
+  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#predicate" : [ {
+    "@id" : "https://change-detection-ontology.adaptcentre.ie/#hasThreshold"
+  } ],
+  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#subject" : [ {
+    "@id" : "https://change-detection-ontology.adaptcentre.ie/#MoveSourceData"
+  } ]
+}, {
+  "@id" : "http://www.example.com/notificationConstraint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#And" ],
+  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#fifth" : [ {
+    "@id" : "http://www.example.com/mergeChangeConstraint"
+  } ],
+  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#first" : [ {
+    "@id" : "http://www.example.com/insertChangeConstraint"
+  } ],
+  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#fourth" : [ {
+    "@id" : "http://www.example.com/updateChangeConstraint"
+  } ],
+  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#second" : [ {
+    "@id" : "http://www.example.com/deleteChangeConstraint"
+  } ],
+  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#sixth" : [ {
+    "@id" : "http://www.example.com/datatypeChangeConstraint"
+  } ],
+  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#third" : [ {
+    "@id" : "http://www.example.com/moveChangeConstraint"
+  } ]
+}, {
+  "@id" : "http://www.example.com/notificationPolicy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#desc" : [ {
+    "@value" : "Notification policy for user 1"
+  } ],
+  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#grants" : [ {
+    "@id" : "http://www.example.com/policyObligation"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy"
+  } ],
+  "http://www.w3.org/2006/time#inXSDDateTimeStamp" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "@value" : "2022-08-07 00:00:00.0000"
+  } ],
+  "https://change-detection-ontology.adaptcentre.ie/#detectionEnd" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2022-08-07 00:00:00.0000"
+  } ],
+  "https://change-detection-ontology.adaptcentre.ie/#detectionStart" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2022-07-05 17:12:56.121344"
+  } ]
+}, {
+  "@id" : "http://www.example.com/policyObligation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#action" : [ {
+    "@id" : "https://change-detection-ontology.adaptcentre.ie/#sendNotification"
+  } ],
+  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#obligedTo" : [ {
+    "@id" : "https://change-detection-ontology.adaptcentre.ie/#softwareAgent"
+  } ],
+  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#startingConstraint" : [ {
+    "@id" : "http://www.example.com/notificationConstraint"
+  } ],
+  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#actor" : [ {
+    "@id" : "http://www.example.com/userActor"
+  }, {
+    "@id" : "https://change-detection-ontology.adaptcentre.ie/#softwareAgent"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#Obligation"
+  } ]
+}, {
+  "@id" : "http://www.example.com/updateChangeConstraint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint" ],
+  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#object" : [ {
+    "@value" : "0"
+  } ],
+  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#predicate" : [ {
+    "@id" : "https://change-detection-ontology.adaptcentre.ie/#hasThreshold"
+  } ],
+  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#subject" : [ {
+    "@id" : "https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData"
+  } ]
+}, {
+  "@id" : "http://www.example.com/userActor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiEntity.owl#Agent"
+  }, {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ],
+  "http://xmlns.com/foaf/0.1/mbox" : [ {
+    "@value" : "alexrandles0@gmail.com"
+  } ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#definition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2006/time#Instant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2006/time#TemporalEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2006/time#inXSDDateTimeStamp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/mbox",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://change-detection-ontology.adaptcentre.ie/#",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/terms/abstract" : [ {
-    "@value" : "The Prometheus Metric Ontology (PMO) provides a set of classes, properties, and restrictions that can be used to represent and interchange provenance and metadata information relating to Prometheus metric information."
+    "@value" : "The Change Detection Ontology (CDO) provides a set of classes, properties, and restrictions that can be used to represent and interchange provenance and metadata information relating to changes that occur within source data that has created an RDF dataset. It can also be specialized to create new classes and properties to model provenance and metadata information for domain specific changes."
   } ],
   "http://purl.org/dc/terms/created" : [ {
-    "@value" : "4 July 2022"
+    "@value" : "20 April 2022"
   } ],
   "http://purl.org/dc/terms/creator" : [ {
     "@value" : "Alex Randles"
   }, {
-    "@value" : "John Keeney"
-  }, {
-    "@value" : "Liam Fallon"
+    "@value" : "Declan O'Sullivan"
   } ],
   "http://purl.org/dc/terms/description" : [ {
-    "@value" : "The Prometheus Metric Ontology (PMO) is used to capture information which relates to metric information within the Prometheus monitoring system."
+    "@value" : "The Change Detection Ontology (CDO) is used to capture information which relates the changes that have occured within the source data of an RDF dataset. \n\nThe ontology allows a notification policy to be defined to notify users when a threshold of changes have occured. Once notified the mapping and source data should be re-examined to ensure no further action is required."
   } ],
   "http://purl.org/dc/terms/license" : [ {
     "@value" : "http://creativecommons.org/publicdomain/zero/1.0/"
   } ],
   "http://purl.org/dc/terms/title" : [ {
-    "@value" : "Prometheus Metric Ontology (PMO)"
+    "@value" : "Change Detection Ontology (CDO)"
   } ],
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
-    "@value" : "pmo"
+    "@value" : "cdo"
   } ],
   "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
-    "@value" : "https://prometheus-metric-ontology.ericsson.com/#"
+    "@value" : "https://change-detection-ontology.adaptcentre.ie/#"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#"
+  }, {
+    "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#"
+  }, {
+    "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "4 July 2022"
+    "@value" : "20 April 2022"
   } ]
 }, {
-  "@id" : "https://prometheus-metric-ontology.ericsson.com/#Metric",
+  "@id" : "https://change-detection-ontology.adaptcentre.ie/#ChangeLog",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The metric information being monitored."
+    "@value" : "A grouping of changes that have occured relating to a specific source data."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://change-detection-ontology.adaptcentre.ie/#"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Metric"
-  } ],
-  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://prometheus-metric-ontology.ericsson.com/#MetricQuery"
-  }, {
-    "@id" : "https://prometheus-metric-ontology.ericsson.com/#MetricResult"
-  }, {
-    "@id" : "https://prometheus-metric-ontology.ericsson.com/#MetricResultSet"
+    "@value" : "ChangeLog"
   } ]
 }, {
-  "@id" : "https://prometheus-metric-ontology.ericsson.com/#MetricQuery",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "@id" : "https://change-detection-ontology.adaptcentre.ie/#DatatypeSourceData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The information related to the query used to collect the metric information."
+    "@value" : "Datatype has been changed in the source data."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://change-detection-ontology.adaptcentre.ie/#"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "MetricQuery"
+    "@value" : "DatatypeSourceData"
   } ],
-  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://prometheus-metric-ontology.ericsson.com/#MetricResult"
-  }, {
-    "@id" : "https://prometheus-metric-ontology.ericsson.com/#MetricResultSet"
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linkedevents.org/ontology/Event"
   } ]
 }, {
-  "@id" : "https://prometheus-metric-ontology.ericsson.com/#MetricResult",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "@id" : "https://change-detection-ontology.adaptcentre.ie/#DeleteSourceData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A result related to a specific result set."
+    "@value" : "Data has been removed within the source data."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://change-detection-ontology.adaptcentre.ie/#"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "MetricResult"
+    "@value" : "DeleteSourceData"
   } ],
-  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://prometheus-metric-ontology.ericsson.com/#MetricResultSet"
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linkedevents.org/ontology/Event"
   } ]
 }, {
-  "@id" : "https://prometheus-metric-ontology.ericsson.com/#MetricResultSet",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "@id" : "https://change-detection-ontology.adaptcentre.ie/#InsertSourceData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The values and timestamps related to a metric."
+    "@value" : "Data has been inserted within the source data."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://change-detection-ontology.adaptcentre.ie/#"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "MetricResultSet"
+    "@value" : "InsertSourceData"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linkedevents.org/ontology/Event"
   } ]
 }, {
-  "@id" : "https://prometheus-metric-ontology.ericsson.com/#generatedByMetric",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@id" : "https://change-detection-ontology.adaptcentre.ie/#MergeSourceData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The result set generated by the metric."
+    "@value" : "Data has been merged within the source data."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://change-detection-ontology.adaptcentre.ie/#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "MergeSourceData"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linkedevents.org/ontology/Event"
+  } ]
+}, {
+  "@id" : "https://change-detection-ontology.adaptcentre.ie/#MoveSourceData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Data has been moved within the source data."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://change-detection-ontology.adaptcentre.ie/#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "MoveSourceData"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linkedevents.org/ontology/Event"
+  } ]
+}, {
+  "@id" : "https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Data has been updated within the source data."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://change-detection-ontology.adaptcentre.ie/#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "UpdateSourceData"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linkedevents.org/ontology/Event"
+  } ]
+}, {
+  "@id" : "https://change-detection-ontology.adaptcentre.ie/#detectionEnd",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The time when the notification policy is finished."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://prometheus-metric-ontology.ericsson.com/#MetricResultSet"
+    "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://change-detection-ontology.adaptcentre.ie/#"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "generatedByMetric"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://prometheus-metric-ontology.ericsson.com/#Metric"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://prometheus-metric-ontology.ericsson.com/#hasResultSet"
-  } ]
-}, {
-  "@id" : "https://prometheus-metric-ontology.ericsson.com/#hasCode",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The code related to the metric."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://prometheus-metric-ontology.ericsson.com/#Metric"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "hasCode"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
-  "@id" : "https://prometheus-metric-ontology.ericsson.com/#hasHandler",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The handler related to the metric."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://prometheus-metric-ontology.ericsson.com/#Metric"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "hasHandler"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
-  "@id" : "https://prometheus-metric-ontology.ericsson.com/#hasInstance",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The instance related to the metric."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://prometheus-metric-ontology.ericsson.com/#Metric"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "hasInstance"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
-  "@id" : "https://prometheus-metric-ontology.ericsson.com/#hasJob",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The job related to the metric."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://prometheus-metric-ontology.ericsson.com/#Metric"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "hasJob"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
-  "@id" : "https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The query which retrieved the metric information."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://prometheus-metric-ontology.ericsson.com/#Metric"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "hasMetricQuery"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://prometheus-metric-ontology.ericsson.com/#MetricQuery"
-  } ]
-}, {
-  "@id" : "https://prometheus-metric-ontology.ericsson.com/#hasName",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The name of the metric."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://prometheus-metric-ontology.ericsson.com/#Metric"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "hasName"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
-  "@id" : "https://prometheus-metric-ontology.ericsson.com/#hasQuery",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The query used to collect the metric information."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://prometheus-metric-ontology.ericsson.com/#MetricQuery"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "hasQuery"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
-  "@id" : "https://prometheus-metric-ontology.ericsson.com/#hasResult",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A result within a result set."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://prometheus-metric-ontology.ericsson.com/#MetricResultSet"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "hasResult"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://prometheus-metric-ontology.ericsson.com/#MetricResult"
-  } ]
-}, {
-  "@id" : "https://prometheus-metric-ontology.ericsson.com/#hasResultSet",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The result set associated with the metric."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://prometheus-metric-ontology.ericsson.com/#Metric"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "hasResultSet"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://prometheus-metric-ontology.ericsson.com/#MetricResultSet"
-  } ]
-}, {
-  "@id" : "https://prometheus-metric-ontology.ericsson.com/#hasResultType",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The result type returned by the API."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://prometheus-metric-ontology.ericsson.com/#MetricQuery"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "hasResultType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
-  "@id" : "https://prometheus-metric-ontology.ericsson.com/#hasStatus",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The status of the API response."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://prometheus-metric-ontology.ericsson.com/#MetricQuery"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "hasStatus"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
-  "@id" : "https://prometheus-metric-ontology.ericsson.com/#hasTimestamp",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The timestamp related to a result."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://prometheus-metric-ontology.ericsson.com/#MetricResult"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "hasTimestamp"
+    "@value" : "detectionEnd"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
   } ]
 }, {
-  "@id" : "https://prometheus-metric-ontology.ericsson.com/#hasValue",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@id" : "https://change-detection-ontology.adaptcentre.ie/#detectionStart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The value associated with a result."
+    "@value" : "The time when the notification policy was created."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://prometheus-metric-ontology.ericsson.com/#MetricResult"
+    "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "hasValue"
+    "@value" : "detectionStart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "https://change-detection-ontology.adaptcentre.ie/#hasChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://change-detection-ontology.adaptcentre.ie/#hasCurrentVersion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://change-detection-ontology.adaptcentre.ie/#hasEvent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An event within a certain event log."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://change-detection-ontology.adaptcentre.ie/#ChangeLog"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://change-detection-ontology.adaptcentre.ie/#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://linkedevents.org/ontology/Event"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://change-detection-ontology.adaptcentre.ie/#inEventLog"
+  } ]
+}, {
+  "@id" : "https://change-detection-ontology.adaptcentre.ie/#hasOwner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The owner of the event log."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://change-detection-ontology.adaptcentre.ie/#ChangeLog"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://change-detection-ontology.adaptcentre.ie/#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasOwner"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://change-detection-ontology.adaptcentre.ie/#ownedBy"
+  } ]
+}, {
+  "@id" : "https://change-detection-ontology.adaptcentre.ie/#hasPreviousVersion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://change-detection-ontology.adaptcentre.ie/#hasReason",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The reason a change occurred."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://linkedevents.org/ontology/Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://change-detection-ontology.adaptcentre.ie/#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasReason"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://prometheus-metric-ontology.ericsson.com/#inMetricSet",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@id" : "https://change-detection-ontology.adaptcentre.ie/#hasThreshold",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A result within a result set."
+    "@value" : "The threshold defined for a change type within the notification policy."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://prometheus-metric-ontology.ericsson.com/#MetricResult"
+    "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://change-detection-ontology.adaptcentre.ie/#"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "inMetricSet"
+    "@value" : "hasThreshold"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://prometheus-metric-ontology.ericsson.com/#MetricResultSet"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://prometheus-metric-ontology.ericsson.com/#hasResult"
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
   } ]
 }, {
-  "@id" : "https://prometheus-metric-ontology.ericsson.com/#usedByMetric",
+  "@id" : "https://change-detection-ontology.adaptcentre.ie/#inEventLog",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The metric used by the query."
+    "@value" : "An event within an event log."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://prometheus-metric-ontology.ericsson.com/#MetricQuery"
+    "@id" : "http://linkedevents.org/ontology/Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://change-detection-ontology.adaptcentre.ie/#"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "usedByMetric"
+    "@value" : "inEventLog"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://prometheus-metric-ontology.ericsson.com/#Metric"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery"
+    "@id" : "https://change-detection-ontology.adaptcentre.ie/#ChangeLog"
   } ]
+}, {
+  "@id" : "https://change-detection-ontology.adaptcentre.ie/#ownedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The agent who owns the change log."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://change-detection-ontology.adaptcentre.ie/#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ownedBy"
+  } ]
+}, {
+  "@id" : "https://change-detection-ontology.adaptcentre.ie/#sendNotification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://change-detection-ontology.adaptcentre.ie/#softwareAgent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 } ]
