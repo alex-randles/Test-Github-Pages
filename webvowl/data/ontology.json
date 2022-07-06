@@ -2,15 +2,15 @@
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "undefined" ],
-    "baseIris" : [ "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl", "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiMetaPolicy.owl", "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl", "http://linkedevents.org/ontology", "http://www.w3.org/2001/XMLSchema", "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl", "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiEntity.owl", "https://change-detection-ontology.adaptcentre.ie/", "http://www.w3.org/2000/01/rdf-schema", "http://xmlns.com/foaf/0.1", "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiAction.owl", "http://www.w3.org/2006/time", "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl" ],
+    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "https://prometheus-metric-ontology.ericsson.com/", "http://www.w3.org/2001/XMLSchema" ],
     "title" : {
-      "undefined" : "Change Detection Ontology (CDO)"
+      "undefined" : "Prometheus Metric Ontology (PMO)"
     },
-    "iri" : "https://change-detection-ontology.adaptcentre.ie/#",
-    "version" : "20 April 2022",
-    "author" : [ "Alex Randles", "Declan O'Sullivan" ],
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#",
+    "version" : "4 July 2022",
+    "author" : [ "Liam Fallon", "Alex Randles", "John Keeney" ],
     "description" : {
-      "undefined" : "The Change Detection Ontology (CDO) is used to capture information which relates the changes that have occured within the source data of an RDF dataset. \n\nThe ontology allows a notification policy to be defined to notify users when a threshold of changes have occured. Once notified the mapping and source data should be re-examined to ensure no further action is required."
+      "undefined" : "The Prometheus Metric Ontology (PMO) is used to capture information which relates to metric information within the Prometheus monitoring system."
     },
     "other" : {
       "license" : [ {
@@ -27,740 +27,394 @@
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Declan O'Sullivan",
+        "value" : "Liam Fallon",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "John Keeney",
         "type" : "label"
       } ],
       "created" : [ {
         "identifier" : "created",
         "language" : "undefined",
-        "value" : "20 April 2022",
+        "value" : "4 July 2022",
         "type" : "label"
       } ],
       "preferredNamespacePrefix" : [ {
         "identifier" : "preferredNamespacePrefix",
         "language" : "undefined",
-        "value" : "cdo",
+        "value" : "pmo",
         "type" : "label"
       } ],
       "abstract" : [ {
         "identifier" : "abstract",
         "language" : "undefined",
-        "value" : "The Change Detection Ontology (CDO) provides a set of classes, properties, and restrictions that can be used to represent and interchange provenance and metadata information relating to changes that occur within source data that has created an RDF dataset. It can also be specialized to create new classes and properties to model provenance and metadata information for domain specific changes.",
-        "type" : "label"
-      } ],
-      "preferredNamespaceUri" : [ {
-        "identifier" : "preferredNamespaceUri",
-        "language" : "undefined",
-        "value" : "https://change-detection-ontology.adaptcentre.ie/#",
+        "value" : "The Prometheus Metric Ontology (PMO) provides a set of classes, properties, and restrictions that can be used to represent and interchange provenance and metadata information relating to Prometheus metric information.",
         "type" : "label"
       } ],
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
-        "value" : "20 April 2022",
+        "value" : "4 July 2022",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://prometheus-metric-ontology.ericsson.com/#",
         "type" : "label"
       } ],
       "title" : [ {
         "identifier" : "title",
         "language" : "undefined",
-        "value" : "Change Detection Ontology (CDO)",
+        "value" : "Prometheus Metric Ontology (PMO)",
         "type" : "label"
       } ]
     }
   },
   "namespace" : [ ],
   "class" : [ {
-    "id" : "0",
-    "type" : "owl:Class"
-  }, {
-    "id" : "15",
-    "type" : "owl:Class"
-  }, {
-    "id" : "18",
-    "type" : "owl:Class"
-  }, {
-    "id" : "21",
-    "type" : "owl:Class"
-  }, {
-    "id" : "20",
-    "type" : "owl:Class"
-  }, {
-    "id" : "46",
-    "type" : "owl:Class"
-  }, {
-    "id" : "49",
-    "type" : "owl:Class"
-  }, {
-    "id" : "58",
-    "type" : "owl:Class"
-  }, {
-    "id" : "34",
-    "type" : "owl:Class"
-  }, {
-    "id" : "14",
-    "type" : "owl:Class"
-  }, {
     "id" : "6",
     "type" : "owl:Class"
   }, {
-    "id" : "16",
-    "type" : "owl:Class"
-  }, {
-    "id" : "25",
-    "type" : "owl:Class"
-  }, {
-    "id" : "3",
-    "type" : "owl:Class"
-  }, {
-    "id" : "70",
-    "type" : "owl:Class"
-  }, {
-    "id" : "63",
-    "type" : "owl:Class"
-  }, {
-    "id" : "4",
-    "type" : "owl:Class"
-  }, {
-    "id" : "17",
-    "type" : "owl:Class"
-  }, {
-    "id" : "56",
-    "type" : "owl:Class"
-  }, {
-    "id" : "9",
-    "type" : "owl:Class"
-  }, {
-    "id" : "29",
-    "type" : "owl:Class"
-  }, {
-    "id" : "82",
-    "type" : "owl:Class"
-  }, {
-    "id" : "61",
-    "type" : "owl:Class"
-  }, {
-    "id" : "51",
-    "type" : "owl:Class"
-  }, {
-    "id" : "53",
-    "type" : "owl:Class"
-  }, {
-    "id" : "31",
+    "id" : "7",
     "type" : "owl:Class"
   }, {
     "id" : "1",
     "type" : "owl:Class"
   }, {
-    "id" : "65",
-    "type" : "owl:Class"
+    "id" : "15",
+    "type" : "rdfs:Datatype"
   }, {
-    "id" : "10",
-    "type" : "owl:Class"
+    "id" : "107",
+    "type" : "rdfs:Datatype"
   }, {
-    "id" : "44",
-    "type" : "owl:Class"
+    "id" : "66",
+    "type" : "rdfs:Datatype"
   }, {
-    "id" : "97",
-    "type" : "owl:Class"
-  }, {
-    "id" : "27",
-    "type" : "owl:Class"
+    "id" : "46",
+    "type" : "rdfs:Datatype"
   }, {
     "id" : "92",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "36",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "12",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "78",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "75",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "73",
-    "type" : "owl:Class"
-  }, {
-    "id" : "99",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "100",
-    "type" : "rdfs:Literal"
-  }, {
     "id" : "94",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "42",
-    "type" : "owl:Class"
-  }, {
-    "id" : "101",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "7",
+    "id" : "52",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "33",
-    "type" : "owl:Class"
-  }, {
-    "id" : "23",
-    "type" : "owl:Class"
-  }, {
-    "id" : "71",
-    "type" : "owl:Class"
+    "id" : "80",
+    "type" : "rdfs:Datatype"
   }, {
     "id" : "109",
-    "type" : "owl:Class"
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "112",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "113",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "126",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "127",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "123",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "128",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "129",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "106",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "140",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "141",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "142",
+    "type" : "rdfs:Datatype"
   }, {
     "id" : "111",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "143",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "137",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "139",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "151",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "115",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "150",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "121",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "119",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "147",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "155",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "145",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "160",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "163",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "164",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "39",
     "type" : "owl:Class"
+  }, {
+    "id" : "168",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "133",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "135",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "117",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "173",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "170",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "179",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "153",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "131",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "181",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "162",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "96",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:Datatype"
   } ],
   "classAttribute" : [ {
-    "iri" : "https://change-detection-ontology.adaptcentre.ie/#DeleteSourceData",
-    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#MetricResultSet",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
     "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://change-detection-ontology.adaptcentre.ie/#",
-        "type" : "iri"
-      } ]
-    },
     "label" : {
-      "IRI-based" : "DeleteSourceData",
-      "undefined" : "DeleteSourceData"
+      "IRI-based" : "MetricResultSet",
+      "undefined" : "MetricResultSet"
     },
     "comment" : {
-      "undefined" : "Data has been removed within the source data."
+      "undefined" : "The values and timestamps related to a metric."
     },
-    "id" : "0",
-    "superClasses" : [ "1" ]
+    "id" : "6"
   }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#And",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#MetricResult",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "And",
-      "undefined" : "And Boolean Constraint"
-    },
-    "individuals" : [ {
-      "iri" : "http://www.example.com/notificationConstraint",
-      "baseIri" : "http://www.example.com",
-      "annotations" : {
-        "sixth" : [ {
-          "identifier" : "sixth",
-          "language" : "undefined",
-          "value" : "http://www.example.com/datatypeChangeConstraint",
-          "type" : "iri"
-        } ],
-        "third" : [ {
-          "identifier" : "third",
-          "language" : "undefined",
-          "value" : "http://www.example.com/moveChangeConstraint",
-          "type" : "iri"
-        } ],
-        "fifth" : [ {
-          "identifier" : "fifth",
-          "language" : "undefined",
-          "value" : "http://www.example.com/mergeChangeConstraint",
-          "type" : "iri"
-        } ],
-        "fourth" : [ {
-          "identifier" : "fourth",
-          "language" : "undefined",
-          "value" : "http://www.example.com/updateChangeConstraint",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "notificationConstraint"
-      }
-    } ],
-    "attributes" : [ "external" ],
-    "id" : "15",
-    "superClasses" : [ "16", "17" ]
-  }, {
-    "iri" : "https://change-detection-ontology.adaptcentre.ie/#InsertSourceData",
-    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
-    "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://change-detection-ontology.adaptcentre.ie/#",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "InsertSourceData",
-      "undefined" : "InsertSourceData"
-    },
-    "individuals" : [ {
-      "iri" : "http://www.example.com/insertChange",
-      "baseIri" : "http://www.example.com",
-      "annotations" : {
-        "atTime" : [ {
-          "identifier" : "atTime",
-          "language" : "undefined",
-          "value" : "http://www.example.com/detectionTime",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "insertChange"
-      }
-    } ],
-    "comment" : {
-      "undefined" : "Data has been inserted within the source data."
-    },
-    "id" : "18",
-    "superClasses" : [ "1" ]
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#Not",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Not",
-      "undefined" : "Not Boolean Constraint"
+      "IRI-based" : "MetricResult",
+      "undefined" : "MetricResult"
     },
     "comment" : {
-      "undefined" : "A constraint that cannot be proved"
+      "undefined" : "A result related to a specific result set."
     },
-    "attributes" : [ "external" ],
-    "id" : "21",
-    "superClasses" : [ "16" ]
+    "id" : "7"
   }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#Permission",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#Metric",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Permission"
-    },
-    "attributes" : [ "external" ],
-    "id" : "20",
-    "superClasses" : [ "4" ]
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#ObligationOrProhibition",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ObligationOrProhibition"
-    },
-    "subClasses" : [ "29", "23" ],
-    "attributes" : [ "external" ],
-    "id" : "46"
-  }, {
-    "iri" : "https://change-detection-ontology.adaptcentre.ie/#MergeSourceData",
-    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
-    "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://change-detection-ontology.adaptcentre.ie/#",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "MergeSourceData",
-      "undefined" : "MergeSourceData"
+      "IRI-based" : "Metric",
+      "undefined" : "Metric"
     },
     "comment" : {
-      "undefined" : "Data has been merged within the source data."
+      "undefined" : "The metric information being monitored."
     },
-    "id" : "49",
-    "superClasses" : [ "1" ]
-  }, {
-    "iri" : "http://xmlns.com/foaf/0.1/Person",
-    "baseIri" : "http://xmlns.com/foaf/0.1",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Person"
-    },
-    "individuals" : [ {
-      "iri" : "http://www.example.com/userActor",
-      "baseIri" : "http://www.example.com",
-      "annotations" : {
-        "mbox" : [ {
-          "identifier" : "mbox",
-          "language" : "undefined",
-          "value" : "alexrandles0@gmail.com",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "userActor"
-      }
-    } ],
-    "attributes" : [ "external" ],
-    "id" : "58"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#Constraint",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Constraint",
-      "undefined" : "constraint"
-    },
-    "subClasses" : [ "16", "33" ],
-    "comment" : {
-      "undefined" : "Root of Rei Constraint Ontology"
-    },
-    "attributes" : [ "external" ],
-    "id" : "34"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiMetaPolicy.owl#ModalityPrecedence",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiMetaPolicy.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ModalityPrecedence"
-    },
-    "attributes" : [ "external" ],
-    "id" : "14"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Policy",
-      "undefined" : "Policy"
-    },
-    "individuals" : [ {
-      "iri" : "http://www.example.com/notificationPolicy",
-      "baseIri" : "http://www.example.com",
-      "annotations" : {
-        "desc" : [ {
-          "identifier" : "desc",
-          "language" : "undefined",
-          "value" : "Notification policy for user 1",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "notificationPolicy"
-      }
-    } ],
-    "comment" : {
-      "undefined" : "Policy class. Contains a list of defaults and policy rules. "
-    },
-    "attributes" : [ "external" ],
-    "id" : "6",
-    "superClasses" : [ "25" ]
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#BooleanConstraint",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "BooleanConstraint",
-      "undefined" : "BooleanConstraint"
-    },
-    "subClasses" : [ "15", "21", "27" ],
-    "comment" : {
-      "undefined" : "Models boolean constraints of AND, OR and NOT"
-    },
-    "attributes" : [ "external" ],
-    "id" : "16",
-    "superClasses" : [ "34" ]
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#ReiRoot",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ReiRoot",
-      "undefined" : "ReiRoot"
-    },
-    "subClasses" : [ "6", "31" ],
-    "comment" : {
-      "undefined" : "Root of the Rei Ontology"
-    },
-    "attributes" : [ "external" ],
-    "id" : "25"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#Dispensation",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Dispensation",
-      "undefined" : "Dispensation"
-    },
-    "comment" : {
-      "undefined" : "A waiver for an obligation. Entity is no longer obliged. Different from not obliged to"
-    },
-    "attributes" : [ "external" ],
-    "id" : "3",
-    "superClasses" : [ "4" ]
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiMetaPolicy.owl#RulePriority",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiMetaPolicy.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "RulePriority"
-    },
-    "attributes" : [ "external" ],
-    "id" : "70"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiEntity.owl#Entity",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiEntity.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Entity"
-    },
-    "attributes" : [ "external" ],
-    "id" : "63"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#DeonticObject",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "DeonticObject",
-      "undefined" : "DeonticObject"
-    },
-    "subClasses" : [ "29", "23", "20", "3" ],
-    "comment" : {
-      "undefined" : "The class of deontic objects"
-    },
-    "attributes" : [ "external" ],
-    "id" : "4",
-    "superClasses" : [ "71", "44" ]
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#AndOrOr",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "AndOrOr"
-    },
-    "subClasses" : [ "15", "27" ],
-    "attributes" : [ "external" ],
-    "id" : "17"
-  }, {
-    "iri" : "https://change-detection-ontology.adaptcentre.ie/#MoveSourceData",
-    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
-    "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://change-detection-ontology.adaptcentre.ie/#",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "MoveSourceData",
-      "undefined" : "MoveSourceData"
-    },
-    "comment" : {
-      "undefined" : "Data has been moved within the source data."
-    },
-    "id" : "56",
-    "superClasses" : [ "1" ]
-  }, {
-    "iri" : "https://change-detection-ontology.adaptcentre.ie/#ChangeLog",
-    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
-    "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://change-detection-ontology.adaptcentre.ie/#",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "ChangeLog",
-      "undefined" : "ChangeLog"
-    },
-    "individuals" : [ {
-      "iri" : "http://www.example.com/changeLog",
-      "baseIri" : "http://www.example.com",
-      "annotations" : {
-        "hasPreviousVersion" : [ {
-          "identifier" : "hasPreviousVersion",
-          "language" : "undefined",
-          "value" : "https://raw.githubusercontent.com/alex-randles/Change-Detection-System-Examples/main/version_1_files/student.csv",
-          "type" : "iri"
-        } ],
-        "hasCurrentVersion" : [ {
-          "identifier" : "hasCurrentVersion",
-          "language" : "undefined",
-          "value" : "https://raw.githubusercontent.com/alex-randles/Change-Detection-System-Examples/main/version_2_files/student.csv",
-          "type" : "iri"
-        } ],
-        "hasChange" : [ {
-          "identifier" : "hasChange",
-          "language" : "undefined",
-          "value" : "http://www.example.com/insertChange",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "changeLog"
-      }
-    } ],
-    "comment" : {
-      "undefined" : "A grouping of changes that have occured relating to a specific source data."
-    },
-    "id" : "9"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#Prohibition",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Prohibition",
-      "undefined" : "Prohibition"
-    },
-    "attributes" : [ "external" ],
-    "id" : "29",
-    "superClasses" : [ "4", "46" ]
-  }, {
-    "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place",
-    "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Place"
-    },
-    "attributes" : [ "external" ],
-    "id" : "82"
-  }, {
-    "iri" : "https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData",
-    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
-    "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://change-detection-ontology.adaptcentre.ie/#",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "UpdateSourceData",
-      "undefined" : "UpdateSourceData"
-    },
-    "comment" : {
-      "undefined" : "Data has been updated within the source data."
-    },
-    "id" : "61",
-    "superClasses" : [ "1" ]
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiEntity.owl#Agent",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiEntity.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Agent"
-    },
-    "individuals" : [ {
-      "iri" : "http://www.example.com/userActor",
-      "baseIri" : "http://www.example.com",
-      "annotations" : {
-        "mbox" : [ {
-          "identifier" : "mbox",
-          "language" : "undefined",
-          "value" : "alexrandles0@gmail.com",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "userActor"
-      }
-    } ],
-    "attributes" : [ "external" ],
-    "id" : "51"
-  }, {
-    "iri" : "https://change-detection-ontology.adaptcentre.ie/#DatatypeSourceData",
-    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
-    "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://change-detection-ontology.adaptcentre.ie/#",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "DatatypeSourceData",
-      "undefined" : "DatatypeSourceData"
-    },
-    "comment" : {
-      "undefined" : "Datatype has been changed in the source data."
-    },
-    "id" : "53",
-    "superClasses" : [ "1" ]
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Granting",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Granting",
-      "undefined" : "Granting"
-    },
-    "comment" : {
-      "undefined" : "The class that connects deontic objects to policies"
-    },
-    "attributes" : [ "external" ],
-    "id" : "31",
-    "superClasses" : [ "44", "25" ]
-  }, {
-    "iri" : "http://linkedevents.org/ontology/Event",
-    "baseIri" : "http://linkedevents.org/ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Event"
-    },
-    "subClasses" : [ "0", "61", "18", "53", "49", "56" ],
-    "attributes" : [ "external" ],
     "id" : "1"
   }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiMetaPolicy.owl#MetaPolicyDefault",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiMetaPolicy.owl",
-    "instances" : 0,
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "15",
     "label" : {
-      "IRI-based" : "MetaPolicyDefault"
-    },
-    "attributes" : [ "external" ],
-    "id" : "65"
+      "IRI-based" : "string"
+    }
   }, {
-    "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
-    "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
-    "instances" : 0,
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "107",
     "label" : {
-      "IRI-based" : "Agent"
-    },
-    "attributes" : [ "external" ],
-    "id" : "10"
+      "IRI-based" : "string"
+    }
   }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#GrantingOrDeontic",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
-    "instances" : 0,
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "66",
     "label" : {
-      "IRI-based" : "GrantingOrDeontic"
-    },
-    "subClasses" : [ "4", "31" ],
-    "attributes" : [ "external" ],
-    "id" : "44"
+      "IRI-based" : "string"
+    }
   }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiMetaPolicy.owl#Behavior",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiMetaPolicy.owl",
-    "instances" : 0,
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "46",
     "label" : {
-      "IRI-based" : "Behavior"
-    },
-    "attributes" : [ "external" ],
-    "id" : "97"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#Or",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Or",
-      "undefined" : "Or Boolean Constraint"
-    },
-    "attributes" : [ "external" ],
-    "id" : "27",
-    "superClasses" : [ "16", "17" ]
+      "IRI-based" : "string"
+    }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -769,1088 +423,2248 @@
       "IRI-based" : "string"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "36",
-    "label" : {
-      "IRI-based" : "int"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "12",
-    "label" : {
-      "undefined" : "Thing"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "78",
-    "label" : {
-      "undefined" : "Thing"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "75",
-    "label" : {
-      "undefined" : "Thing"
-    }
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiMetaPolicy.owl#PolicyPriority",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiMetaPolicy.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "PolicyPriority"
-    },
-    "attributes" : [ "external" ],
-    "id" : "73"
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "99",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "100",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
     "id" : "94",
     "label" : {
-      "undefined" : "Thing"
+      "IRI-based" : "string"
     }
   }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiAction.owl#Action",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiAction.owl",
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "52",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "80",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "109",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "112",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "113",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "126",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "127",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "123",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "76",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "50",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "128",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "70",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "129",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "98",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "90",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "106",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "140",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "42",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "141",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "142",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "111",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "143",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "17",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "137",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "139",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "151",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "115",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "150",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "102",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "121",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "54",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "88",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "119",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "147",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "40",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "44",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "155",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "62",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "78",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "145",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "160",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "9",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "56",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "58",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "4",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "125",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "21",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "163",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "164",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#MetricQuery",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Action"
+      "IRI-based" : "MetricQuery",
+      "undefined" : "MetricQuery"
     },
-    "attributes" : [ "external" ],
-    "id" : "42"
+    "comment" : {
+      "undefined" : "The information related to the query used to collect the metric information."
+    },
+    "id" : "39"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "168",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "11",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "84",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "25",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "64",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "35",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "133",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "29",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "135",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "117",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "173",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "86",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "170",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "74",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "179",
+    "label" : {
+      "IRI-based" : "string"
+    }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "101",
+    "id" : "153",
     "label" : {
       "IRI-based" : "dateTime"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "7",
+    "id" : "131",
     "label" : {
-      "IRI-based" : "dateTime"
+      "IRI-based" : "string"
     }
   }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
-    "instances" : 0,
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "104",
     "label" : {
-      "IRI-based" : "SimpleConstraint",
-      "undefined" : "SimpleConstraint"
-    },
-    "individuals" : [ {
-      "iri" : "http://www.example.com/updateChangeConstraint",
-      "baseIri" : "http://www.example.com",
-      "annotations" : {
-        "object" : [ {
-          "identifier" : "object",
-          "language" : "undefined",
-          "value" : "0",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "updateChangeConstraint"
-      }
-    }, {
-      "iri" : "http://www.example.com/insertChangeConstraint",
-      "baseIri" : "http://www.example.com",
-      "annotations" : {
-        "object" : [ {
-          "identifier" : "object",
-          "language" : "undefined",
-          "value" : "0",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "insertChangeConstraint"
-      }
-    }, {
-      "iri" : "http://www.example.com/mergeChangeConstraint",
-      "baseIri" : "http://www.example.com",
-      "annotations" : {
-        "object" : [ {
-          "identifier" : "object",
-          "language" : "undefined",
-          "value" : "0",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "mergeChangeConstraint"
-      }
-    }, {
-      "iri" : "http://www.example.com/moveChangeConstraint",
-      "baseIri" : "http://www.example.com",
-      "annotations" : {
-        "object" : [ {
-          "identifier" : "object",
-          "language" : "undefined",
-          "value" : "0",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "moveChangeConstraint"
-      }
-    }, {
-      "iri" : "http://www.example.com/datatypeChangeConstraint",
-      "baseIri" : "http://www.example.com",
-      "annotations" : {
-        "object" : [ {
-          "identifier" : "object",
-          "language" : "undefined",
-          "value" : "0",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "datatypeChangeConstraint"
-      }
-    }, {
-      "iri" : "http://www.example.com/deleteChangeConstraint",
-      "baseIri" : "http://www.example.com",
-      "annotations" : {
-        "object" : [ {
-          "identifier" : "object",
-          "language" : "undefined",
-          "value" : "0",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "deleteChangeConstraint"
-      }
-    } ],
-    "attributes" : [ "external" ],
-    "id" : "33",
-    "superClasses" : [ "34" ]
+      "IRI-based" : "string"
+    }
   }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#Obligation",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
-    "instances" : 0,
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "82",
     "label" : {
-      "IRI-based" : "Obligation",
-      "undefined" : "Dispensation"
-    },
-    "individuals" : [ {
-      "iri" : "http://www.example.com/policyObligation",
-      "baseIri" : "http://www.example.com",
-      "annotations" : {
-        "actor" : [ {
-          "identifier" : "actor",
-          "language" : "undefined",
-          "value" : "https://change-detection-ontology.adaptcentre.ie/#softwareAgent",
-          "type" : "iri"
-        }, {
-          "identifier" : "actor",
-          "language" : "undefined",
-          "value" : "http://www.example.com/userActor",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "policyObligation"
-      }
-    } ],
-    "attributes" : [ "external" ],
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "72",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "60",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "31",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "37",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "181",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "68",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "19",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "162",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "96",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "48",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "23",
-    "superClasses" : [ "4", "46" ]
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiAction.owl#ActionOrDeontic",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiAction.owl",
-    "instances" : 0,
     "label" : {
-      "IRI-based" : "ActionOrDeontic"
-    },
-    "subClasses" : [ "4" ],
-    "attributes" : [ "external" ],
-    "id" : "71"
-  }, {
-    "iri" : "http://www.w3.org/2006/time#Instant",
-    "baseIri" : "http://www.w3.org/2006/time",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Instant"
-    },
-    "individuals" : [ {
-      "iri" : "http://www.example.com/detectionTime",
-      "baseIri" : "http://www.example.com",
-      "labels" : {
-        "IRI-based" : "detectionTime"
-      }
-    } ],
-    "attributes" : [ "external" ],
-    "id" : "109"
-  }, {
-    "iri" : "http://www.w3.org/2006/time#TemporalEntity",
-    "baseIri" : "http://www.w3.org/2006/time",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "TemporalEntity"
-    },
-    "attributes" : [ "external" ],
-    "id" : "111"
+      "IRI-based" : "string"
+    }
   } ],
   "property" : [ {
-    "id" : "2",
-    "type" : "rdfs:SubClassOf"
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "5",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "8",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "11",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "13",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "19",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "22",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "24",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "26",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "28",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "30",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "32",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "35",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "37",
-    "type" : "rdfs:SubClassOf"
+    "id" : "10",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "38",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "39",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "40",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "41",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "43",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "45",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "47",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
-    "id" : "48",
-    "type" : "rdfs:SubClassOf"
+    "id" : "49",
+    "type" : "owl:datatypeProperty"
   }, {
-    "id" : "50",
-    "type" : "owl:objectProperty"
+    "id" : "51",
+    "type" : "owl:datatypeProperty"
   }, {
-    "id" : "52",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "54",
-    "type" : "rdfs:SubClassOf"
+    "id" : "53",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "55",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "57",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "59",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
-    "id" : "60",
-    "type" : "rdfs:SubClassOf"
+    "id" : "61",
+    "type" : "owl:datatypeProperty"
   }, {
-    "id" : "62",
-    "type" : "owl:objectProperty"
+    "id" : "63",
+    "type" : "owl:datatypeProperty"
   }, {
-    "id" : "64",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "66",
-    "type" : "owl:objectProperty"
+    "id" : "65",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "67",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "68",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "69",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
-    "id" : "72",
-    "type" : "owl:objectProperty"
+    "id" : "71",
+    "type" : "owl:datatypeProperty"
   }, {
-    "id" : "74",
-    "type" : "owl:objectProperty"
+    "id" : "73",
+    "type" : "owl:datatypeProperty"
   }, {
-    "id" : "76",
-    "type" : "owl:objectProperty"
+    "id" : "75",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "77",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "79",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "80",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "81",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "83",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "84",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "85",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "86",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "87",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "88",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "89",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "90",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "91",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "93",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "95",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "97",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "99",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "96",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "98",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "102",
-    "type" : "owl:objectProperty"
+    "id" : "101",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "103",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "104",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "105",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "106",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "107",
-    "type" : "owl:datatypeProperty"
-  }, {
     "id" : "108",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "110",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "114",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "116",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "118",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "120",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "122",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "124",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "130",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "132",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "134",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "136",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "138",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "144",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "146",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "148",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "149",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "152",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "154",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "156",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "157",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "158",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "159",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "161",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "165",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "166",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "167",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "169",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "171",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "172",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "174",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "175",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "176",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "177",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "178",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "180",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "182",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "183",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "184",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "185",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "186",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "187",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "188",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "189",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "190",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "191",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "100",
     "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
-    "range" : "4",
-    "domain" : "3",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "2"
-  }, {
-    "iri" : "https://change-detection-ontology.adaptcentre.ie/#detectionStart",
-    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
-    "range" : "7",
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasManufacturer",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "2",
     "label" : {
-      "IRI-based" : "detectionStart",
-      "undefined" : "detectionStart"
-    },
-    "domain" : "6",
-    "comment" : {
-      "undefined" : "The time when the notification policy was created."
-    },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "5"
-  }, {
-    "iri" : "https://change-detection-ontology.adaptcentre.ie/#hasOwner",
-    "inverse" : "11",
-    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
-    "range" : "10",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://change-detection-ontology.adaptcentre.ie/#",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "hasOwner",
-      "undefined" : "hasOwner"
-    },
-    "domain" : "9",
-    "comment" : {
-      "undefined" : "The owner of the event log."
-    },
-    "attributes" : [ "object" ],
-    "id" : "8"
-  }, {
-    "iri" : "https://change-detection-ontology.adaptcentre.ie/#ownedBy",
-    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
-    "range" : "12",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://change-detection-ontology.adaptcentre.ie/#",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "ownedBy",
-      "undefined" : "ownedBy"
-    },
-    "domain" : "12",
-    "comment" : {
-      "undefined" : "The agent who owns the change log."
-    },
-    "attributes" : [ "object" ],
-    "id" : "11"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#defaultModality",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
-    "range" : "14",
-    "label" : {
-      "IRI-based" : "defaultModality",
-      "undefined" : "defaults"
-    },
-    "domain" : "6",
-    "comment" : {
-      "undefined" : "Whether positive or negative modality holds precedence"
-    },
-    "attributes" : [ "external", "object" ],
-    "id" : "13"
-  }, {
-    "range" : "4",
-    "domain" : "20",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "19"
-  }, {
-    "range" : "4",
-    "domain" : "23",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "22"
-  }, {
-    "range" : "25",
-    "domain" : "6",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "24"
-  }, {
-    "range" : "16",
-    "domain" : "27",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "26"
-  }, {
-    "range" : "4",
-    "domain" : "29",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "28"
-  }, {
-    "range" : "25",
-    "domain" : "31",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "30"
-  }, {
-    "range" : "34",
-    "domain" : "33",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "32"
-  }, {
-    "iri" : "https://change-detection-ontology.adaptcentre.ie/#hasThreshold",
-    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
-    "range" : "36",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://change-detection-ontology.adaptcentre.ie/#",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "hasThreshold",
-      "undefined" : "hasThreshold"
-    },
-    "domain" : "33",
-    "comment" : {
-      "undefined" : "The threshold defined for a change type within the notification policy."
-    },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "35"
-  }, {
-    "range" : "34",
-    "domain" : "16",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "37"
-  }, {
-    "range" : "16",
-    "domain" : "21",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "38"
-  }, {
-    "range" : "16",
-    "domain" : "15",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "39"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#first",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
-    "range" : "34",
-    "label" : {
-      "IRI-based" : "first"
-    },
-    "domain" : "16",
-    "attributes" : [ "external", "object" ],
-    "id" : "40"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#action",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
-    "range" : "42",
-    "label" : {
-      "IRI-based" : "action",
-      "undefined" : "action"
-    },
-    "cardinality" : "1",
-    "domain" : "4",
-    "attributes" : [ "external", "object" ],
-    "id" : "41"
-  }, {
-    "range" : "44",
-    "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "43"
-  }, {
-    "range" : "46",
-    "domain" : "23",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "45"
-  }, {
-    "range" : "44",
-    "domain" : "31",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "47"
-  }, {
-    "range" : "1",
-    "domain" : "49",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "48"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#obligedTo",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
-    "range" : "51",
-    "label" : {
-      "IRI-based" : "obligedTo",
-      "undefined" : "obligedTo"
-    },
-    "domain" : "23",
-    "comment" : {
-      "undefined" : "Whom the the actor is obliged to"
-    },
-    "attributes" : [ "external", "object" ],
-    "id" : "50"
-  }, {
-    "range" : "1",
-    "domain" : "53",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "52"
-  }, {
-    "range" : "46",
-    "domain" : "29",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "54"
-  }, {
-    "range" : "1",
-    "domain" : "56",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "55"
-  }, {
-    "range" : "1",
-    "domain" : "0",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "57"
-  }, {
-    "range" : "1",
-    "domain" : "18",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "59"
-  }, {
-    "range" : "1",
-    "domain" : "61",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "60"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#to",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
-    "range" : "63",
-    "label" : {
-      "IRI-based" : "to",
-      "undefined" : "to"
-    },
-    "domain" : "31",
-    "attributes" : [ "external", "object" ],
-    "id" : "62"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#metaDefault",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
-    "range" : "65",
-    "label" : {
-      "IRI-based" : "metaDefault",
-      "undefined" : "MetaPolicy about defaults"
-    },
-    "domain" : "6",
-    "comment" : {
-      "undefined" : "In case of conflict, should priority between rules be checked before modality or vice versa"
-    },
-    "attributes" : [ "external", "object" ],
-    "id" : "64"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#context",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
-    "range" : "34",
-    "label" : {
-      "IRI-based" : "context",
-      "undefined" : "context"
-    },
-    "domain" : "6",
-    "comment" : {
-      "undefined" : "All the conditions associated with the policy. Includes domain"
-    },
-    "attributes" : [ "external", "object" ],
-    "id" : "66"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#second",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
-    "range" : "34",
-    "label" : {
-      "IRI-based" : "second"
-    },
-    "domain" : "17",
-    "attributes" : [ "external", "object" ],
-    "id" : "67"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#constraint",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
-    "range" : "34",
-    "label" : {
-      "IRI-based" : "constraint"
-    },
-    "domain" : "4",
-    "subproperty" : [ "69" ],
-    "attributes" : [ "external", "object" ],
-    "id" : "68"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#startingConstraint",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
-    "range" : "34",
-    "label" : {
-      "IRI-based" : "startingConstraint"
-    },
-    "superproperty" : [ "68" ],
-    "domain" : "4",
-    "attributes" : [ "external", "object" ],
-    "id" : "69"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#imports",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
-    "range" : "73",
-    "label" : {
-      "IRI-based" : "imports",
-      "undefined" : "imports"
-    },
-    "domain" : "6",
-    "attributes" : [ "external", "object" ],
-    "id" : "72"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#modifiedBy",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
-    "range" : "75",
-    "label" : {
-      "IRI-based" : "modifiedBy",
-      "undefined" : "modifiedBy"
-    },
-    "domain" : "6",
-    "attributes" : [ "external", "object" ],
-    "id" : "74"
-  }, {
-    "iri" : "https://change-detection-ontology.adaptcentre.ie/#inEventLog",
-    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
-    "range" : "9",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://change-detection-ontology.adaptcentre.ie/#",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "inEventLog",
-      "undefined" : "inEventLog"
+      "IRI-based" : "hasManufacturer",
+      "undefined" : "hasManufacturer"
     },
     "domain" : "1",
     "comment" : {
-      "undefined" : "An event within an event log."
+      "undefined" : "The Manufacturer label for the metric."
     },
-    "attributes" : [ "object" ],
-    "id" : "76"
+    "attributes" : [ "datatype" ],
+    "id" : "0"
   }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#predicate",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
-    "range" : "78",
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasProductName",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "4",
     "label" : {
-      "IRI-based" : "predicate"
+      "IRI-based" : "hasProductName",
+      "undefined" : "hasProductName"
     },
-    "domain" : "33",
-    "attributes" : [ "external", "object" ],
-    "id" : "77"
-  }, {
-    "range" : "17",
-    "domain" : "15",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "79"
-  }, {
-    "range" : "71",
-    "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "80"
-  }, {
-    "range" : "17",
-    "domain" : "27",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "81"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#inequal",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
-    "range" : "12",
-    "label" : {
-      "IRI-based" : "inequal"
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Product name label for the metric."
     },
-    "domain" : "12",
-    "attributes" : [ "symmetric", "external", "object" ],
-    "id" : "83"
+    "attributes" : [ "datatype" ],
+    "id" : "3"
   }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#endingConstraint",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
-    "range" : "34",
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasResult",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "7",
     "label" : {
-      "IRI-based" : "endingConstraint"
-    },
-    "domain" : "4",
-    "attributes" : [ "external", "object" ],
-    "id" : "84"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#rulePriority",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
-    "range" : "70",
-    "label" : {
-      "IRI-based" : "rulePriority",
-      "undefined" : "priority"
+      "IRI-based" : "hasResult",
+      "undefined" : "hasResult"
     },
     "domain" : "6",
     "comment" : {
-      "undefined" : "Used to set priority between granting rules"
-    },
-    "attributes" : [ "external", "object" ],
-    "id" : "85"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#provision",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
-    "range" : "23",
-    "label" : {
-      "IRI-based" : "provision"
-    },
-    "domain" : "20",
-    "comment" : {
-      "undefined" : "Obligation on the actor to either perform some action or make some conditions true sometime in the future."
-    },
-    "attributes" : [ "external", "object" ],
-    "id" : "86"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#actor",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
-    "range" : "51",
-    "label" : {
-      "IRI-based" : "actor",
-      "undefined" : "actor"
-    },
-    "cardinality" : "1",
-    "domain" : "4",
-    "attributes" : [ "external", "object" ],
-    "id" : "87"
-  }, {
-    "iri" : "https://change-detection-ontology.adaptcentre.ie/#hasEvent",
-    "inverse" : "76",
-    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
-    "range" : "1",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://change-detection-ontology.adaptcentre.ie/#",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "hasEvent",
-      "undefined" : "hasEvent"
-    },
-    "domain" : "9",
-    "comment" : {
-      "undefined" : "An event within a certain event log."
+      "undefined" : "A result within a result set."
     },
     "attributes" : [ "object" ],
-    "id" : "88"
+    "id" : "5"
   }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#object",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasProductFamily",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "hasProductFamily",
+      "undefined" : "hasProductFamily"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Product family label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "8"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasMountpoint",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "hasMountpoint",
+      "undefined" : "hasMountpoint"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Mountpoint label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "10"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasBranch",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "hasBranch",
+      "undefined" : "hasBranch"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Branch label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "12"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasDevice",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "hasDevice",
+      "undefined" : "hasDevice"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Device label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "14"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasInterval",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "hasInterval",
+      "undefined" : "hasInterval"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Interval label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "16"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasSerialNumber",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "hasSerialNumber",
+      "undefined" : "hasSerialNumber"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Serial number label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "18"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasOperstate",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "hasOperstate",
+      "undefined" : "hasOperstate"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Operstate label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "20"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasSensor",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "hasSensor",
+      "undefined" : "hasSensor"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Sensor label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "22"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasMode",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "hasMode",
+      "undefined" : "hasMode"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Mode label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "24"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasBoardVersion",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "hasBoardVersion",
+      "undefined" : "hasBoardVersion"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Board version label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "26"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasZone",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "hasZone",
+      "undefined" : "hasZone"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Zone label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "28"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasTechnology",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "hasTechnology",
+      "undefined" : "hasTechnology"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Technology label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "30"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#generatedByMetric",
+    "inverse" : "33",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "generatedByMetric",
+      "undefined" : "generatedByMetric"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "The result set generated by the metric."
+    },
+    "attributes" : [ "object" ],
+    "id" : "32"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasModelName",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "hasModelName",
+      "undefined" : "hasModelName"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Model name label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "34"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasSystemVendor",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "hasSystemVendor",
+      "undefined" : "hasSystemVendor"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The System vendor label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "36"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasResultType",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "hasResultType",
+      "undefined" : "hasResultType"
+    },
+    "domain" : "39",
+    "comment" : {
+      "undefined" : "The result type returned by the API."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "38"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasListenerName",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "hasListenerName",
+      "undefined" : "hasListenerName"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Listener name label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "41"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasRelease",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "hasRelease",
+      "undefined" : "hasRelease"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Release label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "43"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasCode",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "hasCode",
+      "undefined" : "hasCode"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Code label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "45"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasSerial",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "hasSerial",
+      "undefined" : "hasSerial"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Serial label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "47"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasBoardName",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "hasBoardName",
+      "undefined" : "hasBoardName"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Board name label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "49"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasCollector",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "hasCollector",
+      "undefined" : "hasCollector"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Collector label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "51"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasDomainname",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "hasDomainname",
+      "undefined" : "hasDomainname"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Domainname label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "53"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasPrettyName",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "hasPrettyName",
+      "undefined" : "hasPrettyName"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Pretty name label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "55"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasResultSet",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "hasResultSet",
+      "undefined" : "hasResultSet"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The result set associated with the metric."
+    },
+    "attributes" : [ "object" ],
+    "id" : "33"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasQuantile",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "hasQuantile",
+      "undefined" : "hasQuantile"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Quantile label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "57"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasStatus",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "60",
+    "label" : {
+      "IRI-based" : "hasStatus",
+      "undefined" : "hasStatus"
+    },
+    "domain" : "39",
+    "comment" : {
+      "undefined" : "The status of the API response."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "59"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasRevision",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "hasRevision",
+      "undefined" : "hasRevision"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Revision label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "61"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasMinor",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "hasMinor",
+      "undefined" : "hasMinor"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Minor label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "63"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasCore",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "hasCore",
+      "undefined" : "hasCore"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Core label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "65"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasSlice",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "68",
+    "label" : {
+      "IRI-based" : "hasSlice",
+      "undefined" : "hasSlice"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Slice label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "67"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasBiosVersion",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "70",
+    "label" : {
+      "IRI-based" : "hasBiosVersion",
+      "undefined" : "hasBiosVersion"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Bios version label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "69"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasSysname",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "72",
+    "label" : {
+      "IRI-based" : "hasSysname",
+      "undefined" : "hasSysname"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Sysname label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "71"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasAlertname",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "74",
+    "label" : {
+      "IRI-based" : "hasAlertname",
+      "undefined" : "hasAlertname"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Alertname label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "73"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasBoardVendor",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "76",
+    "label" : {
+      "IRI-based" : "hasBoardVendor",
+      "undefined" : "hasBoardVendor"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Board vendor label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "75"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasReason",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
     "range" : "78",
-    "label" : {
-      "IRI-based" : "object"
-    },
-    "domain" : "33",
-    "attributes" : [ "external", "object" ],
-    "id" : "89"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#deontic",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
-    "range" : "4",
-    "label" : {
-      "IRI-based" : "deontic",
-      "undefined" : "deontic object"
-    },
-    "cardinality" : "1",
-    "domain" : "31",
-    "attributes" : [ "external", "object" ],
-    "id" : "90"
-  }, {
-    "iri" : "https://change-detection-ontology.adaptcentre.ie/#hasReason",
-    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
-    "range" : "92",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://change-detection-ontology.adaptcentre.ie/#",
-        "type" : "iri"
-      } ]
-    },
     "label" : {
       "IRI-based" : "hasReason",
       "undefined" : "hasReason"
     },
     "domain" : "1",
     "comment" : {
-      "undefined" : "The reason a change occurred."
+      "undefined" : "The Reason label for the metric."
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype" ],
+    "id" : "77"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasChassisVendor",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "80",
+    "label" : {
+      "IRI-based" : "hasChassisVendor",
+      "undefined" : "hasChassisVendor"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Chassis vendor label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "79"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasType",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "82",
+    "label" : {
+      "IRI-based" : "hasType",
+      "undefined" : "hasType"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Type label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "81"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasNodename",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "84",
+    "label" : {
+      "IRI-based" : "hasNodename",
+      "undefined" : "hasNodename"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Nodename label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "83"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasAddress",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "86",
+    "label" : {
+      "IRI-based" : "hasAddress",
+      "undefined" : "hasAddress"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Address label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "85"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasDialerName",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "88",
+    "label" : {
+      "IRI-based" : "hasDialerName",
+      "undefined" : "hasDialerName"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Dialer name label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "87"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasMajor",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "90",
+    "label" : {
+      "IRI-based" : "hasMajor",
+      "undefined" : "hasMajor"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Major label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "89"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasClocksource",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "hasClocksource",
+      "undefined" : "hasClocksource"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Clocksource label for the metric."
+    },
+    "attributes" : [ "datatype" ],
     "id" : "91"
   }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#sanction",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasConfig",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
     "range" : "94",
     "label" : {
-      "IRI-based" : "sanction"
+      "IRI-based" : "hasConfig",
+      "undefined" : "hasConfig"
     },
-    "domain" : "46",
+    "domain" : "1",
     "comment" : {
-      "undefined" : "In case a rule is broken, a sanction is imposed. Sanction can be either an action or a deontic object"
+      "undefined" : "The Config label for the metric."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "datatype" ],
     "id" : "93"
   }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#createdBy",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
-    "range" : "75",
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasRuleGroup",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "96",
     "label" : {
-      "IRI-based" : "createdBy",
-      "undefined" : "creator"
+      "IRI-based" : "hasRuleGroup",
+      "undefined" : "hasRuleGroup"
     },
-    "domain" : "6",
-    "attributes" : [ "external", "object" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Rule group label for the metric."
+    },
+    "attributes" : [ "datatype" ],
     "id" : "95"
   }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#grants",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
-    "range" : "44",
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasMachine",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "98",
     "label" : {
-      "IRI-based" : "grants",
-      "undefined" : "grants"
+      "IRI-based" : "hasMachine",
+      "undefined" : "hasMachine"
     },
-    "domain" : "6",
+    "domain" : "1",
     "comment" : {
-      "undefined" : "Associates deontic objects with the policy"
+      "undefined" : "The Machine label for the metric."
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "96"
+    "attributes" : [ "datatype" ],
+    "id" : "97"
   }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#subject",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
-    "range" : "78",
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#usedByMetric",
+    "inverse" : "100",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "1",
     "label" : {
-      "IRI-based" : "subject"
+      "IRI-based" : "usedByMetric",
+      "undefined" : "usedByMetric"
     },
-    "domain" : "33",
-    "attributes" : [ "external", "object" ],
-    "id" : "98"
+    "domain" : "39",
+    "comment" : {
+      "undefined" : "The metric used by the query."
+    },
+    "attributes" : [ "object" ],
+    "id" : "99"
   }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#modifiedTime",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
-    "range" : "75",
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasGoversion",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "102",
     "label" : {
-      "IRI-based" : "modifiedTime",
-      "undefined" : "modifiedTime"
+      "IRI-based" : "hasGoversion",
+      "undefined" : "hasGoversion"
     },
-    "domain" : "6",
-    "attributes" : [ "external", "object" ],
-    "id" : "102"
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Goversion label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "101"
   }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#equal",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
-    "range" : "12",
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasValue",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "104",
     "label" : {
-      "IRI-based" : "equal"
+      "IRI-based" : "hasValue",
+      "undefined" : "hasValue"
     },
-    "domain" : "12",
-    "attributes" : [ "symmetric", "external", "object" ],
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "The value associated with a result."
+    },
+    "attributes" : [ "datatype" ],
     "id" : "103"
   }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#requirement",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
-    "range" : "34",
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasLabel",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "106",
     "label" : {
-      "IRI-based" : "requirement",
-      "undefined" : "requirement"
+      "IRI-based" : "hasLabel",
+      "undefined" : "hasLabel"
     },
-    "domain" : "31",
-    "attributes" : [ "external", "object" ],
-    "id" : "104"
-  }, {
-    "iri" : "http://www.w3.org/2006/time#inXSDDateTimeStamp",
-    "baseIri" : "http://www.w3.org/2006/time",
-    "range" : "99",
-    "label" : {
-      "IRI-based" : "inXSDDateTimeStamp"
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Label label for the metric."
     },
-    "domain" : "12",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype" ],
     "id" : "105"
   }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#desc",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
-    "range" : "100",
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasCause",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "109",
     "label" : {
-      "IRI-based" : "desc",
-      "undefined" : "description"
+      "IRI-based" : "hasCause",
+      "undefined" : "hasCause"
     },
-    "domain" : "25",
-    "attributes" : [ "external", "datatype" ],
-    "id" : "106"
-  }, {
-    "iri" : "https://change-detection-ontology.adaptcentre.ie/#detectionEnd",
-    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
-    "range" : "101",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://change-detection-ontology.adaptcentre.ie/#",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "detectionEnd",
-      "undefined" : "detectionEnd"
-    },
-    "domain" : "6",
+    "domain" : "1",
     "comment" : {
-      "undefined" : "The time when the notification policy is finished."
+      "undefined" : "The Cause label for the metric."
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "107"
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#defaultBehavior",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
-    "range" : "97",
-    "label" : {
-      "IRI-based" : "defaultBehavior",
-      "undefined" : "defaults"
-    },
-    "domain" : "6",
-    "comment" : {
-      "undefined" : "Whether implicit/explicit right or prohibition"
-    },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "datatype" ],
     "id" : "108"
   }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#creationTime",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
-    "range" : "75",
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasIndex",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "111",
     "label" : {
-      "IRI-based" : "creationTime",
-      "undefined" : "creationTime"
+      "IRI-based" : "hasIndex",
+      "undefined" : "hasIndex"
     },
-    "domain" : "6",
-    "attributes" : [ "external", "object" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Index label for the metric."
+    },
+    "attributes" : [ "datatype" ],
     "id" : "110"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasFirmwareRevision",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "115",
+    "label" : {
+      "IRI-based" : "hasFirmwareRevision",
+      "undefined" : "hasFirmwareRevision"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Firmware revision label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "114"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasVersionId",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "117",
+    "label" : {
+      "IRI-based" : "hasVersionId",
+      "undefined" : "hasVersionId"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Version id label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "116"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasEndpoint",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "119",
+    "label" : {
+      "IRI-based" : "hasEndpoint",
+      "undefined" : "hasEndpoint"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Endpoint label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "118"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasFstype",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "121",
+    "label" : {
+      "IRI-based" : "hasFstype",
+      "undefined" : "hasFstype"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Fstype label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "120"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasCapacityLevel",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "123",
+    "label" : {
+      "IRI-based" : "hasCapacityLevel",
+      "undefined" : "hasCapacityLevel"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Capacity level label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "122"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasPackage",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "125",
+    "label" : {
+      "IRI-based" : "hasPackage",
+      "undefined" : "hasPackage"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Package label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "124"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasTimeZone",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "131",
+    "label" : {
+      "IRI-based" : "hasTimeZone",
+      "undefined" : "hasTimeZone"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Time zone label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "130"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasModel",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "133",
+    "label" : {
+      "IRI-based" : "hasModel",
+      "undefined" : "hasModel"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Model label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "132"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasVersion",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "135",
+    "label" : {
+      "IRI-based" : "hasVersion",
+      "undefined" : "hasVersion"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Version label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "134"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasIdLike",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "137",
+    "label" : {
+      "IRI-based" : "hasIdLike",
+      "undefined" : "hasIdLike"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Id like label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "136"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasId",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "139",
+    "label" : {
+      "IRI-based" : "hasId",
+      "undefined" : "hasId"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Id label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "138"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasQueue",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "145",
+    "label" : {
+      "IRI-based" : "hasQueue",
+      "undefined" : "hasQueue"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Queue label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "144"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasDuplex",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "147",
+    "label" : {
+      "IRI-based" : "hasDuplex",
+      "undefined" : "hasDuplex"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Duplex label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "146"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasChipName",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "112",
+    "label" : {
+      "IRI-based" : "hasChipName",
+      "undefined" : "hasChipName"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Chip name label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "148"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasEvent",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "150",
+    "label" : {
+      "IRI-based" : "hasEvent",
+      "undefined" : "hasEvent"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Event label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "149"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasTimestamp",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "153",
+    "label" : {
+      "IRI-based" : "hasTimestamp",
+      "undefined" : "hasTimestamp"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "The timestamp related to a result."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "152"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasCall",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "126",
+    "label" : {
+      "IRI-based" : "hasCall",
+      "undefined" : "hasCall"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Call label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "154"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasRole",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "155",
+    "label" : {
+      "IRI-based" : "hasRole",
+      "undefined" : "hasRole"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Role label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "156"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasChip",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "113",
+    "label" : {
+      "IRI-based" : "hasChip",
+      "undefined" : "hasChip"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Chip label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "157"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasBroadcast",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "127",
+    "label" : {
+      "IRI-based" : "hasBroadcast",
+      "undefined" : "hasBroadcast"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Broadcast label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "158"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasBiosDate",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "128",
+    "label" : {
+      "IRI-based" : "hasBiosDate",
+      "undefined" : "hasBiosDate"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Bios date label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "159"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasScrapeJob",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "162",
+    "label" : {
+      "IRI-based" : "hasScrapeJob",
+      "undefined" : "hasScrapeJob"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Scrape job label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "161"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasIp",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "143",
+    "label" : {
+      "IRI-based" : "hasIp",
+      "undefined" : "hasIp"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Ip label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "165"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasQuery",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "160",
+    "label" : {
+      "IRI-based" : "hasQuery",
+      "undefined" : "hasQuery"
+    },
+    "domain" : "39",
+    "comment" : {
+      "undefined" : "The query used to collect the metric information."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "166"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasName",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "168",
+    "label" : {
+      "IRI-based" : "hasName",
+      "undefined" : "hasName"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The   name   label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "167"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasAlertmanager",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "170",
+    "label" : {
+      "IRI-based" : "hasAlertmanager",
+      "undefined" : "hasAlertmanager"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Alertmanager label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "169"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#inMetricSet",
+    "inverse" : "5",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "inMetricSet",
+      "undefined" : "inMetricSet"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "A result within a result set."
+    },
+    "attributes" : [ "object" ],
+    "id" : "171"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasPath",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "164",
+    "label" : {
+      "IRI-based" : "hasPath",
+      "undefined" : "hasPath"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Path label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "172"
+  }, {
+    "range" : "39",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "174"
+  }, {
+    "range" : "7",
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "175"
+  }, {
+    "range" : "6",
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "176"
+  }, {
+    "range" : "6",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "177"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasAlertstate",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "179",
+    "label" : {
+      "IRI-based" : "hasAlertstate",
+      "undefined" : "hasAlertstate"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Alertstate label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "178"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasState",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "181",
+    "label" : {
+      "IRI-based" : "hasState",
+      "undefined" : "hasState"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The State label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "180"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasInstance",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "142",
+    "label" : {
+      "IRI-based" : "hasInstance",
+      "undefined" : "hasInstance"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Instance label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "182"
+  }, {
+    "range" : "6",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "183"
+  }, {
+    "range" : "7",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "184"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasHandler",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "151",
+    "label" : {
+      "IRI-based" : "hasHandler",
+      "undefined" : "hasHandler"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Handler label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "185"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasJob",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "140",
+    "label" : {
+      "IRI-based" : "hasJob",
+      "undefined" : "hasJob"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Job label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "186"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasBiosVendor",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "129",
+    "label" : {
+      "IRI-based" : "hasBiosVendor",
+      "undefined" : "hasBiosVendor"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Bios vendor label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "187"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasCpu",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "107",
+    "label" : {
+      "IRI-based" : "hasCpu",
+      "undefined" : "hasCpu"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Cpu label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "188"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasVersionCodename",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "173",
+    "label" : {
+      "IRI-based" : "hasVersionCodename",
+      "undefined" : "hasVersionCodename"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Version codename label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "189"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasPowerSupply",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "163",
+    "label" : {
+      "IRI-based" : "hasPowerSupply",
+      "undefined" : "hasPowerSupply"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Power supply label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "190"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasLe",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "141",
+    "label" : {
+      "IRI-based" : "hasLe",
+      "undefined" : "hasLe"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Le label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "191"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "hasMetricQuery",
+      "undefined" : "hasMetricQuery"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The query which retrieved the metric information."
+    },
+    "attributes" : [ "object" ],
+    "id" : "100"
   } ]
 }

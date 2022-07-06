@@ -1,43 +1,27 @@
-@prefix : <https://change-detection-ontology.adaptcentre.ie/#> .
+@prefix : <https://prometheus-metric-ontology.ericsson.com/#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://change-detection-ontology.adaptcentre.ie/#> .
+@base <https://prometheus-metric-ontology.ericsson.com/#> .
 
-<https://change-detection-ontology.adaptcentre.ie/#> rdf:type owl:Ontology ;
-                                                      owl:imports <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#> ,
-                                                                  <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#> ,
-                                                                  <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#> ;
-                                                      <http://purl.org/dc/terms/abstract> "The Change Detection Ontology (CDO) provides a set of classes, properties, and restrictions that can be used to represent and interchange provenance and metadata information relating to changes that occur within source data that has created an RDF dataset. It can also be specialized to create new classes and properties to model provenance and metadata information for domain specific changes." ;
-                                                      <http://purl.org/dc/terms/created> "20 April 2022" ;
-                                                      <http://purl.org/dc/terms/creator> "Alex Randles" ,
-                                                                                         "Declan O'Sullivan" ;
-                                                      <http://purl.org/dc/terms/description> """The Change Detection Ontology (CDO) is used to capture information which relates the changes that have occured within the source data of an RDF dataset. 
-
-The ontology allows a notification policy to be defined to notify users when a threshold of changes have occured. Once notified the mapping and source data should be re-examined to ensure no further action is required.""" ;
-                                                      <http://purl.org/dc/terms/license> "http://creativecommons.org/publicdomain/zero/1.0/" ;
-                                                      <http://purl.org/dc/terms/title> "Change Detection Ontology (CDO)" ;
-                                                      <http://purl.org/vocab/vann/preferredNamespacePrefix> "cdo" ;
-                                                      <http://purl.org/vocab/vann/preferredNamespaceUri> "https://change-detection-ontology.adaptcentre.ie/#" ;
-                                                      owl:versionInfo "20 April 2022" .
+<https://prometheus-metric-ontology.ericsson.com/#> rdf:type owl:Ontology ;
+                                                     <http://purl.org/dc/terms/abstract> "The Prometheus Metric Ontology (PMO) provides a set of classes, properties, and restrictions that can be used to represent and interchange provenance and metadata information relating to Prometheus metric information." ;
+                                                     <http://purl.org/dc/terms/created> "4 July 2022" ;
+                                                     <http://purl.org/dc/terms/creator> "Alex Randles" ,
+                                                                                        "John Keeney" ,
+                                                                                        "Liam Fallon" ;
+                                                     <http://purl.org/dc/terms/description> "The Prometheus Metric Ontology (PMO) is used to capture information which relates to metric information within the Prometheus monitoring system." ;
+                                                     <http://purl.org/dc/terms/license> "http://creativecommons.org/publicdomain/zero/1.0/" ;
+                                                     <http://purl.org/dc/terms/title> "Prometheus Metric Ontology (PMO)" ;
+                                                     <http://purl.org/vocab/vann/preferredNamespacePrefix> "pmo" ;
+                                                     <http://purl.org/vocab/vann/preferredNamespaceUri> "https://prometheus-metric-ontology.ericsson.com/#" ;
+                                                     owl:versionInfo "4 July 2022" .
 
 #################################################################
 #    Annotation properties
 #################################################################
-
-###  http://linkedevents.org/ontology/atPlace
-<http://linkedevents.org/ontology/atPlace> rdf:type owl:AnnotationProperty .
-
-
-###  http://linkedevents.org/ontology/atTime
-<http://linkedevents.org/ontology/atTime> rdf:type owl:AnnotationProperty .
-
-
-###  http://linkedevents.org/ontology/involvedAgent
-<http://linkedevents.org/ontology/involvedAgent> rdf:type owl:AnnotationProperty .
-
 
 ###  http://purl.org/dc/terms/abstract
 <http://purl.org/dc/terms/abstract> rdf:type owl:AnnotationProperty .
@@ -53,10 +37,6 @@ The ontology allows a notification policy to be defined to notify users when a t
 
 ###  http://purl.org/dc/terms/description
 <http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/issued
-<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/license
@@ -75,419 +55,803 @@ The ontology allows a notification policy to be defined to notify users when a t
 <http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
 
 
-###  http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#fifth
-<http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#fifth> rdf:type owl:AnnotationProperty .
-
-
-###  http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#fourth
-<http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#fourth> rdf:type owl:AnnotationProperty .
-
-
-###  http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#object
-<http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#object> rdf:type owl:AnnotationProperty .
-
-
-###  http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#sixth
-<http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#sixth> rdf:type owl:AnnotationProperty .
-
-
-###  http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#third
-<http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#third> rdf:type owl:AnnotationProperty .
-
-
-###  http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#action
-<http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#action> rdf:type owl:AnnotationProperty .
-
-
-###  http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#actor
-<http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#actor> rdf:type owl:AnnotationProperty .
-
-
-###  http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#startingConstraint
-<http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#startingConstraint> rdf:type owl:AnnotationProperty .
-
-
-###  http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#actor
-<http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#actor> rdf:type owl:AnnotationProperty .
-
-
-###  http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#desc
-<http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#desc> rdf:type owl:AnnotationProperty .
-
-
-###  http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#grants
-<http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#grants> rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/2004/02/skos/core#definition
-<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
-
-
-###  http://xmlns.com/foaf/0.1/mbox
-<http://xmlns.com/foaf/0.1/mbox> rdf:type owl:AnnotationProperty .
-
-
-###  https://change-detection-ontology.adaptcentre.ie/#hasChange
-:hasChange rdf:type owl:AnnotationProperty .
-
-
-###  https://change-detection-ontology.adaptcentre.ie/#hasCurrentVersion
-:hasCurrentVersion rdf:type owl:AnnotationProperty .
-
-
-###  https://change-detection-ontology.adaptcentre.ie/#hasPreviousVersion
-:hasPreviousVersion rdf:type owl:AnnotationProperty .
-
-
 #################################################################
 #    Object Properties
 #################################################################
 
-###  https://change-detection-ontology.adaptcentre.ie/#hasEvent
-:hasEvent rdf:type owl:ObjectProperty ;
-          owl:inverseOf :inEventLog ;
-          rdfs:domain :ChangeLog ;
-          rdfs:range <http://linkedevents.org/ontology/Event> ;
-          rdfs:comment "An event within a certain event log." ;
-          rdfs:isDefinedBy <https://change-detection-ontology.adaptcentre.ie/#> ;
-          rdfs:label "hasEvent" .
+###  https://prometheus-metric-ontology.ericsson.com/#generatedByMetric
+:generatedByMetric rdf:type owl:ObjectProperty ;
+                   owl:inverseOf :hasResultSet ;
+                   rdfs:domain :MetricResultSet ;
+                   rdfs:range :Metric ;
+                   rdfs:comment "The result set generated by the metric." ;
+                   rdfs:label "generatedByMetric" .
 
 
-###  https://change-detection-ontology.adaptcentre.ie/#hasOwner
-:hasOwner rdf:type owl:ObjectProperty ;
-          owl:inverseOf :ownedBy ;
-          rdfs:domain :ChangeLog ;
-          rdfs:range <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> ;
-          rdfs:comment "The owner of the event log." ;
-          rdfs:isDefinedBy <https://change-detection-ontology.adaptcentre.ie/#> ;
-          rdfs:label "hasOwner" .
+###  https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery
+:hasMetricQuery rdf:type owl:ObjectProperty ;
+                rdfs:domain :Metric ;
+                rdfs:range :MetricQuery ;
+                rdfs:comment "The query which retrieved the metric information." ;
+                rdfs:label "hasMetricQuery" .
 
 
-###  https://change-detection-ontology.adaptcentre.ie/#inEventLog
-:inEventLog rdf:type owl:ObjectProperty ;
-            rdfs:domain <http://linkedevents.org/ontology/Event> ;
-            rdfs:range :ChangeLog ;
-            rdfs:comment "An event within an event log." ;
-            rdfs:isDefinedBy <https://change-detection-ontology.adaptcentre.ie/#> ;
-            rdfs:label "inEventLog" .
+###  https://prometheus-metric-ontology.ericsson.com/#hasResult
+:hasResult rdf:type owl:ObjectProperty ;
+           rdfs:domain :MetricResultSet ;
+           rdfs:range :MetricResult ;
+           rdfs:comment "A result within a result set." ;
+           rdfs:label "hasResult" .
 
 
-###  https://change-detection-ontology.adaptcentre.ie/#ownedBy
-:ownedBy rdf:type owl:ObjectProperty ;
-         rdfs:comment "The agent who owns the change log." ;
-         rdfs:isDefinedBy <https://change-detection-ontology.adaptcentre.ie/#> ;
-         rdfs:label "ownedBy" .
+###  https://prometheus-metric-ontology.ericsson.com/#hasResultSet
+:hasResultSet rdf:type owl:ObjectProperty ;
+              rdfs:domain :Metric ;
+              rdfs:range :MetricResultSet ;
+              rdfs:comment "The result set associated with the metric." ;
+              rdfs:label "hasResultSet" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#inMetricSet
+:inMetricSet rdf:type owl:ObjectProperty ;
+             owl:inverseOf :hasResult ;
+             rdfs:domain :MetricResult ;
+             rdfs:range :MetricResultSet ;
+             rdfs:comment "A result within a result set." ;
+             rdfs:label "inMetricSet" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#usedByMetric
+:usedByMetric rdf:type owl:ObjectProperty ;
+              owl:inverseOf :hasMetricQuery ;
+              rdfs:domain :MetricQuery ;
+              rdfs:range :Metric ;
+              rdfs:comment "The metric used by the query." ;
+              rdfs:label "usedByMetric" .
 
 
 #################################################################
 #    Data properties
 #################################################################
 
-###  http://www.w3.org/2006/time#inXSDDateTimeStamp
-<http://www.w3.org/2006/time#inXSDDateTimeStamp> rdf:type owl:DatatypeProperty .
+###  https://prometheus-metric-ontology.ericsson.com/#hasAddress
+:hasAddress rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Metric ;
+            rdfs:range xsd:string ;
+            rdfs:comment "The Address label for the metric." ;
+            rdfs:label "hasAddress" .
 
 
-###  https://change-detection-ontology.adaptcentre.ie/#detectionEnd
-:detectionEnd rdf:type owl:DatatypeProperty ,
-                       owl:FunctionalProperty ;
-              rdfs:domain <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy> ;
-              rdfs:range xsd:dateTime ;
-              rdfs:comment "The time when the notification policy is finished." ;
-              rdfs:isDefinedBy <https://change-detection-ontology.adaptcentre.ie/#> ;
-              rdfs:label "detectionEnd" .
+###  https://prometheus-metric-ontology.ericsson.com/#hasAlertmanager
+:hasAlertmanager rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Metric ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "The Alertmanager label for the metric." ;
+                 rdfs:label "hasAlertmanager" .
 
 
-###  https://change-detection-ontology.adaptcentre.ie/#detectionStart
-:detectionStart rdf:type owl:DatatypeProperty ,
-                         owl:FunctionalProperty ;
-                rdfs:domain <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy> ;
-                rdfs:range xsd:dateTime ;
-                rdfs:comment "The time when the notification policy was created." ;
-                rdfs:label "detectionStart" .
+###  https://prometheus-metric-ontology.ericsson.com/#hasAlertname
+:hasAlertname rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Metric ;
+              rdfs:range xsd:string ;
+              rdfs:comment "The Alertname label for the metric." ;
+              rdfs:label "hasAlertname" .
 
 
-###  https://change-detection-ontology.adaptcentre.ie/#hasReason
-:hasReason rdf:type owl:DatatypeProperty ,
-                    owl:FunctionalProperty ;
-           rdfs:domain <http://linkedevents.org/ontology/Event> ;
+###  https://prometheus-metric-ontology.ericsson.com/#hasAlertstate
+:hasAlertstate rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Metric ;
+               rdfs:range xsd:string ;
+               rdfs:comment "The Alertstate label for the metric." ;
+               rdfs:label "hasAlertstate" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasBiosDate
+:hasBiosDate rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Metric ;
+             rdfs:range xsd:string ;
+             rdfs:comment "The Bios date label for the metric." ;
+             rdfs:label "hasBiosDate" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasBiosVendor
+:hasBiosVendor rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Metric ;
+               rdfs:range xsd:string ;
+               rdfs:comment "The Bios vendor label for the metric." ;
+               rdfs:label "hasBiosVendor" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasBiosVersion
+:hasBiosVersion rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Metric ;
+                rdfs:range xsd:string ;
+                rdfs:comment "The Bios version label for the metric." ;
+                rdfs:label "hasBiosVersion" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasBoardName
+:hasBoardName rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Metric ;
+              rdfs:range xsd:string ;
+              rdfs:comment "The Board name label for the metric." ;
+              rdfs:label "hasBoardName" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasBoardVendor
+:hasBoardVendor rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Metric ;
+                rdfs:range xsd:string ;
+                rdfs:comment "The Board vendor label for the metric." ;
+                rdfs:label "hasBoardVendor" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasBoardVersion
+:hasBoardVersion rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Metric ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "The Board version label for the metric." ;
+                 rdfs:label "hasBoardVersion" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasBranch
+:hasBranch rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Metric ;
            rdfs:range xsd:string ;
-           rdfs:comment "The reason a change occurred." ;
-           rdfs:isDefinedBy <https://change-detection-ontology.adaptcentre.ie/#> ;
+           rdfs:comment "The Branch label for the metric." ;
+           rdfs:label "hasBranch" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasBroadcast
+:hasBroadcast rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Metric ;
+              rdfs:range xsd:string ;
+              rdfs:comment "The Broadcast label for the metric." ;
+              rdfs:label "hasBroadcast" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasCall
+:hasCall rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Metric ;
+         rdfs:range xsd:string ;
+         rdfs:comment "The Call label for the metric." ;
+         rdfs:label "hasCall" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasCapacityLevel
+:hasCapacityLevel rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Metric ;
+                  rdfs:range xsd:string ;
+                  rdfs:comment "The Capacity level label for the metric." ;
+                  rdfs:label "hasCapacityLevel" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasCause
+:hasCause rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Metric ;
+          rdfs:range xsd:string ;
+          rdfs:comment "The Cause label for the metric." ;
+          rdfs:label "hasCause" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasChassisVendor
+:hasChassisVendor rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Metric ;
+                  rdfs:range xsd:string ;
+                  rdfs:comment "The Chassis vendor label for the metric." ;
+                  rdfs:label "hasChassisVendor" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasChip
+:hasChip rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Metric ;
+         rdfs:range xsd:string ;
+         rdfs:comment "The Chip label for the metric." ;
+         rdfs:label "hasChip" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasChipName
+:hasChipName rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Metric ;
+             rdfs:range xsd:string ;
+             rdfs:comment "The Chip name label for the metric." ;
+             rdfs:label "hasChipName" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasClocksource
+:hasClocksource rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Metric ;
+                rdfs:range xsd:string ;
+                rdfs:comment "The Clocksource label for the metric." ;
+                rdfs:label "hasClocksource" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasCode
+:hasCode rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Metric ;
+         rdfs:range xsd:string ;
+         rdfs:comment "The Code label for the metric." ;
+         rdfs:label "hasCode" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasCollector
+:hasCollector rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Metric ;
+              rdfs:range xsd:string ;
+              rdfs:comment "The Collector label for the metric." ;
+              rdfs:label "hasCollector" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasConfig
+:hasConfig rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Metric ;
+           rdfs:range xsd:string ;
+           rdfs:comment "The Config label for the metric." ;
+           rdfs:label "hasConfig" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasCore
+:hasCore rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Metric ;
+         rdfs:range xsd:string ;
+         rdfs:comment "The Core label for the metric." ;
+         rdfs:label "hasCore" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasCpu
+:hasCpu rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Metric ;
+        rdfs:range xsd:string ;
+        rdfs:comment "The Cpu label for the metric." ;
+        rdfs:label "hasCpu" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasDevice
+:hasDevice rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Metric ;
+           rdfs:range xsd:string ;
+           rdfs:comment "The Device label for the metric." ;
+           rdfs:label "hasDevice" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasDialerName
+:hasDialerName rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Metric ;
+               rdfs:range xsd:string ;
+               rdfs:comment "The Dialer name label for the metric." ;
+               rdfs:label "hasDialerName" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasDomainname
+:hasDomainname rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Metric ;
+               rdfs:range xsd:string ;
+               rdfs:comment "The Domainname label for the metric." ;
+               rdfs:label "hasDomainname" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasDuplex
+:hasDuplex rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Metric ;
+           rdfs:range xsd:string ;
+           rdfs:comment "The Duplex label for the metric." ;
+           rdfs:label "hasDuplex" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasEndpoint
+:hasEndpoint rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Metric ;
+             rdfs:range xsd:string ;
+             rdfs:comment "The Endpoint label for the metric." ;
+             rdfs:label "hasEndpoint" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasEvent
+:hasEvent rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Metric ;
+          rdfs:range xsd:string ;
+          rdfs:comment "The Event label for the metric." ;
+          rdfs:label "hasEvent" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasFirmwareRevision
+:hasFirmwareRevision rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :Metric ;
+                     rdfs:range xsd:string ;
+                     rdfs:comment "The Firmware revision label for the metric." ;
+                     rdfs:label "hasFirmwareRevision" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasFstype
+:hasFstype rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Metric ;
+           rdfs:range xsd:string ;
+           rdfs:comment "The Fstype label for the metric." ;
+           rdfs:label "hasFstype" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasGoversion
+:hasGoversion rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Metric ;
+              rdfs:range xsd:string ;
+              rdfs:comment "The Goversion label for the metric." ;
+              rdfs:label "hasGoversion" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasHandler
+:hasHandler rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Metric ;
+            rdfs:range xsd:string ;
+            rdfs:comment "The Handler label for the metric." ;
+            rdfs:label "hasHandler" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasId
+:hasId rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Metric ;
+       rdfs:range xsd:string ;
+       rdfs:comment "The Id label for the metric." ;
+       rdfs:label "hasId" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasIdLike
+:hasIdLike rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Metric ;
+           rdfs:range xsd:string ;
+           rdfs:comment "The Id like label for the metric." ;
+           rdfs:label "hasIdLike" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasIndex
+:hasIndex rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Metric ;
+          rdfs:range xsd:string ;
+          rdfs:comment "The Index label for the metric." ;
+          rdfs:label "hasIndex" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasInstance
+:hasInstance rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Metric ;
+             rdfs:range xsd:string ;
+             rdfs:comment "The Instance label for the metric." ;
+             rdfs:label "hasInstance" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasInterval
+:hasInterval rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Metric ;
+             rdfs:range xsd:string ;
+             rdfs:comment "The Interval label for the metric." ;
+             rdfs:label "hasInterval" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasIp
+:hasIp rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Metric ;
+       rdfs:range xsd:string ;
+       rdfs:comment "The Ip label for the metric." ;
+       rdfs:label "hasIp" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasJob
+:hasJob rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Metric ;
+        rdfs:range xsd:string ;
+        rdfs:comment "The Job label for the metric." ;
+        rdfs:label "hasJob" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasLabel
+:hasLabel rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Metric ;
+          rdfs:range xsd:string ;
+          rdfs:comment "The Label label for the metric." ;
+          rdfs:label "hasLabel" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasLe
+:hasLe rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Metric ;
+       rdfs:range xsd:string ;
+       rdfs:comment "The Le label for the metric." ;
+       rdfs:label "hasLe" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasListenerName
+:hasListenerName rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Metric ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "The Listener name label for the metric." ;
+                 rdfs:label "hasListenerName" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasMachine
+:hasMachine rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Metric ;
+            rdfs:range xsd:string ;
+            rdfs:comment "The Machine label for the metric." ;
+            rdfs:label "hasMachine" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasMajor
+:hasMajor rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Metric ;
+          rdfs:range xsd:string ;
+          rdfs:comment "The Major label for the metric." ;
+          rdfs:label "hasMajor" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasManufacturer
+:hasManufacturer rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Metric ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "The Manufacturer label for the metric." ;
+                 rdfs:label "hasManufacturer" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasMinor
+:hasMinor rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Metric ;
+          rdfs:range xsd:string ;
+          rdfs:comment "The Minor label for the metric." ;
+          rdfs:label "hasMinor" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasMode
+:hasMode rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Metric ;
+         rdfs:range xsd:string ;
+         rdfs:comment "The Mode label for the metric." ;
+         rdfs:label "hasMode" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasModel
+:hasModel rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Metric ;
+          rdfs:range xsd:string ;
+          rdfs:comment "The Model label for the metric." ;
+          rdfs:label "hasModel" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasModelName
+:hasModelName rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Metric ;
+              rdfs:range xsd:string ;
+              rdfs:comment "The Model name label for the metric." ;
+              rdfs:label "hasModelName" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasMountpoint
+:hasMountpoint rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Metric ;
+               rdfs:range xsd:string ;
+               rdfs:comment "The Mountpoint label for the metric." ;
+               rdfs:label "hasMountpoint" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasName
+:hasName rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Metric ;
+         rdfs:range xsd:string ;
+         rdfs:comment "The   name   label for the metric." ,
+                      "The Name label for the metric." ;
+         rdfs:label "hasName" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasNodename
+:hasNodename rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Metric ;
+             rdfs:range xsd:string ;
+             rdfs:comment "The Nodename label for the metric." ;
+             rdfs:label "hasNodename" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasOperstate
+:hasOperstate rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Metric ;
+              rdfs:range xsd:string ;
+              rdfs:comment "The Operstate label for the metric." ;
+              rdfs:label "hasOperstate" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasPackage
+:hasPackage rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Metric ;
+            rdfs:range xsd:string ;
+            rdfs:comment "The Package label for the metric." ;
+            rdfs:label "hasPackage" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasPath
+:hasPath rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Metric ;
+         rdfs:range xsd:string ;
+         rdfs:comment "The Path label for the metric." ;
+         rdfs:label "hasPath" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasPowerSupply
+:hasPowerSupply rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Metric ;
+                rdfs:range xsd:string ;
+                rdfs:comment "The Power supply label for the metric." ;
+                rdfs:label "hasPowerSupply" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasPrettyName
+:hasPrettyName rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Metric ;
+               rdfs:range xsd:string ;
+               rdfs:comment "The Pretty name label for the metric." ;
+               rdfs:label "hasPrettyName" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasProductFamily
+:hasProductFamily rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Metric ;
+                  rdfs:range xsd:string ;
+                  rdfs:comment "The Product family label for the metric." ;
+                  rdfs:label "hasProductFamily" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasProductName
+:hasProductName rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Metric ;
+                rdfs:range xsd:string ;
+                rdfs:comment "The Product name label for the metric." ;
+                rdfs:label "hasProductName" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasQuantile
+:hasQuantile rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Metric ;
+             rdfs:range xsd:string ;
+             rdfs:comment "The Quantile label for the metric." ;
+             rdfs:label "hasQuantile" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasQuery
+:hasQuery rdf:type owl:DatatypeProperty ;
+          rdfs:domain :MetricQuery ;
+          rdfs:range xsd:string ;
+          rdfs:comment "The query used to collect the metric information." ;
+          rdfs:label "hasQuery" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasQueue
+:hasQueue rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Metric ;
+          rdfs:range xsd:string ;
+          rdfs:comment "The Queue label for the metric." ;
+          rdfs:label "hasQueue" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasReason
+:hasReason rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Metric ;
+           rdfs:range xsd:string ;
+           rdfs:comment "The Reason label for the metric." ;
            rdfs:label "hasReason" .
 
 
-###  https://change-detection-ontology.adaptcentre.ie/#hasThreshold
-:hasThreshold rdf:type owl:DatatypeProperty ,
-                       owl:FunctionalProperty ;
-              rdfs:domain <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint> ;
-              rdfs:range xsd:int .
+###  https://prometheus-metric-ontology.ericsson.com/#hasRelease
+:hasRelease rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Metric ;
+            rdfs:range xsd:string ;
+            rdfs:comment "The Release label for the metric." ;
+            rdfs:label "hasRelease" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasResultType
+:hasResultType rdf:type owl:DatatypeProperty ;
+               rdfs:domain :MetricQuery ;
+               rdfs:range xsd:string ;
+               rdfs:comment "The result type returned by the API." ;
+               rdfs:label "hasResultType" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasRevision
+:hasRevision rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Metric ;
+             rdfs:range xsd:string ;
+             rdfs:comment "The Revision label for the metric." ;
+             rdfs:label "hasRevision" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasRole
+:hasRole rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Metric ;
+         rdfs:range xsd:string ;
+         rdfs:comment "The Role label for the metric." ;
+         rdfs:label "hasRole" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasRuleGroup
+:hasRuleGroup rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Metric ;
+              rdfs:range xsd:string ;
+              rdfs:comment "The Rule group label for the metric." ;
+              rdfs:label "hasRuleGroup" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasScrapeJob
+:hasScrapeJob rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Metric ;
+              rdfs:range xsd:string ;
+              rdfs:comment "The Scrape job label for the metric." ;
+              rdfs:label "hasScrapeJob" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasSensor
+:hasSensor rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Metric ;
+           rdfs:range xsd:string ;
+           rdfs:comment "The Sensor label for the metric." ;
+           rdfs:label "hasSensor" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasSerial
+:hasSerial rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Metric ;
+           rdfs:range xsd:string ;
+           rdfs:comment "The Serial label for the metric." ;
+           rdfs:label "hasSerial" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasSerialNumber
+:hasSerialNumber rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Metric ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "The Serial number label for the metric." ;
+                 rdfs:label "hasSerialNumber" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasSlice
+:hasSlice rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Metric ;
+          rdfs:range xsd:string ;
+          rdfs:comment "The Slice label for the metric." ;
+          rdfs:label "hasSlice" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasState
+:hasState rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Metric ;
+          rdfs:range xsd:string ;
+          rdfs:comment "The State label for the metric." ;
+          rdfs:label "hasState" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasStatus
+:hasStatus rdf:type owl:DatatypeProperty ;
+           rdfs:domain :MetricQuery ;
+           rdfs:range xsd:string ;
+           rdfs:comment "The Status label for the metric." ,
+                        "The status of the API response." ;
+           rdfs:label "hasStatus" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasSysname
+:hasSysname rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Metric ;
+            rdfs:range xsd:string ;
+            rdfs:comment "The Sysname label for the metric." ;
+            rdfs:label "hasSysname" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasSystemVendor
+:hasSystemVendor rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Metric ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "The System vendor label for the metric." ;
+                 rdfs:label "hasSystemVendor" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasTechnology
+:hasTechnology rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Metric ;
+               rdfs:range xsd:string ;
+               rdfs:comment "The Technology label for the metric." ;
+               rdfs:label "hasTechnology" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasTimeZone
+:hasTimeZone rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Metric ;
+             rdfs:range xsd:string ;
+             rdfs:comment "The Time zone label for the metric." ;
+             rdfs:label "hasTimeZone" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasTimestamp
+:hasTimestamp rdf:type owl:DatatypeProperty ;
+              rdfs:domain :MetricResult ;
+              rdfs:range xsd:dateTime ;
+              rdfs:comment "The timestamp related to a result." ;
+              rdfs:label "hasTimestamp" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasType
+:hasType rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Metric ;
+         rdfs:range xsd:string ;
+         rdfs:comment "The Type label for the metric." ;
+         rdfs:label "hasType" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasValue
+:hasValue rdf:type owl:DatatypeProperty ;
+          rdfs:domain :MetricResult ;
+          rdfs:range xsd:string ;
+          rdfs:comment "The value associated with a result." ;
+          rdfs:label "hasValue" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasVersion
+:hasVersion rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Metric ;
+            rdfs:range xsd:string ;
+            rdfs:comment "The Version label for the metric." ;
+            rdfs:label "hasVersion" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasVersionCodename
+:hasVersionCodename rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Metric ;
+                    rdfs:range xsd:string ;
+                    rdfs:comment "The Version codename label for the metric." ;
+                    rdfs:label "hasVersionCodename" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasVersionId
+:hasVersionId rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Metric ;
+              rdfs:range xsd:string ;
+              rdfs:comment "The Version id label for the metric." ;
+              rdfs:label "hasVersionId" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasZone
+:hasZone rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Metric ;
+         rdfs:range xsd:string ;
+         rdfs:comment "The Zone label for the metric." ;
+         rdfs:label "hasZone" .
 
 
 #################################################################
 #    Classes
 #################################################################
 
-###  http://linkedevents.org/ontology/Event
-<http://linkedevents.org/ontology/Event> rdf:type owl:Class .
-
-
-###  http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiAction.owl#Action
-<http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiAction.owl#Action> rdf:type owl:Class .
-
-
-###  http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#Obligation
-<http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#Obligation> rdf:type owl:Class .
-
-
-###  http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiEntity.owl#Agent
-<http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiEntity.owl#Agent> rdf:type owl:Class .
-
-
-###  http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy
-<http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy> rdf:type owl:Class .
-
-
-###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent
-<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> rdf:type owl:Class .
-
-
-###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place
-<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place> rdf:type owl:Class .
-
-
-###  http://www.w3.org/2006/time#Instant
-<http://www.w3.org/2006/time#Instant> rdf:type owl:Class .
-
-
-###  http://www.w3.org/2006/time#TemporalEntity
-<http://www.w3.org/2006/time#TemporalEntity> rdf:type owl:Class .
-
-
-###  http://xmlns.com/foaf/0.1/Person
-<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class .
-
-
-###  https://change-detection-ontology.adaptcentre.ie/#ChangeLog
-:ChangeLog rdf:type owl:Class ;
-           rdfs:comment "A grouping of changes that have occured relating to a specific source data." ;
-           rdfs:isDefinedBy <https://change-detection-ontology.adaptcentre.ie/#> ;
-           rdfs:label "ChangeLog" .
-
-
-###  https://change-detection-ontology.adaptcentre.ie/#DatatypeSourceData
-:DatatypeSourceData rdf:type owl:Class ;
-                    rdfs:subClassOf <http://linkedevents.org/ontology/Event> .
-
-
-###  https://change-detection-ontology.adaptcentre.ie/#DeleteSourceData
-:DeleteSourceData rdf:type owl:Class ;
-                  rdfs:subClassOf <http://linkedevents.org/ontology/Event> .
-
-
-###  https://change-detection-ontology.adaptcentre.ie/#InsertSourceData
-:InsertSourceData rdf:type owl:Class ;
-                  rdfs:subClassOf <http://linkedevents.org/ontology/Event> .
-
-
-###  https://change-detection-ontology.adaptcentre.ie/#MergeSourceData
-:MergeSourceData rdf:type owl:Class ;
-                 rdfs:subClassOf <http://linkedevents.org/ontology/Event> .
-
-
-###  https://change-detection-ontology.adaptcentre.ie/#MoveSourceData
-:MoveSourceData rdf:type owl:Class ;
-                rdfs:subClassOf <http://linkedevents.org/ontology/Event> .
-
-
-###  https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData
-:UpdateSourceData rdf:type owl:Class ;
-                  rdfs:subClassOf <http://linkedevents.org/ontology/Event> .
-
-
-#################################################################
-#    Individuals
-#################################################################
-
-###  http://www.example.com/changeLog
-<http://www.example.com/changeLog> rdf:type owl:NamedIndividual ,
-                                            :ChangeLog ;
-                                   :hasChange <http://www.example.com/insertChange> ;
-                                   :hasCurrentVersion <https://raw.githubusercontent.com/alex-randles/Change-Detection-System-Examples/main/version_2_files/student.csv> ;
-                                   :hasPreviousVersion <https://raw.githubusercontent.com/alex-randles/Change-Detection-System-Examples/main/version_1_files/student.csv> .
-
-
-###  http://www.example.com/datatypeChangeConstraint
-<http://www.example.com/datatypeChangeConstraint> rdf:type owl:NamedIndividual ,
-                                                           <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint> ;
-                                                  <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#predicate> :hasThreshold ;
-                                                  <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#subject> :DatatypeSourceData ;
-                                                  <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#object> "0" .
-
-
-###  http://www.example.com/deleteChangeConstraint
-<http://www.example.com/deleteChangeConstraint> rdf:type owl:NamedIndividual ,
-                                                         <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint> ;
-                                                <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#predicate> :hasThreshold ;
-                                                <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#subject> :DeleteSourceData ;
-                                                <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#object> "0" .
-
-
-###  http://www.example.com/detectionTime
-<http://www.example.com/detectionTime> rdf:type owl:NamedIndividual ,
-                                                <http://www.w3.org/2006/time#Instant> ;
-                                       <http://www.w3.org/2006/time#inXSDDateTimeStamp> "2022-07-05 17:12:57.090772"^^xsd:dateTimeStamp .
-
-
-###  http://www.example.com/insertChange
-<http://www.example.com/insertChange> rdf:type owl:NamedIndividual ,
-                                               :InsertSourceData ;
-                                      :hasReason "Name: Alex Randles" ;
-                                      <http://linkedevents.org/ontology/atTime> <http://www.example.com/detectionTime> .
-
-
-###  http://www.example.com/insertChangeConstraint
-<http://www.example.com/insertChangeConstraint> rdf:type owl:NamedIndividual ,
-                                                         <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint> ;
-                                                <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#predicate> :hasThreshold ;
-                                                <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#subject> :InsertSourceData ;
-                                                <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#object> "0" .
-
-
-###  http://www.example.com/mergeChangeConstraint
-<http://www.example.com/mergeChangeConstraint> rdf:type owl:NamedIndividual ,
-                                                        <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint> ;
-                                               <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#predicate> :hasThreshold ;
-                                               <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#subject> :MergeSourceData ;
-                                               <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#object> "0" .
-
-
-###  http://www.example.com/moveChangeConstraint
-<http://www.example.com/moveChangeConstraint> rdf:type owl:NamedIndividual ,
-                                                       <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint> ;
-                                              <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#predicate> :hasThreshold ;
-                                              <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#subject> :MoveSourceData ;
-                                              <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#object> "0" .
-
-
-###  http://www.example.com/notificationConstraint
-<http://www.example.com/notificationConstraint> rdf:type owl:NamedIndividual ,
-                                                         <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#And> ;
-                                                <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#first> <http://www.example.com/insertChangeConstraint> ;
-                                                <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#second> <http://www.example.com/deleteChangeConstraint> ;
-                                                <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#fifth> <http://www.example.com/mergeChangeConstraint> ;
-                                                <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#fourth> <http://www.example.com/updateChangeConstraint> ;
-                                                <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#sixth> <http://www.example.com/datatypeChangeConstraint> ;
-                                                <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#third> <http://www.example.com/moveChangeConstraint> .
-
-
-###  http://www.example.com/notificationPolicy
-<http://www.example.com/notificationPolicy> rdf:type owl:NamedIndividual ,
-                                                     <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy> ;
-                                            <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#grants> <http://www.example.com/policyObligation> ;
-                                            <http://www.w3.org/2006/time#inXSDDateTimeStamp> "2022-08-07 00:00:00.0000"^^xsd:dateTimeStamp ;
-                                            :detectionEnd "2022-08-07 00:00:00.0000"^^xsd:dateTime ;
-                                            :detectionStart "2022-07-05 17:12:56.121344"^^xsd:dateTime ;
-                                            <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#desc> "Notification policy for user 1" .
-
-
-###  http://www.example.com/policyObligation
-<http://www.example.com/policyObligation> rdf:type owl:NamedIndividual ,
-                                                   <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#Obligation> ;
-                                          <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#action> :sendNotification ;
-                                          <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#obligedTo> :softwareAgent ;
-                                          <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#startingConstraint> <http://www.example.com/notificationConstraint> ;
-                                          <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#actor> <http://www.example.com/userActor> ,
-                                                                                                               :softwareAgent .
-
-
-###  http://www.example.com/updateChangeConstraint
-<http://www.example.com/updateChangeConstraint> rdf:type owl:NamedIndividual ,
-                                                         <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint> ;
-                                                <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#predicate> :hasThreshold ;
-                                                <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#subject> :UpdateSourceData ;
-                                                <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#object> "0" .
-
-
-###  http://www.example.com/userActor
-<http://www.example.com/userActor> rdf:type owl:NamedIndividual ,
-                                            <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiEntity.owl#Agent> ,
-                                            <http://xmlns.com/foaf/0.1/Person> ;
-                                   <http://xmlns.com/foaf/0.1/mbox> "alexrandles0@gmail.com" .
-
-
-###  https://change-detection-ontology.adaptcentre.ie/#DatatypeSourceData
-:DatatypeSourceData rdf:type owl:NamedIndividual .
-
-
-###  https://change-detection-ontology.adaptcentre.ie/#DeleteSourceData
-:DeleteSourceData rdf:type owl:NamedIndividual .
-
-
-###  https://change-detection-ontology.adaptcentre.ie/#InsertSourceData
-:InsertSourceData rdf:type owl:NamedIndividual .
-
-
-###  https://change-detection-ontology.adaptcentre.ie/#MergeSourceData
-:MergeSourceData rdf:type owl:NamedIndividual .
-
-
-###  https://change-detection-ontology.adaptcentre.ie/#MoveSourceData
-:MoveSourceData rdf:type owl:NamedIndividual .
-
-
-###  https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData
-:UpdateSourceData rdf:type owl:NamedIndividual .
-
-
-###  https://change-detection-ontology.adaptcentre.ie/#hasThreshold
-:hasThreshold rdf:type owl:NamedIndividual .
-
-
-###  https://change-detection-ontology.adaptcentre.ie/#sendNotification
-:sendNotification rdf:type owl:NamedIndividual .
-
-
-###  https://change-detection-ontology.adaptcentre.ie/#softwareAgent
-:softwareAgent rdf:type owl:NamedIndividual .
-
-
-#################################################################
-#    Annotations
-#################################################################
-
-:DatatypeSourceData rdfs:comment "Datatype has been changed in the source data." ;
-                    rdfs:isDefinedBy <https://change-detection-ontology.adaptcentre.ie/#> ;
-                    rdfs:label "DatatypeSourceData" .
-
-
-:DeleteSourceData rdfs:comment "Data has been removed within the source data." ;
-                  rdfs:isDefinedBy <https://change-detection-ontology.adaptcentre.ie/#> ;
-                  rdfs:label "DeleteSourceData" .
-
-
-:InsertSourceData rdfs:comment "Data has been inserted within the source data." ;
-                  rdfs:isDefinedBy <https://change-detection-ontology.adaptcentre.ie/#> ;
-                  rdfs:label "InsertSourceData" .
-
-
-:MergeSourceData rdfs:comment "Data has been merged within the source data." ;
-                 rdfs:isDefinedBy <https://change-detection-ontology.adaptcentre.ie/#> ;
-                 rdfs:label "MergeSourceData" .
-
-
-:MoveSourceData rdfs:comment "Data has been moved within the source data." ;
-                rdfs:isDefinedBy <https://change-detection-ontology.adaptcentre.ie/#> ;
-                rdfs:label "MoveSourceData" .
-
-
-:UpdateSourceData rdfs:comment "Data has been updated within the source data." ;
-                  rdfs:isDefinedBy <https://change-detection-ontology.adaptcentre.ie/#> ;
-                  rdfs:label "UpdateSourceData" .
-
-
-:hasThreshold rdfs:comment "The threshold defined for a change type within the notification policy." ;
-              rdfs:isDefinedBy <https://change-detection-ontology.adaptcentre.ie/#> ;
-              rdfs:label "hasThreshold" .
+###  https://prometheus-metric-ontology.ericsson.com/#Metric
+:Metric rdf:type owl:Class ;
+        owl:disjointWith :MetricQuery ,
+                         :MetricResult ,
+                         :MetricResultSet ;
+        rdfs:comment "The metric information being monitored." ;
+        rdfs:label "Metric" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#MetricQuery
+:MetricQuery rdf:type owl:Class ;
+             owl:disjointWith :MetricResult ,
+                              :MetricResultSet ;
+             rdfs:comment "The information related to the query used to collect the metric information." ;
+             rdfs:label "MetricQuery" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#MetricResult
+:MetricResult rdf:type owl:Class ;
+              owl:disjointWith :MetricResultSet ;
+              rdfs:comment "A result related to a specific result set." ;
+              rdfs:label "MetricResult" .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#MetricResultSet
+:MetricResultSet rdf:type owl:Class ;
+                 rdfs:comment "The values and timestamps related to a metric." ;
+                 rdfs:label "MetricResultSet" .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
