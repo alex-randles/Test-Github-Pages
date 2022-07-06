@@ -42,16 +42,16 @@
         "value" : "cdo",
         "type" : "label"
       } ],
-      "preferredNamespaceUri" : [ {
-        "identifier" : "preferredNamespaceUri",
-        "language" : "undefined",
-        "value" : "https://change-detection-ontology.adaptcentre.ie/#",
-        "type" : "label"
-      } ],
       "abstract" : [ {
         "identifier" : "abstract",
         "language" : "undefined",
         "value" : "The Change Detection Ontology (CDO) provides a set of classes, properties, and restrictions that can be used to represent and interchange provenance and metadata information relating to changes that occur within source data that has created an RDF dataset. It can also be specialized to create new classes and properties to model provenance and metadata information for domain specific changes.",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://change-detection-ontology.adaptcentre.ie/#",
         "type" : "label"
       } ],
       "versionInfo" : [ {
@@ -124,10 +124,10 @@
     "id" : "17",
     "type" : "owl:Class"
   }, {
-    "id" : "9",
+    "id" : "56",
     "type" : "owl:Class"
   }, {
-    "id" : "56",
+    "id" : "9",
     "type" : "owl:Class"
   }, {
     "id" : "29",
@@ -536,6 +536,27 @@
     "attributes" : [ "external" ],
     "id" : "17"
   }, {
+    "iri" : "https://change-detection-ontology.adaptcentre.ie/#MoveSourceData",
+    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://change-detection-ontology.adaptcentre.ie/#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MoveSourceData",
+      "undefined" : "MoveSourceData"
+    },
+    "comment" : {
+      "undefined" : "Data has been moved within the source data."
+    },
+    "id" : "56",
+    "superClasses" : [ "1" ]
+  }, {
     "iri" : "https://change-detection-ontology.adaptcentre.ie/#ChangeLog",
     "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
     "instances" : 0,
@@ -582,27 +603,6 @@
       "undefined" : "A grouping of changes that have occured relating to a specific source data."
     },
     "id" : "9"
-  }, {
-    "iri" : "https://change-detection-ontology.adaptcentre.ie/#MoveSourceData",
-    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
-    "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://change-detection-ontology.adaptcentre.ie/#",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "MoveSourceData",
-      "undefined" : "MoveSourceData"
-    },
-    "comment" : {
-      "undefined" : "Data has been moved within the source data."
-    },
-    "id" : "56",
-    "superClasses" : [ "1" ]
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#Prohibition",
     "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
@@ -960,12 +960,12 @@
         "actor" : [ {
           "identifier" : "actor",
           "language" : "undefined",
-          "value" : "http://www.example.com/userActor",
+          "value" : "https://change-detection-ontology.adaptcentre.ie/#softwareAgent",
           "type" : "iri"
         }, {
           "identifier" : "actor",
           "language" : "undefined",
-          "value" : "https://change-detection-ontology.adaptcentre.ie/#softwareAgent",
+          "value" : "http://www.example.com/userActor",
           "type" : "iri"
         } ]
       },
@@ -1278,7 +1278,7 @@
     "comment" : {
       "undefined" : "Whether positive or negative modality holds precedence"
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "13"
   }, {
     "range" : "4",
@@ -1360,7 +1360,7 @@
       "IRI-based" : "first"
     },
     "domain" : "16",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "40"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#action",
@@ -1372,7 +1372,7 @@
     },
     "cardinality" : "1",
     "domain" : "4",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "41"
   }, {
     "range" : "44",
@@ -1406,7 +1406,7 @@
     "comment" : {
       "undefined" : "Whom the the actor is obliged to"
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "50"
   }, {
     "range" : "1",
@@ -1447,7 +1447,7 @@
       "undefined" : "to"
     },
     "domain" : "31",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "62"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#metaDefault",
@@ -1461,7 +1461,7 @@
     "comment" : {
       "undefined" : "In case of conflict, should priority between rules be checked before modality or vice versa"
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "64"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#context",
@@ -1475,7 +1475,7 @@
     "comment" : {
       "undefined" : "All the conditions associated with the policy. Includes domain"
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "66"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#second",
@@ -1485,7 +1485,7 @@
       "IRI-based" : "second"
     },
     "domain" : "17",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "67"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#constraint",
@@ -1496,7 +1496,7 @@
     },
     "domain" : "4",
     "subproperty" : [ "69" ],
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "68"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#startingConstraint",
@@ -1507,7 +1507,7 @@
     },
     "superproperty" : [ "68" ],
     "domain" : "4",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "69"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#imports",
@@ -1518,7 +1518,7 @@
       "undefined" : "imports"
     },
     "domain" : "6",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "72"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#modifiedBy",
@@ -1529,7 +1529,7 @@
       "undefined" : "modifiedBy"
     },
     "domain" : "6",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "74"
   }, {
     "iri" : "https://change-detection-ontology.adaptcentre.ie/#inEventLog",
@@ -1561,7 +1561,7 @@
       "IRI-based" : "predicate"
     },
     "domain" : "33",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "77"
   }, {
     "range" : "17",
@@ -1586,7 +1586,7 @@
       "IRI-based" : "inequal"
     },
     "domain" : "12",
-    "attributes" : [ "object", "symmetric", "external" ],
+    "attributes" : [ "symmetric", "external", "object" ],
     "id" : "83"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#endingConstraint",
@@ -1596,7 +1596,7 @@
       "IRI-based" : "endingConstraint"
     },
     "domain" : "4",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "84"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#rulePriority",
@@ -1610,7 +1610,7 @@
     "comment" : {
       "undefined" : "Used to set priority between granting rules"
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "85"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#provision",
@@ -1623,7 +1623,7 @@
     "comment" : {
       "undefined" : "Obligation on the actor to either perform some action or make some conditions true sometime in the future."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "86"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#actor",
@@ -1635,7 +1635,7 @@
     },
     "cardinality" : "1",
     "domain" : "4",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "87"
   }, {
     "iri" : "https://change-detection-ontology.adaptcentre.ie/#hasEvent",
@@ -1668,7 +1668,7 @@
       "IRI-based" : "object"
     },
     "domain" : "33",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "89"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#deontic",
@@ -1680,7 +1680,7 @@
     },
     "cardinality" : "1",
     "domain" : "31",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "90"
   }, {
     "iri" : "https://change-detection-ontology.adaptcentre.ie/#hasReason",
@@ -1715,7 +1715,7 @@
     "comment" : {
       "undefined" : "In case a rule is broken, a sanction is imposed. Sanction can be either an action or a deontic object"
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "93"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#createdBy",
@@ -1726,7 +1726,7 @@
       "undefined" : "creator"
     },
     "domain" : "6",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "95"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#grants",
@@ -1740,7 +1740,7 @@
     "comment" : {
       "undefined" : "Associates deontic objects with the policy"
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "96"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#subject",
@@ -1750,7 +1750,7 @@
       "IRI-based" : "subject"
     },
     "domain" : "33",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "98"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#modifiedTime",
@@ -1761,7 +1761,7 @@
       "undefined" : "modifiedTime"
     },
     "domain" : "6",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "102"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#equal",
@@ -1771,7 +1771,7 @@
       "IRI-based" : "equal"
     },
     "domain" : "12",
-    "attributes" : [ "object", "symmetric", "external" ],
+    "attributes" : [ "symmetric", "external", "object" ],
     "id" : "103"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#requirement",
@@ -1782,7 +1782,7 @@
       "undefined" : "requirement"
     },
     "domain" : "31",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "104"
   }, {
     "iri" : "http://www.w3.org/2006/time#inXSDDateTimeStamp",
@@ -1792,7 +1792,7 @@
       "IRI-based" : "inXSDDateTimeStamp"
     },
     "domain" : "12",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "105"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#desc",
@@ -1803,7 +1803,7 @@
       "undefined" : "description"
     },
     "domain" : "25",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "106"
   }, {
     "iri" : "https://change-detection-ontology.adaptcentre.ie/#detectionEnd",
@@ -1839,7 +1839,7 @@
     "comment" : {
       "undefined" : "Whether implicit/explicit right or prohibition"
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "108"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#creationTime",
@@ -1850,7 +1850,7 @@
       "undefined" : "creationTime"
     },
     "domain" : "6",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "110"
   } ]
 }
