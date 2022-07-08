@@ -22,17 +22,17 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Alex Randles",
-        "type" : "label"
-      }, {
-        "identifier" : "creator",
-        "language" : "undefined",
         "value" : "Liam Fallon",
         "type" : "label"
       }, {
         "identifier" : "creator",
         "language" : "undefined",
         "value" : "John Keeney",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Alex Randles",
         "type" : "label"
       } ],
       "created" : [ {
@@ -53,16 +53,16 @@
         "value" : "The Prometheus Metric Ontology (PMO) provides a set of classes, properties, and restrictions that can be used to represent and interchange provenance and metadata information relating to Prometheus metric information.",
         "type" : "label"
       } ],
-      "versionInfo" : [ {
-        "identifier" : "versionInfo",
-        "language" : "undefined",
-        "value" : "4 July 2022",
-        "type" : "label"
-      } ],
       "preferredNamespaceUri" : [ {
         "identifier" : "preferredNamespaceUri",
         "language" : "undefined",
         "value" : "https://prometheus-metric-ontology.ericsson.com/#",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "4 July 2022",
         "type" : "label"
       } ],
       "title" : [ {
@@ -96,7 +96,7 @@
     "id" : "46",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "92",
+    "id" : "90",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "94",
@@ -141,7 +141,7 @@
     "id" : "128",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "70",
+    "id" : "68",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "129",
@@ -153,7 +153,7 @@
     "id" : "2",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "90",
+    "id" : "92",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "106",
@@ -261,7 +261,7 @@
     "id" : "39",
     "type" : "owl:Class"
   }, {
-    "id" : "168",
+    "id" : "167",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "11",
@@ -318,7 +318,7 @@
     "id" : "82",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "72",
+    "id" : "70",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "60",
@@ -333,7 +333,7 @@
     "id" : "181",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "68",
+    "id" : "72",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "19",
@@ -418,7 +418,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "92",
+    "id" : "90",
     "label" : {
       "IRI-based" : "string"
     }
@@ -523,7 +523,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "70",
+    "id" : "68",
     "label" : {
       "IRI-based" : "string"
     }
@@ -551,7 +551,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "90",
+    "id" : "92",
     "label" : {
       "IRI-based" : "string"
     }
@@ -808,7 +808,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "168",
+    "id" : "167",
     "label" : {
       "IRI-based" : "string"
     }
@@ -941,7 +941,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "72",
+    "id" : "70",
     "label" : {
       "IRI-based" : "string"
     }
@@ -976,7 +976,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "68",
+    "id" : "72",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1254,7 +1254,7 @@
     "id" : "166",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "167",
+    "id" : "168",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "169",
@@ -1781,23 +1781,9 @@
     "attributes" : [ "datatype" ],
     "id" : "65"
   }, {
-    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasSlice",
-    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "68",
-    "label" : {
-      "IRI-based" : "hasSlice",
-      "undefined" : "hasSlice"
-    },
-    "domain" : "1",
-    "comment" : {
-      "undefined" : "The Slice label for the metric."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "67"
-  }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasBiosVersion",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "70",
+    "range" : "68",
     "label" : {
       "IRI-based" : "hasBiosVersion",
       "undefined" : "hasBiosVersion"
@@ -1807,11 +1793,11 @@
       "undefined" : "The Bios version label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "69"
+    "id" : "67"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasSysname",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "72",
+    "range" : "70",
     "label" : {
       "IRI-based" : "hasSysname",
       "undefined" : "hasSysname"
@@ -1819,6 +1805,20 @@
     "domain" : "1",
     "comment" : {
       "undefined" : "The Sysname label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "69"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasSlice",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "72",
+    "label" : {
+      "IRI-based" : "hasSlice",
+      "undefined" : "hasSlice"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Slice label for the metric."
     },
     "attributes" : [ "datatype" ],
     "id" : "71"
@@ -1935,23 +1935,9 @@
     "attributes" : [ "datatype" ],
     "id" : "87"
   }, {
-    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasMajor",
-    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "90",
-    "label" : {
-      "IRI-based" : "hasMajor",
-      "undefined" : "hasMajor"
-    },
-    "domain" : "1",
-    "comment" : {
-      "undefined" : "The Major label for the metric."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "89"
-  }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasClocksource",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "92",
+    "range" : "90",
     "label" : {
       "IRI-based" : "hasClocksource",
       "undefined" : "hasClocksource"
@@ -1959,6 +1945,20 @@
     "domain" : "1",
     "comment" : {
       "undefined" : "The Clocksource label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "89"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasMajor",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "hasMajor",
+      "undefined" : "hasMajor"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Major label for the metric."
     },
     "attributes" : [ "datatype" ],
     "id" : "91"
@@ -2412,6 +2412,20 @@
     "attributes" : [ "datatype" ],
     "id" : "165"
   }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasName",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "167",
+    "label" : {
+      "IRI-based" : "hasName",
+      "undefined" : "hasName"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Name label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "166"
+  }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasQuery",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
     "range" : "160",
@@ -2424,21 +2438,7 @@
       "undefined" : "The query used to collect the metric information."
     },
     "attributes" : [ "datatype" ],
-    "id" : "166"
-  }, {
-    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasName",
-    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "168",
-    "label" : {
-      "IRI-based" : "hasName",
-      "undefined" : "hasName"
-    },
-    "domain" : "1",
-    "comment" : {
-      "undefined" : "The   name   label for the metric."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "167"
+    "id" : "168"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasAlertmanager",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
@@ -2483,17 +2483,17 @@
     "attributes" : [ "datatype" ],
     "id" : "172"
   }, {
-    "range" : "39",
+    "range" : "6",
     "domain" : "1",
     "attributes" : [ "object", "anonymous" ],
     "id" : "174"
   }, {
-    "range" : "7",
+    "range" : "6",
     "domain" : "39",
     "attributes" : [ "object", "anonymous" ],
     "id" : "175"
   }, {
-    "range" : "6",
+    "range" : "7",
     "domain" : "39",
     "attributes" : [ "object", "anonymous" ],
     "id" : "176"
@@ -2545,29 +2545,15 @@
     "attributes" : [ "datatype" ],
     "id" : "182"
   }, {
-    "range" : "6",
+    "range" : "7",
     "domain" : "1",
     "attributes" : [ "object", "anonymous" ],
     "id" : "183"
   }, {
-    "range" : "7",
+    "range" : "39",
     "domain" : "1",
     "attributes" : [ "object", "anonymous" ],
     "id" : "184"
-  }, {
-    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasHandler",
-    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "151",
-    "label" : {
-      "IRI-based" : "hasHandler",
-      "undefined" : "hasHandler"
-    },
-    "domain" : "1",
-    "comment" : {
-      "undefined" : "The Handler label for the metric."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "185"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasJob",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
@@ -2579,6 +2565,20 @@
     "domain" : "1",
     "comment" : {
       "undefined" : "The Job label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "185"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasHandler",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "151",
+    "label" : {
+      "IRI-based" : "hasHandler",
+      "undefined" : "hasHandler"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Handler label for the metric."
     },
     "attributes" : [ "datatype" ],
     "id" : "186"
