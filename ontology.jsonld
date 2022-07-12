@@ -831,9 +831,6 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
   "@id" : "https://prometheus-metric-ontology.ericsson.com/#hasMinor",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1531,6 +1528,6 @@
     "@id" : "https://prometheus-metric-ontology.ericsson.com/#Metric"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery"
+    "@id" : "https://prometheus-metric-ontology.ericsson.com/#hasQueryInformation"
   } ]
 } ]

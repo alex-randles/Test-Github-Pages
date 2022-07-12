@@ -68,10 +68,6 @@
                    rdfs:label "generatedByMetric" .
 
 
-###  https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery
-:hasMetricQuery rdf:type owl:ObjectProperty .
-
-
 ###  https://prometheus-metric-ontology.ericsson.com/#hasQueryInformation
 :hasQueryInformation rdf:type owl:ObjectProperty ;
                      rdfs:domain :Metric ;
@@ -107,7 +103,7 @@
 
 ###  https://prometheus-metric-ontology.ericsson.com/#usedByMetric
 :usedByMetric rdf:type owl:ObjectProperty ;
-              owl:inverseOf :hasMetricQuery ;
+              owl:inverseOf :hasQueryInformation ;
               rdfs:domain :MetricQuery ;
               rdfs:range :Metric ;
               rdfs:comment "The metric used by the query." ;

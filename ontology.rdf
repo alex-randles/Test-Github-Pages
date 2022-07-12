@@ -117,13 +117,6 @@
     
 
 
-    <!-- https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery -->
-
-
-    <owl:ObjectProperty rdf:about="https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery"/>
-    
-
-
     <!-- https://prometheus-metric-ontology.ericsson.com/#hasQueryInformation -->
 
 
@@ -177,7 +170,7 @@
 
 
     <owl:ObjectProperty rdf:about="https://prometheus-metric-ontology.ericsson.com/#usedByMetric">
-        <owl:inverseOf rdf:resource="https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery"/>
+        <owl:inverseOf rdf:resource="https://prometheus-metric-ontology.ericsson.com/#hasQueryInformation"/>
         <rdfs:domain rdf:resource="https://prometheus-metric-ontology.ericsson.com/#MetricQuery"/>
         <rdfs:range rdf:resource="https://prometheus-metric-ontology.ericsson.com/#Metric"/>
         <rdfs:comment>The metric used by the query.</rdfs:comment>
