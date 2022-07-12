@@ -127,9 +127,7 @@ This section provides details for each class and property defined by Prometheus 
                title="https://prometheus-metric-ontology.ericsson.com/#hasMajor">hasMajor</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#hasManufacturer"
                title="https://prometheus-metric-ontology.ericsson.com/#hasManufacturer">hasManufacturer</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasMetricQuery"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery">hasMetricQuery</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasMinor"
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasMinor"
                title="https://prometheus-metric-ontology.ericsson.com/#hasMinor">hasMinor</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#hasMode"
                title="https://prometheus-metric-ontology.ericsson.com/#hasMode">hasMode</a>
@@ -159,7 +157,9 @@ This section provides details for each class and property defined by Prometheus 
                title="https://prometheus-metric-ontology.ericsson.com/#hasProductName">hasProductName</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#hasQuantile"
                title="https://prometheus-metric-ontology.ericsson.com/#hasQuantile">hasQuantile</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasQueue"
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasQueryInformation"
+               title="https://prometheus-metric-ontology.ericsson.com/#hasQueryInformation">hasQueryInformation</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasQueue"
                title="https://prometheus-metric-ontology.ericsson.com/#hasQueue">hasQueue</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#hasReason"
                title="https://prometheus-metric-ontology.ericsson.com/#hasReason">hasReason</a>
@@ -250,8 +250,8 @@ This section provides details for each class and property defined by Prometheus 
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#hasMetricQuery"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery">hasMetricQuery</a>
+            <a href="#hasQueryInformation"
+               title="https://prometheus-metric-ontology.ericsson.com/#hasQueryInformation">hasQueryInformation</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is disjoint with</dt>
@@ -352,8 +352,8 @@ This section provides details for each class and property defined by Prometheus 
             title="https://prometheus-metric-ontology.ericsson.com/#generatedByMetric">generatedByMetric</a>
       </li>
       <li>
-         <a href="#hasMetricQuery"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery">hasMetricQuery</a>
+         <a href="#hasQueryInformation"
+            title="https://prometheus-metric-ontology.ericsson.com/#hasQueryInformation">hasQueryInformation</a>
       </li>
       <li>
          <a href="#hasResult"
@@ -405,13 +405,13 @@ This section provides details for each class and property defined by Prometheus 
          </dl>
       </div>
    </div>
-   <div class="entity" id="hasMetricQuery">
-      <h3>hasMetricQuery<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="hasQueryInformation">
+      <h3>hasQueryInformation<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery</p>
+         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasQueryInformation</p>
       <div class="comment">
          <span class="markdown">The query which retrieved the metric information.</span>
       </div>
@@ -428,12 +428,6 @@ This section provides details for each class and property defined by Prometheus 
                <a href="#MetricQuery"
                   title="https://prometheus-metric-ontology.ericsson.com/#MetricQuery">MetricQuery</a>
                <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#usedByMetric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#usedByMetric">usedByMetric</a>
-               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -563,8 +557,9 @@ This section provides details for each class and property defined by Prometheus 
             </dd>
             <dt>is inverse of</dt>
             <dd>
-               <a href="#hasMetricQuery"
-                  title="https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery">hasMetricQuery</a>
+               <a href="https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery"
+                  target="_blank"
+                  title="https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery">has metric query</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>

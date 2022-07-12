@@ -69,11 +69,15 @@
 
 
 ###  https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery
-:hasMetricQuery rdf:type owl:ObjectProperty ;
-                rdfs:domain :Metric ;
-                rdfs:range :MetricQuery ;
-                rdfs:comment "The query which retrieved the metric information." ;
-                rdfs:label "hasMetricQuery" .
+:hasMetricQuery rdf:type owl:ObjectProperty .
+
+
+###  https://prometheus-metric-ontology.ericsson.com/#hasQueryInformation
+:hasQueryInformation rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Metric ;
+                     rdfs:range :MetricQuery ;
+                     rdfs:comment "The query which retrieved the metric information." ;
+                     rdfs:label "hasQueryInformation" .
 
 
 ###  https://prometheus-metric-ontology.ericsson.com/#hasResult

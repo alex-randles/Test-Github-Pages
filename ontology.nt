@@ -62,10 +62,13 @@
 # 
 # https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery
 <https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
-<https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery> <http://www.w3.org/2000/01/rdf-schema#range> <https://prometheus-metric-ontology.ericsson.com/#MetricQuery> .
-<https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery> <http://www.w3.org/2000/01/rdf-schema#comment> "The query which retrieved the metric information." .
-<https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery> <http://www.w3.org/2000/01/rdf-schema#label> "hasMetricQuery" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasQueryInformation
+<https://prometheus-metric-ontology.ericsson.com/#hasQueryInformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasQueryInformation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasQueryInformation> <http://www.w3.org/2000/01/rdf-schema#range> <https://prometheus-metric-ontology.ericsson.com/#MetricQuery> .
+<https://prometheus-metric-ontology.ericsson.com/#hasQueryInformation> <http://www.w3.org/2000/01/rdf-schema#comment> "The query which retrieved the metric information." .
+<https://prometheus-metric-ontology.ericsson.com/#hasQueryInformation> <http://www.w3.org/2000/01/rdf-schema#label> "hasQueryInformation" .
 # 
 # https://prometheus-metric-ontology.ericsson.com/#hasResult
 <https://prometheus-metric-ontology.ericsson.com/#hasResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .

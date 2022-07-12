@@ -120,11 +120,18 @@
     <!-- https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery -->
 
 
-    <owl:ObjectProperty rdf:about="https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery">
+    <owl:ObjectProperty rdf:about="https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery"/>
+    
+
+
+    <!-- https://prometheus-metric-ontology.ericsson.com/#hasQueryInformation -->
+
+
+    <owl:ObjectProperty rdf:about="https://prometheus-metric-ontology.ericsson.com/#hasQueryInformation">
         <rdfs:domain rdf:resource="https://prometheus-metric-ontology.ericsson.com/#Metric"/>
         <rdfs:range rdf:resource="https://prometheus-metric-ontology.ericsson.com/#MetricQuery"/>
         <rdfs:comment>The query which retrieved the metric information.</rdfs:comment>
-        <rdfs:label>hasMetricQuery</rdfs:label>
+        <rdfs:label>hasQueryInformation</rdfs:label>
     </owl:ObjectProperty>
     
 
