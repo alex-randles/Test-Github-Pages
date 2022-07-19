@@ -1,570 +1,383 @@
-<h2 id="crossreference" class="list">Cross-reference for Prometheus Metric Ontology (PMO) classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-This section provides details for each class and property defined by Prometheus Metric Ontology (PMO).
+<h2 id="crossreference" class="list">Cross-reference for Change Detection Ontology (CDO) classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Change Detection Ontology (CDO).
 <div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
-         <a href="#Metric"
-            title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
+         <a href="#ChangeLog"
+            title="https://change-detection-ontology.adaptcentre.ie/#ChangeLog">ChangeLog</a>
       </li>
       <li>
-         <a href="#MetricQuery"
-            title="https://prometheus-metric-ontology.ericsson.com/#MetricQuery">MetricQuery</a>
+         <a href="#DatatypeSourceData"
+            title="https://change-detection-ontology.adaptcentre.ie/#DatatypeSourceData">
+            <span>DatatypeSourceData</span>
+         </a>
       </li>
       <li>
-         <a href="#MetricResult"
-            title="https://prometheus-metric-ontology.ericsson.com/#MetricResult">MetricResult</a>
+         <a href="#DeleteSourceData"
+            title="https://change-detection-ontology.adaptcentre.ie/#DeleteSourceData">
+            <span>DeleteSourceData</span>
+         </a>
       </li>
       <li>
-         <a href="#MetricResultSet"
-            title="https://prometheus-metric-ontology.ericsson.com/#MetricResultSet">MetricResultSet</a>
+         <a href="#InsertSourceData"
+            title="https://change-detection-ontology.adaptcentre.ie/#InsertSourceData">
+            <span>InsertSourceData</span>
+         </a>
+      </li>
+      <li>
+         <a href="#MergeSourceData"
+            title="https://change-detection-ontology.adaptcentre.ie/#MergeSourceData">
+            <span>MergeSourceData</span>
+         </a>
+      </li>
+      <li>
+         <a href="#MoveSourceData"
+            title="https://change-detection-ontology.adaptcentre.ie/#MoveSourceData">
+            <span>MoveSourceData</span>
+         </a>
+      </li>
+      <li>
+         <a href="#UpdateSourceData"
+            title="https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData">
+            <span>UpdateSourceData</span>
+         </a>
       </li>
    </ul>
-   <div class="entity" id="Metric">
-      <h3>Metric<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="ChangeLog">
+      <h3>ChangeLog<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#Metric</p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#ChangeLog</p>
       <div class="comment">
-         <span class="markdown">The metric information being monitored.</span>
+         <span class="markdown">A grouping of changes that have occured relating to a specific source data.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://change-detection-ontology.adaptcentre.ie/#">https://change-detection-ontology.adaptcentre.ie/#</a>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>is in domain of</dt>
          <dd>
-            <a href="#hasAddress"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasAddress">hasAddress</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasAlertmanager"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasAlertmanager">hasAlertmanager</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasAlertname"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasAlertname">hasAlertname</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasAlertstate"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasAlertstate">hasAlertstate</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasBiosDate"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasBiosDate">hasBiosDate</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasBiosVendor"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasBiosVendor">hasBiosVendor</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasBiosVersion"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasBiosVersion">hasBiosVersion</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasBoardName"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasBoardName">hasBoardName</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasBoardVendor"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasBoardVendor">hasBoardVendor</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasBoardVersion"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasBoardVersion">hasBoardVersion</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasBranch"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasBranch">hasBranch</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasBroadcast"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasBroadcast">hasBroadcast</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasCall"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasCall">hasCall</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasCapacityLevel"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasCapacityLevel">hasCapacityLevel</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasCause"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasCause">hasCause</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasChassisVendor"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasChassisVendor">hasChassisVendor</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasChip"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasChip">hasChip</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasChipName"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasChipName">hasChipName</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasClocksource"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasClocksource">hasClocksource</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasCode"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasCode">hasCode</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasCollector"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasCollector">hasCollector</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasConfig"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasConfig">hasConfig</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasCore"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasCore">hasCore</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasCpu"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasCpu">hasCpu</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasDevice"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasDevice">hasDevice</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasDialerName"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasDialerName">hasDialerName</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasDomainname"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasDomainname">hasDomainname</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasDuplex"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasDuplex">hasDuplex</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasEndpoint"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasEndpoint">hasEndpoint</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasEvent"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasEvent">hasEvent</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasFirmwareRevision"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasFirmwareRevision">hasFirmwareRevision</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasFstype"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasFstype">hasFstype</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasGoversion"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasGoversion">hasGoversion</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasHandler"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasHandler">hasHandler</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasId"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasId">hasId</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasIdLike"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasIdLike">hasIdLike</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasIndex"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasIndex">hasIndex</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasInstance"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasInstance">hasInstance</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasInterval"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasInterval">hasInterval</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasIp"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasIp">hasIp</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasJob"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasJob">hasJob</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasLabel"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasLabel">hasLabel</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasLe"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasLe">hasLe</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasListenerName"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasListenerName">hasListenerName</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasMachine"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasMachine">hasMachine</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasMajor"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasMajor">hasMajor</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasManufacturer"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasManufacturer">hasManufacturer</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasMinor"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasMinor">hasMinor</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasMode"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasMode">hasMode</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasModel"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasModel">hasModel</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasModelName"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasModelName">hasModelName</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasMountpoint"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasMountpoint">hasMountpoint</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasName"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasName">hasName</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasNodename"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasNodename">hasNodename</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasOperstate"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasOperstate">hasOperstate</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasPackage"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasPackage">hasPackage</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasPath"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasPath">hasPath</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasPowerSupply"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasPowerSupply">hasPowerSupply</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasPrettyName"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasPrettyName">hasPrettyName</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasProductFamily"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasProductFamily">hasProductFamily</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasProductName"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasProductName">hasProductName</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasQuantile"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasQuantile">hasQuantile</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasQueryInformation"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasQueryInformation">hasQueryInformation</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasQueue"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasQueue">hasQueue</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasReason"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasReason">hasReason</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasRelease"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasRelease">hasRelease</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasResultSet"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasResultSet">hasResultSet</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasRevision"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasRevision">hasRevision</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasRole"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasRole">hasRole</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasRuleGroup"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasRuleGroup">hasRuleGroup</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasScrapeJob"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasScrapeJob">hasScrapeJob</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasSensor"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasSensor">hasSensor</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasSerial"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasSerial">hasSerial</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasSerialNumber"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasSerialNumber">hasSerialNumber</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasSlice"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasSlice">hasSlice</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasState"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasState">hasState</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasSysname"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasSysname">hasSysname</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasSystemVendor"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasSystemVendor">hasSystemVendor</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasTechnology"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasTechnology">hasTechnology</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasTimeZone"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasTimeZone">hasTimeZone</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasType"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasType">hasType</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasVersion"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasVersion">hasVersion</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasVersionCodename"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasVersionCodename">hasVersionCodename</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasVersionId"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasVersionId">hasVersionId</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasZone"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasZone">hasZone</a>
-            <sup class="type-dp" title="data property">dp</sup>
+            <a href="#hasEvent"
+               title="https://change-detection-ontology.adaptcentre.ie/#hasEvent">hasEvent</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasOwner"
+               title="https://change-detection-ontology.adaptcentre.ie/#hasOwner">hasOwner</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#generatedByMetric"
-               title="https://prometheus-metric-ontology.ericsson.com/#generatedByMetric">generatedByMetric</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#usedByMetric"
-               title="https://prometheus-metric-ontology.ericsson.com/#usedByMetric">usedByMetric</a>
+            <a href="#ownedBy"
+               title="https://change-detection-ontology.adaptcentre.ie/#ownedBy">hasOwner</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#inEventLog"
+               title="https://change-detection-ontology.adaptcentre.ie/#inEventLog">inEventLog</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
-         <dt>is disjoint with</dt>
+         <dt>has members</dt>
          <dd>
-            <a href="#MetricQuery"
-               title="https://prometheus-metric-ontology.ericsson.com/#MetricQuery">MetricQuery</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#MetricResult"
-               title="https://prometheus-metric-ontology.ericsson.com/#MetricResult">MetricResult</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#MetricResultSet"
-               title="https://prometheus-metric-ontology.ericsson.com/#MetricResultSet">MetricResultSet</a>
-            <sup class="type-c" title="class">c</sup>
+            <a href="#http://www.example.com/changeLog" title="http://www.example.com/changeLog">change log</a>
+            <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="MetricQuery">
-      <h3>MetricQuery<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="DatatypeSourceData">
+      <h3>DatatypeSourceData<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#MetricQuery</p>
-      <div class="comment">
-         <span class="markdown">The information related to the query used to collect the metric information.</span>
-      </div>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#DatatypeSourceData</p>
       <dl class="description">
-         <dt>is in domain of</dt>
+         <dt>has super-classes</dt>
          <dd>
-            <a href="#hasQuery"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasQuery">hasQuery</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasResultType"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasResultType">hasResultType</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasStatus"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasStatus">hasStatus</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#usedByMetric"
-               title="https://prometheus-metric-ontology.ericsson.com/#usedByMetric">usedByMetric</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#hasQueryInformation"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasQueryInformation">hasQueryInformation</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is disjoint with</dt>
-         <dd>
-            <a href="#Metric"
-               title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#MetricResult"
-               title="https://prometheus-metric-ontology.ericsson.com/#MetricResult">MetricResult</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#MetricResultSet"
-               title="https://prometheus-metric-ontology.ericsson.com/#MetricResultSet">MetricResultSet</a>
+            <a href="http://linkedevents.org/ontology/Event"
+               target="_blank"
+               title="http://linkedevents.org/ontology/Event">event</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>is also defined as</dt>
+         <dd>named individual</dd>
       </dl>
    </div>
-   <div class="entity" id="MetricResult">
-      <h3>MetricResult<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="DeleteSourceData">
+      <h3>DeleteSourceData<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#MetricResult</p>
-      <div class="comment">
-         <span class="markdown">A result related to a specific result set.</span>
-      </div>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#DeleteSourceData</p>
       <dl class="description">
-         <dt>is in domain of</dt>
+         <dt>has super-classes</dt>
          <dd>
-            <a href="#hasTimestamp"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasTimestamp">hasTimestamp</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasValue"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasValue">hasValue</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#inMetricSet"
-               title="https://prometheus-metric-ontology.ericsson.com/#inMetricSet">inMetricSet</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#hasResult"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasResult">hasResult</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is disjoint with</dt>
-         <dd>
-            <a href="#Metric"
-               title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#MetricQuery"
-               title="https://prometheus-metric-ontology.ericsson.com/#MetricQuery">MetricQuery</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#MetricResultSet"
-               title="https://prometheus-metric-ontology.ericsson.com/#MetricResultSet">MetricResultSet</a>
+            <a href="http://linkedevents.org/ontology/Event"
+               target="_blank"
+               title="http://linkedevents.org/ontology/Event">event</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>is also defined as</dt>
+         <dd>named individual</dd>
       </dl>
    </div>
-   <div class="entity" id="MetricResultSet">
-      <h3>MetricResultSet<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="InsertSourceData">
+      <h3>InsertSourceData<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#MetricResultSet</p>
-      <div class="comment">
-         <span class="markdown">The values and timestamps related to a metric.</span>
-      </div>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#InsertSourceData</p>
       <dl class="description">
-         <dt>is in domain of</dt>
+         <dt>has super-classes</dt>
          <dd>
-            <a href="#generatedByMetric"
-               title="https://prometheus-metric-ontology.ericsson.com/#generatedByMetric">generatedByMetric</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasResult"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasResult">hasResult</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#hasResultSet"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasResultSet">hasResultSet</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#inMetricSet"
-               title="https://prometheus-metric-ontology.ericsson.com/#inMetricSet">inMetricSet</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is disjoint with</dt>
-         <dd>
-            <a href="#Metric"
-               title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#MetricQuery"
-               title="https://prometheus-metric-ontology.ericsson.com/#MetricQuery">MetricQuery</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#MetricResult"
-               title="https://prometheus-metric-ontology.ericsson.com/#MetricResult">MetricResult</a>
+            <a href="http://linkedevents.org/ontology/Event"
+               target="_blank"
+               title="http://linkedevents.org/ontology/Event">event</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#http://www.example.com/insertChange" title="http://www.example.com/insertChange">insert change</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>named individual</dd>
+      </dl>
+   </div>
+   <div class="entity" id="MergeSourceData">
+      <h3>MergeSourceData<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#MergeSourceData</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://linkedevents.org/ontology/Event"
+               target="_blank"
+               title="http://linkedevents.org/ontology/Event">event</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>named individual</dd>
+      </dl>
+   </div>
+   <div class="entity" id="MoveSourceData">
+      <h3>MoveSourceData<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#MoveSourceData</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://linkedevents.org/ontology/Event"
+               target="_blank"
+               title="http://linkedevents.org/ontology/Event">event</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>named individual</dd>
+      </dl>
+   </div>
+   <div class="entity" id="UpdateSourceData">
+      <h3>UpdateSourceData<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://linkedevents.org/ontology/Event"
+               target="_blank"
+               title="http://linkedevents.org/ontology/Event">event</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>named individual</dd>
       </dl>
    </div>
 </div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
-         <a href="#generatedByMetric"
-            title="https://prometheus-metric-ontology.ericsson.com/#generatedByMetric">generatedByMetric</a>
+         <a href="#hasEvent"
+            title="https://change-detection-ontology.adaptcentre.ie/#hasEvent">hasEvent</a>
       </li>
       <li>
-         <a href="#hasQueryInformation"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasQueryInformation">hasQueryInformation</a>
+         <a href="#hasOwner"
+            title="https://change-detection-ontology.adaptcentre.ie/#hasOwner">hasOwner</a>
       </li>
       <li>
-         <a href="#hasResult"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasResult">hasResult</a>
+         <a href="#ownedBy"
+            title="https://change-detection-ontology.adaptcentre.ie/#ownedBy">hasOwner</a>
       </li>
       <li>
-         <a href="#hasResultSet"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasResultSet">hasResultSet</a>
-      </li>
-      <li>
-         <a href="#inMetricSet"
-            title="https://prometheus-metric-ontology.ericsson.com/#inMetricSet">inMetricSet</a>
-      </li>
-      <li>
-         <a href="#usedByMetric"
-            title="https://prometheus-metric-ontology.ericsson.com/#usedByMetric">usedByMetric</a>
+         <a href="#inEventLog"
+            title="https://change-detection-ontology.adaptcentre.ie/#inEventLog">inEventLog</a>
       </li>
    </ul>
-   <div class="entity" id="generatedByMetric">
-      <h3>generatedByMetric<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="hasEvent">
+      <h3>hasEvent<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#generatedByMetric</p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#hasEvent</p>
       <div class="comment">
-         <span class="markdown">The result set generated by the metric.</span>
+         <span class="markdown">An event within a certain event log.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://change-detection-ontology.adaptcentre.ie/#">https://change-detection-ontology.adaptcentre.ie/#</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#MetricResultSet"
-                  title="https://prometheus-metric-ontology.ericsson.com/#MetricResultSet">MetricResultSet</a>
+               <a href="#ChangeLog"
+                  title="https://change-detection-ontology.adaptcentre.ie/#ChangeLog">ChangeLog</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
+               <a href="http://linkedevents.org/ontology/Event"
+                  target="_blank"
+                  title="http://linkedevents.org/ontology/Event">event</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
             <dd>
-               <a href="#hasResultSet"
-                  title="https://prometheus-metric-ontology.ericsson.com/#hasResultSet">hasResultSet</a>
+               <a href="#inEventLog"
+                  title="https://change-detection-ontology.adaptcentre.ie/#inEventLog">inEventLog</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
    </div>
-   <div class="entity" id="hasQueryInformation">
-      <h3>hasQueryInformation<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="hasOwner">
+      <h3>hasOwner<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasQueryInformation</p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#hasOwner</p>
       <div class="comment">
-         <span class="markdown">The query which retrieved the metric information.</span>
+         <span class="markdown">The owner of the change log.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://change-detection-ontology.adaptcentre.ie/#">https://change-detection-ontology.adaptcentre.ie/#</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
+               <a href="#ChangeLog"
+                  title="https://change-detection-ontology.adaptcentre.ie/#ChangeLog">ChangeLog</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#MetricQuery"
-                  title="https://prometheus-metric-ontology.ericsson.com/#MetricQuery">MetricQuery</a>
+               <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"
+                  target="_blank"
+                  title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent">agent</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
             <dd>
-               <a href="#usedByMetric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#usedByMetric">usedByMetric</a>
+               <a href="#ownedBy"
+                  title="https://change-detection-ontology.adaptcentre.ie/#ownedBy">hasOwner</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
    </div>
-   <div class="entity" id="hasResult">
-      <h3>hasResult<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="ownedBy">
+      <h3>hasOwner<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasResult</p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#ownedBy</p>
       <div class="comment">
-         <span class="markdown">A result within a result set.</span>
+         <span class="markdown">The agent who owns the change log.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://change-detection-ontology.adaptcentre.ie/#">https://change-detection-ontology.adaptcentre.ie/#</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#MetricResultSet"
-                  title="https://prometheus-metric-ontology.ericsson.com/#MetricResultSet">MetricResultSet</a>
+               <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"
+                  target="_blank"
+                  title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent">agent</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#MetricResult"
-                  title="https://prometheus-metric-ontology.ericsson.com/#MetricResult">MetricResult</a>
+               <a href="#ChangeLog"
+                  title="https://change-detection-ontology.adaptcentre.ie/#ChangeLog">ChangeLog</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
             <dd>
-               <a href="#inMetricSet"
-                  title="https://prometheus-metric-ontology.ericsson.com/#inMetricSet">inMetricSet</a>
+               <a href="#hasOwner"
+                  title="https://change-detection-ontology.adaptcentre.ie/#hasOwner">hasOwner</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
    </div>
-   <div class="entity" id="hasResultSet">
-      <h3>hasResultSet<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="inEventLog">
+      <h3>inEventLog<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasResultSet</p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#inEventLog</p>
       <div class="comment">
-         <span class="markdown">The result set associated with the metric.</span>
+         <span class="markdown">An event within an event log.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://change-detection-ontology.adaptcentre.ie/#">https://change-detection-ontology.adaptcentre.ie/#</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
+               <a href="http://linkedevents.org/ontology/Event"
+                  target="_blank"
+                  title="http://linkedevents.org/ontology/Event">event</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#MetricResultSet"
-                  title="https://prometheus-metric-ontology.ericsson.com/#MetricResultSet">MetricResultSet</a>
+               <a href="#ChangeLog"
+                  title="https://change-detection-ontology.adaptcentre.ie/#ChangeLog">ChangeLog</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
             <dd>
-               <a href="#generatedByMetric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#generatedByMetric">generatedByMetric</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="inMetricSet">
-      <h3>inMetricSet<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#inMetricSet</p>
-      <div class="comment">
-         <span class="markdown">A result within a result set.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#MetricResult"
-                  title="https://prometheus-metric-ontology.ericsson.com/#MetricResult">MetricResult</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#MetricResultSet"
-                  title="https://prometheus-metric-ontology.ericsson.com/#MetricResultSet">MetricResultSet</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#hasResult"
-                  title="https://prometheus-metric-ontology.ericsson.com/#hasResult">hasResult</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="usedByMetric">
-      <h3>usedByMetric<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#usedByMetric</p>
-      <div class="comment">
-         <span class="markdown">The metric used by the query.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#MetricQuery"
-                  title="https://prometheus-metric-ontology.ericsson.com/#MetricQuery">MetricQuery</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#hasQueryInformation"
-                  title="https://prometheus-metric-ontology.ericsson.com/#hasQueryInformation">hasQueryInformation</a>
+               <a href="#hasEvent"
+                  title="https://change-detection-ontology.adaptcentre.ie/#hasEvent">hasEvent</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -574,2534 +387,50 @@ This section provides details for each class and property defined by Prometheus 
    <h3 id="dataproperties-headline" class="list">Data Properties</h3>
    <ul class="hlist">
       <li>
-         <a href="#hasAddress"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasAddress">hasAddress</a>
+         <a href="#detectionEnd"
+            title="https://change-detection-ontology.adaptcentre.ie/#detectionEnd">detectionEnd</a>
       </li>
       <li>
-         <a href="#hasAlertmanager"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasAlertmanager">hasAlertmanager</a>
-      </li>
-      <li>
-         <a href="#hasAlertname"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasAlertname">hasAlertname</a>
-      </li>
-      <li>
-         <a href="#hasAlertstate"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasAlertstate">hasAlertstate</a>
-      </li>
-      <li>
-         <a href="#hasBiosDate"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasBiosDate">hasBiosDate</a>
-      </li>
-      <li>
-         <a href="#hasBiosVendor"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasBiosVendor">hasBiosVendor</a>
-      </li>
-      <li>
-         <a href="#hasBiosVersion"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasBiosVersion">hasBiosVersion</a>
-      </li>
-      <li>
-         <a href="#hasBoardName"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasBoardName">hasBoardName</a>
-      </li>
-      <li>
-         <a href="#hasBoardVendor"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasBoardVendor">hasBoardVendor</a>
-      </li>
-      <li>
-         <a href="#hasBoardVersion"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasBoardVersion">hasBoardVersion</a>
-      </li>
-      <li>
-         <a href="#hasBranch"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasBranch">hasBranch</a>
-      </li>
-      <li>
-         <a href="#hasBroadcast"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasBroadcast">hasBroadcast</a>
-      </li>
-      <li>
-         <a href="#hasCall"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasCall">hasCall</a>
-      </li>
-      <li>
-         <a href="#hasCapacityLevel"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasCapacityLevel">hasCapacityLevel</a>
-      </li>
-      <li>
-         <a href="#hasCause"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasCause">hasCause</a>
-      </li>
-      <li>
-         <a href="#hasChassisVendor"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasChassisVendor">hasChassisVendor</a>
-      </li>
-      <li>
-         <a href="#hasChip"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasChip">hasChip</a>
-      </li>
-      <li>
-         <a href="#hasChipName"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasChipName">hasChipName</a>
-      </li>
-      <li>
-         <a href="#hasClocksource"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasClocksource">hasClocksource</a>
-      </li>
-      <li>
-         <a href="#hasCode"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasCode">hasCode</a>
-      </li>
-      <li>
-         <a href="#hasCollector"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasCollector">hasCollector</a>
-      </li>
-      <li>
-         <a href="#hasConfig"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasConfig">hasConfig</a>
-      </li>
-      <li>
-         <a href="#hasCore"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasCore">hasCore</a>
-      </li>
-      <li>
-         <a href="#hasCpu"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasCpu">hasCpu</a>
-      </li>
-      <li>
-         <a href="#hasDevice"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasDevice">hasDevice</a>
-      </li>
-      <li>
-         <a href="#hasDialerName"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasDialerName">hasDialerName</a>
-      </li>
-      <li>
-         <a href="#hasDomainname"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasDomainname">hasDomainname</a>
-      </li>
-      <li>
-         <a href="#hasDuplex"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasDuplex">hasDuplex</a>
-      </li>
-      <li>
-         <a href="#hasEndpoint"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasEndpoint">hasEndpoint</a>
-      </li>
-      <li>
-         <a href="#hasEvent"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasEvent">hasEvent</a>
-      </li>
-      <li>
-         <a href="#hasFirmwareRevision"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasFirmwareRevision">hasFirmwareRevision</a>
-      </li>
-      <li>
-         <a href="#hasFstype"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasFstype">hasFstype</a>
-      </li>
-      <li>
-         <a href="#hasGoversion"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasGoversion">hasGoversion</a>
-      </li>
-      <li>
-         <a href="#hasHandler"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasHandler">hasHandler</a>
-      </li>
-      <li>
-         <a href="#hasId"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasId">hasId</a>
-      </li>
-      <li>
-         <a href="#hasIdLike"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasIdLike">hasIdLike</a>
-      </li>
-      <li>
-         <a href="#hasIndex"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasIndex">hasIndex</a>
-      </li>
-      <li>
-         <a href="#hasInstance"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasInstance">hasInstance</a>
-      </li>
-      <li>
-         <a href="#hasInterval"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasInterval">hasInterval</a>
-      </li>
-      <li>
-         <a href="#hasIp"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasIp">hasIp</a>
-      </li>
-      <li>
-         <a href="#hasJob"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasJob">hasJob</a>
-      </li>
-      <li>
-         <a href="#hasLabel"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasLabel">hasLabel</a>
-      </li>
-      <li>
-         <a href="#hasLe"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasLe">hasLe</a>
-      </li>
-      <li>
-         <a href="#hasListenerName"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasListenerName">hasListenerName</a>
-      </li>
-      <li>
-         <a href="#hasMachine"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasMachine">hasMachine</a>
-      </li>
-      <li>
-         <a href="#hasMajor"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasMajor">hasMajor</a>
-      </li>
-      <li>
-         <a href="#hasManufacturer"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasManufacturer">hasManufacturer</a>
-      </li>
-      <li>
-         <a href="#hasMinor"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasMinor">hasMinor</a>
-      </li>
-      <li>
-         <a href="#hasMode"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasMode">hasMode</a>
-      </li>
-      <li>
-         <a href="#hasModel"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasModel">hasModel</a>
-      </li>
-      <li>
-         <a href="#hasModelName"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasModelName">hasModelName</a>
-      </li>
-      <li>
-         <a href="#hasMountpoint"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasMountpoint">hasMountpoint</a>
-      </li>
-      <li>
-         <a href="#hasName"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasName">hasName</a>
-      </li>
-      <li>
-         <a href="#hasNodename"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasNodename">hasNodename</a>
-      </li>
-      <li>
-         <a href="#hasOperstate"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasOperstate">hasOperstate</a>
-      </li>
-      <li>
-         <a href="#hasPackage"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasPackage">hasPackage</a>
-      </li>
-      <li>
-         <a href="#hasPath"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasPath">hasPath</a>
-      </li>
-      <li>
-         <a href="#hasPowerSupply"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasPowerSupply">hasPowerSupply</a>
-      </li>
-      <li>
-         <a href="#hasPrettyName"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasPrettyName">hasPrettyName</a>
-      </li>
-      <li>
-         <a href="#hasProductFamily"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasProductFamily">hasProductFamily</a>
-      </li>
-      <li>
-         <a href="#hasProductName"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasProductName">hasProductName</a>
-      </li>
-      <li>
-         <a href="#hasQuantile"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasQuantile">hasQuantile</a>
-      </li>
-      <li>
-         <a href="#hasQuery"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasQuery">hasQuery</a>
-      </li>
-      <li>
-         <a href="#hasQueue"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasQueue">hasQueue</a>
+         <a href="#detectionStart"
+            title="https://change-detection-ontology.adaptcentre.ie/#detectionStart">detectionStart</a>
       </li>
       <li>
          <a href="#hasReason"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasReason">hasReason</a>
+            title="https://change-detection-ontology.adaptcentre.ie/#hasReason">hasReason</a>
       </li>
       <li>
-         <a href="#hasRelease"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasRelease">hasRelease</a>
-      </li>
-      <li>
-         <a href="#hasResultType"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasResultType">hasResultType</a>
-      </li>
-      <li>
-         <a href="#hasRevision"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasRevision">hasRevision</a>
-      </li>
-      <li>
-         <a href="#hasRole"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasRole">hasRole</a>
-      </li>
-      <li>
-         <a href="#hasRuleGroup"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasRuleGroup">hasRuleGroup</a>
-      </li>
-      <li>
-         <a href="#hasScrapeJob"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasScrapeJob">hasScrapeJob</a>
-      </li>
-      <li>
-         <a href="#hasSensor"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasSensor">hasSensor</a>
-      </li>
-      <li>
-         <a href="#hasSerial"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasSerial">hasSerial</a>
-      </li>
-      <li>
-         <a href="#hasSerialNumber"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasSerialNumber">hasSerialNumber</a>
-      </li>
-      <li>
-         <a href="#hasSlice"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasSlice">hasSlice</a>
-      </li>
-      <li>
-         <a href="#hasState"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasState">hasState</a>
-      </li>
-      <li>
-         <a href="#hasStatus"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasStatus">hasStatus</a>
-      </li>
-      <li>
-         <a href="#hasSysname"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasSysname">hasSysname</a>
-      </li>
-      <li>
-         <a href="#hasSystemVendor"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasSystemVendor">hasSystemVendor</a>
-      </li>
-      <li>
-         <a href="#hasTechnology"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasTechnology">hasTechnology</a>
-      </li>
-      <li>
-         <a href="#hasTimestamp"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasTimestamp">hasTimestamp</a>
-      </li>
-      <li>
-         <a href="#hasTimeZone"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasTimeZone">hasTimeZone</a>
-      </li>
-      <li>
-         <a href="#hasType"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasType">hasType</a>
-      </li>
-      <li>
-         <a href="#hasValue"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasValue">hasValue</a>
-      </li>
-      <li>
-         <a href="#hasVersion"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasVersion">hasVersion</a>
-      </li>
-      <li>
-         <a href="#hasVersionCodename"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasVersionCodename">hasVersionCodename</a>
-      </li>
-      <li>
-         <a href="#hasVersionId"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasVersionId">hasVersionId</a>
-      </li>
-      <li>
-         <a href="#hasZone"
-            title="https://prometheus-metric-ontology.ericsson.com/#hasZone">hasZone</a>
+         <a href="#hasThreshold"
+            title="https://change-detection-ontology.adaptcentre.ie/#hasThreshold">
+            <span>hasThreshold</span>
+         </a>
       </li>
    </ul>
-   <div class="entity" id="hasAddress">
-      <h3>hasAddress<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="detectionEnd">
+      <h3>detectionEnd<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasAddress</p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#detectionEnd</p>
       <div class="comment">
-         <span class="markdown">The Address label for the metric.</span>
+         <span class="markdown">The time when the notification policy is finished.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://change-detection-ontology.adaptcentre.ie/#">https://change-detection-ontology.adaptcentre.ie/#</a>
+         </dd>
+      </dl>
       <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasAlertmanager">
-      <h3>hasAlertmanager<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasAlertmanager</p>
-      <div class="comment">
-         <span class="markdown">The Alertmanager label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasAlertname">
-      <h3>hasAlertname<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasAlertname</p>
-      <div class="comment">
-         <span class="markdown">The Alertname label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasAlertstate">
-      <h3>hasAlertstate<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasAlertstate</p>
-      <div class="comment">
-         <span class="markdown">The Alertstate label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasBiosDate">
-      <h3>hasBiosDate<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasBiosDate</p>
-      <div class="comment">
-         <span class="markdown">The Bios date label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasBiosVendor">
-      <h3>hasBiosVendor<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasBiosVendor</p>
-      <div class="comment">
-         <span class="markdown">The Bios vendor label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasBiosVersion">
-      <h3>hasBiosVersion<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasBiosVersion</p>
-      <div class="comment">
-         <span class="markdown">The Bios version label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasBoardName">
-      <h3>hasBoardName<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasBoardName</p>
-      <div class="comment">
-         <span class="markdown">The Board name label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasBoardVendor">
-      <h3>hasBoardVendor<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasBoardVendor</p>
-      <div class="comment">
-         <span class="markdown">The Board vendor label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasBoardVersion">
-      <h3>hasBoardVersion<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasBoardVersion</p>
-      <div class="comment">
-         <span class="markdown">The Board version label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasBranch">
-      <h3>hasBranch<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasBranch</p>
-      <div class="comment">
-         <span class="markdown">The Branch label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasBroadcast">
-      <h3>hasBroadcast<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasBroadcast</p>
-      <div class="comment">
-         <span class="markdown">The Broadcast label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasCall">
-      <h3>hasCall<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasCall</p>
-      <div class="comment">
-         <span class="markdown">The Call label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasCapacityLevel">
-      <h3>hasCapacityLevel<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasCapacityLevel</p>
-      <div class="comment">
-         <span class="markdown">The Capacity level label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasCause">
-      <h3>hasCause<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasCause</p>
-      <div class="comment">
-         <span class="markdown">The Cause label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasChassisVendor">
-      <h3>hasChassisVendor<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasChassisVendor</p>
-      <div class="comment">
-         <span class="markdown">The Chassis vendor label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasChip">
-      <h3>hasChip<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasChip</p>
-      <div class="comment">
-         <span class="markdown">The Chip label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasChipName">
-      <h3>hasChipName<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasChipName</p>
-      <div class="comment">
-         <span class="markdown">The Chip name label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasClocksource">
-      <h3>hasClocksource<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasClocksource</p>
-      <div class="comment">
-         <span class="markdown">The Clocksource label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasCode">
-      <h3>hasCode<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasCode</p>
-      <div class="comment">
-         <span class="markdown">The Code label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasCollector">
-      <h3>hasCollector<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasCollector</p>
-      <div class="comment">
-         <span class="markdown">The Collector label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasConfig">
-      <h3>hasConfig<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasConfig</p>
-      <div class="comment">
-         <span class="markdown">The Config label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasCore">
-      <h3>hasCore<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasCore</p>
-      <div class="comment">
-         <span class="markdown">The Core label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasCpu">
-      <h3>hasCpu<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasCpu</p>
-      <div class="comment">
-         <span class="markdown">The Cpu label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasDevice">
-      <h3>hasDevice<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasDevice</p>
-      <div class="comment">
-         <span class="markdown">The Device label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasDialerName">
-      <h3>hasDialerName<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasDialerName</p>
-      <div class="comment">
-         <span class="markdown">The Dialer name label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasDomainname">
-      <h3>hasDomainname<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasDomainname</p>
-      <div class="comment">
-         <span class="markdown">The Domainname label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasDuplex">
-      <h3>hasDuplex<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasDuplex</p>
-      <div class="comment">
-         <span class="markdown">The Duplex label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasEndpoint">
-      <h3>hasEndpoint<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasEndpoint</p>
-      <div class="comment">
-         <span class="markdown">The Endpoint label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasEvent">
-      <h3>hasEvent<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasEvent</p>
-      <div class="comment">
-         <span class="markdown">The Event label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasFirmwareRevision">
-      <h3>hasFirmwareRevision<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasFirmwareRevision</p>
-      <div class="comment">
-         <span class="markdown">The Firmware revision label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasFstype">
-      <h3>hasFstype<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasFstype</p>
-      <div class="comment">
-         <span class="markdown">The Fstype label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasGoversion">
-      <h3>hasGoversion<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasGoversion</p>
-      <div class="comment">
-         <span class="markdown">The Goversion label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasHandler">
-      <h3>hasHandler<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasHandler</p>
-      <div class="comment">
-         <span class="markdown">The Handler label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasId">
-      <h3>hasId<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasId</p>
-      <div class="comment">
-         <span class="markdown">The Id label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasIdLike">
-      <h3>hasIdLike<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasIdLike</p>
-      <div class="comment">
-         <span class="markdown">The Id like label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasIndex">
-      <h3>hasIndex<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasIndex</p>
-      <div class="comment">
-         <span class="markdown">The Index label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasInstance">
-      <h3>hasInstance<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasInstance</p>
-      <div class="comment">
-         <span class="markdown">The Instance label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasInterval">
-      <h3>hasInterval<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasInterval</p>
-      <div class="comment">
-         <span class="markdown">The Interval label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasIp">
-      <h3>hasIp<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasIp</p>
-      <div class="comment">
-         <span class="markdown">The Ip label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasJob">
-      <h3>hasJob<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasJob</p>
-      <div class="comment">
-         <span class="markdown">The Job label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasLabel">
-      <h3>hasLabel<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasLabel</p>
-      <div class="comment">
-         <span class="markdown">The Label label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasLe">
-      <h3>hasLe<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasLe</p>
-      <div class="comment">
-         <span class="markdown">The Le label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasListenerName">
-      <h3>hasListenerName<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasListenerName</p>
-      <div class="comment">
-         <span class="markdown">The Listener name label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasMachine">
-      <h3>hasMachine<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasMachine</p>
-      <div class="comment">
-         <span class="markdown">The Machine label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasMajor">
-      <h3>hasMajor<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasMajor</p>
-      <div class="comment">
-         <span class="markdown">The Major label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasManufacturer">
-      <h3>hasManufacturer<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasManufacturer</p>
-      <div class="comment">
-         <span class="markdown">The Manufacturer label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasMinor">
-      <h3>hasMinor<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasMinor</p>
-      <div class="comment">
-         <span class="markdown">The Minor label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasMode">
-      <h3>hasMode<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasMode</p>
-      <div class="comment">
-         <span class="markdown">The Mode label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasModel">
-      <h3>hasModel<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasModel</p>
-      <div class="comment">
-         <span class="markdown">The Model label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasModelName">
-      <h3>hasModelName<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasModelName</p>
-      <div class="comment">
-         <span class="markdown">The Model name label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasMountpoint">
-      <h3>hasMountpoint<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasMountpoint</p>
-      <div class="comment">
-         <span class="markdown">The Mountpoint label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasName">
-      <h3>hasName<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasName</p>
-      <div class="comment">
-         <span class="markdown">The   name   label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasNodename">
-      <h3>hasNodename<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasNodename</p>
-      <div class="comment">
-         <span class="markdown">The Nodename label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasOperstate">
-      <h3>hasOperstate<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasOperstate</p>
-      <div class="comment">
-         <span class="markdown">The Operstate label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasPackage">
-      <h3>hasPackage<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasPackage</p>
-      <div class="comment">
-         <span class="markdown">The Package label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasPath">
-      <h3>hasPath<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasPath</p>
-      <div class="comment">
-         <span class="markdown">The Path label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasPowerSupply">
-      <h3>hasPowerSupply<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasPowerSupply</p>
-      <div class="comment">
-         <span class="markdown">The Power supply label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasPrettyName">
-      <h3>hasPrettyName<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasPrettyName</p>
-      <div class="comment">
-         <span class="markdown">The Pretty name label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasProductFamily">
-      <h3>hasProductFamily<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasProductFamily</p>
-      <div class="comment">
-         <span class="markdown">The Product family label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasProductName">
-      <h3>hasProductName<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasProductName</p>
-      <div class="comment">
-         <span class="markdown">The Product name label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasQuantile">
-      <h3>hasQuantile<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasQuantile</p>
-      <div class="comment">
-         <span class="markdown">The Quantile label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasQuery">
-      <h3>hasQuery<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasQuery</p>
-      <div class="comment">
-         <span class="markdown">The query used to collect the metric information.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#MetricQuery"
-                  title="https://prometheus-metric-ontology.ericsson.com/#MetricQuery">MetricQuery</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasQueue">
-      <h3>hasQueue<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasQueue</p>
-      <div class="comment">
-         <span class="markdown">The Queue label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasReason">
-      <h3>hasReason<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasReason</p>
-      <div class="comment">
-         <span class="markdown">The Reason label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasRelease">
-      <h3>hasRelease<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasRelease</p>
-      <div class="comment">
-         <span class="markdown">The Release label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasResultType">
-      <h3>hasResultType<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasResultType</p>
-      <div class="comment">
-         <span class="markdown">The result type returned by the API.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#MetricQuery"
-                  title="https://prometheus-metric-ontology.ericsson.com/#MetricQuery">MetricQuery</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasRevision">
-      <h3>hasRevision<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasRevision</p>
-      <div class="comment">
-         <span class="markdown">The Revision label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasRole">
-      <h3>hasRole<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasRole</p>
-      <div class="comment">
-         <span class="markdown">The Role label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasRuleGroup">
-      <h3>hasRuleGroup<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasRuleGroup</p>
-      <div class="comment">
-         <span class="markdown">The Rule group label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasScrapeJob">
-      <h3>hasScrapeJob<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasScrapeJob</p>
-      <div class="comment">
-         <span class="markdown">The Scrape job label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasSensor">
-      <h3>hasSensor<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasSensor</p>
-      <div class="comment">
-         <span class="markdown">The Sensor label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasSerial">
-      <h3>hasSerial<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasSerial</p>
-      <div class="comment">
-         <span class="markdown">The Serial label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasSerialNumber">
-      <h3>hasSerialNumber<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasSerialNumber</p>
-      <div class="comment">
-         <span class="markdown">The Serial number label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasSlice">
-      <h3>hasSlice<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasSlice</p>
-      <div class="comment">
-         <span class="markdown">The Slice label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasState">
-      <h3>hasState<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasState</p>
-      <div class="comment">
-         <span class="markdown">The State label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasStatus">
-      <h3>hasStatus<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasStatus</p>
-      <div class="comment">
-         <span class="markdown">The Status label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#MetricQuery"
-                  title="https://prometheus-metric-ontology.ericsson.com/#MetricQuery">MetricQuery</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasSysname">
-      <h3>hasSysname<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasSysname</p>
-      <div class="comment">
-         <span class="markdown">The Sysname label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasSystemVendor">
-      <h3>hasSystemVendor<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasSystemVendor</p>
-      <div class="comment">
-         <span class="markdown">The System vendor label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasTechnology">
-      <h3>hasTechnology<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasTechnology</p>
-      <div class="comment">
-         <span class="markdown">The Technology label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
+               <a href="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy"
                   target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasTimestamp">
-      <h3>hasTimestamp<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasTimestamp</p>
-      <div class="comment">
-         <span class="markdown">The timestamp related to a result.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#MetricResult"
-                  title="https://prometheus-metric-ontology.ericsson.com/#MetricResult">MetricResult</a>
+                  title="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy">policy</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -3113,22 +442,63 @@ This section provides details for each class and property defined by Prometheus 
          </dl>
       </div>
    </div>
-   <div class="entity" id="hasTimeZone">
-      <h3>hasTimeZone<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="detectionStart">
+      <h3>detectionStart<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasTimeZone</p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#detectionStart</p>
       <div class="comment">
-         <span class="markdown">The Time zone label for the metric.</span>
+         <span class="markdown">The time when the notification policy was created.</span>
       </div>
       <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
+               <a href="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy"
+                  target="_blank"
+                  title="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy">policy</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#dateTime"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#dateTime">date time</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasReason">
+      <h3>hasReason<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#hasReason</p>
+      <div class="comment">
+         <span class="markdown">The reason a change occurred.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://change-detection-ontology.adaptcentre.ie/#">https://change-detection-ontology.adaptcentre.ie/#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://linkedevents.org/ontology/Event"
+                  target="_blank"
+                  title="http://linkedevents.org/ontology/Event">event</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -3140,167 +510,368 @@ This section provides details for each class and property defined by Prometheus 
          </dl>
       </div>
    </div>
-   <div class="entity" id="hasType">
-      <h3>hasType<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="hasThreshold">
+      <h3>hasThreshold<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasType</p>
-      <div class="comment">
-         <span class="markdown">The Type label for the metric.</span>
-      </div>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#hasThreshold</p>
       <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
+               <a href="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint"
+                  target="_blank"
+                  title="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint">simple constraint</a>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
+               <a href="http://www.w3.org/2001/XMLSchema#int"
                   target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+                  title="http://www.w3.org/2001/XMLSchema#int">int</a>
             </dd>
+            <dt>is also defined as</dt>
+            <dd>named individual</dd>
          </dl>
       </div>
    </div>
-   <div class="entity" id="hasValue">
-      <h3>hasValue<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
+   <h3 id="namedindividuals" class="list">Named Individuals</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://www.example.com/changeLog" title="http://www.example.com/changeLog">
+            <span>change log</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.example.com/datatypeChangeConstraint" title="http://www.example.com/datatypeChangeConstraint">
+            <span>datatype change constraint</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.example.com/deleteChangeConstraint" title="http://www.example.com/deleteChangeConstraint">
+            <span>delete change constraint</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.example.com/detectionTime" title="http://www.example.com/detectionTime">
+            <span>detection time</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.example.com/insertChange" title="http://www.example.com/insertChange">
+            <span>insert change</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.example.com/insertChangeConstraint" title="http://www.example.com/insertChangeConstraint">
+            <span>insert change constraint</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.example.com/mergeChangeConstraint" title="http://www.example.com/mergeChangeConstraint">
+            <span>merge change constraint</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.example.com/moveChangeConstraint" title="http://www.example.com/moveChangeConstraint">
+            <span>move change constraint</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.example.com/notificationConstraint" title="http://www.example.com/notificationConstraint">
+            <span>notification constraint</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.example.com/notificationPolicy" title="http://www.example.com/notificationPolicy">
+            <span>notification policy</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.example.com/policyObligation" title="http://www.example.com/policyObligation">
+            <span>policy obligation</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.example.com/updateChangeConstraint" title="http://www.example.com/updateChangeConstraint">
+            <span>update change constraint</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.example.com/userActor" title="http://www.example.com/userActor">
+            <span>user actor</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="http://www.example.com/changeLog">
+      <h3>change log<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasValue</p>
-      <div class="comment">
-         <span class="markdown">The value associated with a result.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#MetricResult"
-                  title="https://prometheus-metric-ontology.ericsson.com/#MetricResult">MetricResult</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
+         <strong>IRI:</strong> http://www.example.com/changeLog</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#ChangeLog"
+               title="https://change-detection-ontology.adaptcentre.ie/#ChangeLog">ChangeLog</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
    </div>
-   <div class="entity" id="hasVersion">
-      <h3>hasVersion<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+   <div class="entity" id="http://www.example.com/datatypeChangeConstraint">
+      <h3>datatype change constraint<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasVersion</p>
-      <div class="comment">
-         <span class="markdown">The Version label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
+         <strong>IRI:</strong> http://www.example.com/datatypeChangeConstraint</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint"
+               target="_blank"
+               title="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint">simple constraint</a>
+         </dd>
+      </dl>
    </div>
-   <div class="entity" id="hasVersionCodename">
-      <h3>hasVersionCodename<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+   <div class="entity" id="http://www.example.com/deleteChangeConstraint">
+      <h3>delete change constraint<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasVersionCodename</p>
-      <div class="comment">
-         <span class="markdown">The Version codename label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
+         <strong>IRI:</strong> http://www.example.com/deleteChangeConstraint</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint"
+               target="_blank"
+               title="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint">simple constraint</a>
+         </dd>
+      </dl>
    </div>
-   <div class="entity" id="hasVersionId">
-      <h3>hasVersionId<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+   <div class="entity" id="http://www.example.com/detectionTime">
+      <h3>detection time<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasVersionId</p>
-      <div class="comment">
-         <span class="markdown">The Version id label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
+         <strong>IRI:</strong> http://www.example.com/detectionTime</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.w3.org/2006/time#Instant"
+               target="_blank"
+               title="http://www.w3.org/2006/time#Instant">instant</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="http://www.w3.org/2006/time#inXSDDateTimeStamp"
+               target="_blank"
+               title="http://www.w3.org/2006/time#inXSDDateTimeStamp">in x s d date time stamp</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"2022-07-05 17:12:57.090772"^^<a href="http://www.w3.org/2001/XMLSchema#dateTimeStamp"
                   target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
+                  title="http://www.w3.org/2001/XMLSchema#dateTimeStamp">date time stamp</a>
+            </span>
+         </dd>
+      </dl>
    </div>
-   <div class="entity" id="hasZone">
-      <h3>hasZone<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+   <div class="entity" id="http://www.example.com/insertChange">
+      <h3>insert change<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasZone</p>
-      <div class="comment">
-         <span class="markdown">The Zone label for the metric.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Metric"
-                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
+         <strong>IRI:</strong> http://www.example.com/insertChange</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#InsertSourceData"
+               title="https://change-detection-ontology.adaptcentre.ie/#InsertSourceData">InsertSourceData</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasReason"
+               title="https://change-detection-ontology.adaptcentre.ie/#hasReason">hasReason</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"Name: Alex Randles"</span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.example.com/insertChangeConstraint">
+      <h3>insert change constraint<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.example.com/insertChangeConstraint</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint"
+               target="_blank"
+               title="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint">simple constraint</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.example.com/mergeChangeConstraint">
+      <h3>merge change constraint<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.example.com/mergeChangeConstraint</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint"
+               target="_blank"
+               title="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint">simple constraint</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.example.com/moveChangeConstraint">
+      <h3>move change constraint<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.example.com/moveChangeConstraint</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint"
+               target="_blank"
+               title="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint">simple constraint</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.example.com/notificationConstraint">
+      <h3>notification constraint<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.example.com/notificationConstraint</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#And"
+               target="_blank"
+               title="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#And">and</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.example.com/notificationPolicy">
+      <h3>notification policy<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.example.com/notificationPolicy</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy"
+               target="_blank"
+               title="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy">policy</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="http://www.w3.org/2006/time#inXSDDateTimeStamp"
+               target="_blank"
+               title="http://www.w3.org/2006/time#inXSDDateTimeStamp">in x s d date time stamp</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"2022-08-07 00:00:00.0000"^^<a href="http://www.w3.org/2001/XMLSchema#dateTimeStamp"
                   target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
+                  title="http://www.w3.org/2001/XMLSchema#dateTimeStamp">date time stamp</a>
+            </span>
+         </dd>
+         <dd>
+            <a href="#detectionEnd"
+               title="https://change-detection-ontology.adaptcentre.ie/#detectionEnd">detectionEnd</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"2022-08-07 00:00:00.0000"^^<a href="http://www.w3.org/2001/XMLSchema#dateTime"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#dateTime">date time</a>
+            </span>
+         </dd>
+         <dd>
+            <a href="#detectionStart"
+               title="https://change-detection-ontology.adaptcentre.ie/#detectionStart">detectionStart</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"2022-07-05 17:12:56.121344"^^<a href="http://www.w3.org/2001/XMLSchema#dateTime"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#dateTime">date time</a>
+            </span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.example.com/policyObligation">
+      <h3>policy obligation<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.example.com/policyObligation</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#Obligation"
+               target="_blank"
+               title="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#Obligation">obligation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.example.com/updateChangeConstraint">
+      <h3>update change constraint<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.example.com/updateChangeConstraint</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint"
+               target="_blank"
+               title="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint">simple constraint</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.example.com/userActor">
+      <h3>user actor<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.example.com/userActor</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiEntity.owl#Agent"
+               target="_blank"
+               title="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiEntity.owl#Agent">agent</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="http://xmlns.com/foaf/0.1/Person"
+               target="_blank"
+               title="http://xmlns.com/foaf/0.1/Person">person</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
    </div>
 </div><div id="legend">
 <h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -3308,5 +879,6 @@ This section provides details for each class and property defined by Prometheus 
 <sup class="type-c" title="Classes">c</sup>: Classes <br/>
 <sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
 <sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
 </div>
 </div>
