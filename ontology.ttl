@@ -145,7 +145,7 @@ The ontology allows a notification policy to be defined to notify users when a t
 
 ###  https://change-detection-ontology.adaptcentre.ie/#hasEvent
 :hasEvent rdf:type owl:ObjectProperty ;
-          owl:inverseOf :inEventLog ;
+          owl:inverseOf :inChamgeLog ;
           rdfs:domain :ChangeLog ;
           rdfs:range <http://linkedevents.org/ontology/Event> ;
           rdfs:comment "An event within a certain event log." ;
@@ -165,13 +165,13 @@ The ontology allows a notification policy to be defined to notify users when a t
                      "ownedBy" .
 
 
-###  https://change-detection-ontology.adaptcentre.ie/#inEventLog
-:inEventLog rdf:type owl:ObjectProperty ;
-            rdfs:domain <http://linkedevents.org/ontology/Event> ;
-            rdfs:range :ChangeLog ;
-            rdfs:comment "An event within an event log." ;
-            rdfs:isDefinedBy <https://change-detection-ontology.adaptcentre.ie/#> ;
-            rdfs:label "inEventLog" .
+###  https://change-detection-ontology.adaptcentre.ie/#inChamgeLog
+:inChamgeLog rdf:type owl:ObjectProperty ;
+             rdfs:domain <http://linkedevents.org/ontology/Event> ;
+             rdfs:range :ChangeLog ;
+             rdfs:comment "An event within an event log." ;
+             rdfs:isDefinedBy <https://change-detection-ontology.adaptcentre.ie/#> ;
+             rdfs:label "inChamgeLog" .
 
 
 ###  https://change-detection-ontology.adaptcentre.ie/#ownedBy

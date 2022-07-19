@@ -490,7 +490,7 @@
     "@id" : "http://linkedevents.org/ontology/Event"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://change-detection-ontology.adaptcentre.ie/#inEventLog"
+    "@id" : "https://change-detection-ontology.adaptcentre.ie/#inChamgeLog"
   } ]
 }, {
   "@id" : "https://change-detection-ontology.adaptcentre.ie/#hasOwner",
@@ -557,7 +557,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#int"
   } ]
 }, {
-  "@id" : "https://change-detection-ontology.adaptcentre.ie/#inEventLog",
+  "@id" : "https://change-detection-ontology.adaptcentre.ie/#inChamgeLog",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An event within an event log."
@@ -569,7 +569,7 @@
     "@id" : "https://change-detection-ontology.adaptcentre.ie/#"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "inEventLog"
+    "@value" : "inChamgeLog"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://change-detection-ontology.adaptcentre.ie/#ChangeLog"

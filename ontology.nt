@@ -116,7 +116,7 @@
 # 
 # https://change-detection-ontology.adaptcentre.ie/#hasEvent
 <https://change-detection-ontology.adaptcentre.ie/#hasEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://change-detection-ontology.adaptcentre.ie/#hasEvent> <http://www.w3.org/2002/07/owl#inverseOf> <https://change-detection-ontology.adaptcentre.ie/#inEventLog> .
+<https://change-detection-ontology.adaptcentre.ie/#hasEvent> <http://www.w3.org/2002/07/owl#inverseOf> <https://change-detection-ontology.adaptcentre.ie/#inChamgeLog> .
 <https://change-detection-ontology.adaptcentre.ie/#hasEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <https://change-detection-ontology.adaptcentre.ie/#ChangeLog> .
 <https://change-detection-ontology.adaptcentre.ie/#hasEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://linkedevents.org/ontology/Event> .
 <https://change-detection-ontology.adaptcentre.ie/#hasEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "An event within a certain event log." .
@@ -134,13 +134,13 @@
 <https://change-detection-ontology.adaptcentre.ie/#hasOwner> <http://www.w3.org/2000/01/rdf-schema#label> "hasOwner" .
 <https://change-detection-ontology.adaptcentre.ie/#hasOwner> <http://www.w3.org/2000/01/rdf-schema#label> "ownedBy" .
 # 
-# https://change-detection-ontology.adaptcentre.ie/#inEventLog
-<https://change-detection-ontology.adaptcentre.ie/#inEventLog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://change-detection-ontology.adaptcentre.ie/#inEventLog> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linkedevents.org/ontology/Event> .
-<https://change-detection-ontology.adaptcentre.ie/#inEventLog> <http://www.w3.org/2000/01/rdf-schema#range> <https://change-detection-ontology.adaptcentre.ie/#ChangeLog> .
-<https://change-detection-ontology.adaptcentre.ie/#inEventLog> <http://www.w3.org/2000/01/rdf-schema#comment> "An event within an event log." .
-<https://change-detection-ontology.adaptcentre.ie/#inEventLog> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
-<https://change-detection-ontology.adaptcentre.ie/#inEventLog> <http://www.w3.org/2000/01/rdf-schema#label> "inEventLog" .
+# https://change-detection-ontology.adaptcentre.ie/#inChamgeLog
+<https://change-detection-ontology.adaptcentre.ie/#inChamgeLog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://change-detection-ontology.adaptcentre.ie/#inChamgeLog> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linkedevents.org/ontology/Event> .
+<https://change-detection-ontology.adaptcentre.ie/#inChamgeLog> <http://www.w3.org/2000/01/rdf-schema#range> <https://change-detection-ontology.adaptcentre.ie/#ChangeLog> .
+<https://change-detection-ontology.adaptcentre.ie/#inChamgeLog> <http://www.w3.org/2000/01/rdf-schema#comment> "An event within an event log." .
+<https://change-detection-ontology.adaptcentre.ie/#inChamgeLog> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
+<https://change-detection-ontology.adaptcentre.ie/#inChamgeLog> <http://www.w3.org/2000/01/rdf-schema#label> "inChamgeLog" .
 # 
 # https://change-detection-ontology.adaptcentre.ie/#ownedBy
 <https://change-detection-ontology.adaptcentre.ie/#ownedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .

@@ -42,12 +42,6 @@
         "value" : "cdo",
         "type" : "label"
       } ],
-      "versionInfo" : [ {
-        "identifier" : "versionInfo",
-        "language" : "undefined",
-        "value" : "20 April 2022",
-        "type" : "label"
-      } ],
       "preferredNamespaceUri" : [ {
         "identifier" : "preferredNamespaceUri",
         "language" : "undefined",
@@ -58,6 +52,12 @@
         "identifier" : "abstract",
         "language" : "undefined",
         "value" : "The Change Detection Ontology (CDO) provides a set of classes, properties, and restrictions that can be used to represent and interchange provenance and metadata information relating to changes that occur within source data that has created an RDF dataset. It can also be specialized to create new classes and properties to model provenance and metadata information for domain specific changes.",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "20 April 2022",
         "type" : "label"
       } ],
       "title" : [ {
@@ -88,10 +88,10 @@
     "id" : "45",
     "type" : "owl:Class"
   }, {
-    "id" : "48",
+    "id" : "57",
     "type" : "owl:Class"
   }, {
-    "id" : "57",
+    "id" : "48",
     "type" : "owl:Class"
   }, {
     "id" : "33",
@@ -124,16 +124,16 @@
     "id" : "16",
     "type" : "owl:Class"
   }, {
-    "id" : "55",
+    "id" : "9",
     "type" : "owl:Class"
   }, {
-    "id" : "9",
+    "id" : "55",
     "type" : "owl:Class"
   }, {
     "id" : "28",
     "type" : "owl:Class"
   }, {
-    "id" : "81",
+    "id" : "80",
     "type" : "owl:Class"
   }, {
     "id" : "60",
@@ -151,7 +151,7 @@
     "id" : "1",
     "type" : "owl:Class"
   }, {
-    "id" : "64",
+    "id" : "65",
     "type" : "owl:Class"
   }, {
     "id" : "10",
@@ -172,10 +172,10 @@
     "id" : "35",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "83",
+    "id" : "82",
     "type" : "owl:Thing"
   }, {
-    "id" : "77",
+    "id" : "76",
     "type" : "owl:Thing"
   }, {
     "id" : "74",
@@ -353,27 +353,6 @@
     "attributes" : [ "external" ],
     "id" : "45"
   }, {
-    "iri" : "https://change-detection-ontology.adaptcentre.ie/#MergeSourceData",
-    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
-    "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://change-detection-ontology.adaptcentre.ie/#",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "MergeSourceData",
-      "undefined" : "MergeSourceData"
-    },
-    "comment" : {
-      "undefined" : "Data has been merged within the source data."
-    },
-    "id" : "48",
-    "superClasses" : [ "1" ]
-  }, {
     "iri" : "http://xmlns.com/foaf/0.1/Person",
     "baseIri" : "http://xmlns.com/foaf/0.1",
     "instances" : 0,
@@ -397,6 +376,27 @@
     } ],
     "attributes" : [ "external" ],
     "id" : "57"
+  }, {
+    "iri" : "https://change-detection-ontology.adaptcentre.ie/#MergeSourceData",
+    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://change-detection-ontology.adaptcentre.ie/#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MergeSourceData",
+      "undefined" : "MergeSourceData"
+    },
+    "comment" : {
+      "undefined" : "Data has been merged within the source data."
+    },
+    "id" : "48",
+    "superClasses" : [ "1" ]
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#Constraint",
     "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
@@ -536,27 +536,6 @@
     "attributes" : [ "external" ],
     "id" : "16"
   }, {
-    "iri" : "https://change-detection-ontology.adaptcentre.ie/#MoveSourceData",
-    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
-    "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://change-detection-ontology.adaptcentre.ie/#",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "MoveSourceData",
-      "undefined" : "MoveSourceData"
-    },
-    "comment" : {
-      "undefined" : "Data has been moved within the source data."
-    },
-    "id" : "55",
-    "superClasses" : [ "1" ]
-  }, {
     "iri" : "https://change-detection-ontology.adaptcentre.ie/#ChangeLog",
     "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
     "instances" : 0,
@@ -604,6 +583,27 @@
     },
     "id" : "9"
   }, {
+    "iri" : "https://change-detection-ontology.adaptcentre.ie/#MoveSourceData",
+    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://change-detection-ontology.adaptcentre.ie/#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MoveSourceData",
+      "undefined" : "MoveSourceData"
+    },
+    "comment" : {
+      "undefined" : "Data has been moved within the source data."
+    },
+    "id" : "55",
+    "superClasses" : [ "1" ]
+  }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#Prohibition",
     "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
     "instances" : 0,
@@ -622,7 +622,7 @@
       "IRI-based" : "Place"
     },
     "attributes" : [ "external" ],
-    "id" : "81"
+    "id" : "80"
   }, {
     "iri" : "https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData",
     "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
@@ -721,7 +721,7 @@
       "IRI-based" : "MetaPolicyDefault"
     },
     "attributes" : [ "external" ],
-    "id" : "64"
+    "id" : "65"
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
@@ -778,14 +778,14 @@
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "83",
+    "id" : "82",
     "label" : {
       "undefined" : "Thing"
     }
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "77",
+    "id" : "76",
     "label" : {
       "undefined" : "Thing"
     }
@@ -960,12 +960,12 @@
         "actor" : [ {
           "identifier" : "actor",
           "language" : "undefined",
-          "value" : "https://change-detection-ontology.adaptcentre.ie/#softwareAgent",
+          "value" : "http://www.example.com/userActor",
           "type" : "iri"
         }, {
           "identifier" : "actor",
           "language" : "undefined",
-          "value" : "http://www.example.com/userActor",
+          "value" : "https://change-detection-ontology.adaptcentre.ie/#softwareAgent",
           "type" : "iri"
         } ]
       },
@@ -1106,7 +1106,7 @@
     "id" : "63",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "65",
+    "id" : "64",
     "type" : "owl:objectProperty"
   }, {
     "id" : "66",
@@ -1127,8 +1127,8 @@
     "id" : "75",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "76",
-    "type" : "owl:objectProperty"
+    "id" : "77",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "78",
     "type" : "rdfs:SubClassOf"
@@ -1136,10 +1136,10 @@
     "id" : "79",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "80",
-    "type" : "rdfs:SubClassOf"
+    "id" : "81",
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "82",
+    "id" : "83",
     "type" : "owl:objectProperty"
   }, {
     "id" : "84",
@@ -1152,9 +1152,6 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "87",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "88",
     "type" : "owl:objectProperty"
   }, {
     "id" : "89",
@@ -1190,6 +1187,9 @@
     "id" : "105",
     "type" : "owl:datatypeProperty"
   }, {
+    "id" : "88",
+    "type" : "owl:objectProperty"
+  }, {
     "id" : "106",
     "type" : "owl:datatypeProperty"
   }, {
@@ -1219,7 +1219,7 @@
     "comment" : {
       "undefined" : "The time when the notification policy was created."
     },
-    "attributes" : [ "datatype", "functional" ],
+    "attributes" : [ "functional", "datatype" ],
     "id" : "5"
   }, {
     "iri" : "https://change-detection-ontology.adaptcentre.ie/#hasOwner",
@@ -1262,7 +1262,7 @@
     },
     "domain" : "10",
     "comment" : {
-      "undefined" : "The owner of the event log."
+      "undefined" : "The agent who owns the change log."
     },
     "attributes" : [ "object" ],
     "id" : "11"
@@ -1335,7 +1335,7 @@
     "comment" : {
       "undefined" : "The threshold defined for a change type within the notification policy."
     },
-    "attributes" : [ "datatype", "functional" ],
+    "attributes" : [ "functional", "datatype" ],
     "id" : "34"
   }, {
     "range" : "33",
@@ -1450,20 +1450,6 @@
     "attributes" : [ "external", "object" ],
     "id" : "61"
   }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#metaDefault",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
-    "range" : "64",
-    "label" : {
-      "IRI-based" : "metaDefault",
-      "undefined" : "MetaPolicy about defaults"
-    },
-    "domain" : "6",
-    "comment" : {
-      "undefined" : "In case of conflict, should priority between rules be checked before modality or vice versa"
-    },
-    "attributes" : [ "external", "object" ],
-    "id" : "63"
-  }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#context",
     "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
     "range" : "33",
@@ -1476,7 +1462,21 @@
       "undefined" : "All the conditions associated with the policy. Includes domain"
     },
     "attributes" : [ "external", "object" ],
-    "id" : "65"
+    "id" : "63"
+  }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#metaDefault",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
+    "range" : "65",
+    "label" : {
+      "IRI-based" : "metaDefault",
+      "undefined" : "MetaPolicy about defaults"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "In case of conflict, should priority between rules be checked before modality or vice versa"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "64"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#second",
     "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
@@ -1532,62 +1532,40 @@
     "attributes" : [ "external", "object" ],
     "id" : "73"
   }, {
-    "iri" : "https://change-detection-ontology.adaptcentre.ie/#inEventLog",
-    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
-    "range" : "9",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://change-detection-ontology.adaptcentre.ie/#",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "inEventLog",
-      "undefined" : "inEventLog"
-    },
-    "domain" : "1",
-    "comment" : {
-      "undefined" : "An event within an event log."
-    },
-    "attributes" : [ "object" ],
-    "id" : "75"
-  }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#predicate",
     "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
-    "range" : "77",
+    "range" : "76",
     "label" : {
       "IRI-based" : "predicate"
     },
     "domain" : "32",
     "attributes" : [ "external", "object" ],
-    "id" : "76"
+    "id" : "75"
   }, {
     "range" : "16",
     "domain" : "14",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "78"
+    "id" : "77"
   }, {
     "range" : "70",
     "domain" : "4",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "79"
+    "id" : "78"
   }, {
     "range" : "16",
     "domain" : "26",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "80"
+    "id" : "79"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#inequal",
     "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
-    "range" : "83",
+    "range" : "82",
     "label" : {
       "IRI-based" : "inequal"
     },
-    "domain" : "83",
+    "domain" : "82",
     "attributes" : [ "external", "object", "symmetric" ],
-    "id" : "82"
+    "id" : "81"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#endingConstraint",
     "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
@@ -1597,7 +1575,7 @@
     },
     "domain" : "4",
     "attributes" : [ "external", "object" ],
-    "id" : "84"
+    "id" : "83"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#rulePriority",
     "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
@@ -1611,7 +1589,7 @@
       "undefined" : "Used to set priority between granting rules"
     },
     "attributes" : [ "external", "object" ],
-    "id" : "85"
+    "id" : "84"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#provision",
     "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
@@ -1624,7 +1602,7 @@
       "undefined" : "Obligation on the actor to either perform some action or make some conditions true sometime in the future."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "86"
+    "id" : "85"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#actor",
     "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl",
@@ -1636,10 +1614,10 @@
     "cardinality" : "1",
     "domain" : "4",
     "attributes" : [ "external", "object" ],
-    "id" : "87"
+    "id" : "86"
   }, {
     "iri" : "https://change-detection-ontology.adaptcentre.ie/#hasEvent",
-    "inverse" : "75",
+    "inverse" : "88",
     "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
     "range" : "1",
     "annotations" : {
@@ -1659,11 +1637,11 @@
       "undefined" : "An event within a certain event log."
     },
     "attributes" : [ "object" ],
-    "id" : "88"
+    "id" : "87"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#object",
     "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
-    "range" : "77",
+    "range" : "76",
     "label" : {
       "IRI-based" : "object"
     },
@@ -1702,7 +1680,7 @@
     "comment" : {
       "undefined" : "The reason a change occurred."
     },
-    "attributes" : [ "datatype", "functional" ],
+    "attributes" : [ "functional", "datatype" ],
     "id" : "91"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#sanction",
@@ -1745,7 +1723,7 @@
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#subject",
     "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
-    "range" : "77",
+    "range" : "76",
     "label" : {
       "IRI-based" : "subject"
     },
@@ -1766,11 +1744,11 @@
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#equal",
     "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
-    "range" : "83",
+    "range" : "82",
     "label" : {
       "IRI-based" : "equal"
     },
-    "domain" : "83",
+    "domain" : "82",
     "attributes" : [ "external", "object", "symmetric" ],
     "id" : "103"
   }, {
@@ -1791,9 +1769,31 @@
     "label" : {
       "IRI-based" : "inXSDDateTimeStamp"
     },
-    "domain" : "83",
-    "attributes" : [ "datatype", "external" ],
+    "domain" : "82",
+    "attributes" : [ "external", "datatype" ],
     "id" : "105"
+  }, {
+    "iri" : "https://change-detection-ontology.adaptcentre.ie/#inChamgeLog",
+    "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
+    "range" : "9",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://change-detection-ontology.adaptcentre.ie/#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "inChamgeLog",
+      "undefined" : "inChamgeLog"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "An event within an event log."
+    },
+    "attributes" : [ "object" ],
+    "id" : "88"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#desc",
     "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
@@ -1803,7 +1803,7 @@
       "undefined" : "description"
     },
     "domain" : "24",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "106"
   }, {
     "iri" : "https://change-detection-ontology.adaptcentre.ie/#detectionEnd",
@@ -1825,7 +1825,7 @@
     "comment" : {
       "undefined" : "The time when the notification policy is finished."
     },
-    "attributes" : [ "datatype", "functional" ],
+    "attributes" : [ "functional", "datatype" ],
     "id" : "107"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#defaultBehavior",

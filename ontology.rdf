@@ -260,7 +260,7 @@ The ontology allows a notification policy to be defined to notify users when a t
 
 
     <owl:ObjectProperty rdf:about="https://change-detection-ontology.adaptcentre.ie/#hasEvent">
-        <owl:inverseOf rdf:resource="https://change-detection-ontology.adaptcentre.ie/#inEventLog"/>
+        <owl:inverseOf rdf:resource="https://change-detection-ontology.adaptcentre.ie/#inChamgeLog"/>
         <rdfs:domain rdf:resource="https://change-detection-ontology.adaptcentre.ie/#ChangeLog"/>
         <rdfs:range rdf:resource="http://linkedevents.org/ontology/Event"/>
         <rdfs:comment>An event within a certain event log.</rdfs:comment>
@@ -286,15 +286,15 @@ The ontology allows a notification policy to be defined to notify users when a t
     
 
 
-    <!-- https://change-detection-ontology.adaptcentre.ie/#inEventLog -->
+    <!-- https://change-detection-ontology.adaptcentre.ie/#inChamgeLog -->
 
 
-    <owl:ObjectProperty rdf:about="https://change-detection-ontology.adaptcentre.ie/#inEventLog">
+    <owl:ObjectProperty rdf:about="https://change-detection-ontology.adaptcentre.ie/#inChamgeLog">
         <rdfs:domain rdf:resource="http://linkedevents.org/ontology/Event"/>
         <rdfs:range rdf:resource="https://change-detection-ontology.adaptcentre.ie/#ChangeLog"/>
         <rdfs:comment>An event within an event log.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://change-detection-ontology.adaptcentre.ie/#"/>
-        <rdfs:label>inEventLog</rdfs:label>
+        <rdfs:label>inChamgeLog</rdfs:label>
     </owl:ObjectProperty>
     
 
