@@ -96,9 +96,6 @@
 # http://xmlns.com/foaf/0.1/mbox
 <http://xmlns.com/foaf/0.1/mbox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# https://change-detection-ontology.adaptcentre.ie/#hasChange
-<https://change-detection-ontology.adaptcentre.ie/#hasChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
 # https://change-detection-ontology.adaptcentre.ie/#hasCurrentVersion
 <https://change-detection-ontology.adaptcentre.ie/#hasCurrentVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -114,14 +111,14 @@
 # #################################################################
 # 
 # 
-# https://change-detection-ontology.adaptcentre.ie/#hasEvent
-<https://change-detection-ontology.adaptcentre.ie/#hasEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://change-detection-ontology.adaptcentre.ie/#hasEvent> <http://www.w3.org/2002/07/owl#inverseOf> <https://change-detection-ontology.adaptcentre.ie/#inChamgeLog> .
-<https://change-detection-ontology.adaptcentre.ie/#hasEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <https://change-detection-ontology.adaptcentre.ie/#ChangeLog> .
-<https://change-detection-ontology.adaptcentre.ie/#hasEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://linkedevents.org/ontology/Event> .
-<https://change-detection-ontology.adaptcentre.ie/#hasEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "An event within a certain event log." .
-<https://change-detection-ontology.adaptcentre.ie/#hasEvent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
-<https://change-detection-ontology.adaptcentre.ie/#hasEvent> <http://www.w3.org/2000/01/rdf-schema#label> "hasEvent" .
+# https://change-detection-ontology.adaptcentre.ie/#hasChange
+<https://change-detection-ontology.adaptcentre.ie/#hasChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://change-detection-ontology.adaptcentre.ie/#hasChange> <http://www.w3.org/2002/07/owl#inverseOf> <https://change-detection-ontology.adaptcentre.ie/#inChamgeLog> .
+<https://change-detection-ontology.adaptcentre.ie/#hasChange> <http://www.w3.org/2000/01/rdf-schema#domain> <https://change-detection-ontology.adaptcentre.ie/#ChangeLog> .
+<https://change-detection-ontology.adaptcentre.ie/#hasChange> <http://www.w3.org/2000/01/rdf-schema#range> <http://linkedevents.org/ontology/Event> .
+<https://change-detection-ontology.adaptcentre.ie/#hasChange> <http://www.w3.org/2000/01/rdf-schema#comment> "A change within a particular change log." .
+<https://change-detection-ontology.adaptcentre.ie/#hasChange> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
+<https://change-detection-ontology.adaptcentre.ie/#hasChange> <http://www.w3.org/2000/01/rdf-schema#label> "hasEvent" .
 # 
 # https://change-detection-ontology.adaptcentre.ie/#hasOwner
 <https://change-detection-ontology.adaptcentre.ie/#hasOwner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -129,7 +126,6 @@
 <https://change-detection-ontology.adaptcentre.ie/#hasOwner> <http://www.w3.org/2000/01/rdf-schema#domain> <https://change-detection-ontology.adaptcentre.ie/#ChangeLog> .
 <https://change-detection-ontology.adaptcentre.ie/#hasOwner> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> .
 <https://change-detection-ontology.adaptcentre.ie/#hasOwner> <http://www.w3.org/2000/01/rdf-schema#comment> "The owner of the change log." .
-<https://change-detection-ontology.adaptcentre.ie/#hasOwner> <http://www.w3.org/2000/01/rdf-schema#comment> "The owner of the event log." .
 <https://change-detection-ontology.adaptcentre.ie/#hasOwner> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
 <https://change-detection-ontology.adaptcentre.ie/#hasOwner> <http://www.w3.org/2000/01/rdf-schema#label> "hasOwner" .
 <https://change-detection-ontology.adaptcentre.ie/#hasOwner> <http://www.w3.org/2000/01/rdf-schema#label> "ownedBy" .
@@ -138,7 +134,7 @@
 <https://change-detection-ontology.adaptcentre.ie/#inChamgeLog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://change-detection-ontology.adaptcentre.ie/#inChamgeLog> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linkedevents.org/ontology/Event> .
 <https://change-detection-ontology.adaptcentre.ie/#inChamgeLog> <http://www.w3.org/2000/01/rdf-schema#range> <https://change-detection-ontology.adaptcentre.ie/#ChangeLog> .
-<https://change-detection-ontology.adaptcentre.ie/#inChamgeLog> <http://www.w3.org/2000/01/rdf-schema#comment> "An event within an event log." .
+<https://change-detection-ontology.adaptcentre.ie/#inChamgeLog> <http://www.w3.org/2000/01/rdf-schema#comment> "A change within a change log." .
 <https://change-detection-ontology.adaptcentre.ie/#inChamgeLog> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
 <https://change-detection-ontology.adaptcentre.ie/#inChamgeLog> <http://www.w3.org/2000/01/rdf-schema#label> "inChamgeLog" .
 # 
@@ -147,7 +143,7 @@
 <https://change-detection-ontology.adaptcentre.ie/#ownedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> .
 <https://change-detection-ontology.adaptcentre.ie/#ownedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://change-detection-ontology.adaptcentre.ie/#ChangeLog> .
 <https://change-detection-ontology.adaptcentre.ie/#ownedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The agent who owns the change log." .
-<https://change-detection-ontology.adaptcentre.ie/#ownedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The owner of the event log." .
+<https://change-detection-ontology.adaptcentre.ie/#ownedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The owner of the change log." .
 <https://change-detection-ontology.adaptcentre.ie/#ownedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
 <https://change-detection-ontology.adaptcentre.ie/#ownedBy> <http://www.w3.org/2000/01/rdf-schema#label> "hasOwner" .
 # 
@@ -277,6 +273,7 @@
 <http://www.example.com/changeLog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.example.com/changeLog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://change-detection-ontology.adaptcentre.ie/#ChangeLog> .
 <http://www.example.com/changeLog> <https://change-detection-ontology.adaptcentre.ie/#hasChange> <http://www.example.com/insertChange> .
+<http://www.example.com/insertChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.example.com/changeLog> <https://change-detection-ontology.adaptcentre.ie/#hasCurrentVersion> <https://raw.githubusercontent.com/alex-randles/Change-Detection-System-Examples/main/version_2_files/student.csv> .
 <http://www.example.com/changeLog> <https://change-detection-ontology.adaptcentre.ie/#hasPreviousVersion> <https://raw.githubusercontent.com/alex-randles/Change-Detection-System-Examples/main/version_1_files/student.csv> .
 # 
@@ -303,7 +300,6 @@
 <http://www.example.com/detectionTime> <http://www.w3.org/2006/time#inXSDDateTimeStamp> "2022-07-05 17:12:57.090772"^^<http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
 # 
 # http://www.example.com/insertChange
-<http://www.example.com/insertChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.example.com/insertChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://change-detection-ontology.adaptcentre.ie/#InsertSourceData> .
 <http://www.example.com/insertChange> <https://change-detection-ontology.adaptcentre.ie/#hasReason> "Name: Alex Randles" .
 <http://www.example.com/insertChange> <http://linkedevents.org/ontology/atTime> <http://www.example.com/detectionTime> .

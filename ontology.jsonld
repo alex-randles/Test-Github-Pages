@@ -467,15 +467,9 @@
   } ]
 }, {
   "@id" : "https://change-detection-ontology.adaptcentre.ie/#hasChange",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://change-detection-ontology.adaptcentre.ie/#hasCurrentVersion",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://change-detection-ontology.adaptcentre.ie/#hasEvent",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "An event within a certain event log."
+    "@value" : "A change within a particular change log."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://change-detection-ontology.adaptcentre.ie/#ChangeLog"
@@ -493,12 +487,13 @@
     "@id" : "https://change-detection-ontology.adaptcentre.ie/#inChamgeLog"
   } ]
 }, {
+  "@id" : "https://change-detection-ontology.adaptcentre.ie/#hasCurrentVersion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "https://change-detection-ontology.adaptcentre.ie/#hasOwner",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The owner of the change log."
-  }, {
-    "@value" : "The owner of the event log."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://change-detection-ontology.adaptcentre.ie/#ChangeLog"
@@ -560,7 +555,7 @@
   "@id" : "https://change-detection-ontology.adaptcentre.ie/#inChamgeLog",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "An event within an event log."
+    "@value" : "A change within a change log."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://linkedevents.org/ontology/Event"
@@ -580,7 +575,7 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The agent who owns the change log."
   }, {
-    "@value" : "The owner of the event log."
+    "@value" : "The owner of the change log."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"
