@@ -2,15 +2,6 @@
   "@id" : "http://linkedevents.org/ontology/Event",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://linkedevents.org/ontology/atPlace",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://linkedevents.org/ontology/atTime",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://linkedevents.org/ontology/involvedAgent",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
   "@id" : "http://purl.org/dc/terms/abstract",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -21,9 +12,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/description",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/issued",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/license",
@@ -38,247 +26,8 @@
   "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiAction.owl#Action",
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#fifth",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#fourth",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#object",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#sixth",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#third",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#Obligation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#action",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#actor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#startingConstraint",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiEntity.owl#Agent",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#actor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#desc",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#grants",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.example.com/changeLog",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://change-detection-ontology.adaptcentre.ie/#ChangeLog"
-  } ],
-  "https://change-detection-ontology.adaptcentre.ie/#hasChange" : [ {
-    "@id" : "http://www.example.com/insertChange"
-  } ],
-  "https://change-detection-ontology.adaptcentre.ie/#hasCurrentVersion" : [ {
-    "@id" : "https://raw.githubusercontent.com/alex-randles/Change-Detection-System-Examples/main/version_2_files/student.csv"
-  } ],
-  "https://change-detection-ontology.adaptcentre.ie/#hasPreviousVersion" : [ {
-    "@id" : "https://raw.githubusercontent.com/alex-randles/Change-Detection-System-Examples/main/version_1_files/student.csv"
-  } ]
-}, {
-  "@id" : "http://www.example.com/datatypeChangeConstraint",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint" ],
-  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#object" : [ {
-    "@value" : "0"
-  } ],
-  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#predicate" : [ {
-    "@id" : "https://change-detection-ontology.adaptcentre.ie/#hasThreshold"
-  } ],
-  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#subject" : [ {
-    "@id" : "https://change-detection-ontology.adaptcentre.ie/#DatatypeSourceData"
-  } ]
-}, {
-  "@id" : "http://www.example.com/deleteChangeConstraint",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint" ],
-  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#object" : [ {
-    "@value" : "0"
-  } ],
-  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#predicate" : [ {
-    "@id" : "https://change-detection-ontology.adaptcentre.ie/#hasThreshold"
-  } ],
-  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#subject" : [ {
-    "@id" : "https://change-detection-ontology.adaptcentre.ie/#DeleteSourceData"
-  } ]
-}, {
-  "@id" : "http://www.example.com/detectionTime",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2006/time#Instant"
-  } ],
-  "http://www.w3.org/2006/time#inXSDDateTimeStamp" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
-    "@value" : "2022-07-05 17:12:57.090772"
-  } ]
-}, {
-  "@id" : "http://www.example.com/insertChange",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://linkedevents.org/ontology/atTime" : [ {
-    "@id" : "http://www.example.com/detectionTime"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://change-detection-ontology.adaptcentre.ie/#InsertSourceData"
-  } ],
-  "https://change-detection-ontology.adaptcentre.ie/#hasReason" : [ {
-    "@value" : "Name: Alex Randles"
-  } ]
-}, {
-  "@id" : "http://www.example.com/insertChangeConstraint",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint" ],
-  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#object" : [ {
-    "@value" : "0"
-  } ],
-  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#predicate" : [ {
-    "@id" : "https://change-detection-ontology.adaptcentre.ie/#hasThreshold"
-  } ],
-  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#subject" : [ {
-    "@id" : "https://change-detection-ontology.adaptcentre.ie/#InsertSourceData"
-  } ]
-}, {
-  "@id" : "http://www.example.com/mergeChangeConstraint",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint" ],
-  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#object" : [ {
-    "@value" : "0"
-  } ],
-  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#predicate" : [ {
-    "@id" : "https://change-detection-ontology.adaptcentre.ie/#hasThreshold"
-  } ],
-  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#subject" : [ {
-    "@id" : "https://change-detection-ontology.adaptcentre.ie/#MergeSourceData"
-  } ]
-}, {
-  "@id" : "http://www.example.com/moveChangeConstraint",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint" ],
-  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#object" : [ {
-    "@value" : "0"
-  } ],
-  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#predicate" : [ {
-    "@id" : "https://change-detection-ontology.adaptcentre.ie/#hasThreshold"
-  } ],
-  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#subject" : [ {
-    "@id" : "https://change-detection-ontology.adaptcentre.ie/#MoveSourceData"
-  } ]
-}, {
-  "@id" : "http://www.example.com/notificationConstraint",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#And" ],
-  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#fifth" : [ {
-    "@id" : "http://www.example.com/mergeChangeConstraint"
-  } ],
-  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#first" : [ {
-    "@id" : "http://www.example.com/insertChangeConstraint"
-  } ],
-  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#fourth" : [ {
-    "@id" : "http://www.example.com/updateChangeConstraint"
-  } ],
-  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#second" : [ {
-    "@id" : "http://www.example.com/deleteChangeConstraint"
-  } ],
-  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#sixth" : [ {
-    "@id" : "http://www.example.com/datatypeChangeConstraint"
-  } ],
-  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#third" : [ {
-    "@id" : "http://www.example.com/moveChangeConstraint"
-  } ]
-}, {
-  "@id" : "http://www.example.com/notificationPolicy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#desc" : [ {
-    "@value" : "Notification policy for user 1"
-  } ],
-  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#grants" : [ {
-    "@id" : "http://www.example.com/policyObligation"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy"
-  } ],
-  "http://www.w3.org/2006/time#inXSDDateTimeStamp" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
-    "@value" : "2022-08-07 00:00:00.0000"
-  } ],
-  "https://change-detection-ontology.adaptcentre.ie/#detectionEnd" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2022-08-07 00:00:00.0000"
-  } ],
-  "https://change-detection-ontology.adaptcentre.ie/#detectionStart" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2022-07-05 17:12:56.121344"
-  } ]
-}, {
-  "@id" : "http://www.example.com/policyObligation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#action" : [ {
-    "@id" : "https://change-detection-ontology.adaptcentre.ie/#sendNotification"
-  } ],
-  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#obligedTo" : [ {
-    "@id" : "https://change-detection-ontology.adaptcentre.ie/#softwareAgent"
-  } ],
-  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#startingConstraint" : [ {
-    "@id" : "http://www.example.com/notificationConstraint"
-  } ],
-  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#actor" : [ {
-    "@id" : "http://www.example.com/userActor"
-  }, {
-    "@id" : "https://change-detection-ontology.adaptcentre.ie/#softwareAgent"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#Obligation"
-  } ]
-}, {
-  "@id" : "http://www.example.com/userActor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiEntity.owl#Agent"
-  }, {
-    "@id" : "http://xmlns.com/foaf/0.1/Person"
-  } ],
-  "http://xmlns.com/foaf/0.1/mbox" : [ {
-    "@value" : "alexrandles0@gmail.com"
-  } ]
-}, {
-  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://www.w3.org/2004/02/skos/core#definition",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/2006/time#Instant",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://www.w3.org/2006/time#TemporalEntity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://www.w3.org/2006/time#inXSDDateTimeStamp",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
-}, {
-  "@id" : "http://xmlns.com/foaf/0.1/Person",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://xmlns.com/foaf/0.1/mbox",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "https://change-detection-ontology.adaptcentre.ie/#",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
@@ -314,6 +63,8 @@
     "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#"
   }, {
     "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#"
+  }, {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@value" : "20 April 2022"
@@ -322,7 +73,7 @@
   "@id" : "https://change-detection-ontology.adaptcentre.ie/#ChangeLog",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A grouping of changes that have occured relating to a specific source data."
+    "@value" : "A grouping of changes that have occured within a specific source data."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://change-detection-ontology.adaptcentre.ie/#"
@@ -332,7 +83,7 @@
   } ]
 }, {
   "@id" : "https://change-detection-ontology.adaptcentre.ie/#DatatypeSourceData",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Datatype has been changed in the source data."
   } ],
@@ -347,7 +98,7 @@
   } ]
 }, {
   "@id" : "https://change-detection-ontology.adaptcentre.ie/#DeleteSourceData",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Data has been removed within the source data."
   } ],
@@ -362,7 +113,7 @@
   } ]
 }, {
   "@id" : "https://change-detection-ontology.adaptcentre.ie/#InsertSourceData",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Data has been inserted within the source data."
   } ],
@@ -377,7 +128,7 @@
   } ]
 }, {
   "@id" : "https://change-detection-ontology.adaptcentre.ie/#MergeSourceData",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Data has been merged within the source data."
   } ],
@@ -392,7 +143,7 @@
   } ]
 }, {
   "@id" : "https://change-detection-ontology.adaptcentre.ie/#MoveSourceData",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Data has been moved within the source data."
   } ],
@@ -424,7 +175,7 @@
   "@id" : "https://change-detection-ontology.adaptcentre.ie/#detectionEnd",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The time when the notification policy is finished."
+    "@value" : "The time when the notification policy is terminated."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy"
@@ -447,6 +198,9 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://change-detection-ontology.adaptcentre.ie/#"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "detectionStart"
   } ],
@@ -466,22 +220,34 @@
     "@id" : "https://change-detection-ontology.adaptcentre.ie/#"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "hasEvent"
+    "@value" : "hasChange"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://linkedevents.org/ontology/Event"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://change-detection-ontology.adaptcentre.ie/#inChamgeLog"
   } ]
 }, {
-  "@id" : "https://change-detection-ontology.adaptcentre.ie/#hasCurrentVersion",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+  "@id" : "https://change-detection-ontology.adaptcentre.ie/#hasCurrentSource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The current version of the source data."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://change-detection-ontology.adaptcentre.ie/#ChangeLog"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://change-detection-ontology.adaptcentre.ie/#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasCurrentSource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource"
+  } ]
 }, {
   "@id" : "https://change-detection-ontology.adaptcentre.ie/#hasOwner",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The owner of the change log."
+    "@value" : "The agent who owns the change log."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://change-detection-ontology.adaptcentre.ie/#ChangeLog"
@@ -491,18 +257,28 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasOwner"
-  }, {
-    "@value" : "ownedBy"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://change-detection-ontology.adaptcentre.ie/#ownedBy"
   } ]
 }, {
-  "@id" : "https://change-detection-ontology.adaptcentre.ie/#hasPreviousVersion",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+  "@id" : "https://change-detection-ontology.adaptcentre.ie/#hasPreviousSource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The previous version of the source data."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://change-detection-ontology.adaptcentre.ie/#ChangeLog"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://change-detection-ontology.adaptcentre.ie/#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasPreviousSource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource"
+  } ]
 }, {
   "@id" : "https://change-detection-ontology.adaptcentre.ie/#hasReason",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
@@ -523,7 +299,7 @@
   } ]
 }, {
   "@id" : "https://change-detection-ontology.adaptcentre.ie/#hasThreshold",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The threshold defined for a change type within the notification policy."
   } ],
@@ -540,7 +316,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#int"
   } ]
 }, {
-  "@id" : "https://change-detection-ontology.adaptcentre.ie/#inChamgeLog",
+  "@id" : "https://change-detection-ontology.adaptcentre.ie/#inChangeLog",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A change within a change log."
@@ -552,17 +328,18 @@
     "@id" : "https://change-detection-ontology.adaptcentre.ie/#"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "inChamgeLog"
+    "@value" : "inChangeLog"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://change-detection-ontology.adaptcentre.ie/#ChangeLog"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://change-detection-ontology.adaptcentre.ie/#hasChange"
   } ]
 }, {
   "@id" : "https://change-detection-ontology.adaptcentre.ie/#ownedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The agent who owns the change log."
-  }, {
     "@value" : "The owner of the change log."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -572,15 +349,12 @@
     "@id" : "https://change-detection-ontology.adaptcentre.ie/#"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "hasOwner"
+    "@value" : "ownedBy"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://change-detection-ontology.adaptcentre.ie/#ChangeLog"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://change-detection-ontology.adaptcentre.ie/#hasOwner"
   } ]
-}, {
-  "@id" : "https://change-detection-ontology.adaptcentre.ie/#sendNotification",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
-}, {
-  "@id" : "https://change-detection-ontology.adaptcentre.ie/#softwareAgent",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 } ]

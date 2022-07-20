@@ -9,33 +9,23 @@ This section provides details for each class and property defined by Change Dete
       </li>
       <li>
          <a href="#DatatypeSourceData"
-            title="https://change-detection-ontology.adaptcentre.ie/#DatatypeSourceData">
-            <span>DatatypeSourceData</span>
-         </a>
+            title="https://change-detection-ontology.adaptcentre.ie/#DatatypeSourceData">DatatypeSourceData</a>
       </li>
       <li>
          <a href="#DeleteSourceData"
-            title="https://change-detection-ontology.adaptcentre.ie/#DeleteSourceData">
-            <span>DeleteSourceData</span>
-         </a>
+            title="https://change-detection-ontology.adaptcentre.ie/#DeleteSourceData">DeleteSourceData</a>
       </li>
       <li>
          <a href="#InsertSourceData"
-            title="https://change-detection-ontology.adaptcentre.ie/#InsertSourceData">
-            <span>InsertSourceData</span>
-         </a>
+            title="https://change-detection-ontology.adaptcentre.ie/#InsertSourceData">InsertSourceData</a>
       </li>
       <li>
          <a href="#MergeSourceData"
-            title="https://change-detection-ontology.adaptcentre.ie/#MergeSourceData">
-            <span>MergeSourceData</span>
-         </a>
+            title="https://change-detection-ontology.adaptcentre.ie/#MergeSourceData">MergeSourceData</a>
       </li>
       <li>
          <a href="#MoveSourceData"
-            title="https://change-detection-ontology.adaptcentre.ie/#MoveSourceData">
-            <span>MoveSourceData</span>
-         </a>
+            title="https://change-detection-ontology.adaptcentre.ie/#MoveSourceData">MoveSourceData</a>
       </li>
       <li>
          <a href="#UpdateSourceData"
@@ -50,7 +40,7 @@ This section provides details for each class and property defined by Change Dete
       <p>
          <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#ChangeLog</p>
       <div class="comment">
-         <span class="markdown">A grouping of changes that have occured relating to a specific source data.</span>
+         <span class="markdown">A grouping of changes that have occured within a specific source data.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -62,23 +52,22 @@ This section provides details for each class and property defined by Change Dete
          <dt>is in domain of</dt>
          <dd>
             <a href="#hasChange"
-               title="https://change-detection-ontology.adaptcentre.ie/#hasChange">hasEvent</a>
+               title="https://change-detection-ontology.adaptcentre.ie/#hasChange">hasChange</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasCurrentSource"
+               title="https://change-detection-ontology.adaptcentre.ie/#hasCurrentSource">hasCurrentSource</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasOwner"
                title="https://change-detection-ontology.adaptcentre.ie/#hasOwner">hasOwner</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasPreviousSource"
+               title="https://change-detection-ontology.adaptcentre.ie/#hasPreviousSource">hasPreviousSource</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#ownedBy"
-               title="https://change-detection-ontology.adaptcentre.ie/#ownedBy">hasOwner</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#inChamgeLog"
-               title="https://change-detection-ontology.adaptcentre.ie/#inChamgeLog">inChamgeLog</a>
+            <a href="#inChangeLog"
+               title="https://change-detection-ontology.adaptcentre.ie/#inChangeLog">inChangeLog</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#ownedBy"
+               title="https://change-detection-ontology.adaptcentre.ie/#ownedBy">ownedBy</a>
             <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>has members</dt>
-         <dd>
-            <a href="#http://www.example.com/changeLog" title="http://www.example.com/changeLog">change log</a>
-            <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
    </div>
@@ -89,6 +78,15 @@ This section provides details for each class and property defined by Change Dete
       </h3>
       <p>
          <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#DatatypeSourceData</p>
+      <div class="comment">
+         <span class="markdown">Datatype has been changed in the source data.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://change-detection-ontology.adaptcentre.ie/#">https://change-detection-ontology.adaptcentre.ie/#</a>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -97,8 +95,6 @@ This section provides details for each class and property defined by Change Dete
                title="http://linkedevents.org/ontology/Event">event</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
-         <dt>is also defined as</dt>
-         <dd>named individual</dd>
       </dl>
    </div>
    <div class="entity" id="DeleteSourceData">
@@ -108,6 +104,15 @@ This section provides details for each class and property defined by Change Dete
       </h3>
       <p>
          <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#DeleteSourceData</p>
+      <div class="comment">
+         <span class="markdown">Data has been removed within the source data.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://change-detection-ontology.adaptcentre.ie/#">https://change-detection-ontology.adaptcentre.ie/#</a>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -116,8 +121,6 @@ This section provides details for each class and property defined by Change Dete
                title="http://linkedevents.org/ontology/Event">event</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
-         <dt>is also defined as</dt>
-         <dd>named individual</dd>
       </dl>
    </div>
    <div class="entity" id="InsertSourceData">
@@ -127,6 +130,15 @@ This section provides details for each class and property defined by Change Dete
       </h3>
       <p>
          <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#InsertSourceData</p>
+      <div class="comment">
+         <span class="markdown">Data has been inserted within the source data.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://change-detection-ontology.adaptcentre.ie/#">https://change-detection-ontology.adaptcentre.ie/#</a>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -135,13 +147,6 @@ This section provides details for each class and property defined by Change Dete
                title="http://linkedevents.org/ontology/Event">event</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
-         <dt>has members</dt>
-         <dd>
-            <a href="#http://www.example.com/insertChange" title="http://www.example.com/insertChange">insert change</a>
-            <sup class="type-ni" title="named individual">ni</sup>
-         </dd>
-         <dt>is also defined as</dt>
-         <dd>named individual</dd>
       </dl>
    </div>
    <div class="entity" id="MergeSourceData">
@@ -151,6 +156,15 @@ This section provides details for each class and property defined by Change Dete
       </h3>
       <p>
          <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#MergeSourceData</p>
+      <div class="comment">
+         <span class="markdown">Data has been merged within the source data.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://change-detection-ontology.adaptcentre.ie/#">https://change-detection-ontology.adaptcentre.ie/#</a>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -159,8 +173,6 @@ This section provides details for each class and property defined by Change Dete
                title="http://linkedevents.org/ontology/Event">event</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
-         <dt>is also defined as</dt>
-         <dd>named individual</dd>
       </dl>
    </div>
    <div class="entity" id="MoveSourceData">
@@ -170,6 +182,15 @@ This section provides details for each class and property defined by Change Dete
       </h3>
       <p>
          <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#MoveSourceData</p>
+      <div class="comment">
+         <span class="markdown">Data has been moved within the source data.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://change-detection-ontology.adaptcentre.ie/#">https://change-detection-ontology.adaptcentre.ie/#</a>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -178,8 +199,6 @@ This section provides details for each class and property defined by Change Dete
                title="http://linkedevents.org/ontology/Event">event</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
-         <dt>is also defined as</dt>
-         <dd>named individual</dd>
       </dl>
    </div>
    <div class="entity" id="UpdateSourceData">
@@ -213,23 +232,31 @@ This section provides details for each class and property defined by Change Dete
    <ul class="hlist">
       <li>
          <a href="#hasChange"
-            title="https://change-detection-ontology.adaptcentre.ie/#hasChange">hasEvent</a>
+            title="https://change-detection-ontology.adaptcentre.ie/#hasChange">hasChange</a>
+      </li>
+      <li>
+         <a href="#hasCurrentSource"
+            title="https://change-detection-ontology.adaptcentre.ie/#hasCurrentSource">hasCurrentSource</a>
       </li>
       <li>
          <a href="#hasOwner"
             title="https://change-detection-ontology.adaptcentre.ie/#hasOwner">hasOwner</a>
       </li>
       <li>
-         <a href="#ownedBy"
-            title="https://change-detection-ontology.adaptcentre.ie/#ownedBy">hasOwner</a>
+         <a href="#hasPreviousSource"
+            title="https://change-detection-ontology.adaptcentre.ie/#hasPreviousSource">hasPreviousSource</a>
       </li>
       <li>
-         <a href="#inChamgeLog"
-            title="https://change-detection-ontology.adaptcentre.ie/#inChamgeLog">inChamgeLog</a>
+         <a href="#inChangeLog"
+            title="https://change-detection-ontology.adaptcentre.ie/#inChangeLog">inChangeLog</a>
+      </li>
+      <li>
+         <a href="#ownedBy"
+            title="https://change-detection-ontology.adaptcentre.ie/#ownedBy">ownedBy</a>
       </li>
    </ul>
    <div class="entity" id="hasChange">
-      <h3>hasEvent<sup class="type-op" title="object property">op</sup>
+      <h3>hasChange<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
@@ -261,9 +288,46 @@ This section provides details for each class and property defined by Change Dete
             </dd>
             <dt>is inverse of</dt>
             <dd>
-               <a href="#inChamgeLog"
-                  title="https://change-detection-ontology.adaptcentre.ie/#inChamgeLog">inChamgeLog</a>
+               <a href="#inChangeLog"
+                  title="https://change-detection-ontology.adaptcentre.ie/#inChangeLog">inChangeLog</a>
                <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasCurrentSource">
+      <h3>hasCurrentSource<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#hasCurrentSource</p>
+      <div class="comment">
+         <span class="markdown">The current version of the source data.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://change-detection-ontology.adaptcentre.ie/#">https://change-detection-ontology.adaptcentre.ie/#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ChangeLog"
+                  title="https://change-detection-ontology.adaptcentre.ie/#ChangeLog">ChangeLog</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2000/01/rdf-schema#Resource"
+                  target="_blank"
+                  title="http://www.w3.org/2000/01/rdf-schema#Resource">resource</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -275,46 +339,6 @@ This section provides details for each class and property defined by Change Dete
       </h3>
       <p>
          <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#hasOwner</p>
-      <div class="comment">
-         <span class="markdown">The owner of the change log.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="https://change-detection-ontology.adaptcentre.ie/#">https://change-detection-ontology.adaptcentre.ie/#</a>
-         </dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#ChangeLog"
-                  title="https://change-detection-ontology.adaptcentre.ie/#ChangeLog">ChangeLog</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"
-                  target="_blank"
-                  title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent">agent</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#ownedBy"
-                  title="https://change-detection-ontology.adaptcentre.ie/#ownedBy">hasOwner</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="ownedBy">
-      <h3>hasOwner<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#ownedBy</p>
       <div class="comment">
          <span class="markdown">The agent who owns the change log.</span>
       </div>
@@ -328,33 +352,69 @@ This section provides details for each class and property defined by Change Dete
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"
-                  target="_blank"
-                  title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent">agent</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
                <a href="#ChangeLog"
                   title="https://change-detection-ontology.adaptcentre.ie/#ChangeLog">ChangeLog</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"
+                  target="_blank"
+                  title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent">agent</a>
+            </dd>
             <dt>is inverse of</dt>
             <dd>
-               <a href="#hasOwner"
-                  title="https://change-detection-ontology.adaptcentre.ie/#hasOwner">hasOwner</a>
+               <a href="#ownedBy"
+                  title="https://change-detection-ontology.adaptcentre.ie/#ownedBy">ownedBy</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
    </div>
-   <div class="entity" id="inChamgeLog">
-      <h3>inChamgeLog<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="hasPreviousSource">
+      <h3>hasPreviousSource<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#inChamgeLog</p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#hasPreviousSource</p>
+      <div class="comment">
+         <span class="markdown">The previous version of the source data.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://change-detection-ontology.adaptcentre.ie/#">https://change-detection-ontology.adaptcentre.ie/#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ChangeLog"
+                  title="https://change-detection-ontology.adaptcentre.ie/#ChangeLog">ChangeLog</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2000/01/rdf-schema#Resource"
+                  target="_blank"
+                  title="http://www.w3.org/2000/01/rdf-schema#Resource">resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="inChangeLog">
+      <h3>inChangeLog<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#inChangeLog</p>
       <div class="comment">
          <span class="markdown">A change within a change log.</span>
       </div>
@@ -382,7 +442,46 @@ This section provides details for each class and property defined by Change Dete
             <dt>is inverse of</dt>
             <dd>
                <a href="#hasChange"
-                  title="https://change-detection-ontology.adaptcentre.ie/#hasChange">hasEvent</a>
+                  title="https://change-detection-ontology.adaptcentre.ie/#hasChange">hasChange</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="ownedBy">
+      <h3>ownedBy<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#ownedBy</p>
+      <div class="comment">
+         <span class="markdown">The owner of the change log.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://change-detection-ontology.adaptcentre.ie/#">https://change-detection-ontology.adaptcentre.ie/#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"
+                  target="_blank"
+                  title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent">agent</a>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ChangeLog"
+                  title="https://change-detection-ontology.adaptcentre.ie/#ChangeLog">ChangeLog</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasOwner"
+                  title="https://change-detection-ontology.adaptcentre.ie/#hasOwner">hasOwner</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -405,9 +504,7 @@ This section provides details for each class and property defined by Change Dete
       </li>
       <li>
          <a href="#hasThreshold"
-            title="https://change-detection-ontology.adaptcentre.ie/#hasThreshold">
-            <span>hasThreshold</span>
-         </a>
+            title="https://change-detection-ontology.adaptcentre.ie/#hasThreshold">hasThreshold</a>
       </li>
    </ul>
    <div class="entity" id="detectionEnd">
@@ -418,7 +515,7 @@ This section provides details for each class and property defined by Change Dete
       <p>
          <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#detectionEnd</p>
       <div class="comment">
-         <span class="markdown">The time when the notification policy is finished.</span>
+         <span class="markdown">The time when the notification policy is terminated.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -436,7 +533,6 @@ This section provides details for each class and property defined by Change Dete
                <a href="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy"
                   target="_blank"
                   title="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy">policy</a>
-               <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
@@ -457,6 +553,12 @@ This section provides details for each class and property defined by Change Dete
       <div class="comment">
          <span class="markdown">The time when the notification policy was created.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://change-detection-ontology.adaptcentre.ie/#">https://change-detection-ontology.adaptcentre.ie/#</a>
+         </dd>
+      </dl>
       <div class="description">
          <p>
             <strong>has characteristics:
@@ -467,7 +569,6 @@ This section provides details for each class and property defined by Change Dete
                <a href="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy"
                   target="_blank"
                   title="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy">policy</a>
-               <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
@@ -522,6 +623,15 @@ This section provides details for each class and property defined by Change Dete
       </h3>
       <p>
          <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#hasThreshold</p>
+      <div class="comment">
+         <span class="markdown">The threshold defined for a change type within the notification policy.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://change-detection-ontology.adaptcentre.ie/#">https://change-detection-ontology.adaptcentre.ie/#</a>
+         </dd>
+      </dl>
       <div class="description">
          <p>
             <strong>has characteristics:
@@ -539,330 +649,8 @@ This section provides details for each class and property defined by Change Dete
                   target="_blank"
                   title="http://www.w3.org/2001/XMLSchema#int">int</a>
             </dd>
-            <dt>is also defined as</dt>
-            <dd>named individual</dd>
          </dl>
       </div>
-   </div>
-</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
-   <h3 id="namedindividuals" class="list">Named Individuals</h3>
-   <ul class="hlist">
-      <li>
-         <a href="#http://www.example.com/changeLog" title="http://www.example.com/changeLog">
-            <span>change log</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://www.example.com/datatypeChangeConstraint" title="http://www.example.com/datatypeChangeConstraint">
-            <span>datatype change constraint</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://www.example.com/deleteChangeConstraint" title="http://www.example.com/deleteChangeConstraint">
-            <span>delete change constraint</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://www.example.com/detectionTime" title="http://www.example.com/detectionTime">
-            <span>detection time</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://www.example.com/insertChange" title="http://www.example.com/insertChange">
-            <span>insert change</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://www.example.com/insertChangeConstraint" title="http://www.example.com/insertChangeConstraint">
-            <span>insert change constraint</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://www.example.com/mergeChangeConstraint" title="http://www.example.com/mergeChangeConstraint">
-            <span>merge change constraint</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://www.example.com/moveChangeConstraint" title="http://www.example.com/moveChangeConstraint">
-            <span>move change constraint</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://www.example.com/notificationConstraint" title="http://www.example.com/notificationConstraint">
-            <span>notification constraint</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://www.example.com/notificationPolicy" title="http://www.example.com/notificationPolicy">
-            <span>notification policy</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://www.example.com/policyObligation" title="http://www.example.com/policyObligation">
-            <span>policy obligation</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://www.example.com/userActor" title="http://www.example.com/userActor">
-            <span>user actor</span>
-         </a>
-      </li>
-   </ul>
-   <div class="entity" id="http://www.example.com/changeLog">
-      <h3>change log<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.example.com/changeLog</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#ChangeLog"
-               title="https://change-detection-ontology.adaptcentre.ie/#ChangeLog">ChangeLog</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>has facts</dt>
-         <dd>
-            <a href="#hasChange"
-               title="https://change-detection-ontology.adaptcentre.ie/#hasChange">hasEvent</a>
-            <sup class="type-op" title="object property">op</sup> 
-            <a href="#http://www.example.com/insertChange" title="http://www.example.com/insertChange">insert change</a>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="http://www.example.com/datatypeChangeConstraint">
-      <h3>datatype change constraint<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.example.com/datatypeChangeConstraint</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint"
-               target="_blank"
-               title="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint">simple constraint</a>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="http://www.example.com/deleteChangeConstraint">
-      <h3>delete change constraint<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.example.com/deleteChangeConstraint</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint"
-               target="_blank"
-               title="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint">simple constraint</a>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="http://www.example.com/detectionTime">
-      <h3>detection time<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.example.com/detectionTime</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="http://www.w3.org/2006/time#Instant"
-               target="_blank"
-               title="http://www.w3.org/2006/time#Instant">instant</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>has facts</dt>
-         <dd>
-            <a href="http://www.w3.org/2006/time#inXSDDateTimeStamp"
-               target="_blank"
-               title="http://www.w3.org/2006/time#inXSDDateTimeStamp">in x s d date time stamp</a>
-            <sup class="type-dp" title="data property">dp</sup> 
-            <span class="literal">"2022-07-05 17:12:57.090772"^^<a href="http://www.w3.org/2001/XMLSchema#dateTimeStamp"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#dateTimeStamp">date time stamp</a>
-            </span>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="http://www.example.com/insertChange">
-      <h3>insert change<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.example.com/insertChange</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#InsertSourceData"
-               title="https://change-detection-ontology.adaptcentre.ie/#InsertSourceData">InsertSourceData</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>has facts</dt>
-         <dd>
-            <a href="#hasReason"
-               title="https://change-detection-ontology.adaptcentre.ie/#hasReason">hasReason</a>
-            <sup class="type-dp" title="data property">dp</sup> 
-            <span class="literal">"Name: Alex Randles"</span>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="http://www.example.com/insertChangeConstraint">
-      <h3>insert change constraint<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.example.com/insertChangeConstraint</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint"
-               target="_blank"
-               title="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint">simple constraint</a>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="http://www.example.com/mergeChangeConstraint">
-      <h3>merge change constraint<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.example.com/mergeChangeConstraint</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint"
-               target="_blank"
-               title="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint">simple constraint</a>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="http://www.example.com/moveChangeConstraint">
-      <h3>move change constraint<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.example.com/moveChangeConstraint</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint"
-               target="_blank"
-               title="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint">simple constraint</a>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="http://www.example.com/notificationConstraint">
-      <h3>notification constraint<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.example.com/notificationConstraint</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#And"
-               target="_blank"
-               title="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#And">and</a>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="http://www.example.com/notificationPolicy">
-      <h3>notification policy<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.example.com/notificationPolicy</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy"
-               target="_blank"
-               title="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy">policy</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>has facts</dt>
-         <dd>
-            <a href="http://www.w3.org/2006/time#inXSDDateTimeStamp"
-               target="_blank"
-               title="http://www.w3.org/2006/time#inXSDDateTimeStamp">in x s d date time stamp</a>
-            <sup class="type-dp" title="data property">dp</sup> 
-            <span class="literal">"2022-08-07 00:00:00.0000"^^<a href="http://www.w3.org/2001/XMLSchema#dateTimeStamp"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#dateTimeStamp">date time stamp</a>
-            </span>
-         </dd>
-         <dd>
-            <a href="#detectionEnd"
-               title="https://change-detection-ontology.adaptcentre.ie/#detectionEnd">detectionEnd</a>
-            <sup class="type-dp" title="data property">dp</sup> 
-            <span class="literal">"2022-08-07 00:00:00.0000"^^<a href="http://www.w3.org/2001/XMLSchema#dateTime"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#dateTime">date time</a>
-            </span>
-         </dd>
-         <dd>
-            <a href="#detectionStart"
-               title="https://change-detection-ontology.adaptcentre.ie/#detectionStart">detectionStart</a>
-            <sup class="type-dp" title="data property">dp</sup> 
-            <span class="literal">"2022-07-05 17:12:56.121344"^^<a href="http://www.w3.org/2001/XMLSchema#dateTime"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#dateTime">date time</a>
-            </span>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="http://www.example.com/policyObligation">
-      <h3>policy obligation<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.example.com/policyObligation</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#Obligation"
-               target="_blank"
-               title="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#Obligation">obligation</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="http://www.example.com/userActor">
-      <h3>user actor<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.example.com/userActor</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiEntity.owl#Agent"
-               target="_blank"
-               title="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiEntity.owl#Agent">agent</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dd>
-            <a href="http://xmlns.com/foaf/0.1/Person"
-               target="_blank"
-               title="http://xmlns.com/foaf/0.1/Person">person</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
    </div>
 </div><div id="legend">
 <h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -870,6 +658,5 @@ This section provides details for each class and property defined by Change Dete
 <sup class="type-c" title="Classes">c</sup>: Classes <br/>
 <sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
 <sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
-<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
 </div>
 </div>
