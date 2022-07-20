@@ -59,7 +59,6 @@
 <https://change-detection-ontology.adaptcentre.ie/#hasChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://change-detection-ontology.adaptcentre.ie/#hasChange> <http://www.w3.org/2000/01/rdf-schema#domain> <https://change-detection-ontology.adaptcentre.ie/#ChangeLog> .
 <https://change-detection-ontology.adaptcentre.ie/#hasChange> <http://www.w3.org/2000/01/rdf-schema#range> <http://linkedevents.org/ontology/Event> .
-<http://linkedevents.org/ontology/Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://change-detection-ontology.adaptcentre.ie/#hasChange> <http://www.w3.org/2000/01/rdf-schema#comment> "A change within a particular change log." .
 <https://change-detection-ontology.adaptcentre.ie/#hasChange> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
 <https://change-detection-ontology.adaptcentre.ie/#hasChange> <http://www.w3.org/2000/01/rdf-schema#label> "hasChange" .
@@ -69,7 +68,6 @@
 <https://change-detection-ontology.adaptcentre.ie/#hasCurrentSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <https://change-detection-ontology.adaptcentre.ie/#hasCurrentSource> <http://www.w3.org/2000/01/rdf-schema#domain> <https://change-detection-ontology.adaptcentre.ie/#ChangeLog> .
 <https://change-detection-ontology.adaptcentre.ie/#hasCurrentSource> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
-<http://www.w3.org/2000/01/rdf-schema#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://change-detection-ontology.adaptcentre.ie/#hasCurrentSource> <http://www.w3.org/2000/01/rdf-schema#comment> "The current version of the source data." .
 <https://change-detection-ontology.adaptcentre.ie/#hasCurrentSource> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
 <https://change-detection-ontology.adaptcentre.ie/#hasCurrentSource> <http://www.w3.org/2000/01/rdf-schema#label> "hasCurrentSource" .
@@ -118,23 +116,23 @@
 # #################################################################
 # 
 # 
-# https://change-detection-ontology.adaptcentre.ie/#detectionEnd
-<https://change-detection-ontology.adaptcentre.ie/#detectionEnd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://change-detection-ontology.adaptcentre.ie/#detectionEnd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://change-detection-ontology.adaptcentre.ie/#detectionEnd> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy> .
-<https://change-detection-ontology.adaptcentre.ie/#detectionEnd> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://change-detection-ontology.adaptcentre.ie/#detectionEnd> <http://www.w3.org/2000/01/rdf-schema#comment> "The time when the notification policy is terminated." .
-<https://change-detection-ontology.adaptcentre.ie/#detectionEnd> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
-<https://change-detection-ontology.adaptcentre.ie/#detectionEnd> <http://www.w3.org/2000/01/rdf-schema#label> "detectionEnd" .
+# https://change-detection-ontology.adaptcentre.ie/#hasDetectionEnd
+<https://change-detection-ontology.adaptcentre.ie/#hasDetectionEnd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://change-detection-ontology.adaptcentre.ie/#hasDetectionEnd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://change-detection-ontology.adaptcentre.ie/#hasDetectionEnd> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy> .
+<https://change-detection-ontology.adaptcentre.ie/#hasDetectionEnd> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://change-detection-ontology.adaptcentre.ie/#hasDetectionEnd> <http://www.w3.org/2000/01/rdf-schema#comment> "The time when the notification policy is terminated." .
+<https://change-detection-ontology.adaptcentre.ie/#hasDetectionEnd> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
+<https://change-detection-ontology.adaptcentre.ie/#hasDetectionEnd> <http://www.w3.org/2000/01/rdf-schema#label> "hasDetectionEnd" .
 # 
-# https://change-detection-ontology.adaptcentre.ie/#detectionStart
-<https://change-detection-ontology.adaptcentre.ie/#detectionStart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://change-detection-ontology.adaptcentre.ie/#detectionStart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://change-detection-ontology.adaptcentre.ie/#detectionStart> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy> .
-<https://change-detection-ontology.adaptcentre.ie/#detectionStart> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://change-detection-ontology.adaptcentre.ie/#detectionStart> <http://www.w3.org/2000/01/rdf-schema#comment> "The time when the notification policy was created." .
-<https://change-detection-ontology.adaptcentre.ie/#detectionStart> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
-<https://change-detection-ontology.adaptcentre.ie/#detectionStart> <http://www.w3.org/2000/01/rdf-schema#label> "detectionStart" .
+# https://change-detection-ontology.adaptcentre.ie/#hasDetectionStart
+<https://change-detection-ontology.adaptcentre.ie/#hasDetectionStart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://change-detection-ontology.adaptcentre.ie/#hasDetectionStart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://change-detection-ontology.adaptcentre.ie/#hasDetectionStart> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy> .
+<https://change-detection-ontology.adaptcentre.ie/#hasDetectionStart> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://change-detection-ontology.adaptcentre.ie/#hasDetectionStart> <http://www.w3.org/2000/01/rdf-schema#comment> "The time when the notification policy was created." .
+<https://change-detection-ontology.adaptcentre.ie/#hasDetectionStart> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
+<https://change-detection-ontology.adaptcentre.ie/#hasDetectionStart> <http://www.w3.org/2000/01/rdf-schema#label> "hasDetectionStart" .
 # 
 # https://change-detection-ontology.adaptcentre.ie/#hasReason
 <https://change-detection-ontology.adaptcentre.ie/#hasReason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -164,8 +162,10 @@
 # 
 # 
 # http://linkedevents.org/ontology/Event
+<http://linkedevents.org/ontology/Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://www.w3.org/2000/01/rdf-schema#Resource
+<http://www.w3.org/2000/01/rdf-schema#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # https://change-detection-ontology.adaptcentre.ie/#ChangeLog
 <https://change-detection-ontology.adaptcentre.ie/#ChangeLog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

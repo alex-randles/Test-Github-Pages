@@ -204,30 +204,30 @@ The ontology allows a notification policy to be defined to notify users when a t
     
 
 
-    <!-- https://change-detection-ontology.adaptcentre.ie/#detectionEnd -->
+    <!-- https://change-detection-ontology.adaptcentre.ie/#hasDetectionEnd -->
 
 
-    <owl:DatatypeProperty rdf:about="https://change-detection-ontology.adaptcentre.ie/#detectionEnd">
+    <owl:DatatypeProperty rdf:about="https://change-detection-ontology.adaptcentre.ie/#hasDetectionEnd">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:comment>The time when the notification policy is terminated.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://change-detection-ontology.adaptcentre.ie/#"/>
-        <rdfs:label>detectionEnd</rdfs:label>
+        <rdfs:label>hasDetectionEnd</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://change-detection-ontology.adaptcentre.ie/#detectionStart -->
+    <!-- https://change-detection-ontology.adaptcentre.ie/#hasDetectionStart -->
 
 
-    <owl:DatatypeProperty rdf:about="https://change-detection-ontology.adaptcentre.ie/#detectionStart">
+    <owl:DatatypeProperty rdf:about="https://change-detection-ontology.adaptcentre.ie/#hasDetectionStart">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:comment>The time when the notification policy was created.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://change-detection-ontology.adaptcentre.ie/#"/>
-        <rdfs:label>detectionStart</rdfs:label>
+        <rdfs:label>hasDetectionStart</rdfs:label>
     </owl:DatatypeProperty>
     
 
