@@ -519,6 +519,9 @@ The ontology allows a notification policy to be defined to notify users when a t
 
     <owl:Class rdf:about="https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData">
         <rdfs:subClassOf rdf:resource="http://linkedevents.org/ontology/Event"/>
+        <rdfs:comment>Data has been updated within the source data.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://change-detection-ontology.adaptcentre.ie/#"/>
+        <rdfs:label>UpdateSourceData</rdfs:label>
     </owl:Class>
     
 
@@ -671,18 +674,6 @@ The ontology allows a notification policy to be defined to notify users when a t
     
 
 
-    <!-- http://www.example.com/updateChangeConstraint -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.example.com/updateChangeConstraint">
-        <rdf:type rdf:resource="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint"/>
-        <ReiConstraint:predicate rdf:resource="https://change-detection-ontology.adaptcentre.ie/#hasThreshold"/>
-        <ReiConstraint:subject rdf:resource="https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData"/>
-        <ReiConstraint:object>0</ReiConstraint:object>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.example.com/userActor -->
 
 
@@ -726,13 +717,6 @@ The ontology allows a notification policy to be defined to notify users when a t
 
 
     <owl:NamedIndividual rdf:about="https://change-detection-ontology.adaptcentre.ie/#MoveSourceData"/>
-    
-
-
-    <!-- https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData -->
-
-
-    <owl:NamedIndividual rdf:about="https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData"/>
     
 
 
@@ -790,11 +774,6 @@ The ontology allows a notification policy to be defined to notify users when a t
         <rdfs:comment>Data has been moved within the source data.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://change-detection-ontology.adaptcentre.ie/#"/>
         <rdfs:label>MoveSourceData</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData">
-        <rdfs:comment>Data has been updated within the source data.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://change-detection-ontology.adaptcentre.ie/#"/>
-        <rdfs:label>UpdateSourceData</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://change-detection-ontology.adaptcentre.ie/#hasThreshold">
         <rdfs:comment>The threshold defined for a change type within the notification policy.</rdfs:comment>

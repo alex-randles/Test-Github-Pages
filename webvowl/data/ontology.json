@@ -22,12 +22,12 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Alex Randles",
+        "value" : "Declan O'Sullivan",
         "type" : "label"
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Declan O'Sullivan",
+        "value" : "Alex Randles",
         "type" : "label"
       } ],
       "created" : [ {
@@ -42,6 +42,12 @@
         "value" : "cdo",
         "type" : "label"
       } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "20 April 2022",
+        "type" : "label"
+      } ],
       "abstract" : [ {
         "identifier" : "abstract",
         "language" : "undefined",
@@ -52,12 +58,6 @@
         "identifier" : "preferredNamespaceUri",
         "language" : "undefined",
         "value" : "https://change-detection-ontology.adaptcentre.ie/#",
-        "type" : "label"
-      } ],
-      "versionInfo" : [ {
-        "identifier" : "versionInfo",
-        "language" : "undefined",
-        "value" : "20 April 2022",
         "type" : "label"
       } ],
       "title" : [ {
@@ -85,7 +85,7 @@
     "id" : "19",
     "type" : "owl:Class"
   }, {
-    "id" : "43",
+    "id" : "45",
     "type" : "owl:Class"
   }, {
     "id" : "48",
@@ -97,10 +97,10 @@
     "id" : "33",
     "type" : "owl:Class"
   }, {
-    "id" : "6",
+    "id" : "13",
     "type" : "owl:Class"
   }, {
-    "id" : "13",
+    "id" : "6",
     "type" : "owl:Class"
   }, {
     "id" : "15",
@@ -157,7 +157,7 @@
     "id" : "10",
     "type" : "owl:Class"
   }, {
-    "id" : "45",
+    "id" : "43",
     "type" : "owl:Class"
   }, {
     "id" : "97",
@@ -351,7 +351,7 @@
     },
     "subClasses" : [ "28", "22" ],
     "attributes" : [ "external" ],
-    "id" : "43"
+    "id" : "45"
   }, {
     "iri" : "https://change-detection-ontology.adaptcentre.ie/#MergeSourceData",
     "baseIri" : "https://change-detection-ontology.adaptcentre.ie/",
@@ -412,6 +412,15 @@
     "attributes" : [ "external" ],
     "id" : "33"
   }, {
+    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiMetaPolicy.owl#ModalityPrecedence",
+    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiMetaPolicy.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ModalityPrecedence"
+    },
+    "attributes" : [ "external" ],
+    "id" : "13"
+  }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy",
     "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
     "instances" : 0,
@@ -440,15 +449,6 @@
     "attributes" : [ "external" ],
     "id" : "6",
     "superClasses" : [ "24" ]
-  }, {
-    "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiMetaPolicy.owl#ModalityPrecedence",
-    "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiMetaPolicy.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ModalityPrecedence"
-    },
-    "attributes" : [ "external" ],
-    "id" : "13"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#BooleanConstraint",
     "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
@@ -524,7 +524,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "4",
-    "superClasses" : [ "70", "45" ]
+    "superClasses" : [ "70", "43" ]
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#AndOrOr",
     "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl",
@@ -607,7 +607,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "28",
-    "superClasses" : [ "4", "43" ]
+    "superClasses" : [ "4", "45" ]
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
@@ -696,7 +696,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "30",
-    "superClasses" : [ "45", "24" ]
+    "superClasses" : [ "43", "24" ]
   }, {
     "iri" : "http://linkedevents.org/ontology/Event",
     "baseIri" : "http://linkedevents.org/ontology",
@@ -734,7 +734,7 @@
     },
     "subClasses" : [ "4", "30" ],
     "attributes" : [ "external" ],
-    "id" : "45"
+    "id" : "43"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiMetaPolicy.owl#Behavior",
     "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiMetaPolicy.owl",
@@ -852,20 +852,6 @@
       "undefined" : "SimpleConstraint"
     },
     "individuals" : [ {
-      "iri" : "http://www.example.com/updateChangeConstraint",
-      "baseIri" : "http://www.example.com",
-      "annotations" : {
-        "object" : [ {
-          "identifier" : "object",
-          "language" : "undefined",
-          "value" : "0",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "updateChangeConstraint"
-      }
-    }, {
       "iri" : "http://www.example.com/insertChangeConstraint",
       "baseIri" : "http://www.example.com",
       "annotations" : {
@@ -954,12 +940,12 @@
         "actor" : [ {
           "identifier" : "actor",
           "language" : "undefined",
-          "value" : "http://www.example.com/userActor",
+          "value" : "https://change-detection-ontology.adaptcentre.ie/#softwareAgent",
           "type" : "iri"
         }, {
           "identifier" : "actor",
           "language" : "undefined",
-          "value" : "https://change-detection-ontology.adaptcentre.ie/#softwareAgent",
+          "value" : "http://www.example.com/userActor",
           "type" : "iri"
         } ]
       },
@@ -969,7 +955,7 @@
     } ],
     "attributes" : [ "external" ],
     "id" : "22",
-    "superClasses" : [ "4", "43" ]
+    "superClasses" : [ "4", "45" ]
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiAction.owl#ActionOrDeontic",
     "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiAction.owl",
@@ -1199,7 +1185,7 @@
   "propertyAttribute" : [ {
     "range" : "4",
     "domain" : "3",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "2"
   }, {
     "iri" : "https://change-detection-ontology.adaptcentre.ie/#detectionStart",
@@ -1230,7 +1216,7 @@
     },
     "label" : {
       "IRI-based" : "hasOwner",
-      "undefined" : "hasOwner"
+      "undefined" : "ownedBy"
     },
     "domain" : "9",
     "comment" : {
@@ -1272,42 +1258,42 @@
     "comment" : {
       "undefined" : "Whether positive or negative modality holds precedence"
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "12"
   }, {
     "range" : "4",
     "domain" : "19",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "18"
   }, {
     "range" : "4",
     "domain" : "22",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "21"
   }, {
     "range" : "24",
     "domain" : "6",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "23"
   }, {
     "range" : "15",
     "domain" : "26",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "25"
   }, {
     "range" : "4",
     "domain" : "28",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "27"
   }, {
     "range" : "24",
     "domain" : "30",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "29"
   }, {
     "range" : "33",
     "domain" : "32",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "31"
   }, {
     "iri" : "https://change-detection-ontology.adaptcentre.ie/#hasThreshold",
@@ -1334,17 +1320,17 @@
   }, {
     "range" : "33",
     "domain" : "15",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "36"
   }, {
     "range" : "15",
     "domain" : "20",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "37"
   }, {
     "range" : "15",
     "domain" : "14",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "38"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#first",
@@ -1354,7 +1340,7 @@
       "IRI-based" : "first"
     },
     "domain" : "15",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "39"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#action",
@@ -1366,27 +1352,27 @@
     },
     "cardinality" : "1",
     "domain" : "4",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "40"
   }, {
     "range" : "43",
-    "domain" : "28",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "42"
   }, {
     "range" : "45",
-    "domain" : "30",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "44"
   }, {
     "range" : "43",
-    "domain" : "22",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "46"
   }, {
     "range" : "1",
     "domain" : "48",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "47"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#obligedTo",
@@ -1400,37 +1386,37 @@
     "comment" : {
       "undefined" : "Whom the the actor is obliged to"
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "49"
   }, {
     "range" : "1",
     "domain" : "52",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "51"
   }, {
     "range" : "45",
-    "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "53"
   }, {
     "range" : "1",
     "domain" : "55",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "54"
   }, {
     "range" : "1",
     "domain" : "0",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "56"
   }, {
     "range" : "1",
     "domain" : "17",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "58"
   }, {
     "range" : "1",
     "domain" : "60",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "59"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#to",
@@ -1441,7 +1427,7 @@
       "undefined" : "to"
     },
     "domain" : "30",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "61"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#context",
@@ -1455,7 +1441,7 @@
     "comment" : {
       "undefined" : "All the conditions associated with the policy. Includes domain"
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "63"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#metaDefault",
@@ -1469,7 +1455,7 @@
     "comment" : {
       "undefined" : "In case of conflict, should priority between rules be checked before modality or vice versa"
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "64"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#second",
@@ -1479,7 +1465,7 @@
       "IRI-based" : "second"
     },
     "domain" : "16",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "66"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#constraint",
@@ -1490,7 +1476,7 @@
     },
     "domain" : "4",
     "subproperty" : [ "68" ],
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "67"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#startingConstraint",
@@ -1501,7 +1487,7 @@
     },
     "superproperty" : [ "67" ],
     "domain" : "4",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "68"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#imports",
@@ -1512,7 +1498,7 @@
       "undefined" : "imports"
     },
     "domain" : "6",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "71"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#modifiedBy",
@@ -1523,7 +1509,7 @@
       "undefined" : "modifiedBy"
     },
     "domain" : "6",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "73"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#predicate",
@@ -1533,22 +1519,22 @@
       "IRI-based" : "predicate"
     },
     "domain" : "32",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "75"
   }, {
     "range" : "16",
     "domain" : "14",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "77"
   }, {
     "range" : "70",
     "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "78"
   }, {
     "range" : "16",
     "domain" : "26",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "79"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#inequal",
@@ -1558,7 +1544,7 @@
       "IRI-based" : "inequal"
     },
     "domain" : "82",
-    "attributes" : [ "external", "symmetric", "object" ],
+    "attributes" : [ "object", "symmetric", "external" ],
     "id" : "81"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#endingConstraint",
@@ -1568,7 +1554,7 @@
       "IRI-based" : "endingConstraint"
     },
     "domain" : "4",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "83"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#rulePriority",
@@ -1582,7 +1568,7 @@
     "comment" : {
       "undefined" : "Used to set priority between granting rules"
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "84"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#provision",
@@ -1595,7 +1581,7 @@
     "comment" : {
       "undefined" : "Obligation on the actor to either perform some action or make some conditions true sometime in the future."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "85"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#actor",
@@ -1607,7 +1593,7 @@
     },
     "cardinality" : "1",
     "domain" : "4",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "86"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#object",
@@ -1617,7 +1603,7 @@
       "IRI-based" : "object"
     },
     "domain" : "32",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "87"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#deontic",
@@ -1629,7 +1615,7 @@
     },
     "cardinality" : "1",
     "domain" : "30",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "88"
   }, {
     "iri" : "https://change-detection-ontology.adaptcentre.ie/#hasReason",
@@ -1660,11 +1646,11 @@
     "label" : {
       "IRI-based" : "sanction"
     },
-    "domain" : "43",
+    "domain" : "45",
     "comment" : {
       "undefined" : "In case a rule is broken, a sanction is imposed. Sanction can be either an action or a deontic object"
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "91"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#createdBy",
@@ -1675,7 +1661,7 @@
       "undefined" : "creator"
     },
     "domain" : "6",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "93"
   }, {
     "iri" : "https://change-detection-ontology.adaptcentre.ie/#hasChange",
@@ -1703,7 +1689,7 @@
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#grants",
     "baseIri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl",
-    "range" : "45",
+    "range" : "43",
     "label" : {
       "IRI-based" : "grants",
       "undefined" : "grants"
@@ -1712,7 +1698,7 @@
     "comment" : {
       "undefined" : "Associates deontic objects with the policy"
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "96"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#subject",
@@ -1722,7 +1708,7 @@
       "IRI-based" : "subject"
     },
     "domain" : "32",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "98"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#modifiedTime",
@@ -1733,7 +1719,7 @@
       "undefined" : "modifiedTime"
     },
     "domain" : "6",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "102"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#equal",
@@ -1743,7 +1729,7 @@
       "IRI-based" : "equal"
     },
     "domain" : "82",
-    "attributes" : [ "external", "symmetric", "object" ],
+    "attributes" : [ "object", "symmetric", "external" ],
     "id" : "103"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#requirement",
@@ -1754,7 +1740,7 @@
       "undefined" : "requirement"
     },
     "domain" : "30",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "104"
   }, {
     "iri" : "http://www.w3.org/2006/time#inXSDDateTimeStamp",
@@ -1833,7 +1819,7 @@
     "comment" : {
       "undefined" : "Whether implicit/explicit right or prohibition"
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "108"
   }, {
     "iri" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#creationTime",
@@ -1844,7 +1830,7 @@
       "undefined" : "creationTime"
     },
     "domain" : "6",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "110"
   } ]
 }

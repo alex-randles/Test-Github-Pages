@@ -301,7 +301,10 @@ The ontology allows a notification policy to be defined to notify users when a t
 
 ###  https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData
 :UpdateSourceData rdf:type owl:Class ;
-                  rdfs:subClassOf <http://linkedevents.org/ontology/Event> .
+                  rdfs:subClassOf <http://linkedevents.org/ontology/Event> ;
+                  rdfs:comment "Data has been updated within the source data." ;
+                  rdfs:isDefinedBy <https://change-detection-ontology.adaptcentre.ie/#> ;
+                  rdfs:label "UpdateSourceData" .
 
 
 #################################################################
@@ -400,14 +403,6 @@ The ontology allows a notification policy to be defined to notify users when a t
                                                                                                                :softwareAgent .
 
 
-###  http://www.example.com/updateChangeConstraint
-<http://www.example.com/updateChangeConstraint> rdf:type owl:NamedIndividual ,
-                                                         <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint> ;
-                                                <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#predicate> :hasThreshold ;
-                                                <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#subject> :UpdateSourceData ;
-                                                <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#object> "0" .
-
-
 ###  http://www.example.com/userActor
 <http://www.example.com/userActor> rdf:type owl:NamedIndividual ,
                                             <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiEntity.owl#Agent> ,
@@ -433,10 +428,6 @@ The ontology allows a notification policy to be defined to notify users when a t
 
 ###  https://change-detection-ontology.adaptcentre.ie/#MoveSourceData
 :MoveSourceData rdf:type owl:NamedIndividual .
-
-
-###  https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData
-:UpdateSourceData rdf:type owl:NamedIndividual .
 
 
 ###  https://change-detection-ontology.adaptcentre.ie/#hasThreshold
@@ -478,11 +469,6 @@ The ontology allows a notification policy to be defined to notify users when a t
 :MoveSourceData rdfs:comment "Data has been moved within the source data." ;
                 rdfs:isDefinedBy <https://change-detection-ontology.adaptcentre.ie/#> ;
                 rdfs:label "MoveSourceData" .
-
-
-:UpdateSourceData rdfs:comment "Data has been updated within the source data." ;
-                  rdfs:isDefinedBy <https://change-detection-ontology.adaptcentre.ie/#> ;
-                  rdfs:label "UpdateSourceData" .
 
 
 :hasThreshold rdfs:comment "The threshold defined for a change type within the notification policy." ;

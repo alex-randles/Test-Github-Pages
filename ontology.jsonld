@@ -245,18 +245,6 @@
     "@id" : "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#Obligation"
   } ]
 }, {
-  "@id" : "http://www.example.com/updateChangeConstraint",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint" ],
-  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#object" : [ {
-    "@value" : "0"
-  } ],
-  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#predicate" : [ {
-    "@id" : "https://change-detection-ontology.adaptcentre.ie/#hasThreshold"
-  } ],
-  "http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#subject" : [ {
-    "@id" : "https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData"
-  } ]
-}, {
   "@id" : "http://www.example.com/userActor",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -419,7 +407,7 @@
   } ]
 }, {
   "@id" : "https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Data has been updated within the source data."
   } ],
