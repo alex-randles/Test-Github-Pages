@@ -72,6 +72,14 @@
 <https://change-detection-ontology.adaptcentre.ie/#hasCurrentSource> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
 <https://change-detection-ontology.adaptcentre.ie/#hasCurrentSource> <http://www.w3.org/2000/01/rdf-schema#label> "hasCurrentSource" .
 # 
+# https://change-detection-ontology.adaptcentre.ie/#hasNotificationPolicy
+<https://change-detection-ontology.adaptcentre.ie/#hasNotificationPolicy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://change-detection-ontology.adaptcentre.ie/#hasNotificationPolicy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://change-detection-ontology.adaptcentre.ie/#ChangeLog> .
+<https://change-detection-ontology.adaptcentre.ie/#hasNotificationPolicy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy> .
+<https://change-detection-ontology.adaptcentre.ie/#hasNotificationPolicy> <http://www.w3.org/2000/01/rdf-schema#comment> "The notification policy associated with the change log." .
+<https://change-detection-ontology.adaptcentre.ie/#hasNotificationPolicy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
+<https://change-detection-ontology.adaptcentre.ie/#hasNotificationPolicy> <http://www.w3.org/2000/01/rdf-schema#label> "hasNotificationPolicy" .
+# 
 # https://change-detection-ontology.adaptcentre.ie/#hasOwner
 <https://change-detection-ontology.adaptcentre.ie/#hasOwner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://change-detection-ontology.adaptcentre.ie/#hasOwner> <http://www.w3.org/2000/01/rdf-schema#domain> <https://change-detection-ontology.adaptcentre.ie/#ChangeLog> .

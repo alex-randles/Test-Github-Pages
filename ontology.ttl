@@ -83,6 +83,15 @@ The ontology allows a notification policy to be defined to notify users when a t
                   rdfs:label "hasCurrentSource" .
 
 
+###  https://change-detection-ontology.adaptcentre.ie/#hasNotificationPolicy
+:hasNotificationPolicy rdf:type owl:ObjectProperty ;
+                       rdfs:domain :ChangeLog ;
+                       rdfs:range <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy> ;
+                       rdfs:comment "The notification policy associated with the change log." ;
+                       rdfs:isDefinedBy <https://change-detection-ontology.adaptcentre.ie/#> ;
+                       rdfs:label "hasNotificationPolicy" .
+
+
 ###  https://change-detection-ontology.adaptcentre.ie/#hasOwner
 :hasOwner rdf:type owl:ObjectProperty ;
           rdfs:domain :ChangeLog ;
