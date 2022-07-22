@@ -104,6 +104,19 @@
     
 
 
+    <!-- https://prometheus-metric-ontology.ericsson.com/#effectedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://prometheus-metric-ontology.ericsson.com/#effectedBy">
+        <owl:inverseOf rdf:resource="https://prometheus-metric-ontology.ericsson.com/#effectsMetric"/>
+        <rdfs:domain rdf:resource="https://prometheus-metric-ontology.ericsson.com/#Metric"/>
+        <rdfs:range rdf:resource="https://prometheus-metric-ontology.ericsson.com/#ActionEffect"/>
+        <rdfs:comment>The effect of the action&apos;s operation on the metric.</rdfs:comment>
+        <rdfs:label>effectedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://prometheus-metric-ontology.ericsson.com/#effectsMetric -->
 
 
@@ -1044,6 +1057,18 @@
     
 
 
+    <!-- https://prometheus-metric-ontology.ericsson.com/#hasResultStatus -->
+
+
+    <owl:DatatypeProperty rdf:about="https://prometheus-metric-ontology.ericsson.com/#hasResultStatus">
+        <rdfs:domain rdf:resource="https://prometheus-metric-ontology.ericsson.com/#MetricQuery"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The status of the API response.</rdfs:comment>
+        <rdfs:label>hasResultStatus</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://prometheus-metric-ontology.ericsson.com/#hasResultType -->
 
 
@@ -1169,10 +1194,8 @@
 
     <owl:DatatypeProperty rdf:about="https://prometheus-metric-ontology.ericsson.com/#hasStatus">
         <rdfs:domain rdf:resource="https://prometheus-metric-ontology.ericsson.com/#Metric"/>
-        <rdfs:domain rdf:resource="https://prometheus-metric-ontology.ericsson.com/#MetricQuery"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>The Status label for the metric.</rdfs:comment>
-        <rdfs:comment>The status of the API response.</rdfs:comment>
         <rdfs:label>hasStatus</rdfs:label>
     </owl:DatatypeProperty>
     

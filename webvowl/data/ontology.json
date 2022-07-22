@@ -22,17 +22,17 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Alex Randles",
-        "type" : "label"
-      }, {
-        "identifier" : "creator",
-        "language" : "undefined",
         "value" : "John Keeney",
         "type" : "label"
       }, {
         "identifier" : "creator",
         "language" : "undefined",
         "value" : "Liam Fallon",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Alex Randles",
         "type" : "label"
       } ],
       "created" : [ {
@@ -47,16 +47,16 @@
         "value" : "pmo",
         "type" : "label"
       } ],
-      "versionInfo" : [ {
-        "identifier" : "versionInfo",
-        "language" : "undefined",
-        "value" : "4 July 2022",
-        "type" : "label"
-      } ],
       "preferredNamespaceUri" : [ {
         "identifier" : "preferredNamespaceUri",
         "language" : "undefined",
         "value" : "https://prometheus-metric-ontology.ericsson.com/#",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "4 July 2022",
         "type" : "label"
       } ],
       "abstract" : [ {
@@ -75,311 +75,304 @@
   },
   "namespace" : [ ],
   "class" : [ {
-    "id" : "22",
-    "type" : "rdfs:Datatype"
-  }, {
     "id" : "25",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "26",
+    "id" : "28",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "9",
     "type" : "owl:Class"
   }, {
-    "id" : "6",
-    "type" : "owl:Class"
-  }, {
-    "id" : "7",
+    "id" : "10",
     "type" : "owl:Class"
   }, {
     "id" : "1",
     "type" : "owl:Class"
   }, {
-    "id" : "41",
+    "id" : "6",
     "type" : "owl:Class"
   }, {
-    "id" : "31",
+    "id" : "33",
     "type" : "owl:Class"
   }, {
-    "id" : "105",
+    "id" : "108",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "42",
+    "id" : "43",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "62",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "118",
+    "id" : "66",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "121",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "54",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "101",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "122",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "123",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "91",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "120",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "15",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "34",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "136",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "79",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "137",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "87",
+    "id" : "124",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "58",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "85",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "138",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "139",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "140",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "141",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "117",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "152",
+    "id" : "104",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "125",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "153",
+    "id" : "126",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "17",
+    "id" : "94",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "154",
+    "id" : "123",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "113",
+    "id" : "16",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "149",
+    "id" : "36",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "151",
+    "id" : "139",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "132",
+    "id" : "82",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "127",
+    "id" : "140",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "161",
+    "id" : "90",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "64",
+    "id" : "62",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "99",
+    "id" : "88",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "130",
+    "id" : "141",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "158",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "164",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "77",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "13",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "32",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "69",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "4",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "156",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "166",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "9",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "67",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "174",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "21",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "60",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "175",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "135",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "11",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "44",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "95",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "178",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "27",
-    "type" : "owl:Class"
-  }, {
-    "id" : "29",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "75",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "145",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "109",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "50",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "2",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "103",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "115",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "93",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "185",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "147",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "37",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "163",
+    "id" : "142",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "143",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "170",
+    "id" : "144",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "97",
+    "id" : "120",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "183",
+    "id" : "155",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "71",
+    "id" : "128",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "194",
+    "id" : "156",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "46",
+    "id" : "20",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "83",
+    "id" : "157",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "56",
+    "id" : "116",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "24",
+    "id" : "152",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "81",
+    "id" : "154",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "19",
+    "id" : "135",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "130",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "164",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "133",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "161",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "167",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "159",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "169",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "70",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "177",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "107",
+    "id" : "24",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "168",
+    "id" : "64",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "178",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "138",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "181",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "148",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "112",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "106",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "96",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "166",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "150",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "118",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "146",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "171",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "186",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "196",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "180",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "173",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "92",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "52",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "89",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "73",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "48",
+    "id" : "50",
     "type" : "rdfs:Datatype"
   } ],
   "classAttribute" : [ {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "22",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "25",
@@ -387,10 +380,19 @@
       "IRI-based" : "string"
     }
   }, {
-    "instances" : 0,
-    "union" : [ "1", "27" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "26"
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "29",
+    "label" : {
+      "IRI-based" : "string"
+    }
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#MetricResultSet",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
@@ -402,7 +404,7 @@
     "comment" : {
       "undefined" : "The values and timestamps related to a metric."
     },
-    "id" : "6"
+    "id" : "9"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#MetricResult",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
@@ -414,7 +416,7 @@
     "comment" : {
       "undefined" : "A result related to a specific result set."
     },
-    "id" : "7"
+    "id" : "10"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#Metric",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
@@ -438,7 +440,7 @@
     "comment" : {
       "undefined" : "The result of executing the actions operations. "
     },
-    "id" : "41"
+    "id" : "6"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#Action",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
@@ -450,32 +452,25 @@
     "comment" : {
       "undefined" : "The operations which will be executed to effect the metric."
     },
-    "id" : "31"
+    "id" : "33"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "105",
+    "id" : "108",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "42",
+    "id" : "43",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "62",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "118",
+    "id" : "66",
     "label" : {
       "IRI-based" : "string"
     }
@@ -489,84 +484,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "54",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "101",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "122",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "123",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "91",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "120",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "15",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "34",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "136",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "79",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "137",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "87",
+    "id" : "124",
     "label" : {
       "IRI-based" : "string"
     }
@@ -580,49 +498,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "85",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "138",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "139",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "140",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "141",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "117",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "152",
+    "id" : "104",
     "label" : {
       "IRI-based" : "string"
     }
@@ -636,133 +512,126 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "153",
+    "id" : "126",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "17",
+    "id" : "94",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "154",
+    "id" : "123",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "113",
+    "id" : "16",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "149",
+    "id" : "36",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "151",
+    "id" : "139",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "132",
+    "id" : "82",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "127",
+    "id" : "140",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "161",
+    "id" : "90",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "64",
+    "id" : "62",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "99",
+    "id" : "88",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "130",
+    "id" : "141",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "158",
+    "id" : "142",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "164",
+    "id" : "143",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "77",
+    "id" : "144",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "13",
+    "id" : "120",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "32",
+    "id" : "155",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "69",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "4",
+    "id" : "128",
     "label" : {
       "IRI-based" : "string"
     }
@@ -776,49 +645,35 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "166",
+    "id" : "20",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "9",
+    "id" : "157",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "67",
+    "id" : "116",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "174",
+    "id" : "152",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "21",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "60",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "175",
+    "id" : "154",
     "label" : {
       "IRI-based" : "string"
     }
@@ -832,21 +687,133 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "11",
+    "id" : "130",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "44",
+    "id" : "164",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "95",
+    "id" : "68",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "102",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "133",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "161",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "167",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "80",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "34",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "72",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "4",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "159",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "169",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "12",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "70",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "177",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "24",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "64",
     "label" : {
       "IRI-based" : "string"
     }
@@ -854,6 +821,41 @@
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "178",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "138",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "45",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "98",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "181",
     "label" : {
       "IRI-based" : "string"
     }
@@ -868,39 +870,39 @@
     "comment" : {
       "undefined" : "The information related to the query used to collect the metric information."
     },
-    "id" : "27"
+    "id" : "49"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "29",
+    "id" : "31",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "75",
+    "id" : "78",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "145",
+    "id" : "148",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "109",
+    "id" : "112",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "50",
+    "id" : "54",
     "label" : {
       "IRI-based" : "string"
     }
@@ -914,105 +916,154 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "103",
+    "id" : "106",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "115",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "93",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "185",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "147",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "37",
+    "id" : "96",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "163",
+    "id" : "166",
     "label" : {
       "IRI-based" : "dateTime"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "143",
+    "id" : "150",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "170",
+    "id" : "118",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "97",
+    "id" : "47",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "183",
+    "id" : "146",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "71",
+    "id" : "39",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "194",
+    "id" : "171",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "46",
+    "id" : "100",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "83",
+    "id" : "186",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "196",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "84",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "86",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "74",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "180",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "22",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "60",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "110",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "173",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "76",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1026,42 +1077,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "24",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "81",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "19",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "177",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "107",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "168",
+    "id" : "92",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1075,21 +1091,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "89",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "73",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "48",
+    "id" : "50",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1105,60 +1107,60 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "11",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "10",
+    "id" : "13",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "12",
+    "id" : "15",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "14",
+    "id" : "17",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "16",
+    "id" : "19",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "18",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "20",
+    "id" : "21",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "23",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "28",
+    "id" : "26",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "30",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "33",
+    "id" : "32",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "35",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "36",
+    "id" : "37",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "38",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "42",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "43",
+    "id" : "44",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "45",
+    "id" : "46",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "47",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "49",
+    "id" : "48",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "51",
@@ -1183,99 +1185,99 @@
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "65",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "7",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "66",
+    "id" : "69",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "39",
+    "id" : "41",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "68",
+    "id" : "71",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "70",
+    "id" : "73",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "72",
+    "id" : "75",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "74",
+    "id" : "77",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "76",
+    "id" : "79",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "78",
+    "id" : "81",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "80",
+    "id" : "83",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "82",
+    "id" : "85",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "84",
+    "id" : "87",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "86",
+    "id" : "89",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "88",
+    "id" : "91",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "90",
+    "id" : "93",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "92",
+    "id" : "95",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "94",
+    "id" : "97",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "96",
+    "id" : "99",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "98",
+    "id" : "101",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "100",
+    "id" : "103",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "102",
+    "id" : "105",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "104",
+    "id" : "107",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "106",
+    "id" : "109",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "108",
+    "id" : "111",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "110",
+    "id" : "113",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "112",
+    "id" : "115",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "114",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "116",
+    "id" : "117",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "119",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "124",
+    "id" : "122",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "126",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "128",
+    "id" : "127",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "129",
@@ -1284,34 +1286,34 @@
     "id" : "131",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "133",
+    "id" : "132",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "134",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "142",
+    "id" : "136",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "144",
+    "id" : "137",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "146",
+    "id" : "145",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "148",
+    "id" : "147",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "150",
+    "id" : "149",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "155",
+    "id" : "151",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "157",
+    "id" : "153",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "159",
+    "id" : "158",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "160",
@@ -1320,22 +1322,25 @@
     "id" : "162",
     "type" : "owl:datatypeProperty"
   }, {
+    "id" : "163",
+    "type" : "owl:datatypeProperty"
+  }, {
     "id" : "165",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "167",
+    "id" : "168",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "169",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "171",
+    "id" : "170",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "172",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "173",
+    "id" : "174",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "175",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "176",
@@ -1344,26 +1349,23 @@
     "id" : "179",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "180",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "181",
-    "type" : "owl:datatypeProperty"
-  }, {
     "id" : "182",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "184",
-    "type" : "owl:objectProperty"
+    "id" : "183",
+    "type" : "owl:datatypeProperty"
   }, {
-    "id" : "186",
+    "id" : "184",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "185",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "187",
-    "type" : "owl:disjointWith"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "188",
-    "type" : "owl:disjointWith"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "189",
     "type" : "owl:disjointWith"
@@ -1372,7 +1374,7 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "191",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "192",
     "type" : "owl:disjointWith"
@@ -1380,20 +1382,20 @@
     "id" : "193",
     "type" : "owl:datatypeProperty"
   }, {
+    "id" : "194",
+    "type" : "owl:disjointWith"
+  }, {
     "id" : "195",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "196",
-    "type" : "owl:disjointWith"
-  }, {
     "id" : "197",
-    "type" : "owl:disjointWith"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "198",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "199",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "200",
     "type" : "owl:datatypeProperty"
@@ -1410,7 +1412,13 @@
     "id" : "204",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "111",
+    "id" : "205",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "206",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "114",
     "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
@@ -1442,23 +1450,38 @@
     "attributes" : [ "datatype" ],
     "id" : "3"
   }, {
-    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasResult",
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#effectedBy",
+    "inverse" : "7",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "7",
+    "range" : "6",
     "label" : {
-      "IRI-based" : "hasResult",
-      "undefined" : "hasResult"
+      "IRI-based" : "effectedBy",
+      "undefined" : "effectedBy"
     },
-    "domain" : "6",
+    "domain" : "1",
     "comment" : {
-      "undefined" : "A result within a result set."
+      "undefined" : "The effect of the action's operation on the metric."
     },
     "attributes" : [ "object" ],
     "id" : "5"
   }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasResult",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "hasResult",
+      "undefined" : "hasResult"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "A result within a result set."
+    },
+    "attributes" : [ "object" ],
+    "id" : "8"
+  }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasProductFamily",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "9",
+    "range" : "12",
     "label" : {
       "IRI-based" : "hasProductFamily",
       "undefined" : "hasProductFamily"
@@ -1468,11 +1491,11 @@
       "undefined" : "The Product family label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "8"
+    "id" : "11"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasMountpoint",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "11",
+    "range" : "14",
     "label" : {
       "IRI-based" : "hasMountpoint",
       "undefined" : "hasMountpoint"
@@ -1482,25 +1505,11 @@
       "undefined" : "The Mountpoint label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "10"
-  }, {
-    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasDevice",
-    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "13",
-    "label" : {
-      "IRI-based" : "hasDevice",
-      "undefined" : "hasDevice"
-    },
-    "domain" : "1",
-    "comment" : {
-      "undefined" : "The Device label for the metric."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "12"
+    "id" : "13"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasBranch",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "15",
+    "range" : "16",
     "label" : {
       "IRI-based" : "hasBranch",
       "undefined" : "hasBranch"
@@ -1510,11 +1519,25 @@
       "undefined" : "The Branch label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "14"
+    "id" : "15"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasDevice",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "hasDevice",
+      "undefined" : "hasDevice"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Device label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "17"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasInterval",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "17",
+    "range" : "20",
     "label" : {
       "IRI-based" : "hasInterval",
       "undefined" : "hasInterval"
@@ -1524,11 +1547,11 @@
       "undefined" : "The Interval label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "16"
+    "id" : "19"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasSerialNumber",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "19",
+    "range" : "22",
     "label" : {
       "IRI-based" : "hasSerialNumber",
       "undefined" : "hasSerialNumber"
@@ -1538,11 +1561,11 @@
       "undefined" : "The Serial number label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "18"
+    "id" : "21"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasOperstate",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "21",
+    "range" : "24",
     "label" : {
       "IRI-based" : "hasOperstate",
       "undefined" : "hasOperstate"
@@ -1552,11 +1575,11 @@
       "undefined" : "The Operstate label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "20"
+    "id" : "23"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasSensor",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "24",
+    "range" : "27",
     "label" : {
       "IRI-based" : "hasSensor",
       "undefined" : "hasSensor"
@@ -1566,11 +1589,11 @@
       "undefined" : "The Sensor label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "23"
+    "id" : "26"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasMode",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "29",
+    "range" : "31",
     "label" : {
       "IRI-based" : "hasMode",
       "undefined" : "hasMode"
@@ -1580,25 +1603,25 @@
       "undefined" : "The Mode label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "28"
+    "id" : "30"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasDescription",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "32",
+    "range" : "34",
     "label" : {
       "IRI-based" : "hasDescription",
       "undefined" : "hasDescription"
     },
-    "domain" : "31",
+    "domain" : "33",
     "comment" : {
       "undefined" : "A textual description of the action."
     },
     "attributes" : [ "datatype" ],
-    "id" : "30"
+    "id" : "32"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasBoardVersion",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "34",
+    "range" : "36",
     "label" : {
       "IRI-based" : "hasBoardVersion",
       "undefined" : "hasBoardVersion"
@@ -1608,11 +1631,11 @@
       "undefined" : "The Board version label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "33"
+    "id" : "35"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasZone",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "22",
+    "range" : "29",
     "label" : {
       "IRI-based" : "hasZone",
       "undefined" : "hasZone"
@@ -1622,11 +1645,11 @@
       "undefined" : "The Zone label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "35"
+    "id" : "37"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasTechnology",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "37",
+    "range" : "39",
     "label" : {
       "IRI-based" : "hasTechnology",
       "undefined" : "hasTechnology"
@@ -1636,40 +1659,40 @@
       "undefined" : "The Technology label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "36"
+    "id" : "38"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#generatedByMetric",
-    "inverse" : "39",
+    "inverse" : "41",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
     "range" : "1",
     "label" : {
       "IRI-based" : "generatedByMetric",
       "undefined" : "generatedByMetric"
     },
-    "domain" : "6",
+    "domain" : "9",
     "comment" : {
       "undefined" : "The result set generated by the metric."
     },
     "attributes" : [ "object" ],
-    "id" : "38"
+    "id" : "40"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasConfidence",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "42",
+    "range" : "43",
     "label" : {
       "IRI-based" : "hasConfidence",
       "undefined" : "hasConfidence"
     },
-    "domain" : "41",
+    "domain" : "6",
     "comment" : {
       "undefined" : "The likelihood of the action having the desired effect."
     },
     "attributes" : [ "datatype" ],
-    "id" : "40"
+    "id" : "42"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasModelName",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "44",
+    "range" : "45",
     "label" : {
       "IRI-based" : "hasModelName",
       "undefined" : "hasModelName"
@@ -1679,11 +1702,11 @@
       "undefined" : "The Model name label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "43"
+    "id" : "44"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasSystemVendor",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "46",
+    "range" : "47",
     "label" : {
       "IRI-based" : "hasSystemVendor",
       "undefined" : "hasSystemVendor"
@@ -1693,25 +1716,39 @@
       "undefined" : "The System vendor label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "45"
+    "id" : "46"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasResultStatus",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "hasResultStatus",
+      "undefined" : "hasResultStatus"
+    },
+    "domain" : "49",
+    "comment" : {
+      "undefined" : "The status of the API response."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "48"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasResultType",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "48",
+    "range" : "52",
     "label" : {
       "IRI-based" : "hasResultType",
       "undefined" : "hasResultType"
     },
-    "domain" : "27",
+    "domain" : "49",
     "comment" : {
       "undefined" : "The result type returned by the API."
     },
     "attributes" : [ "datatype" ],
-    "id" : "47"
+    "id" : "51"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasListenerName",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "50",
+    "range" : "54",
     "label" : {
       "IRI-based" : "hasListenerName",
       "undefined" : "hasListenerName"
@@ -1721,11 +1758,11 @@
       "undefined" : "The Listener name label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "49"
+    "id" : "53"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasRelease",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "52",
+    "range" : "56",
     "label" : {
       "IRI-based" : "hasRelease",
       "undefined" : "hasRelease"
@@ -1735,11 +1772,11 @@
       "undefined" : "The Release label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "51"
+    "id" : "55"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasCode",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "54",
+    "range" : "58",
     "label" : {
       "IRI-based" : "hasCode",
       "undefined" : "hasCode"
@@ -1749,11 +1786,11 @@
       "undefined" : "The Code label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "53"
+    "id" : "57"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasSerial",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "56",
+    "range" : "60",
     "label" : {
       "IRI-based" : "hasSerial",
       "undefined" : "hasSerial"
@@ -1763,11 +1800,11 @@
       "undefined" : "The Serial label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "55"
+    "id" : "59"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasBoardName",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "58",
+    "range" : "62",
     "label" : {
       "IRI-based" : "hasBoardName",
       "undefined" : "hasBoardName"
@@ -1777,25 +1814,25 @@
       "undefined" : "The Board name label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "57"
+    "id" : "61"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasOperation",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "60",
+    "range" : "64",
     "label" : {
       "IRI-based" : "hasOperation",
       "undefined" : "hasOperation"
     },
-    "domain" : "31",
+    "domain" : "33",
     "comment" : {
       "undefined" : "The operation which will be executed by the action."
     },
     "attributes" : [ "datatype" ],
-    "id" : "59"
+    "id" : "63"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasCollector",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "62",
+    "range" : "66",
     "label" : {
       "IRI-based" : "hasCollector",
       "undefined" : "hasCollector"
@@ -1805,11 +1842,11 @@
       "undefined" : "The Collector label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "61"
+    "id" : "65"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasDomainname",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "64",
+    "range" : "68",
     "label" : {
       "IRI-based" : "hasDomainname",
       "undefined" : "hasDomainname"
@@ -1819,7 +1856,7 @@
       "undefined" : "The Domainname label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "63"
+    "id" : "67"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#effectsMetric",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
@@ -1828,16 +1865,16 @@
       "IRI-based" : "effectsMetric",
       "undefined" : "effectsMetric"
     },
-    "domain" : "41",
+    "domain" : "6",
     "comment" : {
       "undefined" : "The metric effected by the action's operation."
     },
     "attributes" : [ "object" ],
-    "id" : "65"
+    "id" : "7"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasPrettyName",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "67",
+    "range" : "70",
     "label" : {
       "IRI-based" : "hasPrettyName",
       "undefined" : "hasPrettyName"
@@ -1847,11 +1884,11 @@
       "undefined" : "The Pretty name label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "66"
+    "id" : "69"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasResultSet",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "6",
+    "range" : "9",
     "label" : {
       "IRI-based" : "hasResultSet",
       "undefined" : "hasResultSet"
@@ -1861,11 +1898,11 @@
       "undefined" : "The result set associated with the metric."
     },
     "attributes" : [ "object" ],
-    "id" : "39"
+    "id" : "41"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasQuantile",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "69",
+    "range" : "72",
     "label" : {
       "IRI-based" : "hasQuantile",
       "undefined" : "hasQuantile"
@@ -1875,25 +1912,25 @@
       "undefined" : "The Quantile label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "68"
+    "id" : "71"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasStatus",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "71",
+    "range" : "74",
     "label" : {
       "IRI-based" : "hasStatus",
       "undefined" : "hasStatus"
     },
-    "domain" : "26",
+    "domain" : "1",
     "comment" : {
       "undefined" : "The Status label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "70"
+    "id" : "73"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasRevision",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "73",
+    "range" : "76",
     "label" : {
       "IRI-based" : "hasRevision",
       "undefined" : "hasRevision"
@@ -1903,11 +1940,11 @@
       "undefined" : "The Revision label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "72"
+    "id" : "75"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasMinor",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "75",
+    "range" : "78",
     "label" : {
       "IRI-based" : "hasMinor",
       "undefined" : "hasMinor"
@@ -1917,11 +1954,11 @@
       "undefined" : "The Minor label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "74"
+    "id" : "77"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasCore",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "77",
+    "range" : "80",
     "label" : {
       "IRI-based" : "hasCore",
       "undefined" : "hasCore"
@@ -1931,11 +1968,11 @@
       "undefined" : "The Core label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "76"
+    "id" : "79"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasBiosVersion",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "79",
+    "range" : "82",
     "label" : {
       "IRI-based" : "hasBiosVersion",
       "undefined" : "hasBiosVersion"
@@ -1945,11 +1982,11 @@
       "undefined" : "The Bios version label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "78"
+    "id" : "81"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasSlice",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "81",
+    "range" : "84",
     "label" : {
       "IRI-based" : "hasSlice",
       "undefined" : "hasSlice"
@@ -1959,11 +1996,11 @@
       "undefined" : "The Slice label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "80"
+    "id" : "83"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasSysname",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "83",
+    "range" : "86",
     "label" : {
       "IRI-based" : "hasSysname",
       "undefined" : "hasSysname"
@@ -1973,11 +2010,11 @@
       "undefined" : "The Sysname label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "82"
+    "id" : "85"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasAlertname",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "85",
+    "range" : "88",
     "label" : {
       "IRI-based" : "hasAlertname",
       "undefined" : "hasAlertname"
@@ -1987,11 +2024,11 @@
       "undefined" : "The Alertname label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "84"
+    "id" : "87"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasBoardVendor",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "87",
+    "range" : "90",
     "label" : {
       "IRI-based" : "hasBoardVendor",
       "undefined" : "hasBoardVendor"
@@ -2001,11 +2038,11 @@
       "undefined" : "The Board vendor label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "86"
+    "id" : "89"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasReason",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "89",
+    "range" : "92",
     "label" : {
       "IRI-based" : "hasReason",
       "undefined" : "hasReason"
@@ -2015,11 +2052,11 @@
       "undefined" : "The Reason label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "88"
+    "id" : "91"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasChassisVendor",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "91",
+    "range" : "94",
     "label" : {
       "IRI-based" : "hasChassisVendor",
       "undefined" : "hasChassisVendor"
@@ -2029,11 +2066,11 @@
       "undefined" : "The Chassis vendor label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "90"
+    "id" : "93"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasType",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "93",
+    "range" : "96",
     "label" : {
       "IRI-based" : "hasType",
       "undefined" : "hasType"
@@ -2043,11 +2080,11 @@
       "undefined" : "The Type label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "92"
+    "id" : "95"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasNodename",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "95",
+    "range" : "98",
     "label" : {
       "IRI-based" : "hasNodename",
       "undefined" : "hasNodename"
@@ -2057,11 +2094,11 @@
       "undefined" : "The Nodename label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "94"
+    "id" : "97"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasAddress",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "97",
+    "range" : "100",
     "label" : {
       "IRI-based" : "hasAddress",
       "undefined" : "hasAddress"
@@ -2071,11 +2108,11 @@
       "undefined" : "The Address label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "96"
+    "id" : "99"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasDialerName",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "99",
+    "range" : "102",
     "label" : {
       "IRI-based" : "hasDialerName",
       "undefined" : "hasDialerName"
@@ -2085,11 +2122,11 @@
       "undefined" : "The Dialer name label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "98"
+    "id" : "101"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasClocksource",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "101",
+    "range" : "104",
     "label" : {
       "IRI-based" : "hasClocksource",
       "undefined" : "hasClocksource"
@@ -2099,11 +2136,11 @@
       "undefined" : "The Clocksource label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "100"
+    "id" : "103"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasMajor",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "103",
+    "range" : "106",
     "label" : {
       "IRI-based" : "hasMajor",
       "undefined" : "hasMajor"
@@ -2113,11 +2150,11 @@
       "undefined" : "The Major label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "102"
+    "id" : "105"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasConfig",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "105",
+    "range" : "108",
     "label" : {
       "IRI-based" : "hasConfig",
       "undefined" : "hasConfig"
@@ -2127,11 +2164,11 @@
       "undefined" : "The Config label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "104"
+    "id" : "107"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasRuleGroup",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "107",
+    "range" : "110",
     "label" : {
       "IRI-based" : "hasRuleGroup",
       "undefined" : "hasRuleGroup"
@@ -2141,11 +2178,11 @@
       "undefined" : "The Rule group label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "106"
+    "id" : "109"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasMachine",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "109",
+    "range" : "112",
     "label" : {
       "IRI-based" : "hasMachine",
       "undefined" : "hasMachine"
@@ -2155,26 +2192,26 @@
       "undefined" : "The Machine label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "108"
+    "id" : "111"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#usedByMetric",
-    "inverse" : "111",
+    "inverse" : "114",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
     "range" : "1",
     "label" : {
       "IRI-based" : "usedByMetric",
       "undefined" : "usedByMetric"
     },
-    "domain" : "27",
+    "domain" : "49",
     "comment" : {
       "undefined" : "The metric used by the query."
     },
     "attributes" : [ "object" ],
-    "id" : "110"
+    "id" : "113"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasGoversion",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "113",
+    "range" : "116",
     "label" : {
       "IRI-based" : "hasGoversion",
       "undefined" : "hasGoversion"
@@ -2184,25 +2221,25 @@
       "undefined" : "The Goversion label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "112"
+    "id" : "115"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasValue",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "115",
+    "range" : "118",
     "label" : {
       "IRI-based" : "hasValue",
       "undefined" : "hasValue"
     },
-    "domain" : "7",
+    "domain" : "10",
     "comment" : {
       "undefined" : "The value associated with a result."
     },
     "attributes" : [ "datatype" ],
-    "id" : "114"
+    "id" : "117"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasLabel",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "117",
+    "range" : "120",
     "label" : {
       "IRI-based" : "hasLabel",
       "undefined" : "hasLabel"
@@ -2212,11 +2249,11 @@
       "undefined" : "The Label label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "116"
+    "id" : "119"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasCause",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "120",
+    "range" : "123",
     "label" : {
       "IRI-based" : "hasCause",
       "undefined" : "hasCause"
@@ -2226,11 +2263,11 @@
       "undefined" : "The Cause label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "119"
+    "id" : "122"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasIndex",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "125",
+    "range" : "128",
     "label" : {
       "IRI-based" : "hasIndex",
       "undefined" : "hasIndex"
@@ -2240,11 +2277,11 @@
       "undefined" : "The Index label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "124"
+    "id" : "127"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasFirmwareRevision",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "127",
+    "range" : "130",
     "label" : {
       "IRI-based" : "hasFirmwareRevision",
       "undefined" : "hasFirmwareRevision"
@@ -2254,7 +2291,7 @@
       "undefined" : "The Firmware revision label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "126"
+    "id" : "129"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasVersionId",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
@@ -2268,11 +2305,11 @@
       "undefined" : "The Version id label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "128"
+    "id" : "131"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasEndpoint",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "130",
+    "range" : "133",
     "label" : {
       "IRI-based" : "hasEndpoint",
       "undefined" : "hasEndpoint"
@@ -2282,11 +2319,11 @@
       "undefined" : "The Endpoint label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "129"
+    "id" : "132"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasFstype",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "132",
+    "range" : "135",
     "label" : {
       "IRI-based" : "hasFstype",
       "undefined" : "hasFstype"
@@ -2296,11 +2333,11 @@
       "undefined" : "The Fstype label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "131"
+    "id" : "134"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasCapacityLevel",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "122",
+    "range" : "125",
     "label" : {
       "IRI-based" : "hasCapacityLevel",
       "undefined" : "hasCapacityLevel"
@@ -2310,11 +2347,11 @@
       "undefined" : "The Capacity level label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "133"
+    "id" : "136"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasPackage",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "135",
+    "range" : "138",
     "label" : {
       "IRI-based" : "hasPackage",
       "undefined" : "hasPackage"
@@ -2324,11 +2361,11 @@
       "undefined" : "The Package label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "134"
+    "id" : "137"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasTimeZone",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "143",
+    "range" : "146",
     "label" : {
       "IRI-based" : "hasTimeZone",
       "undefined" : "hasTimeZone"
@@ -2338,11 +2375,11 @@
       "undefined" : "The Time zone label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "142"
+    "id" : "145"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasModel",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "145",
+    "range" : "148",
     "label" : {
       "IRI-based" : "hasModel",
       "undefined" : "hasModel"
@@ -2352,11 +2389,11 @@
       "undefined" : "The Model label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "144"
+    "id" : "147"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasVersion",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "147",
+    "range" : "150",
     "label" : {
       "IRI-based" : "hasVersion",
       "undefined" : "hasVersion"
@@ -2366,11 +2403,11 @@
       "undefined" : "The Version label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "146"
+    "id" : "149"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasIdLike",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "149",
+    "range" : "152",
     "label" : {
       "IRI-based" : "hasIdLike",
       "undefined" : "hasIdLike"
@@ -2380,11 +2417,11 @@
       "undefined" : "The Id like label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "148"
+    "id" : "151"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasId",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "151",
+    "range" : "154",
     "label" : {
       "IRI-based" : "hasId",
       "undefined" : "hasId"
@@ -2394,11 +2431,11 @@
       "undefined" : "The Id label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "150"
+    "id" : "153"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasQueue",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "156",
+    "range" : "159",
     "label" : {
       "IRI-based" : "hasQueue",
       "undefined" : "hasQueue"
@@ -2408,11 +2445,11 @@
       "undefined" : "The Queue label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "155"
+    "id" : "158"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasDuplex",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "158",
+    "range" : "161",
     "label" : {
       "IRI-based" : "hasDuplex",
       "undefined" : "hasDuplex"
@@ -2422,11 +2459,11 @@
       "undefined" : "The Duplex label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "157"
+    "id" : "160"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasChipName",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "118",
+    "range" : "121",
     "label" : {
       "IRI-based" : "hasChipName",
       "undefined" : "hasChipName"
@@ -2436,11 +2473,11 @@
       "undefined" : "The Chip name label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "159"
+    "id" : "162"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasEvent",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "161",
+    "range" : "164",
     "label" : {
       "IRI-based" : "hasEvent",
       "undefined" : "hasEvent"
@@ -2450,25 +2487,25 @@
       "undefined" : "The Event label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "160"
+    "id" : "163"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasTimestamp",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "163",
+    "range" : "166",
     "label" : {
       "IRI-based" : "hasTimestamp",
       "undefined" : "hasTimestamp"
     },
-    "domain" : "7",
+    "domain" : "10",
     "comment" : {
       "undefined" : "The timestamp related to a result."
     },
     "attributes" : [ "datatype" ],
-    "id" : "162"
+    "id" : "165"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasCall",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "123",
+    "range" : "126",
     "label" : {
       "IRI-based" : "hasCall",
       "undefined" : "hasCall"
@@ -2478,11 +2515,25 @@
       "undefined" : "The Call label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "165"
+    "id" : "168"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasActionName",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "171",
+    "label" : {
+      "IRI-based" : "hasActionName",
+      "undefined" : "hasActionName"
+    },
+    "domain" : "33",
+    "comment" : {
+      "undefined" : "The name of the action."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "170"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasRole",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "168",
+    "range" : "173",
     "label" : {
       "IRI-based" : "hasRole",
       "undefined" : "hasRole"
@@ -2492,25 +2543,11 @@
       "undefined" : "The Role label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "167"
-  }, {
-    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasActionName",
-    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "170",
-    "label" : {
-      "IRI-based" : "hasActionName",
-      "undefined" : "hasActionName"
-    },
-    "domain" : "31",
-    "comment" : {
-      "undefined" : "The name of the action."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "169"
+    "id" : "172"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasChip",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "121",
+    "range" : "124",
     "label" : {
       "IRI-based" : "hasChip",
       "undefined" : "hasChip"
@@ -2520,11 +2557,11 @@
       "undefined" : "The Chip label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "171"
+    "id" : "174"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasBroadcast",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "136",
+    "range" : "139",
     "label" : {
       "IRI-based" : "hasBroadcast",
       "undefined" : "hasBroadcast"
@@ -2534,11 +2571,11 @@
       "undefined" : "The Broadcast label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "172"
+    "id" : "175"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasBiosDate",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "138",
+    "range" : "141",
     "label" : {
       "IRI-based" : "hasBiosDate",
       "undefined" : "hasBiosDate"
@@ -2548,11 +2585,11 @@
       "undefined" : "The Bios date label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "173"
+    "id" : "176"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasScrapeJob",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "177",
+    "range" : "180",
     "label" : {
       "IRI-based" : "hasScrapeJob",
       "undefined" : "hasScrapeJob"
@@ -2562,11 +2599,11 @@
       "undefined" : "The Scrape job label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "176"
+    "id" : "179"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasIp",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "153",
+    "range" : "156",
     "label" : {
       "IRI-based" : "hasIp",
       "undefined" : "hasIp"
@@ -2576,11 +2613,25 @@
       "undefined" : "The Ip label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "179"
+    "id" : "182"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasQuery",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "169",
+    "label" : {
+      "IRI-based" : "hasQuery",
+      "undefined" : "hasQuery"
+    },
+    "domain" : "49",
+    "comment" : {
+      "undefined" : "The query used to collect the metric information."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "183"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasName",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "178",
+    "range" : "181",
     "label" : {
       "IRI-based" : "hasName",
       "undefined" : "hasName"
@@ -2590,25 +2641,11 @@
       "undefined" : "The Name label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "180"
-  }, {
-    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasQuery",
-    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "166",
-    "label" : {
-      "IRI-based" : "hasQuery",
-      "undefined" : "hasQuery"
-    },
-    "domain" : "27",
-    "comment" : {
-      "undefined" : "The query used to collect the metric information."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "181"
+    "id" : "184"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasAlertmanager",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "183",
+    "range" : "186",
     "label" : {
       "IRI-based" : "hasAlertmanager",
       "undefined" : "hasAlertmanager"
@@ -2618,26 +2655,26 @@
       "undefined" : "The Alertmanager label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "182"
+    "id" : "185"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#inMetricSet",
-    "inverse" : "5",
+    "inverse" : "8",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "6",
+    "range" : "9",
     "label" : {
       "IRI-based" : "inMetricSet",
       "undefined" : "inMetricSet"
     },
-    "domain" : "7",
+    "domain" : "10",
     "comment" : {
       "undefined" : "A result within a result set."
     },
     "attributes" : [ "object" ],
-    "id" : "184"
+    "id" : "187"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasPath",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "175",
+    "range" : "178",
     "label" : {
       "IRI-based" : "hasPath",
       "undefined" : "hasPath"
@@ -2647,31 +2684,31 @@
       "undefined" : "The Path label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "186"
-  }, {
-    "range" : "7",
-    "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "187"
-  }, {
-    "range" : "6",
-    "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
     "id" : "188"
   }, {
-    "range" : "7",
-    "domain" : "27",
+    "range" : "49",
+    "domain" : "1",
     "attributes" : [ "object", "anonymous" ],
     "id" : "189"
   }, {
-    "range" : "6",
-    "domain" : "27",
+    "range" : "10",
+    "domain" : "1",
     "attributes" : [ "object", "anonymous" ],
     "id" : "190"
   }, {
+    "range" : "9",
+    "domain" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "191"
+  }, {
+    "range" : "10",
+    "domain" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "192"
+  }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasAlertstate",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "139",
+    "range" : "142",
     "label" : {
       "IRI-based" : "hasAlertstate",
       "undefined" : "hasAlertstate"
@@ -2681,16 +2718,16 @@
       "undefined" : "The Alertstate label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "191"
+    "id" : "193"
   }, {
-    "range" : "6",
-    "domain" : "7",
+    "range" : "9",
+    "domain" : "10",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "192"
+    "id" : "194"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasState",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "194",
+    "range" : "196",
     "label" : {
       "IRI-based" : "hasState",
       "undefined" : "hasState"
@@ -2700,11 +2737,11 @@
       "undefined" : "The State label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "193"
+    "id" : "195"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasInstance",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "152",
+    "range" : "155",
     "label" : {
       "IRI-based" : "hasInstance",
       "undefined" : "hasInstance"
@@ -2714,35 +2751,21 @@
       "undefined" : "The Instance label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "195"
-  }, {
-    "range" : "41",
-    "domain" : "31",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "196"
-  }, {
-    "range" : "27",
-    "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
     "id" : "197"
   }, {
-    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasHandler",
-    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "154",
-    "label" : {
-      "IRI-based" : "hasHandler",
-      "undefined" : "hasHandler"
-    },
-    "domain" : "1",
-    "comment" : {
-      "undefined" : "The Handler label for the metric."
-    },
-    "attributes" : [ "datatype" ],
+    "range" : "6",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "198"
+  }, {
+    "range" : "9",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "199"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasJob",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "140",
+    "range" : "143",
     "label" : {
       "IRI-based" : "hasJob",
       "undefined" : "hasJob"
@@ -2752,11 +2775,25 @@
       "undefined" : "The Job label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "199"
+    "id" : "200"
+  }, {
+    "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasHandler",
+    "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
+    "range" : "157",
+    "label" : {
+      "IRI-based" : "hasHandler",
+      "undefined" : "hasHandler"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The Handler label for the metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "201"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasBiosVendor",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "137",
+    "range" : "140",
     "label" : {
       "IRI-based" : "hasBiosVendor",
       "undefined" : "hasBiosVendor"
@@ -2766,11 +2803,11 @@
       "undefined" : "The Bios vendor label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "200"
+    "id" : "202"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasCpu",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "164",
+    "range" : "167",
     "label" : {
       "IRI-based" : "hasCpu",
       "undefined" : "hasCpu"
@@ -2780,11 +2817,11 @@
       "undefined" : "The Cpu label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "201"
+    "id" : "203"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasVersionCodename",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "185",
+    "range" : "28",
     "label" : {
       "IRI-based" : "hasVersionCodename",
       "undefined" : "hasVersionCodename"
@@ -2794,11 +2831,11 @@
       "undefined" : "The Version codename label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "202"
+    "id" : "204"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasPowerSupply",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "174",
+    "range" : "177",
     "label" : {
       "IRI-based" : "hasPowerSupply",
       "undefined" : "hasPowerSupply"
@@ -2808,11 +2845,11 @@
       "undefined" : "The Power supply label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "203"
+    "id" : "205"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasLe",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "141",
+    "range" : "144",
     "label" : {
       "IRI-based" : "hasLe",
       "undefined" : "hasLe"
@@ -2822,11 +2859,11 @@
       "undefined" : "The Le label for the metric."
     },
     "attributes" : [ "datatype" ],
-    "id" : "204"
+    "id" : "206"
   }, {
     "iri" : "https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery",
     "baseIri" : "https://prometheus-metric-ontology.ericsson.com/",
-    "range" : "27",
+    "range" : "49",
     "label" : {
       "IRI-based" : "hasMetricQuery",
       "undefined" : "hasMetricQuery"
@@ -2836,6 +2873,6 @@
       "undefined" : "The query which retrieved the metric information."
     },
     "attributes" : [ "object" ],
-    "id" : "111"
+    "id" : "114"
   } ]
 }

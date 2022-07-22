@@ -76,6 +76,12 @@ This section provides details for each class and property defined by Prometheus 
                title="https://prometheus-metric-ontology.ericsson.com/#hasConfidence">hasConfidence</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#effectedBy"
+               title="https://prometheus-metric-ontology.ericsson.com/#effectedBy">effectedBy</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
          <dt>is disjoint with</dt>
          <dd>
             <a href="#Action"
@@ -97,7 +103,9 @@ This section provides details for each class and property defined by Prometheus 
       <dl class="description">
          <dt>is in domain of</dt>
          <dd>
-            <a href="#hasAddress"
+            <a href="#effectedBy"
+               title="https://prometheus-metric-ontology.ericsson.com/#effectedBy">effectedBy</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasAddress"
                title="https://prometheus-metric-ontology.ericsson.com/#hasAddress">hasAddress</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#hasAlertmanager"
                title="https://prometheus-metric-ontology.ericsson.com/#hasAlertmanager">hasAlertmanager</a>
@@ -308,10 +316,10 @@ This section provides details for each class and property defined by Prometheus 
          <dd>
             <a href="#hasQuery"
                title="https://prometheus-metric-ontology.ericsson.com/#hasQuery">hasQuery</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasResultStatus"
+               title="https://prometheus-metric-ontology.ericsson.com/#hasResultStatus">hasResultStatus</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#hasResultType"
                title="https://prometheus-metric-ontology.ericsson.com/#hasResultType">hasResultType</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasStatus"
-               title="https://prometheus-metric-ontology.ericsson.com/#hasStatus">hasStatus</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#usedByMetric"
                title="https://prometheus-metric-ontology.ericsson.com/#usedByMetric">usedByMetric</a>
             <sup class="type-op" title="object property">op</sup>
@@ -416,6 +424,10 @@ This section provides details for each class and property defined by Prometheus 
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
+         <a href="#effectedBy"
+            title="https://prometheus-metric-ontology.ericsson.com/#effectedBy">effectedBy</a>
+      </li>
+      <li>
          <a href="#effectsMetric"
             title="https://prometheus-metric-ontology.ericsson.com/#effectsMetric">effectsMetric</a>
       </li>
@@ -444,6 +456,39 @@ This section provides details for each class and property defined by Prometheus 
             title="https://prometheus-metric-ontology.ericsson.com/#usedByMetric">usedByMetric</a>
       </li>
    </ul>
+   <div class="entity" id="effectedBy">
+      <h3>effectedBy<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#effectedBy</p>
+      <div class="comment">
+         <span class="markdown">The effect of the action's operation on the metric.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metric"
+                  title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ActionEffect"
+                  title="https://prometheus-metric-ontology.ericsson.com/#ActionEffect">ActionEffect</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#effectsMetric"
+                  title="https://prometheus-metric-ontology.ericsson.com/#effectsMetric">effectsMetric</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="effectsMetric">
       <h3>effectsMetric<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -467,6 +512,12 @@ This section provides details for each class and property defined by Prometheus 
                <a href="#Metric"
                   title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#effectedBy"
+                  title="https://prometheus-metric-ontology.ericsson.com/#effectedBy">effectedBy</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -951,6 +1002,10 @@ This section provides details for each class and property defined by Prometheus 
       <li>
          <a href="#hasRelease"
             title="https://prometheus-metric-ontology.ericsson.com/#hasRelease">hasRelease</a>
+      </li>
+      <li>
+         <a href="#hasResultStatus"
+            title="https://prometheus-metric-ontology.ericsson.com/#hasResultStatus">hasResultStatus</a>
       </li>
       <li>
          <a href="#hasResultType"
@@ -2931,6 +2986,33 @@ This section provides details for each class and property defined by Prometheus 
          </dl>
       </div>
    </div>
+   <div class="entity" id="hasResultStatus">
+      <h3>hasResultStatus<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://prometheus-metric-ontology.ericsson.com/#hasResultStatus</p>
+      <div class="comment">
+         <span class="markdown">The status of the API response.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#MetricQuery"
+                  title="https://prometheus-metric-ontology.ericsson.com/#MetricQuery">MetricQuery</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="hasResultType">
       <h3>hasResultType<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -3217,11 +3299,6 @@ This section provides details for each class and property defined by Prometheus 
             <dd>
                <a href="#Metric"
                   title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dd>
-               <a href="#MetricQuery"
-                  title="https://prometheus-metric-ontology.ericsson.com/#MetricQuery">MetricQuery</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>

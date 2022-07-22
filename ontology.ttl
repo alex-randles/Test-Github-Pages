@@ -59,6 +59,15 @@
 #    Object Properties
 #################################################################
 
+###  https://prometheus-metric-ontology.ericsson.com/#effectedBy
+:effectedBy rdf:type owl:ObjectProperty ;
+            owl:inverseOf :effectsMetric ;
+            rdfs:domain :Metric ;
+            rdfs:range :ActionEffect ;
+            rdfs:comment "The effect of the action's operation on the metric." ;
+            rdfs:label "effectedBy" .
+
+
 ###  https://prometheus-metric-ontology.ericsson.com/#effectsMetric
 :effectsMetric rdf:type owl:ObjectProperty ;
                rdfs:domain :ActionEffect ;
@@ -683,6 +692,14 @@
             rdfs:label "hasRelease" .
 
 
+###  https://prometheus-metric-ontology.ericsson.com/#hasResultStatus
+:hasResultStatus rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :MetricQuery ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "The status of the API response." ;
+                 rdfs:label "hasResultStatus" .
+
+
 ###  https://prometheus-metric-ontology.ericsson.com/#hasResultType
 :hasResultType rdf:type owl:DatatypeProperty ;
                rdfs:domain :MetricQuery ;
@@ -765,11 +782,9 @@
 
 ###  https://prometheus-metric-ontology.ericsson.com/#hasStatus
 :hasStatus rdf:type owl:DatatypeProperty ;
-           rdfs:domain :Metric ,
-                       :MetricQuery ;
+           rdfs:domain :Metric ;
            rdfs:range xsd:string ;
-           rdfs:comment "The Status label for the metric." ,
-                        "The status of the API response." ;
+           rdfs:comment "The Status label for the metric." ;
            rdfs:label "hasStatus" .
 
 

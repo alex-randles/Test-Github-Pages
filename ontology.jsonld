@@ -129,6 +129,24 @@
     "@value" : "MetricResultSet"
   } ]
 }, {
+  "@id" : "https://prometheus-metric-ontology.ericsson.com/#effectedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The effect of the action's operation on the metric."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://prometheus-metric-ontology.ericsson.com/#Metric"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "effectedBy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://prometheus-metric-ontology.ericsson.com/#ActionEffect"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://prometheus-metric-ontology.ericsson.com/#effectsMetric"
+  } ]
+}, {
   "@id" : "https://prometheus-metric-ontology.ericsson.com/#effectsMetric",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1259,6 +1277,21 @@
     "@id" : "https://prometheus-metric-ontology.ericsson.com/#MetricResultSet"
   } ]
 }, {
+  "@id" : "https://prometheus-metric-ontology.ericsson.com/#hasResultStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The status of the API response."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://prometheus-metric-ontology.ericsson.com/#MetricQuery"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasResultStatus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
   "@id" : "https://prometheus-metric-ontology.ericsson.com/#hasResultType",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1413,13 +1446,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The Status label for the metric."
-  }, {
-    "@value" : "The status of the API response."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://prometheus-metric-ontology.ericsson.com/#Metric"
-  }, {
-    "@id" : "https://prometheus-metric-ontology.ericsson.com/#MetricQuery"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasStatus"

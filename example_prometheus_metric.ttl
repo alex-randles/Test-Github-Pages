@@ -16,7 +16,7 @@
                 "up" ;
         <https://prometheus-metric-ontology.ericsson.com/#hasResultType>
                 "vector" ;
-        <https://prometheus-metric-ontology.ericsson.com/#hasStatus>
+        <https://prometheus-metric-ontology.ericsson.com/#hasResultStatus>
                 "success" .
 
 <http://data.example.com/metric/0>

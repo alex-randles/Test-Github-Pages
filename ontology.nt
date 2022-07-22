@@ -52,6 +52,14 @@
 # #################################################################
 # 
 # 
+# https://prometheus-metric-ontology.ericsson.com/#effectedBy
+<https://prometheus-metric-ontology.ericsson.com/#effectedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#effectedBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://prometheus-metric-ontology.ericsson.com/#effectsMetric> .
+<https://prometheus-metric-ontology.ericsson.com/#effectedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#effectedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://prometheus-metric-ontology.ericsson.com/#ActionEffect> .
+<https://prometheus-metric-ontology.ericsson.com/#effectedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The effect of the action's operation on the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#effectedBy> <http://www.w3.org/2000/01/rdf-schema#label> "effectedBy" .
+# 
 # https://prometheus-metric-ontology.ericsson.com/#effectsMetric
 <https://prometheus-metric-ontology.ericsson.com/#effectsMetric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://prometheus-metric-ontology.ericsson.com/#effectsMetric> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#ActionEffect> .
@@ -604,6 +612,13 @@
 <https://prometheus-metric-ontology.ericsson.com/#hasRelease> <http://www.w3.org/2000/01/rdf-schema#comment> "The Release label for the metric." .
 <https://prometheus-metric-ontology.ericsson.com/#hasRelease> <http://www.w3.org/2000/01/rdf-schema#label> "hasRelease" .
 # 
+# https://prometheus-metric-ontology.ericsson.com/#hasResultStatus
+<https://prometheus-metric-ontology.ericsson.com/#hasResultStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasResultStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#MetricQuery> .
+<https://prometheus-metric-ontology.ericsson.com/#hasResultStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasResultStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "The status of the API response." .
+<https://prometheus-metric-ontology.ericsson.com/#hasResultStatus> <http://www.w3.org/2000/01/rdf-schema#label> "hasResultStatus" .
+# 
 # https://prometheus-metric-ontology.ericsson.com/#hasResultType
 <https://prometheus-metric-ontology.ericsson.com/#hasResultType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://prometheus-metric-ontology.ericsson.com/#hasResultType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#MetricQuery> .
@@ -677,10 +692,8 @@
 # https://prometheus-metric-ontology.ericsson.com/#hasStatus
 <https://prometheus-metric-ontology.ericsson.com/#hasStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://prometheus-metric-ontology.ericsson.com/#hasStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
-<https://prometheus-metric-ontology.ericsson.com/#hasStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#MetricQuery> .
 <https://prometheus-metric-ontology.ericsson.com/#hasStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://prometheus-metric-ontology.ericsson.com/#hasStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "The Status label for the metric." .
-<https://prometheus-metric-ontology.ericsson.com/#hasStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "The status of the API response." .
 <https://prometheus-metric-ontology.ericsson.com/#hasStatus> <http://www.w3.org/2000/01/rdf-schema#label> "hasStatus" .
 # 
 # https://prometheus-metric-ontology.ericsson.com/#hasSysname
