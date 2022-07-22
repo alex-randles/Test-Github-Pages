@@ -1,18 +1,15 @@
-<https://change-detection-ontology.adaptcentre.ie/#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://change-detection-ontology.adaptcentre.ie/#> <http://www.w3.org/2002/07/owl#imports> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#> .
-<https://change-detection-ontology.adaptcentre.ie/#> <http://www.w3.org/2002/07/owl#imports> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiDeontic.owl#> .
-<https://change-detection-ontology.adaptcentre.ie/#> <http://www.w3.org/2002/07/owl#imports> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#> .
-<https://change-detection-ontology.adaptcentre.ie/#> <http://www.w3.org/2002/07/owl#imports> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
-<https://change-detection-ontology.adaptcentre.ie/#> <http://purl.org/dc/terms/abstract> "The Change Detection Ontology (CDO) provides a set of classes, properties, and restrictions that can be used to represent and interchange provenance and metadata information relating to changes that occur within source data that has created an RDF dataset. It can also be specialized to create new classes and properties to model provenance and metadata information for domain specific changes." .
-<https://change-detection-ontology.adaptcentre.ie/#> <http://purl.org/dc/terms/created> "20 April 2022" .
-<https://change-detection-ontology.adaptcentre.ie/#> <http://purl.org/dc/terms/creator> "Alex Randles" .
-<https://change-detection-ontology.adaptcentre.ie/#> <http://purl.org/dc/terms/creator> "Declan O'Sullivan" .
-<https://change-detection-ontology.adaptcentre.ie/#> <http://purl.org/dc/terms/description> "The Change Detection Ontology (CDO) is used to capture information which relates the changes that have occured within the source data of an RDF dataset. \n\nThe ontology allows a notification policy to be defined to notify users when a threshold of changes have occured. Once notified the mapping and source data should be re-examined to ensure no further action is required." .
-<https://change-detection-ontology.adaptcentre.ie/#> <http://purl.org/dc/terms/license> "http://creativecommons.org/publicdomain/zero/1.0/" .
-<https://change-detection-ontology.adaptcentre.ie/#> <http://purl.org/dc/terms/title> "Change Detection Ontology (CDO)" .
-<https://change-detection-ontology.adaptcentre.ie/#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "cdo" .
-<https://change-detection-ontology.adaptcentre.ie/#> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://change-detection-ontology.adaptcentre.ie/#" .
-<https://change-detection-ontology.adaptcentre.ie/#> <http://www.w3.org/2002/07/owl#versionInfo> "20 April 2022" .
+<https://prometheus-metric-ontology.ericsson.com/#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://prometheus-metric-ontology.ericsson.com/#> <http://purl.org/dc/terms/abstract> "The Prometheus Metric Ontology (PMO) provides a set of classes, properties, and restrictions that can be used to represent and interchange provenance and metadata information relating to Prometheus metric information." .
+<https://prometheus-metric-ontology.ericsson.com/#> <http://purl.org/dc/terms/created> "4 July 2022" .
+<https://prometheus-metric-ontology.ericsson.com/#> <http://purl.org/dc/terms/creator> "Alex Randles" .
+<https://prometheus-metric-ontology.ericsson.com/#> <http://purl.org/dc/terms/creator> "John Keeney" .
+<https://prometheus-metric-ontology.ericsson.com/#> <http://purl.org/dc/terms/creator> "Liam Fallon" .
+<https://prometheus-metric-ontology.ericsson.com/#> <http://purl.org/dc/terms/description> "The Prometheus Metric Ontology (PMO) is used to capture information which relates to metric information within the Prometheus monitoring system." .
+<https://prometheus-metric-ontology.ericsson.com/#> <http://purl.org/dc/terms/license> "http://creativecommons.org/publicdomain/zero/1.0/" .
+<https://prometheus-metric-ontology.ericsson.com/#> <http://purl.org/dc/terms/title> "Prometheus Metric Ontology (PMO)" .
+<https://prometheus-metric-ontology.ericsson.com/#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "pmo" .
+<https://prometheus-metric-ontology.ericsson.com/#> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://prometheus-metric-ontology.ericsson.com/#" .
+<https://prometheus-metric-ontology.ericsson.com/#> <http://www.w3.org/2002/07/owl#versionInfo> "4 July 2022" .
 # 
 # 
 # #################################################################
@@ -55,65 +52,57 @@
 # #################################################################
 # 
 # 
-# https://change-detection-ontology.adaptcentre.ie/#hasChange
-<https://change-detection-ontology.adaptcentre.ie/#hasChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://change-detection-ontology.adaptcentre.ie/#hasChange> <http://www.w3.org/2000/01/rdf-schema#domain> <https://change-detection-ontology.adaptcentre.ie/#ChangeLog> .
-<https://change-detection-ontology.adaptcentre.ie/#hasChange> <http://www.w3.org/2000/01/rdf-schema#range> <http://linkedevents.org/ontology/Event> .
-<https://change-detection-ontology.adaptcentre.ie/#hasChange> <http://www.w3.org/2000/01/rdf-schema#comment> "A change within a particular change log." .
-<https://change-detection-ontology.adaptcentre.ie/#hasChange> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
-<https://change-detection-ontology.adaptcentre.ie/#hasChange> <http://www.w3.org/2000/01/rdf-schema#label> "hasChange" .
+# https://prometheus-metric-ontology.ericsson.com/#effectsMetric
+<https://prometheus-metric-ontology.ericsson.com/#effectsMetric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#effectsMetric> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#ActionEffect> .
+<https://prometheus-metric-ontology.ericsson.com/#effectsMetric> <http://www.w3.org/2000/01/rdf-schema#range> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#effectsMetric> <http://www.w3.org/2000/01/rdf-schema#comment> "The metric effected by the action's operation." .
+<https://prometheus-metric-ontology.ericsson.com/#effectsMetric> <http://www.w3.org/2000/01/rdf-schema#label> "effectsMetric" .
 # 
-# https://change-detection-ontology.adaptcentre.ie/#hasCurrentSource
-<https://change-detection-ontology.adaptcentre.ie/#hasCurrentSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://change-detection-ontology.adaptcentre.ie/#hasCurrentSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://change-detection-ontology.adaptcentre.ie/#hasCurrentSource> <http://www.w3.org/2000/01/rdf-schema#domain> <https://change-detection-ontology.adaptcentre.ie/#ChangeLog> .
-<https://change-detection-ontology.adaptcentre.ie/#hasCurrentSource> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
-<https://change-detection-ontology.adaptcentre.ie/#hasCurrentSource> <http://www.w3.org/2000/01/rdf-schema#comment> "The current version of the source data." .
-<https://change-detection-ontology.adaptcentre.ie/#hasCurrentSource> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
-<https://change-detection-ontology.adaptcentre.ie/#hasCurrentSource> <http://www.w3.org/2000/01/rdf-schema#label> "hasCurrentSource" .
+# https://prometheus-metric-ontology.ericsson.com/#generatedByMetric
+<https://prometheus-metric-ontology.ericsson.com/#generatedByMetric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#generatedByMetric> <http://www.w3.org/2002/07/owl#inverseOf> <https://prometheus-metric-ontology.ericsson.com/#hasResultSet> .
+<https://prometheus-metric-ontology.ericsson.com/#generatedByMetric> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#MetricResultSet> .
+<https://prometheus-metric-ontology.ericsson.com/#generatedByMetric> <http://www.w3.org/2000/01/rdf-schema#range> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#generatedByMetric> <http://www.w3.org/2000/01/rdf-schema#comment> "The result set generated by the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#generatedByMetric> <http://www.w3.org/2000/01/rdf-schema#label> "generatedByMetric" .
 # 
-# https://change-detection-ontology.adaptcentre.ie/#hasNotificationPolicy
-<https://change-detection-ontology.adaptcentre.ie/#hasNotificationPolicy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://change-detection-ontology.adaptcentre.ie/#hasNotificationPolicy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://change-detection-ontology.adaptcentre.ie/#ChangeLog> .
-<https://change-detection-ontology.adaptcentre.ie/#hasNotificationPolicy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy> .
-<https://change-detection-ontology.adaptcentre.ie/#hasNotificationPolicy> <http://www.w3.org/2000/01/rdf-schema#comment> "The notification policy associated with the change log." .
-<https://change-detection-ontology.adaptcentre.ie/#hasNotificationPolicy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
-<https://change-detection-ontology.adaptcentre.ie/#hasNotificationPolicy> <http://www.w3.org/2000/01/rdf-schema#label> "hasNotificationPolicy" .
+# https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery
+<https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery> <http://www.w3.org/2000/01/rdf-schema#range> <https://prometheus-metric-ontology.ericsson.com/#MetricQuery> .
+<https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery> <http://www.w3.org/2000/01/rdf-schema#comment> "The query which retrieved the metric information." .
+<https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery> <http://www.w3.org/2000/01/rdf-schema#label> "hasMetricQuery" .
 # 
-# https://change-detection-ontology.adaptcentre.ie/#hasOwner
-<https://change-detection-ontology.adaptcentre.ie/#hasOwner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://change-detection-ontology.adaptcentre.ie/#hasOwner> <http://www.w3.org/2000/01/rdf-schema#domain> <https://change-detection-ontology.adaptcentre.ie/#ChangeLog> .
-<https://change-detection-ontology.adaptcentre.ie/#hasOwner> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> .
-<https://change-detection-ontology.adaptcentre.ie/#hasOwner> <http://www.w3.org/2000/01/rdf-schema#comment> "The agent who owns the change log." .
-<https://change-detection-ontology.adaptcentre.ie/#hasOwner> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
-<https://change-detection-ontology.adaptcentre.ie/#hasOwner> <http://www.w3.org/2000/01/rdf-schema#label> "hasOwner" .
+# https://prometheus-metric-ontology.ericsson.com/#hasResult
+<https://prometheus-metric-ontology.ericsson.com/#hasResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasResult> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#MetricResultSet> .
+<https://prometheus-metric-ontology.ericsson.com/#hasResult> <http://www.w3.org/2000/01/rdf-schema#range> <https://prometheus-metric-ontology.ericsson.com/#MetricResult> .
+<https://prometheus-metric-ontology.ericsson.com/#hasResult> <http://www.w3.org/2000/01/rdf-schema#comment> "A result within a result set." .
+<https://prometheus-metric-ontology.ericsson.com/#hasResult> <http://www.w3.org/2000/01/rdf-schema#label> "hasResult" .
 # 
-# https://change-detection-ontology.adaptcentre.ie/#hasPreviousSource
-<https://change-detection-ontology.adaptcentre.ie/#hasPreviousSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://change-detection-ontology.adaptcentre.ie/#hasPreviousSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://change-detection-ontology.adaptcentre.ie/#hasPreviousSource> <http://www.w3.org/2000/01/rdf-schema#domain> <https://change-detection-ontology.adaptcentre.ie/#ChangeLog> .
-<https://change-detection-ontology.adaptcentre.ie/#hasPreviousSource> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
-<https://change-detection-ontology.adaptcentre.ie/#hasPreviousSource> <http://www.w3.org/2000/01/rdf-schema#comment> "The previous version of the source data." .
-<https://change-detection-ontology.adaptcentre.ie/#hasPreviousSource> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
-<https://change-detection-ontology.adaptcentre.ie/#hasPreviousSource> <http://www.w3.org/2000/01/rdf-schema#label> "hasPreviousSource" .
+# https://prometheus-metric-ontology.ericsson.com/#hasResultSet
+<https://prometheus-metric-ontology.ericsson.com/#hasResultSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasResultSet> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasResultSet> <http://www.w3.org/2000/01/rdf-schema#range> <https://prometheus-metric-ontology.ericsson.com/#MetricResultSet> .
+<https://prometheus-metric-ontology.ericsson.com/#hasResultSet> <http://www.w3.org/2000/01/rdf-schema#comment> "The result set associated with the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasResultSet> <http://www.w3.org/2000/01/rdf-schema#label> "hasResultSet" .
 # 
-# https://change-detection-ontology.adaptcentre.ie/#inChangeLog
-<https://change-detection-ontology.adaptcentre.ie/#inChangeLog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://change-detection-ontology.adaptcentre.ie/#inChangeLog> <http://www.w3.org/2002/07/owl#inverseOf> <https://change-detection-ontology.adaptcentre.ie/#hasChange> .
-<https://change-detection-ontology.adaptcentre.ie/#inChangeLog> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linkedevents.org/ontology/Event> .
-<https://change-detection-ontology.adaptcentre.ie/#inChangeLog> <http://www.w3.org/2000/01/rdf-schema#range> <https://change-detection-ontology.adaptcentre.ie/#ChangeLog> .
-<https://change-detection-ontology.adaptcentre.ie/#inChangeLog> <http://www.w3.org/2000/01/rdf-schema#comment> "A change within a change log." .
-<https://change-detection-ontology.adaptcentre.ie/#inChangeLog> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
-<https://change-detection-ontology.adaptcentre.ie/#inChangeLog> <http://www.w3.org/2000/01/rdf-schema#label> "inChangeLog" .
+# https://prometheus-metric-ontology.ericsson.com/#inMetricSet
+<https://prometheus-metric-ontology.ericsson.com/#inMetricSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#inMetricSet> <http://www.w3.org/2002/07/owl#inverseOf> <https://prometheus-metric-ontology.ericsson.com/#hasResult> .
+<https://prometheus-metric-ontology.ericsson.com/#inMetricSet> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#MetricResult> .
+<https://prometheus-metric-ontology.ericsson.com/#inMetricSet> <http://www.w3.org/2000/01/rdf-schema#range> <https://prometheus-metric-ontology.ericsson.com/#MetricResultSet> .
+<https://prometheus-metric-ontology.ericsson.com/#inMetricSet> <http://www.w3.org/2000/01/rdf-schema#comment> "A result within a result set." .
+<https://prometheus-metric-ontology.ericsson.com/#inMetricSet> <http://www.w3.org/2000/01/rdf-schema#label> "inMetricSet" .
 # 
-# https://change-detection-ontology.adaptcentre.ie/#ownedBy
-<https://change-detection-ontology.adaptcentre.ie/#ownedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://change-detection-ontology.adaptcentre.ie/#ownedBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://change-detection-ontology.adaptcentre.ie/#hasOwner> .
-<https://change-detection-ontology.adaptcentre.ie/#ownedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> .
-<https://change-detection-ontology.adaptcentre.ie/#ownedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://change-detection-ontology.adaptcentre.ie/#ChangeLog> .
-<https://change-detection-ontology.adaptcentre.ie/#ownedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The owner of the change log." .
-<https://change-detection-ontology.adaptcentre.ie/#ownedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
-<https://change-detection-ontology.adaptcentre.ie/#ownedBy> <http://www.w3.org/2000/01/rdf-schema#label> "ownedBy" .
+# https://prometheus-metric-ontology.ericsson.com/#usedByMetric
+<https://prometheus-metric-ontology.ericsson.com/#usedByMetric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#usedByMetric> <http://www.w3.org/2002/07/owl#inverseOf> <https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery> .
+<https://prometheus-metric-ontology.ericsson.com/#usedByMetric> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#MetricQuery> .
+<https://prometheus-metric-ontology.ericsson.com/#usedByMetric> <http://www.w3.org/2000/01/rdf-schema#range> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#usedByMetric> <http://www.w3.org/2000/01/rdf-schema#comment> "The metric used by the query." .
+<https://prometheus-metric-ontology.ericsson.com/#usedByMetric> <http://www.w3.org/2000/01/rdf-schema#label> "usedByMetric" .
 # 
 # 
 # 
@@ -124,41 +113,652 @@
 # #################################################################
 # 
 # 
-# https://change-detection-ontology.adaptcentre.ie/#hasDetectionEnd
-<https://change-detection-ontology.adaptcentre.ie/#hasDetectionEnd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://change-detection-ontology.adaptcentre.ie/#hasDetectionEnd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://change-detection-ontology.adaptcentre.ie/#hasDetectionEnd> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy> .
-<https://change-detection-ontology.adaptcentre.ie/#hasDetectionEnd> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://change-detection-ontology.adaptcentre.ie/#hasDetectionEnd> <http://www.w3.org/2000/01/rdf-schema#comment> "The time when the notification policy is terminated." .
-<https://change-detection-ontology.adaptcentre.ie/#hasDetectionEnd> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
-<https://change-detection-ontology.adaptcentre.ie/#hasDetectionEnd> <http://www.w3.org/2000/01/rdf-schema#label> "hasDetectionEnd" .
+# https://prometheus-metric-ontology.ericsson.com/#hasActionName
+<https://prometheus-metric-ontology.ericsson.com/#hasActionName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasActionName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Action> .
+<https://prometheus-metric-ontology.ericsson.com/#hasActionName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasActionName> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of the action." .
+<https://prometheus-metric-ontology.ericsson.com/#hasActionName> <http://www.w3.org/2000/01/rdf-schema#label> "hasActionName" .
 # 
-# https://change-detection-ontology.adaptcentre.ie/#hasDetectionStart
-<https://change-detection-ontology.adaptcentre.ie/#hasDetectionStart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://change-detection-ontology.adaptcentre.ie/#hasDetectionStart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://change-detection-ontology.adaptcentre.ie/#hasDetectionStart> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy> .
-<https://change-detection-ontology.adaptcentre.ie/#hasDetectionStart> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://change-detection-ontology.adaptcentre.ie/#hasDetectionStart> <http://www.w3.org/2000/01/rdf-schema#comment> "The time when the notification policy was created." .
-<https://change-detection-ontology.adaptcentre.ie/#hasDetectionStart> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
-<https://change-detection-ontology.adaptcentre.ie/#hasDetectionStart> <http://www.w3.org/2000/01/rdf-schema#label> "hasDetectionStart" .
+# https://prometheus-metric-ontology.ericsson.com/#hasAddress
+<https://prometheus-metric-ontology.ericsson.com/#hasAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasAddress> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasAddress> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasAddress> <http://www.w3.org/2000/01/rdf-schema#comment> "The Address label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasAddress> <http://www.w3.org/2000/01/rdf-schema#label> "hasAddress" .
 # 
-# https://change-detection-ontology.adaptcentre.ie/#hasReason
-<https://change-detection-ontology.adaptcentre.ie/#hasReason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://change-detection-ontology.adaptcentre.ie/#hasReason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://change-detection-ontology.adaptcentre.ie/#hasReason> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linkedevents.org/ontology/Event> .
-<https://change-detection-ontology.adaptcentre.ie/#hasReason> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://change-detection-ontology.adaptcentre.ie/#hasReason> <http://www.w3.org/2000/01/rdf-schema#comment> "The reason a change occurred." .
-<https://change-detection-ontology.adaptcentre.ie/#hasReason> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
-<https://change-detection-ontology.adaptcentre.ie/#hasReason> <http://www.w3.org/2000/01/rdf-schema#label> "hasReason" .
+# https://prometheus-metric-ontology.ericsson.com/#hasAlertmanager
+<https://prometheus-metric-ontology.ericsson.com/#hasAlertmanager> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasAlertmanager> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasAlertmanager> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasAlertmanager> <http://www.w3.org/2000/01/rdf-schema#comment> "The Alertmanager label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasAlertmanager> <http://www.w3.org/2000/01/rdf-schema#label> "hasAlertmanager" .
 # 
-# https://change-detection-ontology.adaptcentre.ie/#hasThreshold
-<https://change-detection-ontology.adaptcentre.ie/#hasThreshold> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://change-detection-ontology.adaptcentre.ie/#hasThreshold> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://change-detection-ontology.adaptcentre.ie/#hasThreshold> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint> .
-<https://change-detection-ontology.adaptcentre.ie/#hasThreshold> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
-<https://change-detection-ontology.adaptcentre.ie/#hasThreshold> <http://www.w3.org/2000/01/rdf-schema#comment> "The threshold defined for a change type within the notification policy." .
-<https://change-detection-ontology.adaptcentre.ie/#hasThreshold> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
-<https://change-detection-ontology.adaptcentre.ie/#hasThreshold> <http://www.w3.org/2000/01/rdf-schema#label> "hasThreshold" .
+# https://prometheus-metric-ontology.ericsson.com/#hasAlertname
+<https://prometheus-metric-ontology.ericsson.com/#hasAlertname> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasAlertname> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasAlertname> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasAlertname> <http://www.w3.org/2000/01/rdf-schema#comment> "The Alertname label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasAlertname> <http://www.w3.org/2000/01/rdf-schema#label> "hasAlertname" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasAlertstate
+<https://prometheus-metric-ontology.ericsson.com/#hasAlertstate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasAlertstate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasAlertstate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasAlertstate> <http://www.w3.org/2000/01/rdf-schema#comment> "The Alertstate label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasAlertstate> <http://www.w3.org/2000/01/rdf-schema#label> "hasAlertstate" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasBiosDate
+<https://prometheus-metric-ontology.ericsson.com/#hasBiosDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasBiosDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasBiosDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasBiosDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The Bios date label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasBiosDate> <http://www.w3.org/2000/01/rdf-schema#label> "hasBiosDate" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasBiosVendor
+<https://prometheus-metric-ontology.ericsson.com/#hasBiosVendor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasBiosVendor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasBiosVendor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasBiosVendor> <http://www.w3.org/2000/01/rdf-schema#comment> "The Bios vendor label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasBiosVendor> <http://www.w3.org/2000/01/rdf-schema#label> "hasBiosVendor" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasBiosVersion
+<https://prometheus-metric-ontology.ericsson.com/#hasBiosVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasBiosVersion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasBiosVersion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasBiosVersion> <http://www.w3.org/2000/01/rdf-schema#comment> "The Bios version label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasBiosVersion> <http://www.w3.org/2000/01/rdf-schema#label> "hasBiosVersion" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasBoardName
+<https://prometheus-metric-ontology.ericsson.com/#hasBoardName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasBoardName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasBoardName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasBoardName> <http://www.w3.org/2000/01/rdf-schema#comment> "The Board name label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasBoardName> <http://www.w3.org/2000/01/rdf-schema#label> "hasBoardName" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasBoardVendor
+<https://prometheus-metric-ontology.ericsson.com/#hasBoardVendor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasBoardVendor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasBoardVendor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasBoardVendor> <http://www.w3.org/2000/01/rdf-schema#comment> "The Board vendor label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasBoardVendor> <http://www.w3.org/2000/01/rdf-schema#label> "hasBoardVendor" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasBoardVersion
+<https://prometheus-metric-ontology.ericsson.com/#hasBoardVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasBoardVersion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasBoardVersion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasBoardVersion> <http://www.w3.org/2000/01/rdf-schema#comment> "The Board version label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasBoardVersion> <http://www.w3.org/2000/01/rdf-schema#label> "hasBoardVersion" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasBranch
+<https://prometheus-metric-ontology.ericsson.com/#hasBranch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasBranch> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasBranch> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasBranch> <http://www.w3.org/2000/01/rdf-schema#comment> "The Branch label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasBranch> <http://www.w3.org/2000/01/rdf-schema#label> "hasBranch" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasBroadcast
+<https://prometheus-metric-ontology.ericsson.com/#hasBroadcast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasBroadcast> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasBroadcast> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasBroadcast> <http://www.w3.org/2000/01/rdf-schema#comment> "The Broadcast label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasBroadcast> <http://www.w3.org/2000/01/rdf-schema#label> "hasBroadcast" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasCall
+<https://prometheus-metric-ontology.ericsson.com/#hasCall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasCall> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasCall> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasCall> <http://www.w3.org/2000/01/rdf-schema#comment> "The Call label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasCall> <http://www.w3.org/2000/01/rdf-schema#label> "hasCall" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasCapacityLevel
+<https://prometheus-metric-ontology.ericsson.com/#hasCapacityLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasCapacityLevel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasCapacityLevel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasCapacityLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "The Capacity level label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasCapacityLevel> <http://www.w3.org/2000/01/rdf-schema#label> "hasCapacityLevel" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasCause
+<https://prometheus-metric-ontology.ericsson.com/#hasCause> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasCause> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasCause> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasCause> <http://www.w3.org/2000/01/rdf-schema#comment> "The Cause label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasCause> <http://www.w3.org/2000/01/rdf-schema#label> "hasCause" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasChassisVendor
+<https://prometheus-metric-ontology.ericsson.com/#hasChassisVendor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasChassisVendor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasChassisVendor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasChassisVendor> <http://www.w3.org/2000/01/rdf-schema#comment> "The Chassis vendor label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasChassisVendor> <http://www.w3.org/2000/01/rdf-schema#label> "hasChassisVendor" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasChip
+<https://prometheus-metric-ontology.ericsson.com/#hasChip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasChip> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasChip> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasChip> <http://www.w3.org/2000/01/rdf-schema#comment> "The Chip label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasChip> <http://www.w3.org/2000/01/rdf-schema#label> "hasChip" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasChipName
+<https://prometheus-metric-ontology.ericsson.com/#hasChipName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasChipName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasChipName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasChipName> <http://www.w3.org/2000/01/rdf-schema#comment> "The Chip name label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasChipName> <http://www.w3.org/2000/01/rdf-schema#label> "hasChipName" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasClocksource
+<https://prometheus-metric-ontology.ericsson.com/#hasClocksource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasClocksource> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasClocksource> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasClocksource> <http://www.w3.org/2000/01/rdf-schema#comment> "The Clocksource label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasClocksource> <http://www.w3.org/2000/01/rdf-schema#label> "hasClocksource" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasCode
+<https://prometheus-metric-ontology.ericsson.com/#hasCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasCode> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasCode> <http://www.w3.org/2000/01/rdf-schema#comment> "The Code label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasCode> <http://www.w3.org/2000/01/rdf-schema#label> "hasCode" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasCollector
+<https://prometheus-metric-ontology.ericsson.com/#hasCollector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasCollector> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasCollector> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasCollector> <http://www.w3.org/2000/01/rdf-schema#comment> "The Collector label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasCollector> <http://www.w3.org/2000/01/rdf-schema#label> "hasCollector" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasConfidence
+<https://prometheus-metric-ontology.ericsson.com/#hasConfidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasConfidence> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#ActionEffect> .
+<https://prometheus-metric-ontology.ericsson.com/#hasConfidence> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasConfidence> <http://www.w3.org/2000/01/rdf-schema#comment> "The likelihood of the action having the desired effect." .
+<https://prometheus-metric-ontology.ericsson.com/#hasConfidence> <http://www.w3.org/2000/01/rdf-schema#label> "hasConfidence" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasConfig
+<https://prometheus-metric-ontology.ericsson.com/#hasConfig> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasConfig> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasConfig> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasConfig> <http://www.w3.org/2000/01/rdf-schema#comment> "The Config label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasConfig> <http://www.w3.org/2000/01/rdf-schema#label> "hasConfig" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasCore
+<https://prometheus-metric-ontology.ericsson.com/#hasCore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasCore> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasCore> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasCore> <http://www.w3.org/2000/01/rdf-schema#comment> "The Core label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasCore> <http://www.w3.org/2000/01/rdf-schema#label> "hasCore" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasCpu
+<https://prometheus-metric-ontology.ericsson.com/#hasCpu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasCpu> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasCpu> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasCpu> <http://www.w3.org/2000/01/rdf-schema#comment> "The Cpu label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasCpu> <http://www.w3.org/2000/01/rdf-schema#label> "hasCpu" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasDescription
+<https://prometheus-metric-ontology.ericsson.com/#hasDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Action> .
+<https://prometheus-metric-ontology.ericsson.com/#hasDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "A textual description of the action." .
+<https://prometheus-metric-ontology.ericsson.com/#hasDescription> <http://www.w3.org/2000/01/rdf-schema#label> "hasDescription" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasDevice
+<https://prometheus-metric-ontology.ericsson.com/#hasDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasDevice> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasDevice> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "The Device label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasDevice> <http://www.w3.org/2000/01/rdf-schema#label> "hasDevice" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasDialerName
+<https://prometheus-metric-ontology.ericsson.com/#hasDialerName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasDialerName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasDialerName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasDialerName> <http://www.w3.org/2000/01/rdf-schema#comment> "The Dialer name label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasDialerName> <http://www.w3.org/2000/01/rdf-schema#label> "hasDialerName" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasDomainname
+<https://prometheus-metric-ontology.ericsson.com/#hasDomainname> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasDomainname> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasDomainname> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasDomainname> <http://www.w3.org/2000/01/rdf-schema#comment> "The Domainname label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasDomainname> <http://www.w3.org/2000/01/rdf-schema#label> "hasDomainname" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasDuplex
+<https://prometheus-metric-ontology.ericsson.com/#hasDuplex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasDuplex> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasDuplex> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasDuplex> <http://www.w3.org/2000/01/rdf-schema#comment> "The Duplex label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasDuplex> <http://www.w3.org/2000/01/rdf-schema#label> "hasDuplex" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasEndpoint
+<https://prometheus-metric-ontology.ericsson.com/#hasEndpoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasEndpoint> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasEndpoint> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasEndpoint> <http://www.w3.org/2000/01/rdf-schema#comment> "The Endpoint label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasEndpoint> <http://www.w3.org/2000/01/rdf-schema#label> "hasEndpoint" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasEvent
+<https://prometheus-metric-ontology.ericsson.com/#hasEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The Event label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasEvent> <http://www.w3.org/2000/01/rdf-schema#label> "hasEvent" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasFirmwareRevision
+<https://prometheus-metric-ontology.ericsson.com/#hasFirmwareRevision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasFirmwareRevision> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasFirmwareRevision> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasFirmwareRevision> <http://www.w3.org/2000/01/rdf-schema#comment> "The Firmware revision label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasFirmwareRevision> <http://www.w3.org/2000/01/rdf-schema#label> "hasFirmwareRevision" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasFstype
+<https://prometheus-metric-ontology.ericsson.com/#hasFstype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasFstype> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasFstype> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasFstype> <http://www.w3.org/2000/01/rdf-schema#comment> "The Fstype label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasFstype> <http://www.w3.org/2000/01/rdf-schema#label> "hasFstype" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasGoversion
+<https://prometheus-metric-ontology.ericsson.com/#hasGoversion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasGoversion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasGoversion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasGoversion> <http://www.w3.org/2000/01/rdf-schema#comment> "The Goversion label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasGoversion> <http://www.w3.org/2000/01/rdf-schema#label> "hasGoversion" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasHandler
+<https://prometheus-metric-ontology.ericsson.com/#hasHandler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasHandler> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasHandler> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasHandler> <http://www.w3.org/2000/01/rdf-schema#comment> "The Handler label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasHandler> <http://www.w3.org/2000/01/rdf-schema#label> "hasHandler" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasId
+<https://prometheus-metric-ontology.ericsson.com/#hasId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasId> <http://www.w3.org/2000/01/rdf-schema#comment> "The Id label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasId> <http://www.w3.org/2000/01/rdf-schema#label> "hasId" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasIdLike
+<https://prometheus-metric-ontology.ericsson.com/#hasIdLike> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasIdLike> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasIdLike> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasIdLike> <http://www.w3.org/2000/01/rdf-schema#comment> "The Id like label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasIdLike> <http://www.w3.org/2000/01/rdf-schema#label> "hasIdLike" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasIndex
+<https://prometheus-metric-ontology.ericsson.com/#hasIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasIndex> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasIndex> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasIndex> <http://www.w3.org/2000/01/rdf-schema#comment> "The Index label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasIndex> <http://www.w3.org/2000/01/rdf-schema#label> "hasIndex" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasInstance
+<https://prometheus-metric-ontology.ericsson.com/#hasInstance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasInstance> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasInstance> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasInstance> <http://www.w3.org/2000/01/rdf-schema#comment> "The Instance label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasInstance> <http://www.w3.org/2000/01/rdf-schema#label> "hasInstance" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasInterval
+<https://prometheus-metric-ontology.ericsson.com/#hasInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasInterval> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasInterval> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasInterval> <http://www.w3.org/2000/01/rdf-schema#comment> "The Interval label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasInterval> <http://www.w3.org/2000/01/rdf-schema#label> "hasInterval" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasIp
+<https://prometheus-metric-ontology.ericsson.com/#hasIp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasIp> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasIp> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasIp> <http://www.w3.org/2000/01/rdf-schema#comment> "The Ip label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasIp> <http://www.w3.org/2000/01/rdf-schema#label> "hasIp" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasJob
+<https://prometheus-metric-ontology.ericsson.com/#hasJob> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasJob> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasJob> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasJob> <http://www.w3.org/2000/01/rdf-schema#comment> "The Job label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasJob> <http://www.w3.org/2000/01/rdf-schema#label> "hasJob" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasLabel
+<https://prometheus-metric-ontology.ericsson.com/#hasLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasLabel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasLabel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasLabel> <http://www.w3.org/2000/01/rdf-schema#comment> "The Label label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasLabel> <http://www.w3.org/2000/01/rdf-schema#label> "hasLabel" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasLe
+<https://prometheus-metric-ontology.ericsson.com/#hasLe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasLe> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasLe> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasLe> <http://www.w3.org/2000/01/rdf-schema#comment> "The Le label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasLe> <http://www.w3.org/2000/01/rdf-schema#label> "hasLe" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasListenerName
+<https://prometheus-metric-ontology.ericsson.com/#hasListenerName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasListenerName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasListenerName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasListenerName> <http://www.w3.org/2000/01/rdf-schema#comment> "The Listener name label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasListenerName> <http://www.w3.org/2000/01/rdf-schema#label> "hasListenerName" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasMachine
+<https://prometheus-metric-ontology.ericsson.com/#hasMachine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasMachine> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasMachine> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasMachine> <http://www.w3.org/2000/01/rdf-schema#comment> "The Machine label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasMachine> <http://www.w3.org/2000/01/rdf-schema#label> "hasMachine" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasMajor
+<https://prometheus-metric-ontology.ericsson.com/#hasMajor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasMajor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasMajor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasMajor> <http://www.w3.org/2000/01/rdf-schema#comment> "The Major label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasMajor> <http://www.w3.org/2000/01/rdf-schema#label> "hasMajor" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasManufacturer
+<https://prometheus-metric-ontology.ericsson.com/#hasManufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#comment> "The Manufacturer label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "hasManufacturer" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasMinor
+<https://prometheus-metric-ontology.ericsson.com/#hasMinor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasMinor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasMinor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasMinor> <http://www.w3.org/2000/01/rdf-schema#comment> "The Minor label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasMinor> <http://www.w3.org/2000/01/rdf-schema#label> "hasMinor" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasMode
+<https://prometheus-metric-ontology.ericsson.com/#hasMode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasMode> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasMode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasMode> <http://www.w3.org/2000/01/rdf-schema#comment> "The Mode label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasMode> <http://www.w3.org/2000/01/rdf-schema#label> "hasMode" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasModel
+<https://prometheus-metric-ontology.ericsson.com/#hasModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasModel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasModel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasModel> <http://www.w3.org/2000/01/rdf-schema#comment> "The Model label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasModel> <http://www.w3.org/2000/01/rdf-schema#label> "hasModel" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasModelName
+<https://prometheus-metric-ontology.ericsson.com/#hasModelName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasModelName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasModelName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasModelName> <http://www.w3.org/2000/01/rdf-schema#comment> "The Model name label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasModelName> <http://www.w3.org/2000/01/rdf-schema#label> "hasModelName" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasMountpoint
+<https://prometheus-metric-ontology.ericsson.com/#hasMountpoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasMountpoint> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasMountpoint> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasMountpoint> <http://www.w3.org/2000/01/rdf-schema#comment> "The Mountpoint label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasMountpoint> <http://www.w3.org/2000/01/rdf-schema#label> "hasMountpoint" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasName
+<https://prometheus-metric-ontology.ericsson.com/#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasName> <http://www.w3.org/2000/01/rdf-schema#comment> "The   name   label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasName> <http://www.w3.org/2000/01/rdf-schema#comment> "The Name label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasName> <http://www.w3.org/2000/01/rdf-schema#label> "hasName" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasNodename
+<https://prometheus-metric-ontology.ericsson.com/#hasNodename> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasNodename> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasNodename> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasNodename> <http://www.w3.org/2000/01/rdf-schema#comment> "The Nodename label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasNodename> <http://www.w3.org/2000/01/rdf-schema#label> "hasNodename" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasOperation
+<https://prometheus-metric-ontology.ericsson.com/#hasOperation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasOperation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Action> .
+<https://prometheus-metric-ontology.ericsson.com/#hasOperation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasOperation> <http://www.w3.org/2000/01/rdf-schema#comment> "The operation which will be executed by the action." .
+<https://prometheus-metric-ontology.ericsson.com/#hasOperation> <http://www.w3.org/2000/01/rdf-schema#label> "hasOperation" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasOperstate
+<https://prometheus-metric-ontology.ericsson.com/#hasOperstate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasOperstate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasOperstate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasOperstate> <http://www.w3.org/2000/01/rdf-schema#comment> "The Operstate label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasOperstate> <http://www.w3.org/2000/01/rdf-schema#label> "hasOperstate" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasPackage
+<https://prometheus-metric-ontology.ericsson.com/#hasPackage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasPackage> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasPackage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasPackage> <http://www.w3.org/2000/01/rdf-schema#comment> "The Package label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasPackage> <http://www.w3.org/2000/01/rdf-schema#label> "hasPackage" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasPath
+<https://prometheus-metric-ontology.ericsson.com/#hasPath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasPath> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasPath> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasPath> <http://www.w3.org/2000/01/rdf-schema#comment> "The Path label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasPath> <http://www.w3.org/2000/01/rdf-schema#label> "hasPath" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasPowerSupply
+<https://prometheus-metric-ontology.ericsson.com/#hasPowerSupply> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasPowerSupply> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasPowerSupply> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasPowerSupply> <http://www.w3.org/2000/01/rdf-schema#comment> "The Power supply label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasPowerSupply> <http://www.w3.org/2000/01/rdf-schema#label> "hasPowerSupply" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasPrettyName
+<https://prometheus-metric-ontology.ericsson.com/#hasPrettyName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasPrettyName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasPrettyName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasPrettyName> <http://www.w3.org/2000/01/rdf-schema#comment> "The Pretty name label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasPrettyName> <http://www.w3.org/2000/01/rdf-schema#label> "hasPrettyName" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasProductFamily
+<https://prometheus-metric-ontology.ericsson.com/#hasProductFamily> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasProductFamily> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasProductFamily> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasProductFamily> <http://www.w3.org/2000/01/rdf-schema#comment> "The Product family label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasProductFamily> <http://www.w3.org/2000/01/rdf-schema#label> "hasProductFamily" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasProductName
+<https://prometheus-metric-ontology.ericsson.com/#hasProductName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasProductName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasProductName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasProductName> <http://www.w3.org/2000/01/rdf-schema#comment> "The Product name label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasProductName> <http://www.w3.org/2000/01/rdf-schema#label> "hasProductName" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasQuantile
+<https://prometheus-metric-ontology.ericsson.com/#hasQuantile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasQuantile> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasQuantile> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasQuantile> <http://www.w3.org/2000/01/rdf-schema#comment> "The Quantile label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasQuantile> <http://www.w3.org/2000/01/rdf-schema#label> "hasQuantile" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasQuery
+<https://prometheus-metric-ontology.ericsson.com/#hasQuery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasQuery> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#MetricQuery> .
+<https://prometheus-metric-ontology.ericsson.com/#hasQuery> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasQuery> <http://www.w3.org/2000/01/rdf-schema#comment> "The query used to collect the metric information." .
+<https://prometheus-metric-ontology.ericsson.com/#hasQuery> <http://www.w3.org/2000/01/rdf-schema#label> "hasQuery" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasQueue
+<https://prometheus-metric-ontology.ericsson.com/#hasQueue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasQueue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasQueue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasQueue> <http://www.w3.org/2000/01/rdf-schema#comment> "The Queue label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasQueue> <http://www.w3.org/2000/01/rdf-schema#label> "hasQueue" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasReason
+<https://prometheus-metric-ontology.ericsson.com/#hasReason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasReason> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasReason> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasReason> <http://www.w3.org/2000/01/rdf-schema#comment> "The Reason label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasReason> <http://www.w3.org/2000/01/rdf-schema#label> "hasReason" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasRelease
+<https://prometheus-metric-ontology.ericsson.com/#hasRelease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasRelease> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasRelease> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasRelease> <http://www.w3.org/2000/01/rdf-schema#comment> "The Release label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasRelease> <http://www.w3.org/2000/01/rdf-schema#label> "hasRelease" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasResultType
+<https://prometheus-metric-ontology.ericsson.com/#hasResultType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasResultType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#MetricQuery> .
+<https://prometheus-metric-ontology.ericsson.com/#hasResultType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasResultType> <http://www.w3.org/2000/01/rdf-schema#comment> "The result type returned by the API." .
+<https://prometheus-metric-ontology.ericsson.com/#hasResultType> <http://www.w3.org/2000/01/rdf-schema#label> "hasResultType" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasRevision
+<https://prometheus-metric-ontology.ericsson.com/#hasRevision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasRevision> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasRevision> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasRevision> <http://www.w3.org/2000/01/rdf-schema#comment> "The Revision label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasRevision> <http://www.w3.org/2000/01/rdf-schema#label> "hasRevision" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasRole
+<https://prometheus-metric-ontology.ericsson.com/#hasRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasRole> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasRole> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasRole> <http://www.w3.org/2000/01/rdf-schema#comment> "The Role label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasRole> <http://www.w3.org/2000/01/rdf-schema#label> "hasRole" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasRuleGroup
+<https://prometheus-metric-ontology.ericsson.com/#hasRuleGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasRuleGroup> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasRuleGroup> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasRuleGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "The Rule group label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasRuleGroup> <http://www.w3.org/2000/01/rdf-schema#label> "hasRuleGroup" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasScrapeJob
+<https://prometheus-metric-ontology.ericsson.com/#hasScrapeJob> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasScrapeJob> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasScrapeJob> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasScrapeJob> <http://www.w3.org/2000/01/rdf-schema#comment> "The Scrape job label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasScrapeJob> <http://www.w3.org/2000/01/rdf-schema#label> "hasScrapeJob" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasSensor
+<https://prometheus-metric-ontology.ericsson.com/#hasSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasSensor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasSensor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "The Sensor label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasSensor> <http://www.w3.org/2000/01/rdf-schema#label> "hasSensor" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasSerial
+<https://prometheus-metric-ontology.ericsson.com/#hasSerial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasSerial> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasSerial> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasSerial> <http://www.w3.org/2000/01/rdf-schema#comment> "The Serial label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasSerial> <http://www.w3.org/2000/01/rdf-schema#label> "hasSerial" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasSerialNumber
+<https://prometheus-metric-ontology.ericsson.com/#hasSerialNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasSerialNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasSerialNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasSerialNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "The Serial number label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasSerialNumber> <http://www.w3.org/2000/01/rdf-schema#label> "hasSerialNumber" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasSlice
+<https://prometheus-metric-ontology.ericsson.com/#hasSlice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasSlice> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasSlice> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasSlice> <http://www.w3.org/2000/01/rdf-schema#comment> "The Slice label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasSlice> <http://www.w3.org/2000/01/rdf-schema#label> "hasSlice" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasState
+<https://prometheus-metric-ontology.ericsson.com/#hasState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasState> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasState> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasState> <http://www.w3.org/2000/01/rdf-schema#comment> "The State label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasState> <http://www.w3.org/2000/01/rdf-schema#label> "hasState" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasStatus
+<https://prometheus-metric-ontology.ericsson.com/#hasStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#MetricQuery> .
+<https://prometheus-metric-ontology.ericsson.com/#hasStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "The Status label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "The status of the API response." .
+<https://prometheus-metric-ontology.ericsson.com/#hasStatus> <http://www.w3.org/2000/01/rdf-schema#label> "hasStatus" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasSysname
+<https://prometheus-metric-ontology.ericsson.com/#hasSysname> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasSysname> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasSysname> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasSysname> <http://www.w3.org/2000/01/rdf-schema#comment> "The Sysname label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasSysname> <http://www.w3.org/2000/01/rdf-schema#label> "hasSysname" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasSystemVendor
+<https://prometheus-metric-ontology.ericsson.com/#hasSystemVendor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasSystemVendor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasSystemVendor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasSystemVendor> <http://www.w3.org/2000/01/rdf-schema#comment> "The System vendor label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasSystemVendor> <http://www.w3.org/2000/01/rdf-schema#label> "hasSystemVendor" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasTechnology
+<https://prometheus-metric-ontology.ericsson.com/#hasTechnology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasTechnology> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasTechnology> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasTechnology> <http://www.w3.org/2000/01/rdf-schema#comment> "The Technology label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasTechnology> <http://www.w3.org/2000/01/rdf-schema#label> "hasTechnology" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasTimeZone
+<https://prometheus-metric-ontology.ericsson.com/#hasTimeZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasTimeZone> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasTimeZone> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasTimeZone> <http://www.w3.org/2000/01/rdf-schema#comment> "The Time zone label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasTimeZone> <http://www.w3.org/2000/01/rdf-schema#label> "hasTimeZone" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasTimestamp
+<https://prometheus-metric-ontology.ericsson.com/#hasTimestamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasTimestamp> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#MetricResult> .
+<https://prometheus-metric-ontology.ericsson.com/#hasTimestamp> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://prometheus-metric-ontology.ericsson.com/#hasTimestamp> <http://www.w3.org/2000/01/rdf-schema#comment> "The timestamp related to a result." .
+<https://prometheus-metric-ontology.ericsson.com/#hasTimestamp> <http://www.w3.org/2000/01/rdf-schema#label> "hasTimestamp" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasType
+<https://prometheus-metric-ontology.ericsson.com/#hasType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasType> <http://www.w3.org/2000/01/rdf-schema#comment> "The Type label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasType> <http://www.w3.org/2000/01/rdf-schema#label> "hasType" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasValue
+<https://prometheus-metric-ontology.ericsson.com/#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#MetricResult> .
+<https://prometheus-metric-ontology.ericsson.com/#hasValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The value associated with a result." .
+<https://prometheus-metric-ontology.ericsson.com/#hasValue> <http://www.w3.org/2000/01/rdf-schema#label> "hasValue" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasVersion
+<https://prometheus-metric-ontology.ericsson.com/#hasVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasVersion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasVersion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasVersion> <http://www.w3.org/2000/01/rdf-schema#comment> "The Version label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasVersion> <http://www.w3.org/2000/01/rdf-schema#label> "hasVersion" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasVersionCodename
+<https://prometheus-metric-ontology.ericsson.com/#hasVersionCodename> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasVersionCodename> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasVersionCodename> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasVersionCodename> <http://www.w3.org/2000/01/rdf-schema#comment> "The Version codename label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasVersionCodename> <http://www.w3.org/2000/01/rdf-schema#label> "hasVersionCodename" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasVersionId
+<https://prometheus-metric-ontology.ericsson.com/#hasVersionId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasVersionId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasVersionId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasVersionId> <http://www.w3.org/2000/01/rdf-schema#comment> "The Version id label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasVersionId> <http://www.w3.org/2000/01/rdf-schema#label> "hasVersionId" .
+# 
+# https://prometheus-metric-ontology.ericsson.com/#hasZone
+<https://prometheus-metric-ontology.ericsson.com/#hasZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://prometheus-metric-ontology.ericsson.com/#hasZone> <http://www.w3.org/2000/01/rdf-schema#domain> <https://prometheus-metric-ontology.ericsson.com/#Metric> .
+<https://prometheus-metric-ontology.ericsson.com/#hasZone> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://prometheus-metric-ontology.ericsson.com/#hasZone> <http://www.w3.org/2000/01/rdf-schema#comment> "The Zone label for the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#hasZone> <http://www.w3.org/2000/01/rdf-schema#label> "hasZone" .
 # 
 # 
 # 
@@ -169,58 +769,41 @@
 # #################################################################
 # 
 # 
-# http://linkedevents.org/ontology/Event
-<http://linkedevents.org/ontology/Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# https://prometheus-metric-ontology.ericsson.com/#Action
+<https://prometheus-metric-ontology.ericsson.com/#Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://prometheus-metric-ontology.ericsson.com/#Action> <http://www.w3.org/2002/07/owl#disjointWith> <https://prometheus-metric-ontology.ericsson.com/#ActionEffect> .
+<https://prometheus-metric-ontology.ericsson.com/#Action> <http://www.w3.org/2000/01/rdf-schema#comment> "The operations which will be executed to effect the metric." .
+<https://prometheus-metric-ontology.ericsson.com/#Action> <http://www.w3.org/2000/01/rdf-schema#label> "Action" .
 # 
-# http://www.w3.org/2000/01/rdf-schema#Resource
-<http://www.w3.org/2000/01/rdf-schema#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# https://prometheus-metric-ontology.ericsson.com/#ActionEffect
+<https://prometheus-metric-ontology.ericsson.com/#ActionEffect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://prometheus-metric-ontology.ericsson.com/#ActionEffect> <http://www.w3.org/2000/01/rdf-schema#comment> "The result of executing the actions operations. " .
+<https://prometheus-metric-ontology.ericsson.com/#ActionEffect> <http://www.w3.org/2000/01/rdf-schema#label> "ActionEffect" .
 # 
-# https://change-detection-ontology.adaptcentre.ie/#ChangeLog
-<https://change-detection-ontology.adaptcentre.ie/#ChangeLog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://change-detection-ontology.adaptcentre.ie/#ChangeLog> <http://www.w3.org/2000/01/rdf-schema#comment> "A grouping of changes that have occured within a specific source data." .
-<https://change-detection-ontology.adaptcentre.ie/#ChangeLog> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
-<https://change-detection-ontology.adaptcentre.ie/#ChangeLog> <http://www.w3.org/2000/01/rdf-schema#label> "ChangeLog" .
+# https://prometheus-metric-ontology.ericsson.com/#Metric
+<https://prometheus-metric-ontology.ericsson.com/#Metric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://prometheus-metric-ontology.ericsson.com/#Metric> <http://www.w3.org/2002/07/owl#disjointWith> <https://prometheus-metric-ontology.ericsson.com/#MetricQuery> .
+<https://prometheus-metric-ontology.ericsson.com/#Metric> <http://www.w3.org/2002/07/owl#disjointWith> <https://prometheus-metric-ontology.ericsson.com/#MetricResult> .
+<https://prometheus-metric-ontology.ericsson.com/#Metric> <http://www.w3.org/2002/07/owl#disjointWith> <https://prometheus-metric-ontology.ericsson.com/#MetricResultSet> .
+<https://prometheus-metric-ontology.ericsson.com/#Metric> <http://www.w3.org/2000/01/rdf-schema#comment> "The metric information being monitored." .
+<https://prometheus-metric-ontology.ericsson.com/#Metric> <http://www.w3.org/2000/01/rdf-schema#label> "Metric" .
 # 
-# https://change-detection-ontology.adaptcentre.ie/#DatatypeSourceData
-<https://change-detection-ontology.adaptcentre.ie/#DatatypeSourceData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://change-detection-ontology.adaptcentre.ie/#DatatypeSourceData> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linkedevents.org/ontology/Event> .
-<https://change-detection-ontology.adaptcentre.ie/#DatatypeSourceData> <http://www.w3.org/2000/01/rdf-schema#comment> "Datatype has been changed in the source data." .
-<https://change-detection-ontology.adaptcentre.ie/#DatatypeSourceData> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
-<https://change-detection-ontology.adaptcentre.ie/#DatatypeSourceData> <http://www.w3.org/2000/01/rdf-schema#label> "DatatypeSourceData" .
+# https://prometheus-metric-ontology.ericsson.com/#MetricQuery
+<https://prometheus-metric-ontology.ericsson.com/#MetricQuery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://prometheus-metric-ontology.ericsson.com/#MetricQuery> <http://www.w3.org/2002/07/owl#disjointWith> <https://prometheus-metric-ontology.ericsson.com/#MetricResult> .
+<https://prometheus-metric-ontology.ericsson.com/#MetricQuery> <http://www.w3.org/2002/07/owl#disjointWith> <https://prometheus-metric-ontology.ericsson.com/#MetricResultSet> .
+<https://prometheus-metric-ontology.ericsson.com/#MetricQuery> <http://www.w3.org/2000/01/rdf-schema#comment> "The information related to the query used to collect the metric information." .
+<https://prometheus-metric-ontology.ericsson.com/#MetricQuery> <http://www.w3.org/2000/01/rdf-schema#label> "MetricQuery" .
 # 
-# https://change-detection-ontology.adaptcentre.ie/#DeleteSourceData
-<https://change-detection-ontology.adaptcentre.ie/#DeleteSourceData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://change-detection-ontology.adaptcentre.ie/#DeleteSourceData> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linkedevents.org/ontology/Event> .
-<https://change-detection-ontology.adaptcentre.ie/#DeleteSourceData> <http://www.w3.org/2000/01/rdf-schema#comment> "Data has been removed within the source data." .
-<https://change-detection-ontology.adaptcentre.ie/#DeleteSourceData> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
-<https://change-detection-ontology.adaptcentre.ie/#DeleteSourceData> <http://www.w3.org/2000/01/rdf-schema#label> "DeleteSourceData" .
+# https://prometheus-metric-ontology.ericsson.com/#MetricResult
+<https://prometheus-metric-ontology.ericsson.com/#MetricResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://prometheus-metric-ontology.ericsson.com/#MetricResult> <http://www.w3.org/2002/07/owl#disjointWith> <https://prometheus-metric-ontology.ericsson.com/#MetricResultSet> .
+<https://prometheus-metric-ontology.ericsson.com/#MetricResult> <http://www.w3.org/2000/01/rdf-schema#comment> "A result related to a specific result set." .
+<https://prometheus-metric-ontology.ericsson.com/#MetricResult> <http://www.w3.org/2000/01/rdf-schema#label> "MetricResult" .
 # 
-# https://change-detection-ontology.adaptcentre.ie/#InsertSourceData
-<https://change-detection-ontology.adaptcentre.ie/#InsertSourceData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://change-detection-ontology.adaptcentre.ie/#InsertSourceData> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linkedevents.org/ontology/Event> .
-<https://change-detection-ontology.adaptcentre.ie/#InsertSourceData> <http://www.w3.org/2000/01/rdf-schema#comment> "Data has been inserted within the source data." .
-<https://change-detection-ontology.adaptcentre.ie/#InsertSourceData> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
-<https://change-detection-ontology.adaptcentre.ie/#InsertSourceData> <http://www.w3.org/2000/01/rdf-schema#label> "InsertSourceData" .
-# 
-# https://change-detection-ontology.adaptcentre.ie/#MergeSourceData
-<https://change-detection-ontology.adaptcentre.ie/#MergeSourceData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://change-detection-ontology.adaptcentre.ie/#MergeSourceData> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linkedevents.org/ontology/Event> .
-<https://change-detection-ontology.adaptcentre.ie/#MergeSourceData> <http://www.w3.org/2000/01/rdf-schema#comment> "Data has been merged within the source data." .
-<https://change-detection-ontology.adaptcentre.ie/#MergeSourceData> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
-<https://change-detection-ontology.adaptcentre.ie/#MergeSourceData> <http://www.w3.org/2000/01/rdf-schema#label> "MergeSourceData" .
-# 
-# https://change-detection-ontology.adaptcentre.ie/#MoveSourceData
-<https://change-detection-ontology.adaptcentre.ie/#MoveSourceData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://change-detection-ontology.adaptcentre.ie/#MoveSourceData> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linkedevents.org/ontology/Event> .
-<https://change-detection-ontology.adaptcentre.ie/#MoveSourceData> <http://www.w3.org/2000/01/rdf-schema#comment> "Data has been moved within the source data." .
-<https://change-detection-ontology.adaptcentre.ie/#MoveSourceData> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
-<https://change-detection-ontology.adaptcentre.ie/#MoveSourceData> <http://www.w3.org/2000/01/rdf-schema#label> "MoveSourceData" .
-# 
-# https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData
-<https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linkedevents.org/ontology/Event> .
-<https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData> <http://www.w3.org/2000/01/rdf-schema#comment> "Data has been updated within the source data." .
-<https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
-<https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData> <http://www.w3.org/2000/01/rdf-schema#label> "UpdateSourceData" .
+# https://prometheus-metric-ontology.ericsson.com/#MetricResultSet
+<https://prometheus-metric-ontology.ericsson.com/#MetricResultSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://prometheus-metric-ontology.ericsson.com/#MetricResultSet> <http://www.w3.org/2000/01/rdf-schema#comment> "The values and timestamps related to a metric." .
+<https://prometheus-metric-ontology.ericsson.com/#MetricResultSet> <http://www.w3.org/2000/01/rdf-schema#label> "MetricResultSet" .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

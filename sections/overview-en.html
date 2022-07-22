@@ -1,80 +1,428 @@
-<h2 id="overv" class="list">Change Detection Ontology (CDO): Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<h2 id="overv" class="list">Prometheus Metric Ontology (PMO): Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
 This ontology has the following classes and properties.</span>
 <h4>Classes</h4>
 <ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
    <li>
-      <a href="#ChangeLog"
-         title="https://change-detection-ontology.adaptcentre.ie/#ChangeLog">ChangeLog</a>
+      <a href="#Action"
+         title="https://prometheus-metric-ontology.ericsson.com/#Action">Action</a>
    </li>
    <li>
-      <a href="#DatatypeSourceData"
-         title="https://change-detection-ontology.adaptcentre.ie/#DatatypeSourceData">DatatypeSourceData</a>
+      <a href="#ActionEffect"
+         title="https://prometheus-metric-ontology.ericsson.com/#ActionEffect">ActionEffect</a>
    </li>
    <li>
-      <a href="#DeleteSourceData"
-         title="https://change-detection-ontology.adaptcentre.ie/#DeleteSourceData">DeleteSourceData</a>
+      <a href="#Metric"
+         title="https://prometheus-metric-ontology.ericsson.com/#Metric">Metric</a>
    </li>
    <li>
-      <a href="#InsertSourceData"
-         title="https://change-detection-ontology.adaptcentre.ie/#InsertSourceData">InsertSourceData</a>
+      <a href="#MetricQuery"
+         title="https://prometheus-metric-ontology.ericsson.com/#MetricQuery">MetricQuery</a>
    </li>
    <li>
-      <a href="#MergeSourceData"
-         title="https://change-detection-ontology.adaptcentre.ie/#MergeSourceData">MergeSourceData</a>
+      <a href="#MetricResult"
+         title="https://prometheus-metric-ontology.ericsson.com/#MetricResult">MetricResult</a>
    </li>
    <li>
-      <a href="#MoveSourceData"
-         title="https://change-detection-ontology.adaptcentre.ie/#MoveSourceData">MoveSourceData</a>
-   </li>
-   <li>
-      <a href="#UpdateSourceData"
-         title="https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData">UpdateSourceData</a>
+      <a href="#MetricResultSet"
+         title="https://prometheus-metric-ontology.ericsson.com/#MetricResultSet">MetricResultSet</a>
    </li>
 </ul><h4>Object Properties</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
    <li>
-      <a href="#hasChange"
-         title="https://change-detection-ontology.adaptcentre.ie/#hasChange">hasChange</a>
+      <a href="#effectsMetric"
+         title="https://prometheus-metric-ontology.ericsson.com/#effectsMetric">effectsMetric</a>
    </li>
    <li>
-      <a href="#hasCurrentSource"
-         title="https://change-detection-ontology.adaptcentre.ie/#hasCurrentSource">hasCurrentSource</a>
+      <a href="#generatedByMetric"
+         title="https://prometheus-metric-ontology.ericsson.com/#generatedByMetric">generatedByMetric</a>
    </li>
    <li>
-      <a href="#hasNotificationPolicy"
-         title="https://change-detection-ontology.adaptcentre.ie/#hasNotificationPolicy">hasNotificationPolicy</a>
+      <a href="#hasMetricQuery"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasMetricQuery">hasMetricQuery</a>
    </li>
    <li>
-      <a href="#hasOwner"
-         title="https://change-detection-ontology.adaptcentre.ie/#hasOwner">hasOwner</a>
+      <a href="#hasResult"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasResult">hasResult</a>
    </li>
    <li>
-      <a href="#hasPreviousSource"
-         title="https://change-detection-ontology.adaptcentre.ie/#hasPreviousSource">hasPreviousSource</a>
+      <a href="#hasResultSet"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasResultSet">hasResultSet</a>
    </li>
    <li>
-      <a href="#inChangeLog"
-         title="https://change-detection-ontology.adaptcentre.ie/#inChangeLog">inChangeLog</a>
+      <a href="#inMetricSet"
+         title="https://prometheus-metric-ontology.ericsson.com/#inMetricSet">inMetricSet</a>
    </li>
    <li>
-      <a href="#ownedBy"
-         title="https://change-detection-ontology.adaptcentre.ie/#ownedBy">ownedBy</a>
+      <a href="#usedByMetric"
+         title="https://prometheus-metric-ontology.ericsson.com/#usedByMetric">usedByMetric</a>
    </li>
 </ul><h4>Data Properties</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
    <li>
-      <a href="#hasDetectionEnd"
-         title="https://change-detection-ontology.adaptcentre.ie/#hasDetectionEnd">hasDetectionEnd</a>
+      <a href="#hasActionName"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasActionName">hasActionName</a>
    </li>
    <li>
-      <a href="#hasDetectionStart"
-         title="https://change-detection-ontology.adaptcentre.ie/#hasDetectionStart">hasDetectionStart</a>
+      <a href="#hasAddress"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasAddress">hasAddress</a>
+   </li>
+   <li>
+      <a href="#hasAlertmanager"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasAlertmanager">hasAlertmanager</a>
+   </li>
+   <li>
+      <a href="#hasAlertname"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasAlertname">hasAlertname</a>
+   </li>
+   <li>
+      <a href="#hasAlertstate"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasAlertstate">hasAlertstate</a>
+   </li>
+   <li>
+      <a href="#hasBiosDate"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasBiosDate">hasBiosDate</a>
+   </li>
+   <li>
+      <a href="#hasBiosVendor"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasBiosVendor">hasBiosVendor</a>
+   </li>
+   <li>
+      <a href="#hasBiosVersion"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasBiosVersion">hasBiosVersion</a>
+   </li>
+   <li>
+      <a href="#hasBoardName"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasBoardName">hasBoardName</a>
+   </li>
+   <li>
+      <a href="#hasBoardVendor"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasBoardVendor">hasBoardVendor</a>
+   </li>
+   <li>
+      <a href="#hasBoardVersion"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasBoardVersion">hasBoardVersion</a>
+   </li>
+   <li>
+      <a href="#hasBranch"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasBranch">hasBranch</a>
+   </li>
+   <li>
+      <a href="#hasBroadcast"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasBroadcast">hasBroadcast</a>
+   </li>
+   <li>
+      <a href="#hasCall"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasCall">hasCall</a>
+   </li>
+   <li>
+      <a href="#hasCapacityLevel"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasCapacityLevel">hasCapacityLevel</a>
+   </li>
+   <li>
+      <a href="#hasCause"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasCause">hasCause</a>
+   </li>
+   <li>
+      <a href="#hasChassisVendor"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasChassisVendor">hasChassisVendor</a>
+   </li>
+   <li>
+      <a href="#hasChip"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasChip">hasChip</a>
+   </li>
+   <li>
+      <a href="#hasChipName"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasChipName">hasChipName</a>
+   </li>
+   <li>
+      <a href="#hasClocksource"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasClocksource">hasClocksource</a>
+   </li>
+   <li>
+      <a href="#hasCode"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasCode">hasCode</a>
+   </li>
+   <li>
+      <a href="#hasCollector"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasCollector">hasCollector</a>
+   </li>
+   <li>
+      <a href="#hasConfidence"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasConfidence">hasConfidence</a>
+   </li>
+   <li>
+      <a href="#hasConfig"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasConfig">hasConfig</a>
+   </li>
+   <li>
+      <a href="#hasCore"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasCore">hasCore</a>
+   </li>
+   <li>
+      <a href="#hasCpu"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasCpu">hasCpu</a>
+   </li>
+   <li>
+      <a href="#hasDescription"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasDescription">hasDescription</a>
+   </li>
+   <li>
+      <a href="#hasDevice"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasDevice">hasDevice</a>
+   </li>
+   <li>
+      <a href="#hasDialerName"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasDialerName">hasDialerName</a>
+   </li>
+   <li>
+      <a href="#hasDomainname"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasDomainname">hasDomainname</a>
+   </li>
+   <li>
+      <a href="#hasDuplex"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasDuplex">hasDuplex</a>
+   </li>
+   <li>
+      <a href="#hasEndpoint"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasEndpoint">hasEndpoint</a>
+   </li>
+   <li>
+      <a href="#hasEvent"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasEvent">hasEvent</a>
+   </li>
+   <li>
+      <a href="#hasFirmwareRevision"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasFirmwareRevision">hasFirmwareRevision</a>
+   </li>
+   <li>
+      <a href="#hasFstype"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasFstype">hasFstype</a>
+   </li>
+   <li>
+      <a href="#hasGoversion"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasGoversion">hasGoversion</a>
+   </li>
+   <li>
+      <a href="#hasHandler"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasHandler">hasHandler</a>
+   </li>
+   <li>
+      <a href="#hasId"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasId">hasId</a>
+   </li>
+   <li>
+      <a href="#hasIdLike"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasIdLike">hasIdLike</a>
+   </li>
+   <li>
+      <a href="#hasIndex"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasIndex">hasIndex</a>
+   </li>
+   <li>
+      <a href="#hasInstance"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasInstance">hasInstance</a>
+   </li>
+   <li>
+      <a href="#hasInterval"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasInterval">hasInterval</a>
+   </li>
+   <li>
+      <a href="#hasIp"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasIp">hasIp</a>
+   </li>
+   <li>
+      <a href="#hasJob"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasJob">hasJob</a>
+   </li>
+   <li>
+      <a href="#hasLabel"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasLabel">hasLabel</a>
+   </li>
+   <li>
+      <a href="#hasLe"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasLe">hasLe</a>
+   </li>
+   <li>
+      <a href="#hasListenerName"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasListenerName">hasListenerName</a>
+   </li>
+   <li>
+      <a href="#hasMachine"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasMachine">hasMachine</a>
+   </li>
+   <li>
+      <a href="#hasMajor"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasMajor">hasMajor</a>
+   </li>
+   <li>
+      <a href="#hasManufacturer"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasManufacturer">hasManufacturer</a>
+   </li>
+   <li>
+      <a href="#hasMinor"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasMinor">hasMinor</a>
+   </li>
+   <li>
+      <a href="#hasMode"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasMode">hasMode</a>
+   </li>
+   <li>
+      <a href="#hasModel"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasModel">hasModel</a>
+   </li>
+   <li>
+      <a href="#hasModelName"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasModelName">hasModelName</a>
+   </li>
+   <li>
+      <a href="#hasMountpoint"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasMountpoint">hasMountpoint</a>
+   </li>
+   <li>
+      <a href="#hasName"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasName">hasName</a>
+   </li>
+   <li>
+      <a href="#hasNodename"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasNodename">hasNodename</a>
+   </li>
+   <li>
+      <a href="#hasOperation"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasOperation">hasOperation</a>
+   </li>
+   <li>
+      <a href="#hasOperstate"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasOperstate">hasOperstate</a>
+   </li>
+   <li>
+      <a href="#hasPackage"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasPackage">hasPackage</a>
+   </li>
+   <li>
+      <a href="#hasPath"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasPath">hasPath</a>
+   </li>
+   <li>
+      <a href="#hasPowerSupply"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasPowerSupply">hasPowerSupply</a>
+   </li>
+   <li>
+      <a href="#hasPrettyName"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasPrettyName">hasPrettyName</a>
+   </li>
+   <li>
+      <a href="#hasProductFamily"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasProductFamily">hasProductFamily</a>
+   </li>
+   <li>
+      <a href="#hasProductName"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasProductName">hasProductName</a>
+   </li>
+   <li>
+      <a href="#hasQuantile"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasQuantile">hasQuantile</a>
+   </li>
+   <li>
+      <a href="#hasQuery"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasQuery">hasQuery</a>
+   </li>
+   <li>
+      <a href="#hasQueue"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasQueue">hasQueue</a>
    </li>
    <li>
       <a href="#hasReason"
-         title="https://change-detection-ontology.adaptcentre.ie/#hasReason">hasReason</a>
+         title="https://prometheus-metric-ontology.ericsson.com/#hasReason">hasReason</a>
    </li>
    <li>
-      <a href="#hasThreshold"
-         title="https://change-detection-ontology.adaptcentre.ie/#hasThreshold">hasThreshold</a>
+      <a href="#hasRelease"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasRelease">hasRelease</a>
+   </li>
+   <li>
+      <a href="#hasResultType"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasResultType">hasResultType</a>
+   </li>
+   <li>
+      <a href="#hasRevision"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasRevision">hasRevision</a>
+   </li>
+   <li>
+      <a href="#hasRole"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasRole">hasRole</a>
+   </li>
+   <li>
+      <a href="#hasRuleGroup"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasRuleGroup">hasRuleGroup</a>
+   </li>
+   <li>
+      <a href="#hasScrapeJob"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasScrapeJob">hasScrapeJob</a>
+   </li>
+   <li>
+      <a href="#hasSensor"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasSensor">hasSensor</a>
+   </li>
+   <li>
+      <a href="#hasSerial"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasSerial">hasSerial</a>
+   </li>
+   <li>
+      <a href="#hasSerialNumber"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasSerialNumber">hasSerialNumber</a>
+   </li>
+   <li>
+      <a href="#hasSlice"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasSlice">hasSlice</a>
+   </li>
+   <li>
+      <a href="#hasState"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasState">hasState</a>
+   </li>
+   <li>
+      <a href="#hasStatus"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasStatus">hasStatus</a>
+   </li>
+   <li>
+      <a href="#hasSysname"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasSysname">hasSysname</a>
+   </li>
+   <li>
+      <a href="#hasSystemVendor"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasSystemVendor">hasSystemVendor</a>
+   </li>
+   <li>
+      <a href="#hasTechnology"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasTechnology">hasTechnology</a>
+   </li>
+   <li>
+      <a href="#hasTimestamp"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasTimestamp">hasTimestamp</a>
+   </li>
+   <li>
+      <a href="#hasTimeZone"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasTimeZone">hasTimeZone</a>
+   </li>
+   <li>
+      <a href="#hasType"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasType">hasType</a>
+   </li>
+   <li>
+      <a href="#hasValue"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasValue">hasValue</a>
+   </li>
+   <li>
+      <a href="#hasVersion"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasVersion">hasVersion</a>
+   </li>
+   <li>
+      <a href="#hasVersionCodename"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasVersionCodename">hasVersionCodename</a>
+   </li>
+   <li>
+      <a href="#hasVersionId"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasVersionId">hasVersionId</a>
+   </li>
+   <li>
+      <a href="#hasZone"
+         title="https://prometheus-metric-ontology.ericsson.com/#hasZone">hasZone</a>
    </li>
 </ul><iframe align="center" width="100%" height ="500px" src="webvowl/index.html"></iframe> 
