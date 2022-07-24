@@ -1,0 +1,271 @@
+<https://change-detection-ontology.adaptcentre.ie/#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://change-detection-ontology.adaptcentre.ie/#> <http://purl.org/dc/terms/abstract> "The Change Detection Ontology (CDO) provides a set of classes, properties, and restrictions that can be used to represent and interchange provenance and metadata information relating to changes that occur within source data that has created an RDF dataset. It can also be specialized to create new classes and properties to model provenance and metadata information for domain specific changes." .
+<https://change-detection-ontology.adaptcentre.ie/#> <http://purl.org/dc/terms/created> "20 April 2022" .
+<https://change-detection-ontology.adaptcentre.ie/#> <http://purl.org/dc/terms/creator> "Alex Randles" .
+<https://change-detection-ontology.adaptcentre.ie/#> <http://purl.org/dc/terms/creator> "Declan O'Sullivan" .
+<https://change-detection-ontology.adaptcentre.ie/#> <http://purl.org/dc/terms/description> "The Change Detection Ontology (CDO) is used to capture information which relates the changes that have occured within the source data of an RDF dataset. \n\nThe ontology allows a notification policy to be defined to notify users when a threshold of changes have occured. Once notified the mapping and source data should be re-examined to ensure no further action is required." .
+<https://change-detection-ontology.adaptcentre.ie/#> <http://purl.org/dc/terms/license> "http://creativecommons.org/publicdomain/zero/1.0/" .
+<https://change-detection-ontology.adaptcentre.ie/#> <http://purl.org/dc/terms/title> "Change Detection Ontology (CDO)" .
+<https://change-detection-ontology.adaptcentre.ie/#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "cdo" .
+<https://change-detection-ontology.adaptcentre.ie/#> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://change-detection-ontology.adaptcentre.ie/#" .
+<https://change-detection-ontology.adaptcentre.ie/#> <http://www.w3.org/2002/07/owl#versionInfo> "20 April 2022" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/abstract
+<http://purl.org/dc/terms/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://change-detection-ontology.adaptcentre.ie/#hasChange
+<https://change-detection-ontology.adaptcentre.ie/#hasChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://change-detection-ontology.adaptcentre.ie/#hasChange> <http://www.w3.org/2000/01/rdf-schema#domain> <https://change-detection-ontology.adaptcentre.ie/#ChangeLog> .
+<https://change-detection-ontology.adaptcentre.ie/#hasChange> <http://www.w3.org/2000/01/rdf-schema#range> <http://linkedevents.org/ontology/Event> .
+<https://change-detection-ontology.adaptcentre.ie/#hasChange> <http://www.w3.org/2000/01/rdf-schema#comment> "A change within a particular change log." .
+<https://change-detection-ontology.adaptcentre.ie/#hasChange> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
+<https://change-detection-ontology.adaptcentre.ie/#hasChange> <http://www.w3.org/2000/01/rdf-schema#label> "hasChange" .
+# 
+# https://change-detection-ontology.adaptcentre.ie/#hasCurrentSource
+<https://change-detection-ontology.adaptcentre.ie/#hasCurrentSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://change-detection-ontology.adaptcentre.ie/#hasCurrentSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://change-detection-ontology.adaptcentre.ie/#hasCurrentSource> <http://www.w3.org/2000/01/rdf-schema#domain> <https://change-detection-ontology.adaptcentre.ie/#ChangeLog> .
+<https://change-detection-ontology.adaptcentre.ie/#hasCurrentSource> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<https://change-detection-ontology.adaptcentre.ie/#hasCurrentSource> <http://www.w3.org/2000/01/rdf-schema#comment> "The current version of the source data." .
+<https://change-detection-ontology.adaptcentre.ie/#hasCurrentSource> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
+<https://change-detection-ontology.adaptcentre.ie/#hasCurrentSource> <http://www.w3.org/2000/01/rdf-schema#label> "hasCurrentSource" .
+# 
+# https://change-detection-ontology.adaptcentre.ie/#hasNotificationPolicy
+<https://change-detection-ontology.adaptcentre.ie/#hasNotificationPolicy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://change-detection-ontology.adaptcentre.ie/#hasNotificationPolicy> <http://www.w3.org/2002/07/owl#inverseOf> <https://change-detection-ontology.adaptcentre.ie/#isNotificationPolicy> .
+<https://change-detection-ontology.adaptcentre.ie/#hasNotificationPolicy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://change-detection-ontology.adaptcentre.ie/#ChangeLog> .
+<https://change-detection-ontology.adaptcentre.ie/#hasNotificationPolicy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy> .
+<https://change-detection-ontology.adaptcentre.ie/#hasNotificationPolicy> <http://www.w3.org/2000/01/rdf-schema#comment> "The notification policy of the change log." .
+<https://change-detection-ontology.adaptcentre.ie/#hasNotificationPolicy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://change-detection-ontology.adaptcentre.ie/#> .
+<https://change-detection-ontology.adaptcentre.ie/#hasNotificationPolicy> <http://www.w3.org/2000/01/rdf-schema#label> "hasNotificationPolicy" .
+# 
+# https://change-detection-ontology.adaptcentre.ie/#hasOwner
+<https://change-detection-ontology.adaptcentre.ie/#hasOwner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://change-detection-ontology.adaptcentre.ie/#hasOwner> <http://www.w3.org/2000/01/rdf-schema#domain> <https://change-detection-ontology.adaptcentre.ie/#ChangeLog> .
+<https://change-detection-ontology.adaptcentre.ie/#hasOwner> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> .
+<https://change-detection-ontology.adaptcentre.ie/#hasOwner> <http://www.w3.org/2000/01/rdf-schema#comment> "The agent who owns the change log." .
+<https://change-detection-ontology.adaptcentre.ie/#hasOwner> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
+<https://change-detection-ontology.adaptcentre.ie/#hasOwner> <http://www.w3.org/2000/01/rdf-schema#label> "hasOwner" .
+# 
+# https://change-detection-ontology.adaptcentre.ie/#hasPreviousSource
+<https://change-detection-ontology.adaptcentre.ie/#hasPreviousSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://change-detection-ontology.adaptcentre.ie/#hasPreviousSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://change-detection-ontology.adaptcentre.ie/#hasPreviousSource> <http://www.w3.org/2000/01/rdf-schema#domain> <https://change-detection-ontology.adaptcentre.ie/#ChangeLog> .
+<https://change-detection-ontology.adaptcentre.ie/#hasPreviousSource> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<https://change-detection-ontology.adaptcentre.ie/#hasPreviousSource> <http://www.w3.org/2000/01/rdf-schema#comment> "The previous version of the source data of the change log." .
+<https://change-detection-ontology.adaptcentre.ie/#hasPreviousSource> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
+<https://change-detection-ontology.adaptcentre.ie/#hasPreviousSource> <http://www.w3.org/2000/01/rdf-schema#label> "hasPreviousSource" .
+# 
+# https://change-detection-ontology.adaptcentre.ie/#inChangeLog
+<https://change-detection-ontology.adaptcentre.ie/#inChangeLog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://change-detection-ontology.adaptcentre.ie/#inChangeLog> <http://www.w3.org/2002/07/owl#inverseOf> <https://change-detection-ontology.adaptcentre.ie/#hasChange> .
+<https://change-detection-ontology.adaptcentre.ie/#inChangeLog> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linkedevents.org/ontology/Event> .
+<https://change-detection-ontology.adaptcentre.ie/#inChangeLog> <http://www.w3.org/2000/01/rdf-schema#range> <https://change-detection-ontology.adaptcentre.ie/#ChangeLog> .
+<https://change-detection-ontology.adaptcentre.ie/#inChangeLog> <http://www.w3.org/2000/01/rdf-schema#comment> "A change within a change log." .
+<https://change-detection-ontology.adaptcentre.ie/#inChangeLog> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
+<https://change-detection-ontology.adaptcentre.ie/#inChangeLog> <http://www.w3.org/2000/01/rdf-schema#label> "inChangeLog" .
+# 
+# https://change-detection-ontology.adaptcentre.ie/#isCurrentSource
+<https://change-detection-ontology.adaptcentre.ie/#isCurrentSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://change-detection-ontology.adaptcentre.ie/#isCurrentSource> <http://www.w3.org/2002/07/owl#inverseOf> <https://change-detection-ontology.adaptcentre.ie/#hasCurrentSource> .
+<https://change-detection-ontology.adaptcentre.ie/#isCurrentSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://change-detection-ontology.adaptcentre.ie/#isCurrentSource> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<https://change-detection-ontology.adaptcentre.ie/#isCurrentSource> <http://www.w3.org/2000/01/rdf-schema#range> <https://change-detection-ontology.adaptcentre.ie/#ChangeLog> .
+<https://change-detection-ontology.adaptcentre.ie/#isCurrentSource> <http://www.w3.org/2000/01/rdf-schema#comment> "The current version of the source data." .
+<https://change-detection-ontology.adaptcentre.ie/#isCurrentSource> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
+<https://change-detection-ontology.adaptcentre.ie/#isCurrentSource> <http://www.w3.org/2000/01/rdf-schema#label> "isCurrentSource" .
+# 
+# https://change-detection-ontology.adaptcentre.ie/#isNotificationPolicy
+<https://change-detection-ontology.adaptcentre.ie/#isNotificationPolicy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://change-detection-ontology.adaptcentre.ie/#isNotificationPolicy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy> .
+<https://change-detection-ontology.adaptcentre.ie/#isNotificationPolicy> <http://www.w3.org/2000/01/rdf-schema#range> <https://change-detection-ontology.adaptcentre.ie/#ChangeLog> .
+<https://change-detection-ontology.adaptcentre.ie/#isNotificationPolicy> <http://www.w3.org/2000/01/rdf-schema#comment> "The notification policy defined for the change log" .
+<https://change-detection-ontology.adaptcentre.ie/#isNotificationPolicy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://change-detection-ontology.adaptcentre.ie/#> .
+<https://change-detection-ontology.adaptcentre.ie/#isNotificationPolicy> <http://www.w3.org/2000/01/rdf-schema#label> "isNotificationPolicy" .
+# 
+# https://change-detection-ontology.adaptcentre.ie/#isPreviousSource
+<https://change-detection-ontology.adaptcentre.ie/#isPreviousSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://change-detection-ontology.adaptcentre.ie/#isPreviousSource> <http://www.w3.org/2002/07/owl#inverseOf> <https://change-detection-ontology.adaptcentre.ie/#hasPreviousSource> .
+<https://change-detection-ontology.adaptcentre.ie/#isPreviousSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://change-detection-ontology.adaptcentre.ie/#isPreviousSource> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<https://change-detection-ontology.adaptcentre.ie/#isPreviousSource> <http://www.w3.org/2000/01/rdf-schema#range> <https://change-detection-ontology.adaptcentre.ie/#ChangeLog> .
+<https://change-detection-ontology.adaptcentre.ie/#isPreviousSource> <http://www.w3.org/2000/01/rdf-schema#comment> "The previous version of the source " .
+<https://change-detection-ontology.adaptcentre.ie/#isPreviousSource> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
+<https://change-detection-ontology.adaptcentre.ie/#isPreviousSource> <http://www.w3.org/2000/01/rdf-schema#label> "isPreviousSource" .
+# 
+# https://change-detection-ontology.adaptcentre.ie/#ownedBy
+<https://change-detection-ontology.adaptcentre.ie/#ownedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://change-detection-ontology.adaptcentre.ie/#ownedBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://change-detection-ontology.adaptcentre.ie/#hasOwner> .
+<https://change-detection-ontology.adaptcentre.ie/#ownedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> .
+<https://change-detection-ontology.adaptcentre.ie/#ownedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://change-detection-ontology.adaptcentre.ie/#ChangeLog> .
+<https://change-detection-ontology.adaptcentre.ie/#ownedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The owner of the change log." .
+<https://change-detection-ontology.adaptcentre.ie/#ownedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
+<https://change-detection-ontology.adaptcentre.ie/#ownedBy> <http://www.w3.org/2000/01/rdf-schema#label> "ownedBy" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://change-detection-ontology.adaptcentre.ie/#hasDetectionEnd
+<https://change-detection-ontology.adaptcentre.ie/#hasDetectionEnd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://change-detection-ontology.adaptcentre.ie/#hasDetectionEnd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://change-detection-ontology.adaptcentre.ie/#hasDetectionEnd> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy> .
+<https://change-detection-ontology.adaptcentre.ie/#hasDetectionEnd> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://change-detection-ontology.adaptcentre.ie/#hasDetectionEnd> <http://www.w3.org/2000/01/rdf-schema#comment> "The time when the notification policy is terminated." .
+<https://change-detection-ontology.adaptcentre.ie/#hasDetectionEnd> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
+<https://change-detection-ontology.adaptcentre.ie/#hasDetectionEnd> <http://www.w3.org/2000/01/rdf-schema#label> "hasDetectionEnd" .
+# 
+# https://change-detection-ontology.adaptcentre.ie/#hasDetectionStart
+<https://change-detection-ontology.adaptcentre.ie/#hasDetectionStart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://change-detection-ontology.adaptcentre.ie/#hasDetectionStart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://change-detection-ontology.adaptcentre.ie/#hasDetectionStart> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy> .
+<https://change-detection-ontology.adaptcentre.ie/#hasDetectionStart> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://change-detection-ontology.adaptcentre.ie/#hasDetectionStart> <http://www.w3.org/2000/01/rdf-schema#comment> "The time when the notification policy was created." .
+<https://change-detection-ontology.adaptcentre.ie/#hasDetectionStart> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
+<https://change-detection-ontology.adaptcentre.ie/#hasDetectionStart> <http://www.w3.org/2000/01/rdf-schema#label> "hasDetectionStart" .
+# 
+# https://change-detection-ontology.adaptcentre.ie/#hasReason
+<https://change-detection-ontology.adaptcentre.ie/#hasReason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://change-detection-ontology.adaptcentre.ie/#hasReason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://change-detection-ontology.adaptcentre.ie/#hasReason> <http://www.w3.org/2000/01/rdf-schema#domain> <http://linkedevents.org/ontology/Event> .
+<https://change-detection-ontology.adaptcentre.ie/#hasReason> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://change-detection-ontology.adaptcentre.ie/#hasReason> <http://www.w3.org/2000/01/rdf-schema#comment> "The reason a change occurred." .
+<https://change-detection-ontology.adaptcentre.ie/#hasReason> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
+<https://change-detection-ontology.adaptcentre.ie/#hasReason> <http://www.w3.org/2000/01/rdf-schema#label> "hasReason" .
+# 
+# https://change-detection-ontology.adaptcentre.ie/#hasThreshold
+<https://change-detection-ontology.adaptcentre.ie/#hasThreshold> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://change-detection-ontology.adaptcentre.ie/#hasThreshold> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://change-detection-ontology.adaptcentre.ie/#hasThreshold> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint> .
+<https://change-detection-ontology.adaptcentre.ie/#hasThreshold> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<https://change-detection-ontology.adaptcentre.ie/#hasThreshold> <http://www.w3.org/2000/01/rdf-schema#comment> "The threshold defined for a change type within the notification policy." .
+<https://change-detection-ontology.adaptcentre.ie/#hasThreshold> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
+<https://change-detection-ontology.adaptcentre.ie/#hasThreshold> <http://www.w3.org/2000/01/rdf-schema#label> "hasThreshold" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://linkedevents.org/ontology/Event
+<http://linkedevents.org/ontology/Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linkedevents.org/ontology/Event> <http://www.w3.org/2002/07/owl#disjointWith> <https://change-detection-ontology.adaptcentre.ie/#ChangeLog> .
+<http://linkedevents.org/ontology/Event> <http://www.w3.org/2000/01/rdf-schema#comment> "The superclass of each change type." .
+<http://linkedevents.org/ontology/Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event" .
+# 
+# http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint
+<http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint> <http://www.w3.org/2000/01/rdf-schema#comment> "The constraint for the notification policy." .
+<http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint> <http://www.w3.org/2000/01/rdf-schema#label> "SimpleConstraint" .
+# 
+# http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy
+<http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy> <http://www.w3.org/2000/01/rdf-schema#comment> "The notification policy for the change log." .
+<http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy> <http://www.w3.org/2000/01/rdf-schema#label> "Policy" .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> <http://www.w3.org/2000/01/rdf-schema#comment> "The agent who owns the change log." .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> <http://www.w3.org/2000/01/rdf-schema#label> "Agent" .
+# 
+# http://www.w3.org/2000/01/rdf-schema#Resource
+<http://www.w3.org/2000/01/rdf-schema#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2000/01/rdf-schema#Resource> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the source data." .
+<http://www.w3.org/2000/01/rdf-schema#Resource> <http://www.w3.org/2000/01/rdf-schema#label> "Resource" .
+# 
+# https://change-detection-ontology.adaptcentre.ie/#ChangeLog
+<https://change-detection-ontology.adaptcentre.ie/#ChangeLog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://change-detection-ontology.adaptcentre.ie/#ChangeLog> <http://www.w3.org/2000/01/rdf-schema#comment> "A grouping of changes that have occured within a specific source data." .
+<https://change-detection-ontology.adaptcentre.ie/#ChangeLog> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
+<https://change-detection-ontology.adaptcentre.ie/#ChangeLog> <http://www.w3.org/2000/01/rdf-schema#label> "ChangeLog" .
+# 
+# https://change-detection-ontology.adaptcentre.ie/#DatatypeSourceData
+<https://change-detection-ontology.adaptcentre.ie/#DatatypeSourceData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://change-detection-ontology.adaptcentre.ie/#DatatypeSourceData> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linkedevents.org/ontology/Event> .
+<https://change-detection-ontology.adaptcentre.ie/#DatatypeSourceData> <http://www.w3.org/2000/01/rdf-schema#comment> "Datatype has been changed in the source data." .
+<https://change-detection-ontology.adaptcentre.ie/#DatatypeSourceData> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
+<https://change-detection-ontology.adaptcentre.ie/#DatatypeSourceData> <http://www.w3.org/2000/01/rdf-schema#label> "DatatypeSourceData" .
+# 
+# https://change-detection-ontology.adaptcentre.ie/#DeleteSourceData
+<https://change-detection-ontology.adaptcentre.ie/#DeleteSourceData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://change-detection-ontology.adaptcentre.ie/#DeleteSourceData> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linkedevents.org/ontology/Event> .
+<https://change-detection-ontology.adaptcentre.ie/#DeleteSourceData> <http://www.w3.org/2000/01/rdf-schema#comment> "Data has been removed within the source data." .
+<https://change-detection-ontology.adaptcentre.ie/#DeleteSourceData> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
+<https://change-detection-ontology.adaptcentre.ie/#DeleteSourceData> <http://www.w3.org/2000/01/rdf-schema#label> "DeleteSourceData" .
+# 
+# https://change-detection-ontology.adaptcentre.ie/#InsertSourceData
+<https://change-detection-ontology.adaptcentre.ie/#InsertSourceData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://change-detection-ontology.adaptcentre.ie/#InsertSourceData> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linkedevents.org/ontology/Event> .
+<https://change-detection-ontology.adaptcentre.ie/#InsertSourceData> <http://www.w3.org/2000/01/rdf-schema#comment> "Data has been inserted within the source data." .
+<https://change-detection-ontology.adaptcentre.ie/#InsertSourceData> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
+<https://change-detection-ontology.adaptcentre.ie/#InsertSourceData> <http://www.w3.org/2000/01/rdf-schema#label> "InsertSourceData" .
+# 
+# https://change-detection-ontology.adaptcentre.ie/#MergeSourceData
+<https://change-detection-ontology.adaptcentre.ie/#MergeSourceData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://change-detection-ontology.adaptcentre.ie/#MergeSourceData> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linkedevents.org/ontology/Event> .
+<https://change-detection-ontology.adaptcentre.ie/#MergeSourceData> <http://www.w3.org/2000/01/rdf-schema#comment> "Data has been merged within the source data." .
+<https://change-detection-ontology.adaptcentre.ie/#MergeSourceData> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
+<https://change-detection-ontology.adaptcentre.ie/#MergeSourceData> <http://www.w3.org/2000/01/rdf-schema#label> "MergeSourceData" .
+# 
+# https://change-detection-ontology.adaptcentre.ie/#MoveSourceData
+<https://change-detection-ontology.adaptcentre.ie/#MoveSourceData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://change-detection-ontology.adaptcentre.ie/#MoveSourceData> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linkedevents.org/ontology/Event> .
+<https://change-detection-ontology.adaptcentre.ie/#MoveSourceData> <http://www.w3.org/2000/01/rdf-schema#comment> "Data has been moved within the source data." .
+<https://change-detection-ontology.adaptcentre.ie/#MoveSourceData> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
+<https://change-detection-ontology.adaptcentre.ie/#MoveSourceData> <http://www.w3.org/2000/01/rdf-schema#label> "MoveSourceData" .
+# 
+# https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData
+<https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linkedevents.org/ontology/Event> .
+<https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData> <http://www.w3.org/2000/01/rdf-schema#comment> "Data has been updated within the source data." .
+<https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://change-detection-ontology.adaptcentre.ie/#> .
+<https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData> <http://www.w3.org/2000/01/rdf-schema#label> "UpdateSourceData" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

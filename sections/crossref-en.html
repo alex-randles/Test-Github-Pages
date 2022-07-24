@@ -1,0 +1,1010 @@
+<h2 id="crossreference" class="list">Cross-reference for Change Detection Ontology (CDO) classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Change Detection Ontology (CDO).
+<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"
+            title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent">Agent</a>
+      </li>
+      <li>
+         <a href="#ChangeLog"
+            title="https://change-detection-ontology.adaptcentre.ie/#ChangeLog">ChangeLog</a>
+      </li>
+      <li>
+         <a href="#DatatypeSourceData"
+            title="https://change-detection-ontology.adaptcentre.ie/#DatatypeSourceData">DatatypeSourceData</a>
+      </li>
+      <li>
+         <a href="#DeleteSourceData"
+            title="https://change-detection-ontology.adaptcentre.ie/#DeleteSourceData">DeleteSourceData</a>
+      </li>
+      <li>
+         <a href="#http://linkedevents.org/ontology/Event" title="http://linkedevents.org/ontology/Event">Event</a>
+      </li>
+      <li>
+         <a href="#InsertSourceData"
+            title="https://change-detection-ontology.adaptcentre.ie/#InsertSourceData">InsertSourceData</a>
+      </li>
+      <li>
+         <a href="#MergeSourceData"
+            title="https://change-detection-ontology.adaptcentre.ie/#MergeSourceData">MergeSourceData</a>
+      </li>
+      <li>
+         <a href="#MoveSourceData"
+            title="https://change-detection-ontology.adaptcentre.ie/#MoveSourceData">MoveSourceData</a>
+      </li>
+      <li>
+         <a href="#http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy"
+            title="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy">Policy</a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/2000/01/rdf-schema#Resource" title="http://www.w3.org/2000/01/rdf-schema#Resource">Resource</a>
+      </li>
+      <li>
+         <a href="#http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint"
+            title="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint">SimpleConstraint</a>
+      </li>
+      <li>
+         <a href="#UpdateSourceData"
+            title="https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData">UpdateSourceData</a>
+      </li>
+   </ul>
+   <div class="entity" id="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent">
+      <h3>Agent<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent</p>
+      <div class="comment">
+         <span class="markdown">The agent who owns the change log.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#ownedBy"
+               title="https://change-detection-ontology.adaptcentre.ie/#ownedBy">ownedBy</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasOwner"
+               title="https://change-detection-ontology.adaptcentre.ie/#hasOwner">hasOwner</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ChangeLog">
+      <h3>ChangeLog<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#ChangeLog</p>
+      <div class="comment">
+         <span class="markdown">A grouping of changes that have occured within a specific source data.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://change-detection-ontology.adaptcentre.ie/#">https://change-detection-ontology.adaptcentre.ie/#</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasChange"
+               title="https://change-detection-ontology.adaptcentre.ie/#hasChange">hasChange</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasCurrentSource"
+               title="https://change-detection-ontology.adaptcentre.ie/#hasCurrentSource">hasCurrentSource</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasNotificationPolicy"
+               title="https://change-detection-ontology.adaptcentre.ie/#hasNotificationPolicy">hasNotificationPolicy</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasOwner"
+               title="https://change-detection-ontology.adaptcentre.ie/#hasOwner">hasOwner</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasPreviousSource"
+               title="https://change-detection-ontology.adaptcentre.ie/#hasPreviousSource">hasPreviousSource</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#inChangeLog"
+               title="https://change-detection-ontology.adaptcentre.ie/#inChangeLog">inChangeLog</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isCurrentSource"
+               title="https://change-detection-ontology.adaptcentre.ie/#isCurrentSource">isCurrentSource</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isNotificationPolicy"
+               title="https://change-detection-ontology.adaptcentre.ie/#isNotificationPolicy">isNotificationPolicy</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isPreviousSource"
+               title="https://change-detection-ontology.adaptcentre.ie/#isPreviousSource">isPreviousSource</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#ownedBy"
+               title="https://change-detection-ontology.adaptcentre.ie/#ownedBy">ownedBy</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#http://linkedevents.org/ontology/Event" title="http://linkedevents.org/ontology/Event">Event</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="DatatypeSourceData">
+      <h3>DatatypeSourceData<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#DatatypeSourceData</p>
+      <div class="comment">
+         <span class="markdown">Datatype has been changed in the source data.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://change-detection-ontology.adaptcentre.ie/#">https://change-detection-ontology.adaptcentre.ie/#</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://linkedevents.org/ontology/Event" title="http://linkedevents.org/ontology/Event">Event</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="DeleteSourceData">
+      <h3>DeleteSourceData<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#DeleteSourceData</p>
+      <div class="comment">
+         <span class="markdown">Data has been removed within the source data.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://change-detection-ontology.adaptcentre.ie/#">https://change-detection-ontology.adaptcentre.ie/#</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://linkedevents.org/ontology/Event" title="http://linkedevents.org/ontology/Event">Event</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://linkedevents.org/ontology/Event">
+      <h3>Event<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://linkedevents.org/ontology/Event</p>
+      <div class="comment">
+         <span class="markdown">The superclass of each change type.</span>
+      </div>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#DatatypeSourceData"
+               title="https://change-detection-ontology.adaptcentre.ie/#DatatypeSourceData">DatatypeSourceData</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#DeleteSourceData"
+               title="https://change-detection-ontology.adaptcentre.ie/#DeleteSourceData">DeleteSourceData</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#InsertSourceData"
+               title="https://change-detection-ontology.adaptcentre.ie/#InsertSourceData">InsertSourceData</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#MergeSourceData"
+               title="https://change-detection-ontology.adaptcentre.ie/#MergeSourceData">MergeSourceData</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#MoveSourceData"
+               title="https://change-detection-ontology.adaptcentre.ie/#MoveSourceData">MoveSourceData</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#UpdateSourceData"
+               title="https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData">UpdateSourceData</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasReason"
+               title="https://change-detection-ontology.adaptcentre.ie/#hasReason">hasReason</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#inChangeLog"
+               title="https://change-detection-ontology.adaptcentre.ie/#inChangeLog">inChangeLog</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasChange"
+               title="https://change-detection-ontology.adaptcentre.ie/#hasChange">hasChange</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#ChangeLog"
+               title="https://change-detection-ontology.adaptcentre.ie/#ChangeLog">ChangeLog</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="InsertSourceData">
+      <h3>InsertSourceData<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#InsertSourceData</p>
+      <div class="comment">
+         <span class="markdown">Data has been inserted within the source data.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://change-detection-ontology.adaptcentre.ie/#">https://change-detection-ontology.adaptcentre.ie/#</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://linkedevents.org/ontology/Event" title="http://linkedevents.org/ontology/Event">Event</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="MergeSourceData">
+      <h3>MergeSourceData<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#MergeSourceData</p>
+      <div class="comment">
+         <span class="markdown">Data has been merged within the source data.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://change-detection-ontology.adaptcentre.ie/#">https://change-detection-ontology.adaptcentre.ie/#</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://linkedevents.org/ontology/Event" title="http://linkedevents.org/ontology/Event">Event</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="MoveSourceData">
+      <h3>MoveSourceData<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#MoveSourceData</p>
+      <div class="comment">
+         <span class="markdown">Data has been moved within the source data.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://change-detection-ontology.adaptcentre.ie/#">https://change-detection-ontology.adaptcentre.ie/#</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://linkedevents.org/ontology/Event" title="http://linkedevents.org/ontology/Event">Event</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy">
+      <h3>Policy<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy</p>
+      <div class="comment">
+         <span class="markdown">The notification policy for the change log.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasDetectionEnd"
+               title="https://change-detection-ontology.adaptcentre.ie/#hasDetectionEnd">hasDetectionEnd</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasDetectionStart"
+               title="https://change-detection-ontology.adaptcentre.ie/#hasDetectionStart">hasDetectionStart</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#isNotificationPolicy"
+               title="https://change-detection-ontology.adaptcentre.ie/#isNotificationPolicy">isNotificationPolicy</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasNotificationPolicy"
+               title="https://change-detection-ontology.adaptcentre.ie/#hasNotificationPolicy">hasNotificationPolicy</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.w3.org/2000/01/rdf-schema#Resource">
+      <h3>Resource<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/2000/01/rdf-schema#Resource</p>
+      <div class="comment">
+         <span class="markdown">Represents the source data.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#isCurrentSource"
+               title="https://change-detection-ontology.adaptcentre.ie/#isCurrentSource">isCurrentSource</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isPreviousSource"
+               title="https://change-detection-ontology.adaptcentre.ie/#isPreviousSource">isPreviousSource</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasCurrentSource"
+               title="https://change-detection-ontology.adaptcentre.ie/#hasCurrentSource">hasCurrentSource</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasPreviousSource"
+               title="https://change-detection-ontology.adaptcentre.ie/#hasPreviousSource">hasPreviousSource</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint">
+      <h3>SimpleConstraint<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint</p>
+      <div class="comment">
+         <span class="markdown">The constraint for the notification policy.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasThreshold"
+               title="https://change-detection-ontology.adaptcentre.ie/#hasThreshold">hasThreshold</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="UpdateSourceData">
+      <h3>UpdateSourceData<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData</p>
+      <div class="comment">
+         <span class="markdown">Data has been updated within the source data.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://change-detection-ontology.adaptcentre.ie/#">https://change-detection-ontology.adaptcentre.ie/#</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://linkedevents.org/ontology/Event" title="http://linkedevents.org/ontology/Event">Event</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#hasChange"
+            title="https://change-detection-ontology.adaptcentre.ie/#hasChange">hasChange</a>
+      </li>
+      <li>
+         <a href="#hasCurrentSource"
+            title="https://change-detection-ontology.adaptcentre.ie/#hasCurrentSource">hasCurrentSource</a>
+      </li>
+      <li>
+         <a href="#hasNotificationPolicy"
+            title="https://change-detection-ontology.adaptcentre.ie/#hasNotificationPolicy">hasNotificationPolicy</a>
+      </li>
+      <li>
+         <a href="#hasOwner"
+            title="https://change-detection-ontology.adaptcentre.ie/#hasOwner">hasOwner</a>
+      </li>
+      <li>
+         <a href="#hasPreviousSource"
+            title="https://change-detection-ontology.adaptcentre.ie/#hasPreviousSource">hasPreviousSource</a>
+      </li>
+      <li>
+         <a href="#inChangeLog"
+            title="https://change-detection-ontology.adaptcentre.ie/#inChangeLog">inChangeLog</a>
+      </li>
+      <li>
+         <a href="#isCurrentSource"
+            title="https://change-detection-ontology.adaptcentre.ie/#isCurrentSource">isCurrentSource</a>
+      </li>
+      <li>
+         <a href="#isNotificationPolicy"
+            title="https://change-detection-ontology.adaptcentre.ie/#isNotificationPolicy">isNotificationPolicy</a>
+      </li>
+      <li>
+         <a href="#isPreviousSource"
+            title="https://change-detection-ontology.adaptcentre.ie/#isPreviousSource">isPreviousSource</a>
+      </li>
+      <li>
+         <a href="#ownedBy"
+            title="https://change-detection-ontology.adaptcentre.ie/#ownedBy">ownedBy</a>
+      </li>
+   </ul>
+   <div class="entity" id="hasChange">
+      <h3>hasChange<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#hasChange</p>
+      <div class="comment">
+         <span class="markdown">A change within a particular change log.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://change-detection-ontology.adaptcentre.ie/#">https://change-detection-ontology.adaptcentre.ie/#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ChangeLog"
+                  title="https://change-detection-ontology.adaptcentre.ie/#ChangeLog">ChangeLog</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://linkedevents.org/ontology/Event" title="http://linkedevents.org/ontology/Event">Event</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#inChangeLog"
+                  title="https://change-detection-ontology.adaptcentre.ie/#inChangeLog">inChangeLog</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasCurrentSource">
+      <h3>hasCurrentSource<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#hasCurrentSource</p>
+      <div class="comment">
+         <span class="markdown">The current version of the source data.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://change-detection-ontology.adaptcentre.ie/#">https://change-detection-ontology.adaptcentre.ie/#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ChangeLog"
+                  title="https://change-detection-ontology.adaptcentre.ie/#ChangeLog">ChangeLog</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://www.w3.org/2000/01/rdf-schema#Resource" title="http://www.w3.org/2000/01/rdf-schema#Resource">Resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isCurrentSource"
+                  title="https://change-detection-ontology.adaptcentre.ie/#isCurrentSource">isCurrentSource</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasNotificationPolicy">
+      <h3>hasNotificationPolicy<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#hasNotificationPolicy</p>
+      <div class="comment">
+         <span class="markdown">The notification policy of the change log.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://change-detection-ontology.adaptcentre.ie/#">http://change-detection-ontology.adaptcentre.ie/#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ChangeLog"
+                  title="https://change-detection-ontology.adaptcentre.ie/#ChangeLog">ChangeLog</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy"
+                  title="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy">Policy</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isNotificationPolicy"
+                  title="https://change-detection-ontology.adaptcentre.ie/#isNotificationPolicy">isNotificationPolicy</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasOwner">
+      <h3>hasOwner<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#hasOwner</p>
+      <div class="comment">
+         <span class="markdown">The agent who owns the change log.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://change-detection-ontology.adaptcentre.ie/#">https://change-detection-ontology.adaptcentre.ie/#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ChangeLog"
+                  title="https://change-detection-ontology.adaptcentre.ie/#ChangeLog">ChangeLog</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"
+                  title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent">Agent</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#ownedBy"
+                  title="https://change-detection-ontology.adaptcentre.ie/#ownedBy">ownedBy</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasPreviousSource">
+      <h3>hasPreviousSource<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#hasPreviousSource</p>
+      <div class="comment">
+         <span class="markdown">The previous version of the source data of the change log.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://change-detection-ontology.adaptcentre.ie/#">https://change-detection-ontology.adaptcentre.ie/#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ChangeLog"
+                  title="https://change-detection-ontology.adaptcentre.ie/#ChangeLog">ChangeLog</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://www.w3.org/2000/01/rdf-schema#Resource" title="http://www.w3.org/2000/01/rdf-schema#Resource">Resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isPreviousSource"
+                  title="https://change-detection-ontology.adaptcentre.ie/#isPreviousSource">isPreviousSource</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="inChangeLog">
+      <h3>inChangeLog<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#inChangeLog</p>
+      <div class="comment">
+         <span class="markdown">A change within a change log.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://change-detection-ontology.adaptcentre.ie/#">https://change-detection-ontology.adaptcentre.ie/#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://linkedevents.org/ontology/Event" title="http://linkedevents.org/ontology/Event">Event</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ChangeLog"
+                  title="https://change-detection-ontology.adaptcentre.ie/#ChangeLog">ChangeLog</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasChange"
+                  title="https://change-detection-ontology.adaptcentre.ie/#hasChange">hasChange</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isCurrentSource">
+      <h3>isCurrentSource<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#isCurrentSource</p>
+      <div class="comment">
+         <span class="markdown">The current version of the source data.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://change-detection-ontology.adaptcentre.ie/#">https://change-detection-ontology.adaptcentre.ie/#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://www.w3.org/2000/01/rdf-schema#Resource" title="http://www.w3.org/2000/01/rdf-schema#Resource">Resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ChangeLog"
+                  title="https://change-detection-ontology.adaptcentre.ie/#ChangeLog">ChangeLog</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasCurrentSource"
+                  title="https://change-detection-ontology.adaptcentre.ie/#hasCurrentSource">hasCurrentSource</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isNotificationPolicy">
+      <h3>isNotificationPolicy<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#isNotificationPolicy</p>
+      <div class="comment">
+         <span class="markdown">The notification policy defined for the change log</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://change-detection-ontology.adaptcentre.ie/#">http://change-detection-ontology.adaptcentre.ie/#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy"
+                  title="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy">Policy</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ChangeLog"
+                  title="https://change-detection-ontology.adaptcentre.ie/#ChangeLog">ChangeLog</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasNotificationPolicy"
+                  title="https://change-detection-ontology.adaptcentre.ie/#hasNotificationPolicy">hasNotificationPolicy</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isPreviousSource">
+      <h3>isPreviousSource<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#isPreviousSource</p>
+      <div class="comment">
+         <span class="markdown">The previous version of the source </span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://change-detection-ontology.adaptcentre.ie/#">https://change-detection-ontology.adaptcentre.ie/#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://www.w3.org/2000/01/rdf-schema#Resource" title="http://www.w3.org/2000/01/rdf-schema#Resource">Resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ChangeLog"
+                  title="https://change-detection-ontology.adaptcentre.ie/#ChangeLog">ChangeLog</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasPreviousSource"
+                  title="https://change-detection-ontology.adaptcentre.ie/#hasPreviousSource">hasPreviousSource</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="ownedBy">
+      <h3>ownedBy<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#ownedBy</p>
+      <div class="comment">
+         <span class="markdown">The owner of the change log.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://change-detection-ontology.adaptcentre.ie/#">https://change-detection-ontology.adaptcentre.ie/#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"
+                  title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent">Agent</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ChangeLog"
+                  title="https://change-detection-ontology.adaptcentre.ie/#ChangeLog">ChangeLog</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasOwner"
+                  title="https://change-detection-ontology.adaptcentre.ie/#hasOwner">hasOwner</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#hasDetectionEnd"
+            title="https://change-detection-ontology.adaptcentre.ie/#hasDetectionEnd">hasDetectionEnd</a>
+      </li>
+      <li>
+         <a href="#hasDetectionStart"
+            title="https://change-detection-ontology.adaptcentre.ie/#hasDetectionStart">hasDetectionStart</a>
+      </li>
+      <li>
+         <a href="#hasReason"
+            title="https://change-detection-ontology.adaptcentre.ie/#hasReason">hasReason</a>
+      </li>
+      <li>
+         <a href="#hasThreshold"
+            title="https://change-detection-ontology.adaptcentre.ie/#hasThreshold">hasThreshold</a>
+      </li>
+   </ul>
+   <div class="entity" id="hasDetectionEnd">
+      <h3>hasDetectionEnd<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#hasDetectionEnd</p>
+      <div class="comment">
+         <span class="markdown">The time when the notification policy is terminated.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://change-detection-ontology.adaptcentre.ie/#">https://change-detection-ontology.adaptcentre.ie/#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy"
+                  title="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy">Policy</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#dateTime"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#dateTime">date time</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasDetectionStart">
+      <h3>hasDetectionStart<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#hasDetectionStart</p>
+      <div class="comment">
+         <span class="markdown">The time when the notification policy was created.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://change-detection-ontology.adaptcentre.ie/#">https://change-detection-ontology.adaptcentre.ie/#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy"
+                  title="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy">Policy</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#dateTime"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#dateTime">date time</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasReason">
+      <h3>hasReason<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#hasReason</p>
+      <div class="comment">
+         <span class="markdown">The reason a change occurred.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://change-detection-ontology.adaptcentre.ie/#">https://change-detection-ontology.adaptcentre.ie/#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://linkedevents.org/ontology/Event" title="http://linkedevents.org/ontology/Event">Event</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasThreshold">
+      <h3>hasThreshold<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://change-detection-ontology.adaptcentre.ie/#hasThreshold</p>
+      <div class="comment">
+         <span class="markdown">The threshold defined for a change type within the notification policy.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://change-detection-ontology.adaptcentre.ie/#">https://change-detection-ontology.adaptcentre.ie/#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint"
+                  title="http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint">SimpleConstraint</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#int"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#int">int</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+</div>
+</div>

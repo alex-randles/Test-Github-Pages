@@ -1,0 +1,296 @@
+@prefix : <https://change-detection-ontology.adaptcentre.ie/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://change-detection-ontology.adaptcentre.ie/#> .
+
+<https://change-detection-ontology.adaptcentre.ie/#> rdf:type owl:Ontology ;
+                                                      <http://purl.org/dc/terms/abstract> "The Change Detection Ontology (CDO) provides a set of classes, properties, and restrictions that can be used to represent and interchange provenance and metadata information relating to changes that occur within source data that has created an RDF dataset. It can also be specialized to create new classes and properties to model provenance and metadata information for domain specific changes." ;
+                                                      <http://purl.org/dc/terms/created> "20 April 2022" ;
+                                                      <http://purl.org/dc/terms/creator> "Alex Randles" ,
+                                                                                         "Declan O'Sullivan" ;
+                                                      <http://purl.org/dc/terms/description> """The Change Detection Ontology (CDO) is used to capture information which relates the changes that have occured within the source data of an RDF dataset. 
+
+The ontology allows a notification policy to be defined to notify users when a threshold of changes have occured. Once notified the mapping and source data should be re-examined to ensure no further action is required.""" ;
+                                                      <http://purl.org/dc/terms/license> "http://creativecommons.org/publicdomain/zero/1.0/" ;
+                                                      <http://purl.org/dc/terms/title> "Change Detection Ontology (CDO)" ;
+                                                      <http://purl.org/vocab/vann/preferredNamespacePrefix> "cdo" ;
+                                                      <http://purl.org/vocab/vann/preferredNamespaceUri> "https://change-detection-ontology.adaptcentre.ie/#" ;
+                                                      owl:versionInfo "20 April 2022" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/abstract
+<http://purl.org/dc/terms/abstract> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://change-detection-ontology.adaptcentre.ie/#hasChange
+:hasChange rdf:type owl:ObjectProperty ;
+           rdfs:domain :ChangeLog ;
+           rdfs:range <http://linkedevents.org/ontology/Event> ;
+           rdfs:comment "A change within a particular change log." ;
+           rdfs:isDefinedBy <https://change-detection-ontology.adaptcentre.ie/#> ;
+           rdfs:label "hasChange" .
+
+
+###  https://change-detection-ontology.adaptcentre.ie/#hasCurrentSource
+:hasCurrentSource rdf:type owl:ObjectProperty ,
+                           owl:FunctionalProperty ;
+                  rdfs:domain :ChangeLog ;
+                  rdfs:range rdfs:Resource ;
+                  rdfs:comment "The current version of the source data." ;
+                  rdfs:isDefinedBy <https://change-detection-ontology.adaptcentre.ie/#> ;
+                  rdfs:label "hasCurrentSource" .
+
+
+###  https://change-detection-ontology.adaptcentre.ie/#hasNotificationPolicy
+:hasNotificationPolicy rdf:type owl:ObjectProperty ;
+                       owl:inverseOf :isNotificationPolicy ;
+                       rdfs:domain :ChangeLog ;
+                       rdfs:range <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy> ;
+                       rdfs:comment "The notification policy of the change log." ;
+                       rdfs:isDefinedBy <http://change-detection-ontology.adaptcentre.ie/#> ;
+                       rdfs:label "hasNotificationPolicy" .
+
+
+###  https://change-detection-ontology.adaptcentre.ie/#hasOwner
+:hasOwner rdf:type owl:ObjectProperty ;
+          rdfs:domain :ChangeLog ;
+          rdfs:range <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> ;
+          rdfs:comment "The agent who owns the change log." ;
+          rdfs:isDefinedBy <https://change-detection-ontology.adaptcentre.ie/#> ;
+          rdfs:label "hasOwner" .
+
+
+###  https://change-detection-ontology.adaptcentre.ie/#hasPreviousSource
+:hasPreviousSource rdf:type owl:ObjectProperty ,
+                            owl:FunctionalProperty ;
+                   rdfs:domain :ChangeLog ;
+                   rdfs:range rdfs:Resource ;
+                   rdfs:comment "The previous version of the source data of the change log." ;
+                   rdfs:isDefinedBy <https://change-detection-ontology.adaptcentre.ie/#> ;
+                   rdfs:label "hasPreviousSource" .
+
+
+###  https://change-detection-ontology.adaptcentre.ie/#inChangeLog
+:inChangeLog rdf:type owl:ObjectProperty ;
+             owl:inverseOf :hasChange ;
+             rdfs:domain <http://linkedevents.org/ontology/Event> ;
+             rdfs:range :ChangeLog ;
+             rdfs:comment "A change within a change log." ;
+             rdfs:isDefinedBy <https://change-detection-ontology.adaptcentre.ie/#> ;
+             rdfs:label "inChangeLog" .
+
+
+###  https://change-detection-ontology.adaptcentre.ie/#isCurrentSource
+:isCurrentSource rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :hasCurrentSource ;
+                 rdf:type owl:FunctionalProperty ;
+                 rdfs:domain rdfs:Resource ;
+                 rdfs:range :ChangeLog ;
+                 rdfs:comment "The current version of the source data." ;
+                 rdfs:isDefinedBy <https://change-detection-ontology.adaptcentre.ie/#> ;
+                 rdfs:label "isCurrentSource" .
+
+
+###  https://change-detection-ontology.adaptcentre.ie/#isNotificationPolicy
+:isNotificationPolicy rdf:type owl:ObjectProperty ;
+                      rdfs:domain <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy> ;
+                      rdfs:range :ChangeLog ;
+                      rdfs:comment "The notification policy defined for the change log" ;
+                      rdfs:isDefinedBy <http://change-detection-ontology.adaptcentre.ie/#> ;
+                      rdfs:label "isNotificationPolicy" .
+
+
+###  https://change-detection-ontology.adaptcentre.ie/#isPreviousSource
+:isPreviousSource rdf:type owl:ObjectProperty ;
+                  owl:inverseOf :hasPreviousSource ;
+                  rdf:type owl:FunctionalProperty ;
+                  rdfs:domain rdfs:Resource ;
+                  rdfs:range :ChangeLog ;
+                  rdfs:comment "The previous version of the source " ;
+                  rdfs:isDefinedBy <https://change-detection-ontology.adaptcentre.ie/#> ;
+                  rdfs:label "isPreviousSource" .
+
+
+###  https://change-detection-ontology.adaptcentre.ie/#ownedBy
+:ownedBy rdf:type owl:ObjectProperty ;
+         owl:inverseOf :hasOwner ;
+         rdfs:domain <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> ;
+         rdfs:range :ChangeLog ;
+         rdfs:comment "The owner of the change log." ;
+         rdfs:isDefinedBy <https://change-detection-ontology.adaptcentre.ie/#> ;
+         rdfs:label "ownedBy" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://change-detection-ontology.adaptcentre.ie/#hasDetectionEnd
+:hasDetectionEnd rdf:type owl:DatatypeProperty ,
+                          owl:FunctionalProperty ;
+                 rdfs:domain <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy> ;
+                 rdfs:range xsd:dateTime ;
+                 rdfs:comment "The time when the notification policy is terminated." ;
+                 rdfs:isDefinedBy <https://change-detection-ontology.adaptcentre.ie/#> ;
+                 rdfs:label "hasDetectionEnd" .
+
+
+###  https://change-detection-ontology.adaptcentre.ie/#hasDetectionStart
+:hasDetectionStart rdf:type owl:DatatypeProperty ,
+                            owl:FunctionalProperty ;
+                   rdfs:domain <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy> ;
+                   rdfs:range xsd:dateTime ;
+                   rdfs:comment "The time when the notification policy was created." ;
+                   rdfs:isDefinedBy <https://change-detection-ontology.adaptcentre.ie/#> ;
+                   rdfs:label "hasDetectionStart" .
+
+
+###  https://change-detection-ontology.adaptcentre.ie/#hasReason
+:hasReason rdf:type owl:DatatypeProperty ,
+                    owl:FunctionalProperty ;
+           rdfs:domain <http://linkedevents.org/ontology/Event> ;
+           rdfs:range xsd:string ;
+           rdfs:comment "The reason a change occurred." ;
+           rdfs:isDefinedBy <https://change-detection-ontology.adaptcentre.ie/#> ;
+           rdfs:label "hasReason" .
+
+
+###  https://change-detection-ontology.adaptcentre.ie/#hasThreshold
+:hasThreshold rdf:type owl:DatatypeProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain <http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint> ;
+              rdfs:range xsd:int ;
+              rdfs:comment "The threshold defined for a change type within the notification policy." ;
+              rdfs:isDefinedBy <https://change-detection-ontology.adaptcentre.ie/#> ;
+              rdfs:label "hasThreshold" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://linkedevents.org/ontology/Event
+<http://linkedevents.org/ontology/Event> rdf:type owl:Class ;
+                                         owl:disjointWith :ChangeLog ;
+                                         rdfs:comment "The superclass of each change type." ;
+                                         rdfs:label "Event" .
+
+
+###  http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint
+<http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiConstraint.owl#SimpleConstraint> rdf:type owl:Class ;
+                                                                                    rdfs:comment "The constraint for the notification policy." ;
+                                                                                    rdfs:label "SimpleConstraint" .
+
+
+###  http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy
+<http://www.cs.umbc.edu/~lkagal1/rei/ontologies/ReiPolicy.owl#Policy> rdf:type owl:Class ;
+                                                                      rdfs:comment "The notification policy for the change log." ;
+                                                                      rdfs:label "Policy" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> rdf:type owl:Class ;
+                                                              rdfs:comment "The agent who owns the change log." ;
+                                                              rdfs:label "Agent" .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#Resource
+rdfs:Resource rdf:type owl:Class ;
+              rdfs:comment "Represents the source data." ;
+              rdfs:label "Resource" .
+
+
+###  https://change-detection-ontology.adaptcentre.ie/#ChangeLog
+:ChangeLog rdf:type owl:Class ;
+           rdfs:comment "A grouping of changes that have occured within a specific source data." ;
+           rdfs:isDefinedBy <https://change-detection-ontology.adaptcentre.ie/#> ;
+           rdfs:label "ChangeLog" .
+
+
+###  https://change-detection-ontology.adaptcentre.ie/#DatatypeSourceData
+:DatatypeSourceData rdf:type owl:Class ;
+                    rdfs:subClassOf <http://linkedevents.org/ontology/Event> ;
+                    rdfs:comment "Datatype has been changed in the source data." ;
+                    rdfs:isDefinedBy <https://change-detection-ontology.adaptcentre.ie/#> ;
+                    rdfs:label "DatatypeSourceData" .
+
+
+###  https://change-detection-ontology.adaptcentre.ie/#DeleteSourceData
+:DeleteSourceData rdf:type owl:Class ;
+                  rdfs:subClassOf <http://linkedevents.org/ontology/Event> ;
+                  rdfs:comment "Data has been removed within the source data." ;
+                  rdfs:isDefinedBy <https://change-detection-ontology.adaptcentre.ie/#> ;
+                  rdfs:label "DeleteSourceData" .
+
+
+###  https://change-detection-ontology.adaptcentre.ie/#InsertSourceData
+:InsertSourceData rdf:type owl:Class ;
+                  rdfs:subClassOf <http://linkedevents.org/ontology/Event> ;
+                  rdfs:comment "Data has been inserted within the source data." ;
+                  rdfs:isDefinedBy <https://change-detection-ontology.adaptcentre.ie/#> ;
+                  rdfs:label "InsertSourceData" .
+
+
+###  https://change-detection-ontology.adaptcentre.ie/#MergeSourceData
+:MergeSourceData rdf:type owl:Class ;
+                 rdfs:subClassOf <http://linkedevents.org/ontology/Event> ;
+                 rdfs:comment "Data has been merged within the source data." ;
+                 rdfs:isDefinedBy <https://change-detection-ontology.adaptcentre.ie/#> ;
+                 rdfs:label "MergeSourceData" .
+
+
+###  https://change-detection-ontology.adaptcentre.ie/#MoveSourceData
+:MoveSourceData rdf:type owl:Class ;
+                rdfs:subClassOf <http://linkedevents.org/ontology/Event> ;
+                rdfs:comment "Data has been moved within the source data." ;
+                rdfs:isDefinedBy <https://change-detection-ontology.adaptcentre.ie/#> ;
+                rdfs:label "MoveSourceData" .
+
+
+###  https://change-detection-ontology.adaptcentre.ie/#UpdateSourceData
+:UpdateSourceData rdf:type owl:Class ;
+                  rdfs:subClassOf <http://linkedevents.org/ontology/Event> ;
+                  rdfs:comment "Data has been updated within the source data." ;
+                  rdfs:isDefinedBy <https://change-detection-ontology.adaptcentre.ie/#> ;
+                  rdfs:label "UpdateSourceData" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
